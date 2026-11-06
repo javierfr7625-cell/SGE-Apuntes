@@ -1,0 +1,2112 @@
+---
+// Astro Component Server-Side Script
+const pageTitle = "SGE Examen Progresa - Guía Rápida Ionic v8 & Angular Standalone";
+const lastUpdated = "Noviembre 2026 - Francisco Belda";
+---
+
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{pageTitle}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-body: #090d16;
+      --bg-surface: #0f172a;
+      --bg-card: #141e33;
+      --bg-subtle: #1e293b;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.2);
+      --accent-hover: #0284c7;
+      --border: #22324e;
+      --border-focus: #38bdf8;
+      --code-bg: #070b14;
+      --success: #10b981;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(9, 13, 22, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+    }
+
+    .header-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      font-size: 1.6rem;
+      font-weight: 900;
+    }
+
+    .logo-text h1 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    .badge-pill {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-ionic {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .badge-belda {
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    /* Search Input */
+    .search-bar-container {
+      position: relative;
+      flex: 1;
+      max-width: 580px;
+      min-width: 280px;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 18px 10px 42px;
+      color: #fff;
+      font-size: 0.92rem;
+      outline: none;
+      transition: all 0.2s ease;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    .search-icon-svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+      font-size: 1rem;
+    }
+
+    .shortcut-hint {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.7rem;
+      font-family: 'Fira Code', monospace;
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .btn-checklist {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: #fff;
+      border: none;
+      padding: 9px 18px;
+      border-radius: var(--radius-md);
+      font-size: 0.86rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+    }
+
+    .btn-checklist:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(2, 132, 199, 0.45);
+    }
+
+    /* Tag Filters */
+    .filter-tags {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+
+    .filter-tags::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tag-chip {
+      background: var(--bg-surface);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 5px 14px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .tag-chip:hover {
+      background: var(--bg-subtle);
+      color: #fff;
+      border-color: #3b82f6;
+    }
+
+    .tag-chip.active {
+      background: var(--accent);
+      color: #090d16;
+      border-color: var(--accent);
+      font-weight: 800;
+      box-shadow: 0 2px 8px var(--accent-glow);
+    }
+
+    /* Layout Grid */
+    .app-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 28px;
+      flex: 1;
+      width: 100%;
+    }
+
+    @media (max-width: 1040px) {
+      .app-container {
+        grid-template-columns: 1fr;
+      }
+      .toc-sidebar {
+        display: none;
+      }
+    }
+
+    /* Sidebar Navigation */
+    .toc-sidebar {
+      position: sticky;
+      top: 140px;
+      max-height: calc(100vh - 160px);
+      overflow-y: auto;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      scrollbar-width: thin;
+    }
+
+    .toc-title {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      font-weight: 800;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .toc-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      transition: all 0.15s ease;
+    }
+
+    .toc-link:hover {
+      background: var(--bg-subtle);
+      color: #fff;
+    }
+
+    .toc-link .num {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Critical Golden Rules Banner */
+    .golden-banner {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(185, 28, 28, 0.25) 100%);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .golden-banner::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: var(--danger);
+    }
+
+    .golden-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .golden-header h2 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #fecaca;
+    }
+
+    .golden-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .golden-card {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      font-size: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .golden-card strong {
+      color: #f87171;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Model Cards */
+    .models-feed {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .model-card {
+      scroll-margin-top: 155px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.8); border-color: #38bdf8; }
+      50% { box-shadow: 0 0 0 12px rgba(56, 189, 248, 0.25); border-color: #38bdf8; }
+      100% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0); }
+    }
+
+    .card-highlight {
+      animation: pulseGlow 1.6s ease-out;
+      border-color: #38bdf8 !important;
+    }
+
+    .active-filter-bar {
+      display: none;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 10px 16px;
+      border-radius: var(--radius-md);
+      margin-bottom: 20px;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.88rem;
+    }
+
+    .active-filter-bar.show {
+      display: flex;
+    }
+
+    .btn-reset-filter {
+      background: var(--accent);
+      color: #090d16;
+      border: none;
+      border-radius: 9999px;
+      padding: 4px 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .model-card:hover {
+      border-color: #3b82f6;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .card-top {
+      padding: 18px 24px;
+      background: #0f192b;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .card-id-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .card-num {
+      background: var(--accent);
+      color: #090d16;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.85rem;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    .card-title {
+      font-size: 1.22rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .trigger-pill {
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 5px 12px;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-family: 'Fira Code', monospace;
+      font-weight: 600;
+    }
+
+    .card-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Anatomy & Steps */
+    .info-callout {
+      background: var(--bg-surface);
+      border-left: 4px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.88rem;
+    }
+
+    .info-callout strong {
+      color: var(--accent);
+    }
+
+    .recipe-steps {
+      padding-left: 20px;
+      font-size: 0.92rem;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .recipe-steps li strong {
+      color: #fff;
+    }
+
+    /* Code Blocks */
+    .code-box {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .code-bar {
+      background: #090d16;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      font-family: 'Fira Code', monospace;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .btn-copy {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.15s;
+    }
+
+    .btn-copy:hover {
+      background: var(--accent);
+      color: #090d16;
+      border-color: var(--accent);
+    }
+
+    pre {
+      padding: 16px;
+      overflow-x: auto;
+      font-family: 'Fira Code', Consolas, Monaco, monospace;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+
+
+    /* Teacher Criteria & Traps */
+    .rubric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .rubric-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .rubric-card {
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      font-size: 0.85rem;
+    }
+
+    .rubric-positive {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+
+    .rubric-positive h4 {
+      color: var(--success);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .rubric-negative {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+    }
+
+    .rubric-negative h4 {
+      color: var(--danger);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .rubric-card ul {
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    /* Directory Tree Visualization */
+    .tree-card {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin: 14px 0;
+    }
+
+    .tree-header {
+      background: #090d16;
+      padding: 8px 16px;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.8rem;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tree-content {
+      padding: 16px;
+      margin: 0;
+      font-family: 'Fira Code', Consolas, Monaco, monospace;
+      font-size: 0.86rem;
+      line-height: 1.6;
+      white-space: pre !important;
+      overflow-x: auto;
+      color: #e2e8f0;
+    }
+
+    .tree-content .folder {
+      color: #38bdf8;
+      font-weight: 700;
+    }
+
+    .tree-content .file {
+      color: #f1f5f9;
+      font-weight: 600;
+    }
+
+    .tree-content .comment {
+      color: #64748b;
+      font-style: italic;
+    }
+
+    /* Interactive Checklist Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 7, 13, 0.8);
+      backdrop-filter: blur(6px);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-window {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      max-width: 650px;
+      width: 100%;
+      padding: 26px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .modal-head h3 {
+      font-size: 1.25rem;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .close-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.6rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .check-items-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.92rem;
+      cursor: pointer;
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      transition: background 0.15s;
+    }
+
+    .check-item:hover {
+      background: var(--bg-card);
+    }
+
+    .check-item input[type="checkbox"] {
+      margin-top: 4px;
+      width: 20px;
+      height: 20px;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: auto;
+      background: var(--bg-surface);
+    }
+  </style>
+
+  <style is:global>
+    /* =========================================
+       GLOBAL SYNTAX HIGHLIGHTING (VS Code / One Dark Pro)
+       ========================================= */
+    pre code.hljs {
+      display: block;
+      overflow-x: auto;
+      padding: 0;
+      background: transparent !important;
+      color: #abb2bf !important;
+      font-family: 'Fira Code', Consolas, Monaco, monospace !important;
+      font-size: 0.85rem !important;
+      line-height: 1.6 !important;
+    }
+
+    /* Keywords: import, export, from, const, return, class, interface, async */
+    .hljs-keyword,
+    .hljs-selector-tag,
+    .hljs-subst {
+      color: #c678dd !important; /* Vibrant One Dark Purple */
+      font-weight: 600 !important;
+    }
+
+    /* Strings: '...', "...", `...` */
+    .hljs-string,
+    .hljs-regexp,
+    .hljs-addition,
+    .hljs-attribute {
+      color: #98c379 !important; /* Vibrant Emerald Green */
+    }
+
+    /* Function calls, definitions */
+    .hljs-title.function_,
+    .hljs-function,
+    .hljs-section {
+      color: #61afef !important; /* Sky Blue */
+      font-weight: 600 !important;
+    }
+
+    /* Classes, Types, Built-ins */
+    .hljs-title.class_,
+    .hljs-class .hljs-title,
+    .hljs-type,
+    .hljs-built_in {
+      color: #e5c07b !important; /* Amber Gold */
+      font-weight: 600 !important;
+    }
+
+    /* Decorators & Symbols: @Component, @Injectable, @Input */
+    .hljs-meta,
+    .hljs-symbol,
+    .hljs-bullet {
+      color: #e5c07b !important;
+      font-weight: 700 !important;
+    }
+
+    /* Properties, Attributes, Variables */
+    .hljs-attr,
+    .hljs-variable,
+    .hljs-template-variable,
+    .hljs-params {
+      color: #d19a66 !important; /* Warm Orange / Salmon */
+    }
+
+    /* Numbers & Literals: true, false, numbers */
+    .hljs-number,
+    .hljs-literal {
+      color: #d19a66 !important;
+    }
+
+    /* Comments */
+    .hljs-comment,
+    .hljs-quote {
+      color: #768390 !important; /* Slate Gray */
+      font-style: italic !important;
+    }
+
+    /* HTML/XML Elements & Tags */
+    .hljs-tag {
+      color: #abb2bf !important;
+    }
+
+    .hljs-name {
+      color: #e06c75 !important; /* Coral Red */
+      font-weight: 600 !important;
+    }
+
+    .hljs-selector-class,
+    .hljs-selector-id,
+    .hljs-selector-attr {
+      color: #e5c07b !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation & Search -->
+  <header>
+    <div class="header-inner">
+      <div class="top-row">
+        <div class="logo-area">
+          <span class="logo-icon">⚡</span>
+          <div class="logo-text">
+            <h1>SGE Examen Rápido</h1>
+          </div>
+          <span class="badge-pill badge-ionic">Ionic v8 + Angular Standalone</span>
+          <span class="badge-pill badge-belda">Francisco Belda</span>
+        </div>
+
+        <div class="search-bar-container">
+          <span class="search-icon-svg">🔍</span>
+          <input
+            type="text"
+            id="globalSearch"
+            class="search-input"
+            placeholder="Buscar por concepto, archivo, trigger (ej: author, zelda, modal, infinite, structure)..."
+            autofocus
+          />
+          <span class="shortcut-hint">Ctrl + F</span>
+        </div>
+
+        <button class="btn-checklist" id="openChecklistBtn">
+          <span>📋</span> Checklist de Entrega
+        </button>
+      </div>
+
+      <!-- Tag Filters -->
+      <div class="filter-tags" id="tagFilters">
+        <button class="tag-chip active" data-filter="all">✨ Todos</button>
+        <button class="tag-chip" data-filter="inicio">🛠️ 0. Guía Inicio & Setup</button>
+        <button class="tag-chip" data-filter="critico">🚨 Puntos Fatales</button>
+        <button class="tag-chip" data-filter="zelda">🗡️ Simulacro Zelda</button>
+        <button class="tag-chip" data-filter="menu">📑 Menú Lateral</button>
+        <button class="tag-chip" data-filter="modal">🪟 Modales Inline</button>
+        <button class="tag-chip" data-filter="infinite">🔄 Infinite Scroll</button>
+        <button class="tag-chip" data-filter="swiper">🎠 Diapositivas Swiper</button>
+        <button class="tag-chip" data-filter="refresher">⬇️ Refresher/Skeleton</button>
+        <button class="tag-chip" data-filter="searchbar">🔎 Searchbar/Pipe</button>
+        <button class="tag-chip" data-filter="segment">📊 Segments/URL</button>
+        <button class="tag-chip" data-filter="toast">🍞 Toast Service</button>
+        <button class="tag-chip" data-filter="alert">⚠️ Alert Controller</button>
+        <button class="tag-chip" data-filter="i18n">🌍 Multilenguaje</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- App Body Layout -->
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="toc-sidebar">
+      <div class="toc-title">
+        <span>📑</span> Índice Rápido
+      </div>
+      <ul class="toc-list">
+        <li><a href="#guia-inicio" class="toc-link"><span class="num">00</span> Guía Inicio & Setup Cero</a></li>
+        <li><a href="#setup-critico" class="toc-link"><span class="num">01</span> Setup Base & Providers</a></li>
+        <li><a href="#modelo-api" class="toc-link"><span class="num">02</span> Consumo API REST + Signals</a></li>
+        <li><a href="#modelo-swiper" class="toc-link"><span class="num">03</span> Diapositivas Swiper</a></li>
+        <li><a href="#modelo-menu" class="toc-link"><span class="num">04</span> Menú con Avatar Toggle</a></li>
+        <li><a href="#modelo-modal" class="toc-link"><span class="num">05</span> Modal Inline willDismiss</a></li>
+        <li><a href="#modelo-infinite" class="toc-link"><span class="num">06</span> Infinite Scroll (Listas)</a></li>
+        <li><a href="#modelo-refresher" class="toc-link"><span class="num">07</span> Refresher y Skeleton</a></li>
+        <li><a href="#modelo-search" class="toc-link"><span class="num">08</span> Searchbar + Filtro Pipe</a></li>
+        <li><a href="#modelo-segment" class="toc-link"><span class="num">09</span> Segments + QueryParams</a></li>
+        <li><a href="#modelo-toast" class="toc-link"><span class="num">10</span> Toast Service Central</a></li>
+        <li><a href="#modelo-alert" class="toc-link"><span class="num">11</span> Alert Controller</a></li>
+        <li><a href="#modelo-i18n" class="toc-link"><span class="num">12</span> Multilenguaje i18n</a></li>
+        <li><a href="#cheat-sheet" class="toc-link"><span class="num">13</span> Cheat-Sheet y addIcons</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Critical Warning Banner -->
+      <section class="golden-banner" id="bannerCritico">
+        <div class="golden-header">
+          <span style="font-size: 1.4rem;">🚨</span>
+          <h2>REGLAS DE ORO DE FRANCISCO BELDA (AUDITORÍA OFICIAL)</h2>
+        </div>
+        <p style="font-size: 0.88rem; color: #fecaca;">
+          Detectadas en las correcciones del simulacro y transcripciones de clase. Comprueba estos 5 puntos antes de escribir código:
+        </p>
+        <div class="golden-grid">
+          <div class="golden-card">
+            <strong>👤 package.json -> Autor</strong>
+            <span>Poner <code>"author": "Tu Nombre"</code> en package.json. Es lo primero que revisa al abrir el zip.</span>
+          </div>
+          <div class="golden-card">
+            <strong>🌐 main.ts -> HttpClient</strong>
+            <span>Añadir <code>provideHttpClient(withFetch())</code> en providers o la app fallará con pantalla blanca.</span>
+          </div>
+          <div class="golden-card">
+            <strong>🎠 app.component.ts -> Swiper</strong>
+            <span>Llamar a <code>register()</code> de Swiper y <code>CUSTOM_ELEMENTS_SCHEMA</code> en la página de slides.</span>
+          </div>
+          <div class="golden-card">
+            <strong>🔗 ion-menu -> contentId</strong>
+            <span>El <code>contentId</code> del menú DEBE ser idéntico al <code>id</code> del <code>ion-content</code> o la app se bloquea.</span>
+          </div>
+          <div class="golden-card">
+            <strong>🛑 Infinite & Refresher</strong>
+            <span>Llamar SIEMPRE a <code>event.target.complete()</code> o el spinner se quedará cargando para siempre.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Active Filter Notice -->
+      <div class="active-filter-bar" id="filterNotice">
+        <span>🔍 Mostrando filtro: <strong id="filterName">Todos</strong> (<span id="matchCount">14</span> modelos encontrados)</span>
+        <button class="btn-reset-filter" id="btnResetFilter">Mostrar Todos</button>
+      </div>
+
+      <!-- Feed of Models -->
+      <div class="models-feed" id="modelsFeed">
+
+        <!-- SECCIÓN: GUÍA DE INICIO Y SETUP DESDE CERO -->
+        <article class="model-card" data-tags="inicio setup critico" id="guia-inicio">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">00</span>
+              <h3 class="card-title">Guía de Inicio y Setup desde Cero (Estructura y Comandos)</h3>
+            </div>
+            <span class="trigger-pill">"Crear proyecto en blanco", "Estructura de carpetas", "CLI commands"</span>
+          </div>
+          <div class="card-content">
+            <div class="info-callout">
+              <strong>Objetivo:</strong> Crear un proyecto Angular Standalone limpio en Ionic v8 sin archivos basura, generando la estructura de carpetas que exige el profesor (`models/`, `services/`, `pages/`, `components/`, `assets/`).
+            </div>
+
+            <h4 style="color: #fff; margin-top: 10px;">1. Comando de Creación Oficial (Terminal)</h4>
+            <div class="code-box">
+              <div class="code-bar">
+                <span>PowerShell / Bash</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-bash"># 1. Crear proyecto blank en Angular Standalone (Sin módulos viejos)
+ionic start mi-examen blank --type=angular --standalone
+
+# 2. Entrar a la carpeta
+cd mi-examen
+
+# 3. Instalar Swiper para las diapositivas
+npm install swiper
+
+# (Opcional) Si el examen pide multilenguaje:
+npm install @ngx-translate/core @ngx-translate/http-loader</code></pre>
+            </div>
+
+            <h4 style="color: #fff; margin-top: 10px;">2. Arquitectura de Carpetas Exigida</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              Crea estas carpetas dentro de <code>src/app/</code> y <code>src/assets/</code> para tener todo organizado según el criterio del profesor:
+            </p>
+
+            <div class="tree-card">
+              <div class="tree-header">
+                <span>📁</span> Arquitectura de Carpetas Oficial (src/)
+              </div>
+              <pre class="tree-content"><code class="nohighlight"><span class="folder">src/</span>
+├── <span class="folder">app/</span>
+│   ├── <span class="folder">common/</span>
+│   │   └── <span class="folder">models/</span>          <span class="comment">← Interfaces TypeScript / DTOs (ej: zelda.model.ts)</span>
+│   ├── <span class="folder">components/</span>          <span class="comment">← Componentes modulares (ej: menu/, header/)</span>
+│   ├── <span class="folder">pages/</span>               <span class="comment">← Pantallas enlazadas a rutas (ej: inicio/, materials/)</span>
+│   ├── <span class="folder">pipes/</span>               <span class="comment">← Pipes de búsqueda personalizada (ej: filtro.pipe.ts)</span>
+│   └── <span class="folder">services/</span>            <span class="comment">← Servicios HTTP y Toast (ej: zelda.service.ts, toast.service.ts)</span>
+├── <span class="folder">assets/</span>
+│   ├── <span class="folder">data/</span>                <span class="comment">← Ficheros JSON locales de prueba (ej: menu.json)</span>
+│   ├── <span class="folder">i18n/</span>                <span class="comment">← Traducciones (es.json, en.json) si hay multilenguaje</span>
+│   └── <span class="folder">images/</span>              <span class="comment">← Imágenes (AmongUs.jpg, logo.png, etc.)</span>
+└── <span class="folder">environments/</span>
+    └── <span class="file">environment.ts</span>       <span class="comment">← URLBase de la API: https://botw-compendium.herokuapp.com/api/v3</span></code></pre>
+            </div>
+
+            <h4 style="color: #fff; margin-top: 10px;">3. Comandos CLI para Generar Artefactos sin Archivos Basura</h4>
+            <div class="code-box">
+              <div class="code-bar">
+                <span>Comandos de Generación Rápida</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-bash"># 📄 Crear Páginas (sin spec de test):
+ionic g page pages/inicio --spec=false
+ionic g page pages/materials --spec=false
+
+# 🧩 Crear Componentes Standalone:
+ionic g c components/menu --standalone --spec=false
+ionic g c components/header --standalone --spec=false
+
+# 💉 Crear Servicios (sin spec):
+ionic g s services/zelda --skip-tests
+ionic g s services/toast --skip-tests
+
+# 🔍 Crear Pipe de Filtrado:
+ionic g pipe pipes/filtro --standalone</code></pre>
+            </div>
+
+            <h4 style="color: #fff; margin-top: 10px;">4. Enrutamiento Inicial (`src/app/app.routes.ts`)</h4>
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/app.routes.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; Routes &#125; from '@angular/router';
+
+export const routes: Routes = [
+  &#123;
+    path: '',
+    redirectTo: 'inicio',
+    pathMatch: 'full',
+  &#125;,
+  &#123;
+    path: 'inicio',
+    loadComponent: () =&gt; import('./pages/inicio/inicio.page').then((m) =&gt; m.InicioPage),
+  &#125;,
+  &#123;
+    path: 'materials',
+    loadComponent: () =&gt; import('./pages/materials/materials.page').then((m) =&gt; m.MaterialsPage),
+  &#125;,
+];</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 1: SETUP CRÍTICO Y PROVIDERS -->
+        <article class="model-card" data-tags="setup critico" id="setup-critico">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">01</span>
+              <h3 class="card-title">Configuración Crítica de `package.json`, `main.ts` y Swiper</h3>
+            </div>
+            <span class="trigger-pill">"Configuración Base", "package.json", "provideHttpClient"</span>
+          </div>
+          <div class="card-content">
+            <div class="info-callout">
+              <strong>Archivos clave:</strong> <code>package.json</code>, <code>src/main.ts</code>, <code>src/app/app.component.ts</code>, <code>src/environments/environment.ts</code>.
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>package.json (Autor Obligatorio)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-json">&#123;
+  "name": "examen-sge",
+  "version": "1.0.0",
+  "author": "Tu Nombre y Apellidos",
+  "description": "Examen de SGE Primera Evaluacion"
+&#125;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/main.ts (Providers Globales)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; bootstrapApplication &#125; from '@angular/platform-browser';
+import &#123; RouteReuseStrategy, provideRouter, withComponentInputBinding, withPreloading, PreloadAllModules &#125; from '@angular/router';
+import &#123; IonicRouteStrategy, provideIonicAngular &#125; from '@ionic/angular/standalone';
+import &#123; provideHttpClient, withFetch &#125; from '@angular/common/http';
+import &#123; AppComponent &#125; from './app/app.component';
+import &#123; routes &#125; from './app/app.routes';
+
+bootstrapApplication(AppComponent, &#123;
+  providers: [
+    &#123; provide: RouteReuseStrategy, useClass: IonicRouteStrategy &#125;,
+    provideIonicAngular(),
+    provideHttpClient(withFetch()), // &lt;-- OBLIGATORIO PARA HttpClient
+    provideRouter(routes, withPreloading(PreloadAllModules), withComponentInputBinding()),
+  ],
+&#125;);</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/app.component.ts (Registro de Swiper)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; Component &#125; from '@angular/core';
+import &#123; IonApp, IonRouterOutlet &#125; from '@ionic/angular/standalone';
+import &#123; register &#125; from 'swiper/element/bundle';
+
+register(); // &lt;-- OBLIGATORIO PARA SWIPER DIAPOSITIVAS
+
+@Component(&#123;
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  standalone: true,
+  imports: [IonApp, IonRouterOutlet],
+&#125;)
+export class AppComponent &#123;&#125;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 2: API REST + SIGNALS -->
+        <article class="model-card" data-tags="zelda api critico" id="modelo-api">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">02</span>
+              <h3 class="card-title">Consumo de API REST Externa con DTOs y Signals</h3>
+            </div>
+            <span class="trigger-pill">"Dada la API...", "Cargar información de la API", "Lista con imagen y descripción"</span>
+          </div>
+          <div class="card-content">
+            <div class="info-callout">
+              <strong>Anatomía:</strong> <code>src/app/common/models/zelda.model.ts</code>, <code>src/app/services/zelda.service.ts</code>, <code>src/app/pages/materials/materials.page.ts</code> y <code>.html</code>.
+            </div>
+
+            <ol class="recipe-steps">
+              <li>Definir interfaz DTO de la respuesta en <code>zelda.model.ts</code>.</li>
+              <li>Inyectar <code>HttpClient</code> en el servicio y devolver <code>Observable&lt;ApiResponseZelda&gt;</code>.</li>
+              <li>Declarar <code>materials = signal&lt;ZeldaMaterial[]&gt;([])</code> en el componente.</li>
+              <li>Cargar en <code>ngOnInit()</code> con <code>this.materials.set(res.data)</code>.</li>
+              <li>Pintar en el HTML con <code>@for (m of materials(); track m.id)</code>.</li>
+            </ol>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/common/models/zelda.model.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">export interface ApiResponseZelda &#123;
+  data: ZeldaMaterial[];
+  message: string;
+  status: number;
+&#125;
+
+export interface ZeldaMaterial &#123;
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+  category: string;
+&#125;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/services/zelda.service.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; inject, Injectable &#125; from '@angular/core';
+import &#123; HttpClient &#125; from '@angular/common/http';
+import &#123; Observable &#125; from 'rxjs';
+import &#123; ApiResponseZelda &#125; from '../common/models/zelda.model';
+import &#123; environment &#125; from '../../environments/environment';
+
+@Injectable(&#123;
+  providedIn: 'root'
+&#125;)
+export class ZeldaService &#123;
+  private readonly http: HttpClient = inject(HttpClient);
+
+  getMaterials(): Observable&lt;ApiResponseZelda&gt; &#123;
+    return this.http.get&lt;ApiResponseZelda&gt;(
+      `$&#123;environment.URLBase&#125;/category/materials`
+    );
+  &#125;
+&#125;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/pages/materials/materials.page.html</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-html">&lt;ion-content id="materials-page"&gt;
+  &lt;ion-list&gt;
+    @for (material of materials(); track material.id) &#123;
+      &lt;ion-item&gt;
+        &lt;ion-avatar slot="end"&gt;
+          &lt;img [src]="material.image" [alt]="material.name" /&gt;
+        &lt;/ion-avatar&gt;
+        &lt;ion-label&gt;
+          &lt;h2 class="ion-text-capitalize"&gt;&#123;&#123; material.name &#125;&#125;&lt;/h2&gt;
+          &lt;p&gt;&#123;&#123; material.description &#125;&#125;&lt;/p&gt;
+        &lt;/ion-label&gt;
+      &lt;/ion-item&gt;
+    &#125;
+  &lt;/ion-list&gt;
+&lt;/ion-content&gt;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 3: SWIPER SLIDES -->
+        <article class="model-card" data-tags="swiper zelda critico" id="modelo-swiper">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">03</span>
+              <h3 class="card-title">Secuencia de Diapositivas (Swiper / Slides)</h3>
+            </div>
+            <span class="trigger-pill">"Secuencia de 3 diapositivas", "La tercera tendrá un botón para ir a la siguiente página"</span>
+          </div>
+          <div class="card-content">
+            <div class="info-callout">
+              <strong>Atención:</strong> En <code>inicio.page.ts</code> es OBLIGATORIO añadir <code>schemas: [CUSTOM_ELEMENTS_SCHEMA]</code>.
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/pages/inicio/inicio.page.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; Component, CUSTOM_ELEMENTS_SCHEMA, OnInit &#125; from '@angular/core';
+import &#123; CommonModule &#125; from '@angular/common';
+import &#123; RouterLink &#125; from '@angular/router';
+import &#123; IonContent, IonButton, IonText, IonCardContent &#125; from '@ionic/angular/standalone';
+
+@Component(&#123;
+  selector: 'app-inicio',
+  templateUrl: './inicio.page.html',
+  styleUrls: ['./inicio.page.scss'],
+  standalone: true,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA], // &lt;-- OBLIGATORIO
+  imports: [IonContent, IonButton, IonText, IonCardContent, RouterLink, CommonModule]
+&#125;)
+export class InicioPage implements OnInit &#123;
+  slides = [
+    &#123; texto: 'En este examen utilizaremos componentes de Ionic', image: 'assets/images/logo.avif', color: 'primary' &#125;,
+    &#123; texto: 'Pero trabajaremos con la API del Zelda', image: 'assets/images/link.jpg', color: 'secondary' &#125;,
+    &#123; texto: 'Para lograr el ansiado aprobado', image: 'assets/images/approved.png', color: 'success' &#125;
+  ];
+
+  ngOnInit() &#123;&#125;
+&#125;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/pages/inicio/inicio.page.html</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-html">&lt;ion-content&gt;
+  &lt;swiper-container pagination="true"&gt;
+    @for (slide of slides; track slide.texto) &#123;
+      &lt;swiper-slide&gt;
+        &lt;div class="ion-display-flex ion-flex-column ion-justify-content-center ion-align-items-center" style="height: 100vh; padding: 24px;"&gt;
+          &lt;div class="ion-display-flex ion-justify-content-center ion-margin-bottom"&gt;
+            &lt;img [src]="slide.image" [alt]="slide.texto" style="max-height: 250px; object-fit: contain;" /&gt;
+          &lt;/div&gt;
+          &lt;ion-card-content class="ion-text-center"&gt;
+            &lt;ion-text [color]="slide.color"&gt;
+              &lt;h3&gt;&#123;&#123; slide.texto &#125;&#125;&lt;/h3&gt;
+            &lt;/ion-text&gt;
+            @if ($last) &#123;
+              &lt;div class="ion-margin-top"&gt;
+                &lt;ion-button routerLink="/materials" [color]="slide.color" shape="round"&gt;
+                  EMPEZAR
+                &lt;/ion-button&gt;
+              &lt;/div&gt;
+            &#125;
+          &lt;/ion-card-content&gt;
+        &lt;/div&gt;
+      &lt;/swiper-slide&gt;
+    &#125;
+  &lt;/swiper-container&gt;
+&lt;/ion-content&gt;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 4: MENU CON AVATAR -->
+        <article class="model-card" data-tags="menu zelda critico" id="modelo-menu">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">04</span>
+              <h3 class="card-title">Menú Lateral con Avatar y Toggle en Cabecera</h3>
+            </div>
+            <span class="trigger-pill">"Menú con ion-menu-toggle con Avatar y aparecerá por la izquierda"</span>
+          </div>
+          <div class="card-content">
+            <div class="info-callout">
+              <strong>Error Fatal de Examen:</strong> El <code>contentId</code> de <code>&lt;ion-menu&gt;</code> DEBE coincidir con el <code>id</code> de <code>&lt;ion-content&gt;</code> de la página.
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/components/menu/menu.component.html</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-html">&lt;ion-menu side="start" menuId="menu-among-us" contentId="materials-page"&gt;
+  &lt;ion-content class="ion-padding"&gt;
+    &lt;div class="ion-display-flex ion-justify-content-center ion-margin-bottom"&gt;
+      &lt;ion-avatar style="width: 80px; height: 80px;"&gt;
+        &lt;img src="assets/images/AmongUs.jpg" alt="Avatar" /&gt;
+      &lt;/ion-avatar&gt;
+    &lt;/div&gt;
+
+    &lt;h2 class="ion-text-center"&gt;&lt;ion-text color="primary"&gt;Nombre del Alumno&lt;/ion-text&gt;&lt;/h2&gt;
+    &lt;p class="ion-text-center"&gt;1998&lt;/p&gt;
+
+    &lt;ion-list&gt;
+      &lt;ion-menu-toggle auto-hide="true"&gt;
+        &lt;ion-item button&gt;
+          &lt;ion-icon name="settings" color="primary" slot="start"&gt;&lt;/ion-icon&gt;
+          &lt;ion-label&gt;Ajustes&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      &lt;/ion-menu-toggle&gt;
+      &lt;ion-menu-toggle auto-hide="true"&gt;
+        &lt;ion-item button&gt;
+          &lt;ion-icon name="cog" color="primary" slot="start"&gt;&lt;/ion-icon&gt;
+          &lt;ion-label&gt;Preferencias&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      &lt;/ion-menu-toggle&gt;
+    &lt;/ion-list&gt;
+  &lt;/ion-content&gt;
+&lt;/ion-menu&gt;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>Cabecera en materials.page.html</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-html">&lt;ion-header class="ion-no-border"&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-menu-toggle slot="start" menu="menu-among-us"&gt;
+      &lt;ion-avatar style="cursor: pointer; margin-left: 8px;"&gt;
+        &lt;img src="assets/images/AmongUs.jpg" alt="Abrir Menú" /&gt;
+      &lt;/ion-avatar&gt;
+    &lt;/ion-menu-toggle&gt;
+    &lt;ion-title color="primary"&gt;Materials&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;app-menu /&gt;
+
+&lt;!-- EL ID DEBE COINCIDIR EXACTO CON contentId --&gt;
+&lt;ion-content id="materials-page"&gt;
+  ...
+&lt;/ion-content&gt;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 5: MODAL INLINE -->
+        <article class="model-card" data-tags="modal zelda critico" id="modelo-modal">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">05</span>
+              <h3 class="card-title">Modal Inline con `willDismiss` y Retorno de Datos</h3>
+            </div>
+            <span class="trigger-pill">"Botón que lanzará un modal", "Generar número aleatorio", "Toast Aceptar/Cancel"</span>
+          </div>
+          <div class="card-content">
+            <div class="info-callout">
+              <strong>Estructura:</strong> Enlace mediante <code>trigger="abrir-modal"</code> y captura del rol en <code>(willDismiss)="onWillDismiss($event)"</code>.
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>materials.page.html (Modal Inline con ng-template)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-html">&lt;div class="ion-text-center ion-margin"&gt;
+  &lt;ion-button id="abrir-modal" color="primary"&gt;
+    &lt;ion-icon name="power"&gt;&lt;/ion-icon&gt;
+  &lt;/ion-button&gt;
+&lt;/div&gt;
+
+&lt;ion-modal #miModal trigger="abrir-modal" (willDismiss)="onWillDismiss($event)"&gt;
+  &lt;ng-template&gt;
+    &lt;ion-header&gt;
+      &lt;ion-toolbar&gt;
+        &lt;ion-buttons slot="start"&gt;
+          &lt;ion-button color="primary" (click)="miModal.dismiss(null, 'cancel')"&gt;CANCEL&lt;/ion-button&gt;
+        &lt;/ion-buttons&gt;
+        &lt;ion-buttons slot="end"&gt;
+          &lt;ion-button color="primary" (click)="miModal.dismiss(null, 'aceptar')"&gt;ACEPTAR&lt;/ion-button&gt;
+        &lt;/ion-buttons&gt;
+      &lt;/ion-toolbar&gt;
+    &lt;/ion-header&gt;
+
+    &lt;ion-content class="ion-padding"&gt;
+      &lt;div class="ion-display-flex ion-justify-content-center ion-margin-top"&gt;
+        &lt;ion-button color="success" (click)="generateRandom()"&gt;RANDOM&lt;/ion-button&gt;
+      &lt;/div&gt;
+      &lt;p class="ion-text-center ion-margin-top"&gt;
+        &lt;ion-text color="success" style="font-size: 28px; font-weight: bold;"&gt;&#123;&#123; randomNumber() &#125;&#125;&lt;/ion-text&gt;
+      &lt;/p&gt;
+    &lt;/ion-content&gt;
+  &lt;/ng-template&gt;
+&lt;/ion-modal&gt;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>materials.page.ts (Lógica de Dismiss)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">randomNumber = signal&lt;number&gt;(0);
+
+protected generateRandom() &#123;
+  const total = this.materials().length;
+  if (total &gt; 0) &#123;
+    this.randomNumber.set(Math.floor(Math.random() * total));
+  &#125;
+&#125;
+
+protected onWillDismiss(event: CustomEvent) &#123;
+  if (event.detail.role === 'cancel') &#123;
+    this.toastService.showToast('Cancelado', 'danger');
+  &#125;
+  if (event.detail.role === 'aceptar') &#123;
+    const item = this.materials()[this.randomNumber()];
+    const nombre = item ? item.name : 'Elemento';
+    this.toastService.showToast('Aceptado: ' + nombre, 'primary');
+  &#125;
+&#125;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 6: INFINITE SCROLL -->
+        <article class="model-card" data-tags="infinite critico" id="modelo-infinite">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">06</span>
+              <h3 class="card-title">Listas Infinitas (Infinite Scroll) con Bloqueo</h3>
+            </div>
+            <span class="trigger-pill">"Infinite Scroll", "Paginación continua", "Bloquear al llegar al final"</span>
+          </div>
+          <div class="card-content">
+            <div class="code-box">
+              <div class="code-bar">
+                <span>infinite.page.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; Component, inject, OnInit &#125; from '@angular/core';
+import &#123; InfiniteScrollCustomEvent &#125; from '@ionic/angular';
+import &#123; DataService &#125; from '../../services/data.service';
+
+export class InfinitePage implements OnInit &#123;
+  private dataService = inject(DataService);
+  items: any[] = [];
+  currentPage = 1;
+
+  ngOnInit() &#123;
+    this.loadData();
+  &#125;
+
+  loadData(event?: InfiniteScrollCustomEvent) &#123;
+    this.dataService.getItems(this.currentPage).subscribe(&#123;
+      next: (res) =&gt; &#123;
+        this.items.push(...res.results);
+
+        // 1. COMPLETAR SIEMPRE EL EVENTO
+        event?.target.complete();
+
+        // 2. DESACTIVAR AL LLEGAR AL FINAL DE LA COLECCIÓN
+        if (event && res.total_pages === this.currentPage) &#123;
+          event.target.disabled = true;
+          return;
+        &#125;
+
+        this.currentPage++;
+      &#125;,
+      error: (err) =&gt; &#123;
+        console.error(err);
+        event?.target.complete();
+      &#125;
+    &#125;);
+  &#125;
+&#125;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>infinite.page.html</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-html">&lt;ion-content&gt;
+  &lt;ion-list&gt;
+    @for (item of items; track item.id) &#123;
+      &lt;ion-item&gt;
+        &lt;ion-label&gt;
+          &lt;h2&gt;&#123;&#123; item.title &#125;&#125;&lt;/h2&gt;
+          &lt;p&gt;&#123;&#123; item.description &#125;&#125;&lt;/p&gt;
+        &lt;/ion-label&gt;
+      &lt;/ion-item&gt;
+    &#125;
+  &lt;/ion-list&gt;
+
+  &lt;ion-infinite-scroll threshold="150px" (ionInfinite)="loadData($event)"&gt;
+    &lt;ion-infinite-scroll-content
+      loadingSpinner="crescent"
+      loadingText="Cargando siguientes elementos..."&gt;
+    &lt;/ion-infinite-scroll-content&gt;
+  &lt;/ion-infinite-scroll&gt;
+&lt;/ion-content&gt;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 7: REFRESHER Y SKELETON -->
+        <article class="model-card" data-tags="refresher" id="modelo-refresher">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">07</span>
+              <h3 class="card-title">Pull to Refresh (`ion-refresher`) y Skeleton Text Animado</h3>
+            </div>
+            <span class="trigger-pill">"Arrastre hacia abajo para recargar", "Placeholder skeleton animado"</span>
+          </div>
+          <div class="card-content">
+            <div class="code-box">
+              <div class="code-bar">
+                <span>refresher.page.html</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-html">&lt;ion-content class="ion-padding"&gt;
+  &lt;ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)"&gt;
+    &lt;ion-refresher-content&gt;&lt;/ion-refresher-content&gt;
+  &lt;/ion-refresher&gt;
+
+  @if (items.length === 0 && !skeleton) &#123;
+    &lt;h4 class="ion-text-center"&gt;Arrastre hacia abajo para recargar&lt;/h4&gt;
+  &#125; @else if (skeleton) &#123;
+    &lt;ion-list&gt;
+      @for (i of [1,2,3,4,5]; track i) &#123;
+        &lt;ion-item&gt;
+          &lt;ion-avatar slot="start"&gt;
+            &lt;ion-skeleton-text [animated]="true"&gt;&lt;/ion-skeleton-text&gt;
+          &lt;/ion-avatar&gt;
+          &lt;ion-label&gt;
+            &lt;h3&gt;&lt;ion-skeleton-text [animated]="true" style="width: 60%;"&gt;&lt;/ion-skeleton-text&gt;&lt;/h3&gt;
+            &lt;p&gt;&lt;ion-skeleton-text [animated]="true" style="width: 80%;"&gt;&lt;/ion-skeleton-text&gt;&lt;/p&gt;
+          &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      &#125;
+    &lt;/ion-list&gt;
+  &#125; @else &#123;
+    &lt;ion-list&gt;
+      @for (item of items; track item.id) &#123;
+        &lt;ion-item&gt;
+          &lt;ion-label&gt;&#123;&#123; item.name &#125;&#125;&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      &#125;
+    &lt;/ion-list&gt;
+  &#125;
+&lt;/ion-content&gt;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>refresher.page.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">doRefresh(event: any) &#123;
+  this.skeleton = true;
+  setTimeout(() =&gt; &#123;
+    this.items = Array.from(&#123; length: 10 &#125;, (_, i) =&gt; (&#123; id: i + 1, name: `Elemento $&#123;i + 1&#125;` &#125;));
+    this.skeleton = false;
+    event.target.complete(); // &lt;-- OBLIGATORIO
+  &#125;, 1500);
+&#125;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 8: SEARCHBAR Y PIPE -->
+        <article class="model-card" data-tags="searchbar" id="modelo-search">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">08</span>
+              <h3 class="card-title">Barra de Búsqueda (`ion-searchbar`) + Pipe de Filtro</h3>
+            </div>
+            <span class="trigger-pill">"Barra de búsqueda", "Filtrar por texto en tiempo real", "Pipe filtro"</span>
+          </div>
+          <div class="card-content">
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/pipes/filtro.pipe.ts (Pipe Standalone)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; Pipe, PipeTransform &#125; from '@angular/core';
+
+@Pipe(&#123;
+  name: 'filtro',
+  standalone: true
+&#125;)
+export class FiltroPipe implements PipeTransform &#123;
+  transform(lista: any[], texto: string, columna: string): any[] &#123;
+    if (!lista) return [];
+    if (!texto || texto.trim() === '') return lista;
+
+    const term = texto.toLowerCase();
+    return lista.filter(item =&gt; &#123;
+      const val = item[columna];
+      return val ? val.toString().toLowerCase().includes(term) : false;
+    &#125;);
+  &#125;
+&#125;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>search.page.html</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-html">&lt;ion-header&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-title&gt;Buscar&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-searchbar animated="true" (ionInput)="buscar($event)" placeholder="Buscar..."&gt;&lt;/ion-searchbar&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content class="ion-padding"&gt;
+  &lt;ion-list&gt;
+    @for (item of items | filtro: textoBuscar: 'name'; track item.id) &#123;
+      &lt;ion-item&gt;
+        &lt;ion-label&gt;&#123;&#123; item.name &#125;&#125;&lt;/ion-label&gt;
+      &lt;/ion-item&gt;
+    &#125;
+  &lt;/ion-list&gt;
+&lt;/ion-content&gt;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 9: SEGMENTS -->
+        <article class="model-card" data-tags="segment zelda" id="modelo-segment">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">09</span>
+              <h3 class="card-title">Segmentos sincronizados con Query Params y Componente Hijo</h3>
+            </div>
+            <span class="trigger-pill">"Segment", "Cambiar categoría en la URL", "Componente con @Input()"</span>
+          </div>
+          <div class="card-content">
+            <div class="code-box">
+              <div class="code-bar">
+                <span>segments.page.ts (Padre)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">segmentChanged(event: any) &#123;
+  const cat = event.detail.value;
+  if (cat) &#123;
+    this.currentCategory = cat;
+    this.router.navigate([], &#123;
+      queryParams: &#123; category: cat &#125;,
+      queryParamsHandling: 'merge'
+    &#125;);
+  &#125;
+&#125;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>segment-content.component.ts (Hijo con ngOnChanges)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">@Input() category!: string;
+
+ngOnChanges(changes: SimpleChanges): void &#123;
+  if (changes['category'] && this.category) &#123;
+    this.fetchData(this.category);
+  &#125;
+&#125;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 10: TOAST -->
+        <article class="model-card" data-tags="toast zelda critico" id="modelo-toast">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">10</span>
+              <h3 class="card-title">Servicio Centralizado de Toast</h3>
+            </div>
+            <span class="trigger-pill">"Toast de aviso", "ToastController", "Mensaje dinámico"</span>
+          </div>
+          <div class="card-content">
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/services/toast.service.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; inject, Injectable &#125; from '@angular/core';
+import &#123; ToastController &#125; from '@ionic/angular/standalone';
+
+@Injectable(&#123;
+  providedIn: 'root'
+&#125;)
+export class ToastService &#123;
+  private readonly toastCtrl = inject(ToastController);
+
+  async showToast(message: string, color: 'primary' | 'danger' | 'success' | 'warning' = 'primary', duration: number = 2000) &#123;
+    const toast = await this.toastCtrl.create(&#123;
+      message,
+      color,
+      duration,
+      position: 'bottom',
+      buttons: [&#123; text: 'OK', role: 'cancel' &#125;]
+    &#125;);
+    await toast.present();
+  &#125;
+&#125;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 11: ALERT -->
+        <article class="model-card" data-tags="alert" id="modelo-alert">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">11</span>
+              <h3 class="card-title">Alert Controller con Inputs de Texto o Radios</h3>
+            </div>
+            <span class="trigger-pill">"Alert con Input", "Pedir datos al usuario mediante alerta"</span>
+          </div>
+          <div class="card-content">
+            <div class="code-box">
+              <div class="code-bar">
+                <span>alert.page.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; Component, inject &#125; from '@angular/core';
+import &#123; AlertController &#125; from '@ionic/angular/standalone';
+
+@Component(&#123; ... &#125;)
+export class AlertExamplePage &#123;
+  private alertCtrl = inject(AlertController);
+
+  async abrirAlertConInput() &#123;
+    const alert = await this.alertCtrl.create(&#123;
+      header: 'Registro',
+      subHeader: 'Ingrese sus datos',
+      inputs: [
+        &#123; name: 'nombre', type: 'text', placeholder: 'Tu Nombre' &#125;,
+        &#123; name: 'email', type: 'email', placeholder: 'correo@ejemplo.com' &#125;
+      ],
+      buttons: [
+        &#123; text: 'Cancelar', role: 'cancel' &#125;,
+        &#123;
+          text: 'Guardar',
+          handler: (data) =&gt; &#123;
+            console.log('Datos recogidos:', data);
+          &#125;
+        &#125;
+      ]
+    &#125;);
+    await alert.present();
+  &#125;
+&#125;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO 12: I18N MULTILENGUAJE -->
+        <article class="model-card" data-tags="i18n" id="modelo-i18n">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">12</span>
+              <h3 class="card-title">Sistema Multilenguaje con ngx-translate</h3>
+            </div>
+            <span class="trigger-pill">"Multilenguaje", "ngx-translate", "Cambiar idioma con ActionSheet"</span>
+          </div>
+          <div class="card-content">
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/services/translate-config.service.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; inject, Injectable &#125; from '@angular/core';
+import &#123; TranslateService &#125; from '@ngx-translate/core';
+
+@Injectable(&#123; providedIn: 'root' &#125;)
+export class TranslateConfigService &#123;
+  private translate = inject(TranslateService);
+
+  initLanguage() &#123;
+    const saved = localStorage.getItem('lang') || this.translate.getBrowserLang() || 'es';
+    this.translate.setDefaultLang(saved);
+    this.translate.use(saved);
+  &#125;
+
+  setLanguage(lang: string) &#123;
+    this.translate.use(lang);
+    localStorage.setItem('lang', lang);
+  &#125;
+&#125;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- CHEAT-SHEET -->
+        <article class="model-card" data-tags="setup" id="cheat-sheet">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">13</span>
+              <h3 class="card-title">Cheat-Sheet Rápido y Registro de Iconos (addIcons)</h3>
+            </div>
+            <span class="trigger-pill">"addIcons", "Comandos útiles", "Quick copy"</span>
+          </div>
+          <div class="card-content">
+            <div class="code-box">
+              <div class="code-bar">
+                <span>addIcons Habituales en app.component.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; addIcons &#125; from 'ionicons';
+import &#123;
+  power, settings, cog, search, close, refresh,
+  arrowBack, trash, add, menu, flame, heart, star, car
+&#125; from 'ionicons/icons';
+
+constructor() &#123;
+  addIcons(&#123;
+    power, settings, cog, search, close, refresh,
+    arrowBack, trash, add, menu, flame, heart, star, car
+  &#125;);
+&#125;</code></pre>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- CHECKLIST MODAL -->
+  <div class="modal-overlay" id="checklistModal">
+    <div class="modal-window">
+      <div class="modal-head">
+        <h3>📋 Checklist Obligatorio de Entrega</h3>
+        <button class="close-btn" id="closeChecklistBtn">&times;</button>
+      </div>
+
+      <ul class="check-items-list">
+        <li>
+          <label class="check-item">
+            <input type="checkbox" id="chk-author" />
+            <div><strong>1. package.json:</strong> He puesto mi nombre y apellidos en <code>"author": "..."</code> y la versión.</div>
+          </label>
+        </li>
+        <li>
+          <label class="check-item">
+            <input type="checkbox" id="chk-http" />
+            <div><strong>2. main.ts:</strong> He añadido <code>provideHttpClient(withFetch())</code> en providers.</div>
+          </label>
+        </li>
+        <li>
+          <label class="check-item">
+            <input type="checkbox" id="chk-swiper" />
+            <div><strong>3. Swiper:</strong> He llamado a <code>register()</code> en <code>app.component.ts</code> y añadido <code>CUSTOM_ELEMENTS_SCHEMA</code> en la página de diapositivas.</div>
+          </label>
+        </li>
+        <li>
+          <label class="check-item">
+            <input type="checkbox" id="chk-menu" />
+            <div><strong>4. Conexión Menú:</strong> El <code>contentId</code> de <code>&lt;ion-menu&gt;</code> coincide con el <code>id</code> de <code>&lt;ion-content&gt;</code>.</div>
+          </label>
+        </li>
+        <li>
+          <label class="check-item">
+            <input type="checkbox" id="chk-complete" />
+            <div><strong>5. complete() en eventos:</strong> Tanto el Infinite Scroll como el Refresher llaman a <code>event.target.complete()</code>.</div>
+          </label>
+        </li>
+        <li>
+          <label class="check-item">
+            <input type="checkbox" id="chk-console" />
+            <div><strong>6. Consola limpia (F12):</strong> He abierto DevTools y no hay ningún error en rojo al navegar o interactuar.</div>
+          </label>
+        </li>
+        <li>
+          <label class="check-item">
+            <input type="checkbox" id="chk-recording" />
+            <div><strong>7. Grabación activa:</strong> He iniciado el software de captura de pantalla antes de empezar la prueba.</div>
+          </label>
+        </li>
+      </ul>
+
+      <div style="margin-top: 24px; text-align: right;">
+        <button class="btn-checklist" id="closeChecklistBottomBtn" style="margin-left: auto;">
+          Entendido / Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Guía de Resolución Rápida para Examen SGE - {lastUpdated}</p>
+  </footer>
+
+  <!-- Highlight.js Standalone IIFE (Offline & file:/// Compatible) -->
+  <script is:inline src="./highlighter.bundle.js"></script>
+
+  <!-- Client-side Interactive Scripts -->
+  <script is:inline>
+    // Initialize Syntax Highlighting
+    if (window.hljs) {
+      window.hljs.highlightAll();
+    }
+
+    // Elements
+    const searchInput = document.getElementById('globalSearch');
+    const cards = document.querySelectorAll('.model-card');
+    const tagButtons = document.querySelectorAll('.tag-chip');
+    const filterNotice = document.getElementById('filterNotice');
+    const filterName = document.getElementById('filterName');
+    const matchCount = document.getElementById('matchCount');
+    const btnResetFilter = document.getElementById('btnResetFilter');
+    let currentFilter = 'all';
+
+    function resetAllFilters() {
+      currentFilter = 'all';
+      if (searchInput) searchInput.value = '';
+      tagButtons.forEach(b => b.classList.remove('active'));
+      const allBtn = document.querySelector('.tag-chip[data-filter="all"]');
+      if (allBtn) allBtn.classList.add('active');
+      applyFilters();
+    }
+
+    btnResetFilter?.addEventListener('click', resetAllFilters);
+
+    function applyFilters() {
+      const query = (searchInput?.value || '').toLowerCase().trim();
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        const tags = (card.dataset.tags || '').toLowerCase();
+
+        const matchQuery = query === '' || text.includes(query);
+        const matchFilter = currentFilter === 'all' || tags.includes(currentFilter);
+
+        if (matchQuery && matchFilter) {
+          card.style.display = 'block';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update Filter Notice Bar
+      const isFiltered = currentFilter !== 'all' || query !== '';
+      if (isFiltered && filterNotice) {
+        filterNotice.classList.add('show');
+        if (filterName) {
+          const activeTagBtn = document.querySelector('.tag-chip.active');
+          const tagLabel = activeTagBtn ? activeTagBtn.innerText : currentFilter;
+          filterName.innerText = query !== '' ? `Texto: "${query}" ${currentFilter !== 'all' ? '(' + tagLabel + ')' : ''}` : tagLabel;
+        }
+        if (matchCount) matchCount.innerText = visibleCount.toString();
+      } else if (filterNotice) {
+        filterNotice.classList.remove('show');
+      }
+    }
+
+    searchInput?.addEventListener('input', applyFilters);
+
+    tagButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tagButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.dataset.filter || 'all';
+        applyFilters();
+      });
+    });
+
+    // Sidebar (Índice Rápido) - Siempre funciona sin importar el filtro
+    document.querySelectorAll('.toc-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href');
+        if (!targetId || !targetId.startsWith('#')) return;
+
+        // 1. Si hay filtro o búsqueda activa, resetear para que la tarjeta sea visible
+        if (currentFilter !== 'all' || (searchInput && searchInput.value.trim() !== '')) {
+          resetAllFilters();
+        }
+
+        // 2. Navegación suave y resalte visual
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          targetElement.classList.remove('card-highlight');
+          void targetElement.offsetWidth; // Forzar repintado
+          targetElement.classList.add('card-highlight');
+          history.pushState(null, null, targetId);
+        }
+      });
+    });
+
+    // Keyboard Shortcuts
+    window.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey && e.key.toLowerCase() === 'f') || (e.key === '/' && document.activeElement !== searchInput)) {
+        e.preventDefault();
+        searchInput?.focus();
+        searchInput?.select();
+      }
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    // Copy to Clipboard
+    document.querySelectorAll('.btn-copy').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const codeElement = btn.closest('.code-box')?.querySelector('code');
+        if (!codeElement) return;
+
+        navigator.clipboard.writeText(codeElement.innerText).then(() => {
+          const original = btn.innerText;
+          btn.innerText = '✅ ¡Copiado!';
+          btn.style.background = '#10b981';
+          btn.style.color = '#090d16';
+          setTimeout(() => {
+            btn.innerText = original;
+            btn.style.background = '';
+            btn.style.color = '';
+          }, 1500);
+        });
+      });
+    });
+
+    // Modal Checklist
+    const modal = document.getElementById('checklistModal');
+    const openBtn = document.getElementById('openChecklistBtn');
+    const closeBtn = document.getElementById('closeChecklistBtn');
+    const closeBottomBtn = document.getElementById('closeChecklistBottomBtn');
+
+    function openModal() { modal?.classList.add('active'); }
+    function closeModal() { modal?.classList.remove('active'); }
+
+    openBtn?.addEventListener('click', openModal);
+    closeBtn?.addEventListener('click', closeModal);
+    closeBottomBtn?.addEventListener('click', closeModal);
+
+    // Save and load checklist from localStorage
+    const checkboxes = document.querySelectorAll('.check-item input[type="checkbox"]');
+    function saveChecks() {
+      const state = {};
+      checkboxes.forEach(chk => {
+        state[chk.id] = chk.checked;
+      });
+      localStorage.setItem('sge_astro_checks', JSON.stringify(state));
+    }
+
+    function loadChecks() {
+      const raw = localStorage.getItem('sge_astro_checks');
+      if (raw) {
+        try {
+          const state = JSON.parse(raw);
+          checkboxes.forEach(chk => {
+            if (state[chk.id]) chk.checked = true;
+          });
+        } catch(e) {}
+      }
+    }
+
+    checkboxes.forEach(chk => chk.addEventListener('change', saveChecks));
+    loadChecks();
+  </script>
+</body>
+</html>

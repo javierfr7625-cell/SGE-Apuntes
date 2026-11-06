@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+web-astro/node_modules/
+
+# Astro build cache
+.astro/
+web-astro/.astro/
+
+# Environment and logs
+*.log
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db

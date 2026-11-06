@@ -1,0 +1,8063 @@
+1
+00:00:02,419 --> 00:00:06,840
+Vale, vamos a crear el proyecto Ionic
+Start.
+
+2
+00:00:08,900 --> 00:00:16,900
+En este caso se va a llamar 03,
+ejercicio Ionic.
+
+3
+00:00:18,360 --> 00:00:20,900
+Yo pongo Dan B por vosotros.
+
+4
+00:00:22,460 --> 00:00:23,480
+Y Blanc.
+
+5
+00:00:27,560 --> 00:00:29,660
+Vale, esto me pedirá el framework.
+
+6
+00:00:29,990 --> 00:00:31,900
+Trabajamos con Angular y Standard.
+
+7
+00:00:35,440 --> 00:00:39,980
+Ahora teníamos... Vamos a hacer corregir
+sistemas de gestión.
+
+8
+00:00:40,500 --> 00:00:42,360
+Aunque toque, no se que toque.
+
+9
+00:00:44,280 --> 00:00:45,440
+No se que tenemos dos horas.
+
+10
+00:00:45,600 --> 00:00:49,220
+Os dije que estas dos
+horas las utilizaríamos
+
+11
+00:00:49,221 --> 00:00:52,560
+de comodín, de
+corrección de ejercicios.
+
+12
+00:00:53,060 --> 00:00:55,161
+Porque el cesto de datos dijiste que
+íbamos bastante bien.
+
+13
+00:00:55,185 --> 00:00:57,620
+Y que realmente podemos perder una horita
+de clase.
+
+14
+00:00:59,105 --> 00:01:01,440
+Igualmente el ejercicio era muy parecido a
+lo que hicimos.
+
+15
+00:01:03,169 --> 00:01:05,000
+Sí, de hecho, era muy metódico.
+
+16
+00:01:05,140 --> 00:01:08,500
+Era ver el vídeo, estudiárselo y
+replicarlo.
+
+17
+00:01:08,554 --> 00:01:09,554
+¿El de acceso a datos?
+
+18
+00:01:09,920 --> 00:01:10,435
+Sí, sí.
+
+19
+00:01:10,459 --> 00:01:11,880
+Es que acceso a datos os lo dije.
+
+20
+00:01:12,200 --> 00:01:13,200
+Es muy metódico.
+
+21
+00:01:13,500 --> 00:01:15,779
+Lo que es el examen,
+que es lo mismo que el
+
+22
+00:01:15,780 --> 00:01:18,020
+ejercicio, que es lo
+mismo que hemos hecho.
+
+23
+00:01:18,080 --> 00:01:19,780
+Es muy ABC, ¿vale?
+
+24
+00:01:19,820 --> 00:01:20,900
+O sea, no tiene más.
+
+25
+00:01:21,439 --> 00:01:24,380
+Pero tenéis que hacerlo, porque tenéis que
+acostumbraros, porque...
+
+26
+00:01:25,409 --> 00:01:29,060
+Por eso os dije, no copiéis y peguéis el
+código, sino que hacerlo, porque en el
+
+27
+00:01:29,061 --> 00:01:31,260
+examen no vais a poder copiar y pegar el
+código.
+
+28
+00:01:31,619 --> 00:01:34,980
+Entonces vais a tener los apuntes para...
+para escribirlo, para ayudaros a
+
+29
+00:01:34,981 --> 00:01:38,500
+escribirlo, pero si os acostumbráis ya a
+ir escribiéndole...
+
+30
+00:01:39,600 --> 00:01:41,120
+La memoria muscular, ¿vale?
+
+31
+00:01:41,160 --> 00:01:43,880
+Se va acostumbrando ya a eso.
+
+32
+00:01:44,240 --> 00:01:45,360
+Vale, y una pregunta, Belda.
+
+33
+00:01:45,489 --> 00:01:48,660
+A la hora de poner iconos
+y tal, nos dirás tú... En Ionic.
+
+34
+00:01:48,661 --> 00:01:50,420
+Me metáis unos
+cambios de... Ah, vale.
+
+35
+00:01:50,680 --> 00:01:51,036
+Perdón.
+
+36
+00:01:51,060 --> 00:01:51,556
+Dime, sí.
+
+37
+00:01:51,580 --> 00:01:55,200
+En Ionic, en el examen, a la hora de
+poner iconos y tal... Os pongo los nombres.
+
+38
+00:01:55,260 --> 00:01:56,280
+Os pone los nombres, ¿no?
+
+39
+00:01:56,320 --> 00:01:57,560
+Sí, como aquí... Vale, gracias.
+
+40
+00:01:57,600 --> 00:01:59,940
+Lo que habías puesto
+acá es por... Sí, vale, vale.
+
+41
+00:01:59,960 --> 00:02:03,820
+Siempre que tengáis que poner iconos,
+os pongo los nombres.
+
+42
+00:02:03,934 --> 00:02:05,740
+Es que si me tengo que aprender todos los
+iconos de Ionic...
+
+43
+00:02:05,741 --> 00:02:08,479
+Claro, o ir a la página oficial de Ionic.
+
+44
+00:02:08,480 --> 00:02:09,456
+No, no, no.
+
+45
+00:02:09,480 --> 00:02:10,760
+Los iconos os pongo los nombres.
+
+46
+00:02:10,940 --> 00:02:11,476
+Perfecto.
+
+47
+00:02:11,500 --> 00:02:12,216
+Muchas gracias.
+
+48
+00:02:12,240 --> 00:02:13,336
+Siempre que hay que utilizar algunos.
+
+49
+00:02:13,360 --> 00:02:15,160
+Lo que no pongo, por ejemplo, son los
+colores.
+
+50
+00:02:15,220 --> 00:02:18,280
+Los colores sí que son nueve colores,
+¿vale?
+
+51
+00:02:18,480 --> 00:02:22,300
+Y entonces, eso hay que
+saberse el... Sí, la paleta de colores.
+
+52
+00:02:22,620 --> 00:02:23,156
+Bueno, ya...
+
+53
+00:02:23,180 --> 00:02:24,240
+Sí, pero bueno, ya poco a poco.
+
+54
+00:02:24,264 --> 00:02:26,180
+De todas formas, volvemos a lo mismo.
+
+55
+00:02:26,360 --> 00:02:30,840
+Tampoco juzgo si en vez de un primary es
+un secondary, que a lo mejor se parecen
+
+56
+00:02:30,890 --> 00:02:34,080
+más o tal... Sí, pero...
+Ahí no penalizo, ¿vale?
+
+57
+00:02:34,240 --> 00:02:36,696
+Otra cosa es que a lo
+mejor en vez de un primary
+
+58
+00:02:36,697 --> 00:02:39,280
+me pongas un warning,
+o un danger o un... Sí.
+
+59
+00:02:39,281 --> 00:02:42,740
+Salvo que tengas un papel que te
+diga que eres daltónico... Eh, no me...
+
+60
+00:02:42,741 --> 00:02:43,741
+¿Te imaginas?
+
+61
+00:02:44,040 --> 00:02:44,456
+¿Qué?
+
+62
+00:02:44,480 --> 00:02:44,786
+¿Qué?
+
+63
+00:02:44,810 --> 00:02:46,260
+Te pone azul y yo no te pone rojo.
+
+64
+00:02:46,460 --> 00:02:47,356
+Es gracioso.
+
+65
+00:02:47,380 --> 00:02:48,380
+Bien.
+
+66
+00:02:49,410 --> 00:02:50,570
+Pero si no he hecho nada aún.
+
+67
+00:02:51,080 --> 00:02:51,576
+No, no.
+
+68
+00:02:51,600 --> 00:02:52,216
+¿De qué página?
+
+69
+00:02:52,240 --> 00:02:52,611
+No, no.
+
+70
+00:02:52,635 --> 00:02:53,635
+Yo quedé muy orgulloso.
+
+71
+00:02:53,740 --> 00:02:54,740
+Esto del comando.
+
+72
+00:02:54,960 --> 00:02:56,180
+Mi primera página funciona.
+
+73
+00:02:59,970 --> 00:03:02,540
+Es Ionic, espacio, start, ¿vale?
+
+74
+00:03:02,640 --> 00:03:07,160
+Para crear el proyecto, luego nombre del
+proyecto, y luego espacio y la plantilla.
+
+75
+00:03:07,390 --> 00:03:08,920
+En este caso es la plantilla blank.
+
+76
+00:03:10,020 --> 00:03:12,740
+Yo el martes estuve con las cartas.
+
+77
+00:03:12,960 --> 00:03:14,080
+Lo peleándome de una manera.
+
+78
+00:03:14,820 --> 00:03:15,820
+Y dije...
+
+79
+00:03:16,464 --> 00:03:18,200
+Pero ya después... Pero ya
+después... ¿En cuanto salís?
+
+80
+00:03:18,201 --> 00:03:19,600
+¿Luego que tenéis última?
+
+81
+00:03:19,900 --> 00:03:20,900
+Fold, tres horitas.
+
+82
+00:03:21,160 --> 00:03:21,506
+Ah.
+
+83
+00:03:21,530 --> 00:03:22,530
+Sí, tres horitas después.
+
+84
+00:03:22,700 --> 00:03:23,376
+¿Fold?
+
+85
+00:03:23,400 --> 00:03:27,900
+Se pueden ir la mitad porque no
+tienen convalidado, así que... ¿De Fold?
+
+86
+00:03:28,560 --> 00:03:29,560
+¿De Fold?
+
+87
+00:03:29,920 --> 00:03:30,416
+No.
+
+88
+00:03:30,440 --> 00:03:31,296
+No, no.
+
+89
+00:03:31,320 --> 00:03:31,820
+No.
+
+90
+00:03:31,844 --> 00:03:33,040
+¿De Fold quién se queda?
+
+91
+00:03:33,180 --> 00:03:34,180
+Fold, Fold.
+
+92
+00:03:34,920 --> 00:03:35,920
+No, otros cuatro.
+
+93
+00:03:36,000 --> 00:03:36,716
+Otros cuatro.
+
+94
+00:03:36,740 --> 00:03:37,740
+Otros cuatro, pero...
+
+95
+00:03:38,434 --> 00:03:39,434
+No, Luis no viene.
+
+96
+00:03:39,500 --> 00:03:40,236
+Sebas tampoco.
+
+97
+00:03:40,260 --> 00:03:41,036
+¿Tampoco a Fold?
+
+98
+00:03:41,060 --> 00:03:41,736
+No.
+
+99
+00:03:41,760 --> 00:03:43,196
+Sí, Sebas tiene exactamente conducir,
+tío.
+
+100
+00:03:43,220 --> 00:03:44,116
+No, no.
+
+101
+00:03:44,140 --> 00:03:45,840
+Digo partir de...
+No, no, no, no.
+
+102
+00:03:46,040 --> 00:03:47,400
+Sí, Sebas que viene de Gandía,
+¿sabes?
+
+103
+00:03:47,420 --> 00:03:48,296
+Que tardaron en llegar.
+
+104
+00:03:48,320 --> 00:03:49,320
+Bueno.
+
+105
+00:03:50,860 --> 00:03:51,860
+Luis entra ahora.
+
+106
+00:03:52,105 --> 00:03:54,716
+Luis entra ahora a trabajar porque tenía
+que cubrir un turno de mañana.
+
+107
+00:03:54,740 --> 00:03:55,740
+Sí, claro.
+
+108
+00:03:56,750 --> 00:03:58,916
+Bueno, dijo que tenía que
+cambiar el turno por el... Sí.
+
+109
+00:03:58,940 --> 00:04:00,020
+Ehh... Ehh... Ehh... Ehh...
+
+110
+00:04:01,120 --> 00:04:02,620
+Ehh... Si no Freddy
+vendría ahora.
+
+111
+00:04:03,000 --> 00:04:04,000
+Ya.
+
+112
+00:04:05,560 --> 00:04:07,120
+Es que bien que jueves más...
+
+113
+00:04:07,810 --> 00:04:09,560
+Encima jueves, antes
+de puente... A ver...
+
+114
+00:04:09,561 --> 00:04:11,361
+También tengo que yo esperaba menos gente,
+eh.
+
+115
+00:04:11,480 --> 00:04:12,276
+¿Menos aún?
+
+116
+00:04:12,300 --> 00:04:13,276
+Sí.
+
+117
+00:04:13,300 --> 00:04:17,000
+Sí, para que la gente se agarra a un puente
+como... Porque, ¿cuál fue nuestro récord?
+
+118
+00:04:17,079 --> 00:04:17,656
+¿Dos personas?
+
+119
+00:04:17,680 --> 00:04:17,796
+¿Tres?
+
+120
+00:04:17,820 --> 00:04:19,660
+Nuestro récord fue el año pasado tres
+personas.
+
+121
+00:04:19,880 --> 00:04:20,296
+¿Tres?
+
+122
+00:04:20,320 --> 00:04:21,320
+De veinte y pico.
+
+123
+00:04:21,440 --> 00:04:23,600
+Y en esa crisis sí que veníamos veinte y
+pico personas.
+
+124
+00:04:25,640 --> 00:04:26,860
+Ehh... ¡Qué maravilla!
+
+125
+00:04:28,840 --> 00:04:30,160
+De hecho ese día no hicimos nada.
+
+126
+00:04:30,740 --> 00:04:33,640
+Nos tocaba banda de Juan y nada,
+repasamos y tal y... Un poquito más.
+
+127
+00:04:35,060 --> 00:04:36,996
+Luego... Luego obviamente
+sacamos muy buena otra vez.
+
+128
+00:04:37,020 --> 00:04:37,766
+O sea...
+
+129
+00:04:37,790 --> 00:04:39,150
+Eso vino de puta
+madre, pero... Sí.
+
+130
+00:04:43,630 --> 00:04:44,680
+Un poquito más.
+
+131
+00:04:45,170 --> 00:04:46,180
+Un poquito más.
+
+132
+00:04:46,940 --> 00:04:47,296
+Un poquito más.
+
+133
+00:04:47,320 --> 00:04:48,320
+Un poquito más.
+
+134
+00:04:48,880 --> 00:04:49,880
+Vale.
+
+135
+00:04:51,595 --> 00:04:55,540
+Ya por curiosidad que sacasteis en la
+final de programación cada uno.
+
+136
+00:04:55,960 --> 00:04:57,160
+Yo saqué un ocho.
+
+137
+00:04:57,520 --> 00:04:58,880
+Yo creo que un ocho está decidido.
+
+138
+00:04:59,160 --> 00:04:59,996
+Un poquito menos.
+
+139
+00:05:00,020 --> 00:05:01,020
+Por ahí.
+
+140
+00:05:01,460 --> 00:05:02,460
+Un nueve.
+
+141
+00:05:06,410 --> 00:05:06,730
+Un nueve.
+
+142
+00:05:06,731 --> 00:05:08,386
+Los que me notas sacaron fueron Luis y
+Freddy.
+
+143
+00:05:08,410 --> 00:05:09,366
+Sí.
+
+144
+00:05:09,390 --> 00:05:10,390
+Sí.
+
+145
+00:05:12,220 --> 00:05:13,290
+Los sacaron diez o no?
+
+146
+00:05:13,430 --> 00:05:13,726
+Sí.
+
+147
+00:05:13,750 --> 00:05:14,641
+Son diez.
+
+148
+00:05:14,665 --> 00:05:15,665
+Freddy sí.
+
+149
+00:05:15,750 --> 00:05:16,186
+Freddy sí.
+
+150
+00:05:16,210 --> 00:05:17,210
+Luis creo que también.
+
+151
+00:05:17,575 --> 00:05:21,450
+Sí, pero porque Luis invirtió bastante en
+el tiempo en programación.
+
+152
+00:05:21,690 --> 00:05:22,326
+Sí.
+
+153
+00:05:22,350 --> 00:05:23,350
+Vale.
+
+154
+00:05:23,610 --> 00:05:24,246
+Vale.
+
+155
+00:05:24,270 --> 00:05:24,966
+Eh... Vale.
+
+156
+00:05:24,990 --> 00:05:25,990
+Ya he creado el proyecto.
+
+157
+00:05:26,350 --> 00:05:26,586
+Vale.
+
+158
+00:05:26,610 --> 00:05:27,610
+Lo abrimos.
+
+159
+00:05:27,820 --> 00:05:29,750
+Vamos a ir a la carpeta del proyecto.
+
+160
+00:05:38,175 --> 00:05:39,800
+Y ahí... Eh?
+
+161
+00:05:39,820 --> 00:05:40,820
+En el momento.
+
+162
+00:05:43,060 --> 00:05:43,956
+Ah, vale.
+
+163
+00:05:43,980 --> 00:05:44,896
+Tienes rojo.
+
+164
+00:05:44,920 --> 00:05:46,320
+Tengo rojo, tengo rojo, tengo rojo.
+
+165
+00:05:46,480 --> 00:05:47,206
+Bien.
+
+166
+00:05:47,230 --> 00:05:49,280
+Un rojo.
+
+167
+00:05:51,580 --> 00:05:52,580
+Vale.
+
+168
+00:05:53,600 --> 00:05:54,296
+Vale.
+
+169
+00:05:54,320 --> 00:05:55,940
+A él le puso un pendiente rojo.
+
+170
+00:05:56,800 --> 00:05:57,860
+Eh... Proyecto.
+
+171
+00:05:57,880 --> 00:05:58,880
+Un like para el botón.
+
+172
+00:05:59,900 --> 00:06:00,536
+Vale.
+
+173
+00:06:00,560 --> 00:06:02,020
+Lo primero, el ejercicio.
+
+174
+00:06:02,160 --> 00:06:03,180
+A ver chicos, venga ya.
+
+175
+00:06:04,740 --> 00:06:05,076
+Vale.
+
+176
+00:06:05,100 --> 00:06:06,100
+El ejercicio.
+
+177
+00:06:07,020 --> 00:06:07,656
+Vale.
+
+178
+00:06:07,680 --> 00:06:09,080
+Me decía...
+
+179
+00:06:10,880 --> 00:06:12,080
+Os lo pongo aquí el enunciado.
+
+180
+00:06:35,390 --> 00:06:36,390
+Vale.
+
+181
+00:06:37,990 --> 00:06:38,990
+Vale.
+
+182
+00:06:39,890 --> 00:06:43,250
+Dice... Crear un app que traerá la
+información del endpoint de la API.
+
+183
+00:06:43,650 --> 00:06:43,806
+Vale.
+
+184
+00:06:43,830 --> 00:06:45,710
+Teníamos tres endpoints de la API.
+
+185
+00:06:45,870 --> 00:06:48,190
+Ahora, cuando trabajemos con el servicio,
+lo haremos.
+
+186
+00:06:48,430 --> 00:06:48,586
+Vale.
+
+187
+00:06:48,610 --> 00:06:49,610
+En la parte individual.
+
+188
+00:06:50,010 --> 00:06:52,290
+Dice... El app tendrá
+cuatro páginas.
+
+189
+00:06:52,380 --> 00:06:54,810
+Página de inicio, que mostrará un FAB en
+el centro.
+
+190
+00:06:56,010 --> 00:06:57,690
+Con... Eh... Tres iconos.
+
+191
+00:06:57,810 --> 00:06:58,226
+Vale.
+
+192
+00:06:58,250 --> 00:06:59,450
+De coches, aviones y barcos.
+
+193
+00:07:00,250 --> 00:07:02,910
+Cada icono tendrá que llevarnos a la
+página correspondiente.
+
+194
+00:07:03,750 --> 00:07:07,410
+Tendremos una página de coches, una
+página de aviones y una página de barcos.
+
+195
+00:07:07,970 --> 00:07:13,630
+Que nos mostrará la información del
+vehículo en cuestión.
+
+196
+00:07:14,450 --> 00:07:14,726
+Vale.
+
+197
+00:07:14,750 --> 00:07:15,990
+Entonces, es un poco...
+
+198
+00:07:16,950 --> 00:07:18,110
+Lo que teníamos que ver...
+
+199
+00:07:19,500 --> 00:07:21,270
+Era esto en la página de inicio.
+
+200
+00:07:21,570 --> 00:07:26,130
+Que cuando pulsáramos en el
+FAB, se abriera el... En su menú.
+
+201
+00:07:26,880 --> 00:07:27,930
+Con los tres coches.
+
+202
+00:07:28,730 --> 00:07:29,930
+Bueno, con los tres vehículos.
+
+203
+00:07:30,705 --> 00:07:32,250
+Eh... Cada uno en un color.
+
+204
+00:07:32,575 --> 00:07:33,850
+Primary, secondary y tertiary.
+
+205
+00:07:34,890 --> 00:07:35,306
+Vale.
+
+206
+00:07:35,330 --> 00:07:37,490
+Que además, cuando abriamos sus páginas.
+
+207
+00:07:39,475 --> 00:07:40,570
+Conservaban ese color.
+
+208
+00:07:41,010 --> 00:07:41,266
+Vale.
+
+209
+00:07:41,290 --> 00:07:42,870
+Entonces, si os fijabais en el detalle.
+
+210
+00:07:42,871 --> 00:07:44,550
+Pues el color.
+
+211
+00:07:45,100 --> 00:07:47,050
+Cargaba aquí la parte de cards.
+
+212
+00:07:47,870 --> 00:07:49,370
+Eh... Conservando el primary.
+
+213
+00:07:49,630 --> 00:07:52,630
+Tanto para el header como para el badge.
+
+214
+00:07:52,790 --> 00:07:53,790
+Que tenía aquí.
+
+215
+00:07:54,030 --> 00:07:55,030
+Luego teníamos...
+
+216
+00:07:55,750 --> 00:07:57,850
+Eh... Esto que eran
+las tarjetas normales.
+
+217
+00:07:57,930 --> 00:07:59,010
+Y cuando las desplazábamos.
+
+218
+00:07:59,050 --> 00:08:01,090
+Lateralmente teníamos el precio.
+
+219
+00:08:01,760 --> 00:08:03,710
+Lo mismo pasaba en las otras dos páginas.
+
+220
+00:08:03,790 --> 00:08:03,946
+Vale.
+
+221
+00:08:03,970 --> 00:08:05,010
+Eran exactamente iguales.
+
+222
+00:08:05,135 --> 00:08:06,510
+Este ejercicio como tal.
+
+223
+00:08:07,090 --> 00:08:07,736
+Vale.
+
+224
+00:08:07,760 --> 00:08:09,480
+En realidad solo teníais que ver una
+página.
+
+225
+00:08:09,785 --> 00:08:10,990
+Y la reutilizabas.
+
+226
+00:08:13,330 --> 00:08:14,136
+Vale.
+
+227
+00:08:14,160 --> 00:08:15,670
+Pues entonces vamos a hacer eso.
+
+228
+00:08:18,255 --> 00:08:19,510
+Vamos a nuestro proyecto.
+
+229
+00:08:20,595 --> 00:08:22,170
+Y entonces que voy a necesitar.
+
+230
+00:08:31,840 --> 00:08:32,850
+Pues este era fácil.
+
+231
+00:08:33,549 --> 00:08:34,506
+Este es lo fácil.
+
+232
+00:08:34,530 --> 00:08:34,789
+Este es lo fácil.
+
+233
+00:08:34,790 --> 00:08:34,950
+Este lo fácil.
+
+234
+00:08:34,951 --> 00:08:35,010
+Este lo fácil.
+
+235
+00:08:35,011 --> 00:08:39,250
+Deja el vídeo como... Además de que en
+tiempo... En tiempo... Lleva poco tiempo.
+
+236
+00:08:39,500 --> 00:08:41,030
+Porque es todo muy repetitivo.
+
+237
+00:08:41,250 --> 00:08:42,031
+No.
+
+238
+00:08:42,055 --> 00:08:43,055
+Entonces...
+
+239
+00:08:44,039 --> 00:08:45,450
+Si lo sabes hacer es fácil.
+
+240
+00:08:45,710 --> 00:08:46,630
+Cambiar la copia diferente.
+
+241
+00:08:46,631 --> 00:08:47,631
+De copiar y pegar.
+
+242
+00:08:47,690 --> 00:08:49,090
+Cambiar los datos y...
+
+243
+00:08:50,310 --> 00:08:50,866
+No.
+
+244
+00:08:50,890 --> 00:08:51,526
+Ahora lo veréis.
+
+245
+00:08:51,550 --> 00:08:53,126
+Que ni siquiera tenéis que copiar y pegar.
+
+246
+00:08:53,150 --> 00:08:54,150
+El... No.
+
+247
+00:08:54,390 --> 00:08:55,086
+Vale.
+
+248
+00:08:55,110 --> 00:08:57,010
+Vamos a hacer las páginas.
+
+249
+00:08:57,570 --> 00:08:58,146
+Page.
+
+250
+00:08:58,170 --> 00:08:58,986
+Page.
+
+251
+00:08:59,010 --> 00:09:00,010
+Barra.
+
+252
+00:09:00,550 --> 00:09:01,590
+E inicio.
+
+253
+00:09:02,530 --> 00:09:03,446
+Menos menos.
+
+254
+00:09:03,470 --> 00:09:03,986
+Spec.
+
+255
+00:09:04,010 --> 00:09:04,706
+Igual.
+
+256
+00:09:04,730 --> 00:09:05,730
+A false.
+
+257
+00:09:11,990 --> 00:09:12,546
+Vale.
+
+258
+00:09:12,570 --> 00:09:13,386
+Página inicio.
+
+259
+00:09:13,410 --> 00:09:15,830
+Y luego vamos a hacer página de cada
+vehículo.
+
+260
+00:09:15,920 --> 00:09:16,970
+Página de barcos.
+
+261
+00:09:17,120 --> 00:09:18,120
+Página de...
+
+262
+00:09:18,690 --> 00:09:19,141
+Coches.
+
+263
+00:09:19,165 --> 00:09:20,690
+Página de... Aviones.
+
+264
+00:09:22,750 --> 00:09:23,750
+Sí.
+
+265
+00:09:43,320 --> 00:09:43,776
+Sí.
+
+266
+00:09:43,800 --> 00:09:43,840
+Sí.
+
+267
+00:09:43,841 --> 00:09:44,841
+Se va a tardar un pelín.
+
+268
+00:09:45,060 --> 00:09:45,420
+Sí.
+
+269
+00:09:45,421 --> 00:09:46,146
+El primero.
+
+270
+00:09:46,170 --> 00:09:47,200
+El primer componente.
+
+271
+00:09:47,360 --> 00:09:47,560
+Sí.
+
+272
+00:09:47,561 --> 00:09:47,816
+El primero.
+
+273
+00:09:47,840 --> 00:09:48,840
+El primer componente.
+
+274
+00:09:49,740 --> 00:09:50,740
+Luego ya va todo.
+
+275
+00:09:51,320 --> 00:09:51,836
+Ah.
+
+276
+00:09:51,860 --> 00:09:52,860
+Sí.
+
+277
+00:09:53,660 --> 00:09:54,020
+Sí.
+
+278
+00:09:54,021 --> 00:09:54,696
+Sí.
+
+279
+00:09:54,720 --> 00:09:55,720
+Sí.
+
+280
+00:09:56,100 --> 00:09:57,100
+Sí.
+
+281
+00:09:57,380 --> 00:09:58,700
+Así he empezado con los otros.
+
+282
+00:09:58,840 --> 00:09:59,456
+Con los segundos.
+
+283
+00:09:59,480 --> 00:10:01,445
+Lo que pasa es que los otros me ha pasado
+en el Ionic Start.
+
+284
+00:10:01,469 --> 00:10:02,469
+El Ionic Start.
+
+285
+00:10:02,510 --> 00:10:03,920
+Se ha cascado.
+
+286
+00:10:05,380 --> 00:10:08,020
+Eh... Ha tardado ya un
+montón en... En hacerlo.
+
+287
+00:10:09,400 --> 00:10:10,600
+Y luego... Sí.
+
+288
+00:10:10,720 --> 00:10:12,220
+Los 55 minutos he creado el proyecto.
+
+289
+00:10:12,340 --> 00:10:13,620
+He creado el proyecto y ya está.
+
+290
+00:10:13,920 --> 00:10:16,260
+Y he tenido que cargarmelo y volver a
+crear otro.
+
+291
+00:10:16,580 --> 00:10:16,876
+O sea.
+
+292
+00:10:16,900 --> 00:10:17,110
+Eh.
+
+293
+00:10:17,134 --> 00:10:19,574
+Solo hemos creado el proyecto en los 55
+minutos que he tenido.
+
+294
+00:10:19,960 --> 00:10:20,960
+Ahora luego tengo...
+
+295
+00:10:21,119 --> 00:10:22,940
+Las otras clases y lo vuelvo a corregir.
+
+296
+00:10:24,009 --> 00:10:25,336
+Me pasa lo mismo que con vosotros.
+
+297
+00:10:25,360 --> 00:10:25,626
+Es decir.
+
+298
+00:10:25,650 --> 00:10:26,650
+Tengo ese eje de IAP.
+
+299
+00:10:26,740 --> 00:10:27,920
+La de una hora suelta.
+
+300
+00:10:27,980 --> 00:10:29,240
+Solo que a primera y a última.
+
+301
+00:10:30,259 --> 00:10:31,856
+En vez de con vosotros que la tengo
+juntas.
+
+302
+00:10:31,880 --> 00:10:33,396
+Con ellos lo tengo a primera y a última.
+
+303
+00:10:33,420 --> 00:10:34,620
+Bueno, es que... Bueno, demás.
+
+304
+00:10:36,260 --> 00:10:37,620
+Eh... Página de inicio.
+
+305
+00:10:37,880 --> 00:10:40,340
+Página de... Eh... Barcos.
+
+306
+00:10:49,555 --> 00:10:50,870
+Página de Airplanes.
+
+307
+00:10:53,030 --> 00:10:54,030
+Airplanes.
+
+308
+00:10:55,289 --> 00:10:56,310
+Y página de coches.
+
+309
+00:11:09,280 --> 00:11:09,956
+Y página de coches.
+
+310
+00:11:09,980 --> 00:11:10,980
+Y página de coches.
+
+311
+00:11:11,519 --> 00:11:15,140
+Lo otro que tengo es que el...
+
+312
+00:11:17,100 --> 00:11:19,040
+Eh... Tengo que
+conectar a una API.
+
+313
+00:11:19,389 --> 00:11:20,749
+Como tengo que conectar a una API.
+
+314
+00:11:20,900 --> 00:11:23,500
+Para conectar a una API tenemos que
+utilizar un servicio.
+
+315
+00:11:23,720 --> 00:11:23,886
+¿Vale?
+
+316
+00:11:23,910 --> 00:11:28,060
+Un servicio que... Eh... Recoja todas
+las peticiones a elementos externos.
+
+317
+00:11:28,550 --> 00:11:29,700
+Me da a ser API.
+
+318
+00:11:30,320 --> 00:11:31,296
+Pues entonces.
+
+319
+00:11:31,320 --> 00:11:32,320
+Ionic.
+
+320
+00:11:32,560 --> 00:11:33,396
+Enlace.
+
+321
+00:11:33,420 --> 00:11:34,336
+Service.
+
+322
+00:11:34,360 --> 00:11:35,360
+OS.
+
+323
+00:11:35,860 --> 00:11:36,500
+Service.
+
+324
+00:11:36,501 --> 00:11:37,336
+Services.
+
+325
+00:11:37,360 --> 00:11:38,360
+Barra.
+
+326
+00:11:38,800 --> 00:11:39,800
+Vehicle.
+
+327
+00:11:39,940 --> 00:11:40,940
+Service.
+
+328
+00:11:41,940 --> 00:11:42,616
+Menos.
+
+329
+00:11:42,640 --> 00:11:43,276
+Menos.
+
+330
+00:11:43,300 --> 00:11:44,300
+Skip.
+
+331
+00:11:47,600 --> 00:11:48,600
+Vale.
+
+332
+00:11:49,780 --> 00:11:52,983
+Eh... Y lo otro que tengo
+es que si detectamos,
+
+333
+00:11:52,984 --> 00:11:56,160
+como os decía antes,
+las páginas de barcos.
+
+334
+00:11:56,900 --> 00:12:01,520
+La página de barcos, la página de coches y
+la página de aviones.
+
+335
+00:12:01,940 --> 00:12:02,545
+Vale.
+
+336
+00:12:02,569 --> 00:12:03,569
+Son iguales.
+
+337
+00:12:04,760 --> 00:12:05,316
+Vale.
+
+338
+00:12:05,340 --> 00:12:06,460
+Lo único que cambia...
+
+339
+00:12:06,959 --> 00:12:09,320
+Es básicamente... Pues...
+
+340
+00:12:10,000 --> 00:12:12,200
+El... El... Título
+de la cabecera.
+
+341
+00:12:12,680 --> 00:12:13,325
+Vale.
+
+342
+00:12:13,349 --> 00:12:15,460
+La información es exactamente lo mismo.
+
+343
+00:12:15,640 --> 00:12:16,920
+Solo que uno saca aviones...
+
+344
+00:12:17,949 --> 00:12:19,349
+Y lo que cambiaría es el colorcito.
+
+345
+00:12:19,820 --> 00:12:20,236
+Vale.
+
+346
+00:12:20,260 --> 00:12:21,260
+El color que trabajamos.
+
+347
+00:12:21,909 --> 00:12:24,420
+Entonces lo que vamos a
+hacer es... Aprovechar eso.
+
+348
+00:12:24,520 --> 00:12:28,640
+De tal manera que vamos a tener un
+elemento que sea... La colección de...
+
+349
+00:12:29,399 --> 00:12:30,420
+De vehículos.
+
+350
+00:12:30,720 --> 00:12:31,940
+Y otro que sea la cabecera.
+
+351
+00:12:32,760 --> 00:12:33,176
+Vale.
+
+352
+00:12:33,200 --> 00:12:34,760
+Entonces vamos
+a hacer un... Ionic.
+
+353
+00:12:35,460 --> 00:12:36,166
+Generate.
+
+354
+00:12:36,190 --> 00:12:37,190
+Component.
+
+355
+00:12:37,960 --> 00:12:38,960
+Component.
+
+356
+00:12:39,180 --> 00:12:39,436
+Component.
+
+357
+00:12:39,460 --> 00:12:40,276
+Barra.
+
+358
+00:12:40,300 --> 00:12:41,300
+Header.
+
+359
+00:12:41,520 --> 00:12:41,896
+Menos.
+
+360
+00:12:41,920 --> 00:12:42,136
+Menos.
+
+361
+00:12:42,160 --> 00:12:42,746
+Espec.
+
+362
+00:12:42,770 --> 00:12:43,770
+Igual a false.
+
+363
+00:12:46,440 --> 00:12:47,116
+Vale.
+
+364
+00:12:47,140 --> 00:12:49,360
+Para hacer la cabecera común a los
+vehículos.
+
+365
+00:12:51,969 --> 00:12:54,200
+Y luego vamos a hacer otro que sea...
+
+366
+00:12:57,440 --> 00:12:58,440
+Vehicle...
+
+367
+00:13:01,180 --> 00:13:02,180
+Eh...
+
+368
+00:13:02,280 --> 00:13:03,280
+Vehicle list.
+
+369
+00:13:07,675 --> 00:13:08,675
+Vehicle list.
+
+370
+00:13:08,830 --> 00:13:09,830
+Por ejemplo.
+
+371
+00:13:13,760 --> 00:13:14,260
+Vale.
+
+372
+00:13:14,280 --> 00:13:16,640
+Que será el listado de los vehículos.
+
+373
+00:13:17,920 --> 00:13:18,705
+Vale.
+
+374
+00:13:18,729 --> 00:13:21,660
+Con eso yo creo que ya tenemos todo lo que
+tenemos que lanzar o crear.
+
+375
+00:13:21,661 --> 00:13:24,220
+Así que vamos a lanzar ya el chat.
+
+376
+00:13:24,369 --> 00:13:25,380
+El Ionic Ser.
+
+377
+00:13:25,420 --> 00:13:26,420
+Para que vaya compilando.
+
+378
+00:13:28,460 --> 00:13:28,996
+Vale.
+
+379
+00:13:29,020 --> 00:13:30,320
+Mientras eso va arrancando.
+
+380
+00:13:30,560 --> 00:13:32,440
+Nosotros podemos ir haciendo
+modificaciones.
+
+381
+00:13:33,480 --> 00:13:34,056
+Vale.
+
+382
+00:13:34,080 --> 00:13:34,676
+Lo primero.
+
+383
+00:13:34,700 --> 00:13:35,740
+Voy a cargarme el home.
+
+384
+00:13:36,179 --> 00:13:37,219
+Este que no me gusta nada.
+
+385
+00:13:37,360 --> 00:13:38,360
+Que no nos lo pongan ahí.
+
+386
+00:13:39,889 --> 00:13:41,120
+Me voy a poner mi página.
+
+387
+00:13:41,759 --> 00:13:43,076
+Voy a quitar el archivo de pruebas.
+
+388
+00:13:43,100 --> 00:13:44,100
+.spec.
+
+389
+00:13:45,009 --> 00:13:47,420
+Y voy a poner el archivo de inicio.
+
+390
+00:13:48,559 --> 00:13:49,560
+Como página principal.
+
+391
+00:13:50,289 --> 00:13:51,320
+De nuestra aplicación.
+
+392
+00:13:51,720 --> 00:13:52,296
+Inicio.
+
+393
+00:13:52,320 --> 00:13:53,400
+Ahí nos encendió las teles.
+
+394
+00:13:57,120 --> 00:13:58,580
+¿Tú quieres aquella?
+
+395
+00:13:58,879 --> 00:13:59,880
+¿La tele o esa que?
+
+396
+00:14:01,340 --> 00:14:05,160
+¿Se podría crear un nuevo proyecto?
+
+397
+00:14:05,734 --> 00:14:07,399
+¿Se podría hacer de
+manera que la carpeta de
+
+398
+00:14:07,400 --> 00:14:09,780
+inicio estuviese eliminada
+desde el principio o no?
+
+399
+00:14:10,380 --> 00:14:10,920
+La carpeta de inicio.
+
+400
+00:14:10,921 --> 00:14:12,080
+La carpeta de inicio.
+
+401
+00:14:12,120 --> 00:14:16,970
+Eso es meterse en la parte de...
+de... de configuración del propio...
+
+402
+00:14:17,799 --> 00:14:18,840
+del propio Ionic.
+
+403
+00:14:19,320 --> 00:14:22,860
+O sea, de... la parte de...
+de instalación de Ionic.
+
+404
+00:14:23,160 --> 00:14:24,146
+A ver... es mirarlo.
+
+405
+00:14:24,170 --> 00:14:26,380
+Mirarlo, porque seguro
+que en algún script... ¿Sabes?
+
+406
+00:14:26,420 --> 00:14:30,620
+En algún fichero del script es donde te
+pone el componente que crea.
+
+407
+00:14:30,819 --> 00:14:31,820
+Y la ruta donde lo crea.
+
+408
+00:14:33,009 --> 00:14:36,760
+Te lo miro exactamente a ver si encuentro
+eso y te lo digo.
+
+409
+00:14:37,920 --> 00:14:38,920
+Vale.
+
+410
+00:14:44,159 --> 00:14:45,380
+Vale, página de inicio.
+
+411
+00:14:47,920 --> 00:14:51,600
+Vale, la página de inicio, lo
+primero que tenemos... Vale,
+
+412
+00:15:01,210 --> 00:15:06,430
+la página de inicio tenemos la cabecera en
+negro, vale, con ejercicio 3.
+
+413
+00:15:07,050 --> 00:15:09,730
+Y luego en el centro un FAB con el color
+rojo.
+
+414
+00:15:10,709 --> 00:15:11,990
+Vale, pues vamos a ponerlo.
+
+415
+00:15:12,909 --> 00:15:13,910
+Vamos a tener aquí...
+
+416
+00:15:17,859 --> 00:15:24,200
+Vamos a quitarle la separación entre la
+cabecera y el content.
+
+417
+00:15:24,949 --> 00:15:27,860
+Vale, para que nos quite el sombreado que
+no aparece ahí.
+
+418
+00:15:28,789 --> 00:15:31,820
+Vamos a ponerle el color dark que hemos
+visto.
+
+419
+00:15:33,235 --> 00:15:37,040
+Vale, color negro de la cabecera.
+
+420
+00:15:37,979 --> 00:15:39,699
+Acordaos que el color se pone en el
+toolbar.
+
+421
+00:15:40,545 --> 00:15:42,315
+Y luego que el texto esté
+centrado en el IonTitel,
+
+422
+00:15:42,339 --> 00:15:45,840
+le tenemos que aplicar
+un ClassTextCenter.
+
+423
+00:15:54,680 --> 00:15:55,680
+IonTextCenter.
+
+424
+00:15:56,060 --> 00:15:57,100
+Bueno, cuando quieras.
+
+425
+00:15:59,995 --> 00:16:02,540
+Vale, luego se llamaba ejercicio 3.
+
+426
+00:16:02,870 --> 00:16:04,360
+Pues ejercicio 3.
+
+427
+00:16:08,289 --> 00:16:09,460
+Vale, en el content...
+
+428
+00:16:12,920 --> 00:16:13,920
+IonPile.
+
+429
+00:16:20,920 --> 00:16:24,420
+Y hemos dicho que lo único que teníamos
+aquí era un IonFab.
+
+430
+00:16:26,009 --> 00:16:27,340
+Vale, poníamos un FAB.
+
+431
+00:16:28,049 --> 00:16:31,260
+Que el FAB tenía que estar colocado en el
+centro.
+
+432
+00:16:31,380 --> 00:16:38,900
+Con lo cual teníamos que ponerle
+horizontal center vertical center.
+
+433
+00:16:40,059 --> 00:16:41,699
+Vale, con eso lo colocábamos en el medio.
+
+434
+00:16:42,049 --> 00:16:43,160
+Para que no se desplazara.
+
+435
+00:16:43,300 --> 00:16:44,616
+Aunque no había scroll en esta página.
+
+436
+00:16:44,640 --> 00:16:45,640
+No hacía falta.
+
+437
+00:16:46,920 --> 00:16:47,920
+Pero el...
+
+438
+00:16:47,989 --> 00:16:49,840
+Para que sea flotante.
+
+439
+00:16:50,219 --> 00:16:51,760
+Vale, le ponemos el SlotPixel.
+
+440
+00:16:53,199 --> 00:16:56,100
+Luego teníamos un FAB botón.
+
+441
+00:16:56,549 --> 00:16:57,560
+Que era el botón.
+
+442
+00:16:57,869 --> 00:16:59,140
+Que iba a abrir el FAB.
+
+443
+00:17:00,999 --> 00:17:03,220
+Que dentro tenía un IonFAB.
+
+444
+00:17:03,860 --> 00:17:04,276
+Ahí.
+
+445
+00:17:04,300 --> 00:17:05,300
+Un IonIcon.
+
+446
+00:17:07,859 --> 00:17:10,400
+En este caso el icono era una cruz.
+
+447
+00:17:10,949 --> 00:17:12,240
+Eso es el icono Add.
+
+448
+00:17:13,014 --> 00:17:15,060
+Y teníamos un color rojo.
+
+449
+00:17:15,280 --> 00:17:16,280
+Danger.
+
+450
+00:17:19,179 --> 00:17:22,200
+Acordaros que el icono para que funcione.
+
+451
+00:17:22,300 --> 00:17:23,075
+Vale.
+
+452
+00:17:23,099 --> 00:17:25,410
+Lo tenemos que poner en el APP Compone...
+
+453
+00:17:25,880 --> 00:17:26,555
+Bueno, perdón.
+
+454
+00:17:26,579 --> 00:17:27,579
+En el componente.
+
+455
+00:17:27,775 --> 00:17:28,775
+En el TS.
+
+456
+00:17:29,220 --> 00:17:30,000
+En una función.
+
+457
+00:17:30,001 --> 00:17:30,996
+Que función era?
+
+458
+00:17:31,020 --> 00:17:31,836
+Adicons.
+
+459
+00:17:31,860 --> 00:17:32,860
+Adicons.
+
+460
+00:17:33,540 --> 00:17:34,196
+Vale.
+
+461
+00:17:34,220 --> 00:17:35,280
+Funciona Adicons.
+
+462
+00:17:36,779 --> 00:17:37,780
+Dentro del constructor.
+
+463
+00:17:38,224 --> 00:17:40,080
+Y entre llaves decíais los nombres.
+
+464
+00:17:40,340 --> 00:17:41,340
+De los iconos.
+
+465
+00:17:41,554 --> 00:17:43,240
+Pues en este caso hemos puesto el ADD.
+
+466
+00:17:43,399 --> 00:17:44,720
+Como vamos a poner ya los otros.
+
+467
+00:17:45,040 --> 00:17:45,336
+Vale.
+
+468
+00:17:45,360 --> 00:17:46,980
+Era icono Airplanes.
+
+469
+00:17:48,195 --> 00:17:49,460
+Icono... Bueno.
+
+470
+00:17:49,900 --> 00:17:50,900
+Es... Airplane.
+
+471
+00:17:51,695 --> 00:17:52,695
+Boat.
+
+472
+00:17:53,240 --> 00:17:54,240
+Y Car.
+
+473
+00:17:54,430 --> 00:17:55,430
+Sport.
+
+474
+00:17:56,200 --> 00:17:56,656
+Vale.
+
+475
+00:17:56,680 --> 00:17:58,960
+Los iconos que nos
+dice el... El ejercicio.
+
+476
+00:17:59,040 --> 00:18:00,040
+Estaban escritos ahí.
+
+477
+00:18:01,000 --> 00:18:01,676
+Eso.
+
+478
+00:18:01,700 --> 00:18:02,700
+Hay que importarlo.
+
+479
+00:18:02,960 --> 00:18:03,676
+Pondráis.
+
+480
+00:18:03,700 --> 00:18:04,156
+Allí.
+
+481
+00:18:04,180 --> 00:18:05,180
+Alt Enter.
+
+482
+00:18:07,279 --> 00:18:08,600
+Y los importáis.
+
+483
+00:18:14,570 --> 00:18:15,226
+Estos tres.
+
+484
+00:18:15,250 --> 00:18:16,490
+Aún no los he usado estos tres.
+
+485
+00:18:16,710 --> 00:18:17,710
+Pero... A ver.
+
+486
+00:18:17,759 --> 00:18:18,879
+Sé que los voy a usar ahora.
+
+487
+00:18:20,990 --> 00:18:21,646
+Vale.
+
+488
+00:18:21,670 --> 00:18:22,970
+Entonces esto era un FabButton.
+
+489
+00:18:25,730 --> 00:18:26,466
+Vale.
+
+490
+00:18:26,490 --> 00:18:30,330
+Luego teníamos que ese FabButton iba a
+abrir tres listas.
+
+491
+00:18:30,670 --> 00:18:31,270
+Vale.
+
+492
+00:18:31,294 --> 00:18:32,530
+Una a cada lado.
+
+493
+00:18:33,249 --> 00:18:35,430
+Pues decíamos que esto era un IonFabList.
+
+494
+00:18:35,530 --> 00:18:36,530
+El IonFabList.
+
+495
+00:18:36,629 --> 00:18:40,450
+El IonFabList le teníamos que decir los
+lados por donde iba a abrirse.
+
+496
+00:18:40,779 --> 00:18:42,470
+En este caso es... Izquierda.
+
+497
+00:18:42,670 --> 00:18:43,406
+Arriba.
+
+498
+00:18:43,430 --> 00:18:44,430
+Y derecha.
+
+499
+00:18:45,150 --> 00:18:45,776
+Que...
+
+500
+00:18:45,800 --> 00:18:48,510
+Traducido a... El lenguaje de...
+
+501
+00:18:49,490 --> 00:18:50,490
+De Flex.
+
+502
+00:18:50,830 --> 00:18:51,830
+Por decir así.
+
+503
+00:18:52,089 --> 00:18:54,530
+Entonces lo que
+trabaja esto es... Start.
+
+504
+00:18:54,810 --> 00:18:55,506
+Top.
+
+505
+00:18:55,530 --> 00:18:56,530
+Y End.
+
+506
+00:18:56,670 --> 00:18:57,295
+Vale.
+
+507
+00:18:57,319 --> 00:18:58,799
+Pues eso lo poníamos dentro del Side.
+
+508
+00:18:59,379 --> 00:19:00,410
+Y Button también, ¿no?
+
+509
+00:19:01,390 --> 00:19:01,730
+Y Button también, ¿no?
+
+510
+00:19:01,731 --> 00:19:02,235
+¿El qué?
+
+511
+00:19:02,259 --> 00:19:03,830
+El Button también lo trabajaba,
+¿no?
+
+512
+00:19:03,910 --> 00:19:06,010
+O eso era... El Button también, lo
+que pasa es que en este ejercicio...
+
+513
+00:19:06,011 --> 00:19:07,850
+En este no nos falta,
+sí, sí, pero... En este...
+
+514
+00:19:07,874 --> 00:19:09,246
+El que no habíamos puesto era el Button.
+
+515
+00:19:09,270 --> 00:19:09,646
+Pero sí.
+
+516
+00:19:09,670 --> 00:19:10,606
+En que quedas el Button.
+
+517
+00:19:10,630 --> 00:19:11,586
+No, no, no.
+
+518
+00:19:11,610 --> 00:19:11,946
+Vale.
+
+519
+00:19:11,970 --> 00:19:12,846
+El FabList.
+
+520
+00:19:12,870 --> 00:19:14,550
+Que iba a tener un FabButton.
+
+521
+00:19:15,450 --> 00:19:16,285
+Vale.
+
+522
+00:19:16,309 --> 00:19:19,690
+En este caso el FabButton, además,
+iba a tener un color...
+
+523
+00:19:20,770 --> 00:19:21,770
+Primary.
+
+524
+00:19:23,210 --> 00:19:26,650
+Y el nombre... Este
+era, era el CarSport.
+
+525
+00:19:27,490 --> 00:19:28,490
+Que era el coche.
+
+526
+00:19:28,979 --> 00:19:30,370
+Aquí ya quitamos el color.
+
+527
+00:19:32,890 --> 00:19:33,885
+Vale.
+
+528
+00:19:33,909 --> 00:19:35,050
+Y teníais tres listas.
+
+529
+00:19:35,169 --> 00:19:37,250
+Pues cogíais y replicabais.
+
+530
+00:19:39,319 --> 00:19:42,130
+Hemos dicho que teníamos Start,
+Top...
+
+531
+00:19:42,379 --> 00:19:43,410
+Que era Secondary.
+
+532
+00:19:45,219 --> 00:19:46,970
+Y era el Avión, creo.
+
+533
+00:19:47,195 --> 00:19:48,470
+Si no recuerdo mal.
+
+534
+00:19:49,809 --> 00:19:52,730
+Y luego tenemos End para poner a la
+derecha.
+
+535
+00:19:53,509 --> 00:19:55,370
+El color era el Certiary.
+
+536
+00:19:55,844 --> 00:19:57,490
+Y el Bolt.
+
+537
+00:19:58,720 --> 00:19:59,720
+No.
+
+538
+00:20:01,939 --> 00:20:08,530
+Además, cada uno de los FabButton tenía
+que llevarnos a la página correspondiente.
+
+539
+00:20:09,689 --> 00:20:12,290
+Pues cogemos y les escribimos un
+RouterLink.
+
+540
+00:20:12,930 --> 00:20:13,386
+Vale.
+
+541
+00:20:13,410 --> 00:20:17,750
+Acordaos que el RouterLink es para
+movernos por las rutas de Angular.
+
+542
+00:20:19,139 --> 00:20:21,490
+Y aquí le poníamos barra, pues lo que
+fuera.
+
+543
+00:20:21,690 --> 00:20:22,386
+Vale.
+
+544
+00:20:22,410 --> 00:20:24,390
+Acordaos que habíamos hecho las páginas
+antes.
+
+545
+00:20:25,989 --> 00:20:27,510
+Pues el de coches será Cars.
+
+546
+00:20:29,819 --> 00:20:31,790
+El de aviones será Airplanes.
+
+547
+00:20:33,039 --> 00:20:34,830
+Y el de barcos será Boats.
+
+548
+00:20:35,250 --> 00:20:35,506
+Vale.
+
+549
+00:20:35,530 --> 00:20:39,550
+Que coinciden exactamente con el nombre de
+las páginas que hemos puesto.
+
+550
+00:20:39,749 --> 00:20:42,887
+Acordaos que eso era
+el nombre que ponía en
+
+551
+00:20:42,888 --> 00:20:46,010
+el AppRoute a la hora
+de hacer el Lazy Load.
+
+552
+00:20:46,230 --> 00:20:46,955
+Vale.
+
+553
+00:20:46,979 --> 00:20:48,570
+Boats, Airplanes y Cars.
+
+554
+00:20:48,910 --> 00:20:49,286
+Vale.
+
+555
+00:20:49,310 --> 00:20:50,590
+Con eso teníamos esas rutas.
+
+556
+00:20:56,130 --> 00:20:56,610
+Vale.
+
+557
+00:20:56,611 --> 00:20:58,370
+Nos habrá abierto el navegador.
+
+558
+00:20:58,839 --> 00:21:00,510
+Aquí en el localhost 8100.
+
+559
+00:21:05,460 --> 00:21:06,016
+Vale.
+
+560
+00:21:06,040 --> 00:21:07,480
+Ahora recompilará.
+
+561
+00:21:08,900 --> 00:21:12,280
+Y saldrá... Debería salir el
+ejercicio 3 ahora cuando...
+
+562
+00:21:12,429 --> 00:21:13,429
+Cuando cargue.
+
+563
+00:21:13,700 --> 00:21:14,700
+Cuando termine de cargar.
+
+564
+00:21:15,400 --> 00:21:16,400
+Asmovicio,
+
+565
+00:21:57,250 --> 00:21:57,466
+¿no?
+
+566
+00:21:57,490 --> 00:21:57,966
+Si.
+
+567
+00:21:57,990 --> 00:21:59,330
+De hecho es que no te carga el...
+
+568
+00:21:59,804 --> 00:22:03,044
+Porque de poco te están analizando también
+desde que te empieza algún error y tal.
+
+569
+00:22:04,030 --> 00:22:06,490
+O sea... Voy a lanzarlo
+otra vez porque se alraga.
+
+570
+00:22:06,690 --> 00:22:07,690
+Si.
+
+571
+00:22:08,350 --> 00:22:09,330
+Se ha quedado bien.
+
+572
+00:22:09,331 --> 00:22:10,331
+Bueno.
+
+573
+00:22:12,590 --> 00:22:13,166
+Vale.
+
+574
+00:22:13,190 --> 00:22:14,270
+Ya os digo yo que funciona.
+
+575
+00:22:15,530 --> 00:22:16,266
+Eh... Vale.
+
+576
+00:22:16,290 --> 00:22:18,290
+Entonces tendríamos ahí el...
+
+577
+00:22:18,890 --> 00:22:19,806
+El... El Fab.
+
+578
+00:22:19,830 --> 00:22:20,026
+Vale.
+
+579
+00:22:20,050 --> 00:22:22,070
+Que nos abre los...
+Los tres elementos.
+
+580
+00:22:23,250 --> 00:22:24,250
+Vale.
+
+581
+00:22:24,329 --> 00:22:26,510
+Mientras nos va cargando de nuevo.
+
+582
+00:22:26,650 --> 00:22:26,806
+Vale.
+
+583
+00:22:26,830 --> 00:22:29,270
+Está recompilando ahora el serve que le he
+puesto.
+
+584
+00:22:30,179 --> 00:22:31,330
+Lo que nos dice...
+
+585
+00:22:32,079 --> 00:22:36,570
+Es que esos enlaces nos llevará a las
+páginas de aviones, coches y barcos.
+
+586
+00:22:37,019 --> 00:22:39,890
+Que tiene que cargar la información desde
+esta API.
+
+587
+00:22:40,210 --> 00:22:41,210
+Vale.
+
+588
+00:22:41,910 --> 00:22:43,630
+Entonces... Lo que
+teníais que hacer...
+
+589
+00:22:46,629 --> 00:22:50,610
+Lo que teníais que hacer también
+es... Pues de alguna manera...
+
+590
+00:22:50,909 --> 00:22:53,370
+Coger la información
+de... De esta API.
+
+591
+00:22:54,070 --> 00:22:54,250
+Vale.
+
+592
+00:22:54,251 --> 00:22:54,595
+Vale.
+
+593
+00:22:54,619 --> 00:22:57,890
+Para trabajar con la API...
+Esta API... En principio tiene...
+
+594
+00:22:58,239 --> 00:23:00,810
+La llave que
+representaba... El objeto.
+
+595
+00:23:01,470 --> 00:23:02,066
+Objeto.
+
+596
+00:23:02,090 --> 00:23:02,306
+Vale.
+
+597
+00:23:02,330 --> 00:23:04,030
+Tenía un objeto... Vale.
+
+598
+00:23:04,150 --> 00:23:05,710
+Un objeto que tenía
+una propiedad... Ok.
+
+599
+00:23:05,870 --> 00:23:06,870
+De tipo boolean.
+
+600
+00:23:08,210 --> 00:23:08,665
+Bueno.
+
+601
+00:23:08,689 --> 00:23:09,730
+Una propiedad ok.
+
+602
+00:23:09,850 --> 00:23:10,645
+De tipo boolean.
+
+603
+00:23:10,669 --> 00:23:11,455
+Y luego...
+
+604
+00:23:11,479 --> 00:23:14,010
+Una propiedad data...
+Que era una colección...
+
+605
+00:23:14,459 --> 00:23:16,130
+De objetos... Vale.
+
+606
+00:23:16,210 --> 00:23:17,210
+Que tenían datos.
+
+607
+00:23:17,449 --> 00:23:19,770
+Si os fijabais...
+Aviones... Vale.
+
+608
+00:23:19,850 --> 00:23:23,330
+Tenía nombre... Año...
+Modelo... Motor... Precio...
+
+609
+00:23:23,629 --> 00:23:25,810
+Si os fijabais en...
+
+610
+00:23:26,634 --> 00:23:32,610
+Los barcos... Tenían lo mismo...
+Pero representado de barcos...
+
+611
+00:23:33,409 --> 00:23:34,850
+Y si veníamos a coches...
+
+612
+00:23:37,414 --> 00:23:39,390
+Teníamos lo mismo...
+Pero de coches.
+
+613
+00:23:39,505 --> 00:23:43,190
+Es decir... Era exactamente...
+La misma interfaz... Para los tres.
+
+614
+00:23:44,030 --> 00:23:45,026
+Vale.
+
+615
+00:23:45,050 --> 00:23:48,610
+Esa interfaz... La podéis hacer a
+mano... O podéis iros a conversores...
+
+616
+00:23:49,250 --> 00:23:49,686
+Vale.
+
+617
+00:23:49,710 --> 00:23:50,465
+Escribiendo...
+
+618
+00:23:50,489 --> 00:23:53,110
+JSON to TS... Y lo que
+hacéis es... Convertir...
+
+619
+00:23:53,409 --> 00:23:54,430
+El fichero...
+
+620
+00:23:55,290 --> 00:23:56,470
+JSON... Vale.
+
+621
+00:23:56,735 --> 00:23:58,610
+O la información del fichero JSON...
+
+622
+00:23:59,269 --> 00:24:00,790
+En una interfaz de TypeScript.
+
+623
+00:24:01,170 --> 00:24:01,490
+Vale.
+
+624
+00:24:01,491 --> 00:24:03,610
+Pues entonces
+vosotros... Lo ponéis aquí...
+
+625
+00:24:03,909 --> 00:24:04,950
+Esa url...
+
+626
+00:24:05,349 --> 00:24:07,490
+Y automáticamente...
+Os genera... La interfaz...
+
+627
+00:24:08,490 --> 00:24:09,106
+Vale.
+
+628
+00:24:09,130 --> 00:24:09,645
+Pues...
+
+629
+00:24:09,669 --> 00:24:10,710
+Vamos a copiar eso...
+
+630
+00:24:11,009 --> 00:24:13,650
+Y nos lo vamos a
+traer... Al proyecto...
+
+631
+00:24:14,549 --> 00:24:15,669
+Vamos a hacer una carpeta...
+
+632
+00:24:16,330 --> 00:24:17,026
+Common...
+
+633
+00:24:17,050 --> 00:24:18,050
+Dentro de app...
+
+634
+00:24:22,070 --> 00:24:23,070
+Directory...
+
+635
+00:24:24,090 --> 00:24:25,090
+Common...
+
+636
+00:24:26,609 --> 00:24:29,250
+Y dentro hacemos el
+fichero... De interfaz...
+
+637
+00:24:29,399 --> 00:24:30,610
+TypeScript File...
+
+638
+00:24:30,759 --> 00:24:31,759
+Interfaz...
+
+639
+00:24:32,050 --> 00:24:32,566
+Vale.
+
+640
+00:24:32,590 --> 00:24:35,070
+También lo podéis
+hacer por la terminal... En...
+
+641
+00:24:36,570 --> 00:24:37,890
+Ionic... Generate...
+
+642
+00:24:38,510 --> 00:24:39,366
+Interface... Vale.
+
+643
+00:24:39,390 --> 00:24:40,650
+Y luego pondríais... Common...
+
+644
+00:24:41,450 --> 00:24:42,070
+Interface... Vale.
+
+645
+00:24:42,090 --> 00:24:46,270
+Y haría lo mismo... Dicimos que
+sí... Que lo añada... Y aquí pegaríais...
+
+646
+00:24:46,469 --> 00:24:48,170
+Pues la información... Vale.
+
+647
+00:24:48,419 --> 00:24:50,259
+Los nombres... Los
+nombres de las interfaces...
+
+648
+00:24:51,010 --> 00:24:51,586
+Vale.
+
+649
+00:24:51,610 --> 00:24:52,670
+Los nombres...
+
+650
+00:24:53,370 --> 00:24:55,850
+Eh... Son totalmente
+personalizables... Es decir...
+
+651
+00:24:55,851 --> 00:24:59,810
+Yo no tengo que dejar este Road... Y este
+Down... Porque me lo había puesto... El...
+
+652
+00:24:59,811 --> 00:25:02,670
+Root... Lo pone
+porque es la raíz... Vale.
+
+653
+00:25:02,750 --> 00:25:08,090
+Y Down... Lo pone porque es Data... Eh...
+Unit... Minimum... O algo así... Vale.
+
+654
+00:25:08,389 --> 00:25:12,530
+No hace falta que mantengáis esos
+nombres... Podéis ponerle aquí... API...
+
+655
+00:25:13,230 --> 00:25:14,610
+Response... Vehicles...
+
+656
+00:25:17,209 --> 00:25:18,790
+Y aquí... Vale.
+
+657
+00:25:18,950 --> 00:25:21,750
+Le hemos dicho... Que lo que
+estamos trabajando... Son con vehículos...
+
+658
+00:25:22,080 --> 00:25:24,810
+Que todos tienen la misma
+interfaz... Pues trabajamos con Vehicle...
+
+659
+00:25:24,810 --> 00:25:28,150
+No trabajo con Boat... No trabajo
+con Airplane... No trabajo con Car...
+
+660
+00:25:28,151 --> 00:25:31,030
+Puedo trabajar directamente...
+Con Vehicle que engloba... A los tres...
+
+661
+00:25:32,470 --> 00:25:33,470
+Vale.
+
+662
+00:25:33,590 --> 00:25:34,690
+Eh... Con eso...
+
+663
+00:25:35,130 --> 00:25:35,686
+Vale.
+
+664
+00:25:35,710 --> 00:25:36,750
+Lo que voy a hacer...
+
+665
+00:25:38,150 --> 00:25:39,150
+Es...
+
+666
+00:25:43,369 --> 00:25:44,560
+Esto debería haber...
+
+667
+00:25:52,450 --> 00:25:53,306
+Ahí está.
+
+668
+00:25:53,330 --> 00:25:53,606
+Vale.
+
+669
+00:25:53,630 --> 00:25:58,390
+Lo que cambia también es que... Por
+defecto nos pone el botón en azul... Vale.
+
+670
+00:25:58,490 --> 00:26:00,190
+Voy a decirle que... Al...
+
+671
+00:26:01,650 --> 00:26:02,650
+Al...
+
+672
+00:26:02,890 --> 00:26:03,890
+Botón... Vale.
+
+673
+00:26:04,710 --> 00:26:05,710
+Color...
+
+674
+00:26:06,550 --> 00:26:07,550
+Light...
+
+675
+00:26:12,220 --> 00:26:12,756
+Vale.
+
+676
+00:26:12,780 --> 00:26:14,400
+Para que nos ponga el color en blanco.
+
+677
+00:26:14,780 --> 00:26:15,136
+Vale.
+
+678
+00:26:15,160 --> 00:26:16,940
+Y esto era la página de inicio...
+
+679
+00:26:17,389 --> 00:26:18,540
+Con los tres elementos...
+
+680
+00:26:19,110 --> 00:26:21,540
+Que cuando le dé a
+uno... Vendré a Cars...
+
+681
+00:26:22,449 --> 00:26:24,540
+Cuando le dé a
+Aviones... Iré a Airplanes...
+
+682
+00:26:25,520 --> 00:26:26,520
+Y cuando...
+
+683
+00:26:26,929 --> 00:26:29,080
+Le dé al barco... Iré a... Vale.
+
+684
+00:26:30,369 --> 00:26:33,009
+Eso era la página de inicio... Que
+nos llevaba a las otras páginas.
+
+685
+00:26:33,420 --> 00:26:34,420
+Vale.
+
+686
+00:26:34,540 --> 00:26:35,980
+Entonces... Para
+las otras páginas...
+
+687
+00:26:36,589 --> 00:26:37,820
+Voy a hacer primero el servicio...
+
+688
+00:26:37,821 --> 00:26:39,901
+Ya que estábamos ahora con la parte de la
+interfaz...
+
+689
+00:26:40,140 --> 00:26:40,316
+Vale.
+
+690
+00:26:40,340 --> 00:26:41,836
+En la que hemos hecho la interfaz de
+datos...
+
+691
+00:26:41,860 --> 00:26:44,460
+Pues vamos a hacer el servicio...
+Que es el que gasta la interfaz.
+
+692
+00:26:44,750 --> 00:26:47,900
+El servicio... Es el que se va a
+encargar de... Hacer la función...
+
+693
+00:26:47,901 --> 00:26:49,740
+Que llame a la API...
+Y traiga la información.
+
+694
+00:26:51,460 --> 00:26:51,836
+Vale.
+
+695
+00:26:51,860 --> 00:26:53,620
+Pues entonces vamos
+ahí... Vamos al servicio.
+
+696
+00:26:56,120 --> 00:26:57,120
+Ingles Service...
+
+697
+00:27:00,510 --> 00:27:01,510
+Vale.
+
+698
+00:27:01,770 --> 00:27:02,626
+Y entonces...
+
+699
+00:27:02,650 --> 00:27:06,370
+Sport... Class... Vehicle Service... Lo
+que tenemos que hacer... Lo primero es...
+
+700
+00:27:06,890 --> 00:27:09,170
+Necesitamos... Un... Private...
+
+701
+00:27:09,519 --> 00:27:15,870
+Read Only... Eh... HTTP Client... Llamarlo
+HTTP... Llamarlo HTTP Client... Esto es...
+
+702
+00:27:15,871 --> 00:27:19,230
+Como... Eh... Más
+os guste... ¿Vale?
+
+703
+00:27:19,231 --> 00:27:21,330
+Es el nombre de
+una variable... ¿Vale?
+
+704
+00:27:21,331 --> 00:27:23,850
+Lo importante es que...
+Luego sepáis... Eh...
+
+705
+00:27:24,124 --> 00:27:25,990
+Lo que estáis haciendo... ¿Vale?
+
+706
+00:27:25,991 --> 00:27:29,151
+Es decir... Aquí llamarla como queráis...
+Yo la llamo HTTP normalmente... ¿Vale?
+
+707
+00:27:29,550 --> 00:27:31,190
+Pero... Como queráis...
+
+708
+00:27:31,639 --> 00:27:35,010
+Al final es un cliente HTTP... Que va a
+ser el encargado... De hacer peticiones...
+
+709
+00:27:35,011 --> 00:27:37,810
+A HTTP... A una... A una API...
+
+710
+00:27:38,009 --> 00:27:43,170
+Para traer información... Para
+inicializarlo... Tenéis que inyectarlo...
+
+711
+00:27:43,171 --> 00:27:47,650
+Pues hacemos... Inyect... Ojo... El
+Inyect... Tiene que ser... De AngularCore...
+
+712
+00:27:47,651 --> 00:27:47,830
+¿Vale?
+
+713
+00:27:47,850 --> 00:27:52,790
+No debites... Cuidado que lo hace por
+defecto ahora... Eh... Y le decís que...
+
+714
+00:27:52,791 --> 00:27:55,110
+Inyectáis HTTP...
+
+715
+00:27:55,990 --> 00:27:59,130
+Pero... Eso... Eh... Tiene...
+
+716
+00:28:00,110 --> 00:28:01,110
+Un...
+
+717
+00:28:01,469 --> 00:28:02,470
+Un problema...
+
+718
+00:28:02,669 --> 00:28:04,950
+Y es que para inyectar...
+El cliente HTTP...
+
+719
+00:28:05,149 --> 00:28:10,430
+Necesitamos un proveedor... Del
+cliente HTTP... Esto es... En nuestro...
+
+720
+00:28:10,580 --> 00:28:11,580
+Main TS...
+
+721
+00:28:12,010 --> 00:28:12,995
+¿Vale?
+
+722
+00:28:13,019 --> 00:28:14,190
+Tenéis que añadir...
+
+723
+00:28:14,614 --> 00:28:16,330
+Provider... HTTP...
+
+724
+00:28:16,990 --> 00:28:17,990
+Client...
+
+725
+00:28:19,669 --> 00:28:23,130
+Estos pasos son siempre
+que... Eh... Conectéis con una...
+
+726
+00:28:23,529 --> 00:28:24,770
+Con una API... ¿Vale?
+
+727
+00:28:24,950 --> 00:28:25,715
+Es...
+
+728
+00:28:25,739 --> 00:28:30,750
+Necesito una interfaz... Que es lo que
+devuelve la API... Necesito... Un servicio...
+
+729
+00:28:30,751 --> 00:28:34,510
+El servicio... Necesitaré un cliente
+HTTP... Para hacer las peticiones...
+
+730
+00:28:34,709 --> 00:28:35,910
+Ese cliente HTTP...
+
+731
+00:28:36,484 --> 00:28:39,130
+Necesito inyectarlo... Por lo
+tanto... Necesito el Provider...
+
+732
+00:28:39,779 --> 00:28:41,130
+En el Main TS... ¿Vale?
+
+733
+00:28:41,300 --> 00:28:44,150
+Y luego... Pues... Lo que
+viene ahora... Que son...
+
+734
+00:28:44,499 --> 00:28:45,510
+Las funciones...
+
+735
+00:28:46,030 --> 00:28:47,030
+¿Vale?
+
+736
+00:28:49,070 --> 00:28:49,725
+Nosotros...
+
+737
+00:28:49,749 --> 00:28:52,490
+Vamos a necesitar...
+Una función... Para coger...
+
+738
+00:28:52,939 --> 00:28:54,270
+Los vehículos...
+
+739
+00:28:55,830 --> 00:28:59,770
+Esa función... Intentadla hacer siempre...
+Lo más descriptiva posible... Es decir...
+
+740
+00:28:59,869 --> 00:29:01,270
+Función que vais a utilizar...
+
+741
+00:29:02,010 --> 00:29:02,725
+¿Vale?
+
+742
+00:29:02,749 --> 00:29:04,130
+Un GET si vais a coger...
+
+743
+00:29:04,304 --> 00:29:08,930
+Un POST si vais a insertar... Un UPD... Un
+PUT... Un PAT... Lo que sea... Y luego...
+
+744
+00:29:08,931 --> 00:29:10,451
+El tipo de datos que vais a recoger...
+
+745
+00:29:11,230 --> 00:29:11,836
+¿Vale?
+
+746
+00:29:11,860 --> 00:29:16,150
+De tal manera que... Solo viendo la
+función... Ya sepáis lo que hace... Vale...
+
+747
+00:29:17,710 --> 00:29:18,830
+Además... ¿Vale?
+
+748
+00:29:18,910 --> 00:29:20,250
+Yo a ese...
+
+749
+00:29:21,770 --> 00:29:24,570
+Eh... Eh... A esa
+función... ¿Vale?
+
+750
+00:29:24,630 --> 00:29:26,210
+Le voy a pasar...
+
+751
+00:29:28,215 --> 00:29:30,290
+El... El tipo de vehículo...
+
+752
+00:29:31,050 --> 00:29:31,386
+¿Vale?
+
+753
+00:29:31,410 --> 00:29:34,410
+O... Ya que estamos en inglés...
+Para no mezclar aquí... Type...
+
+754
+00:29:36,270 --> 00:29:36,846
+¿Vale?
+
+755
+00:29:36,870 --> 00:29:38,210
+O CATEORIE...
+
+756
+00:29:40,610 --> 00:29:41,610
+Da igual...
+
+757
+00:29:41,719 --> 00:29:42,870
+Llamarla como queráis...
+
+758
+00:29:43,680 --> 00:29:44,586
+Eh... ¿Vale?
+
+759
+00:29:44,610 --> 00:29:46,190
+Que va a representar...
+
+760
+00:29:46,290 --> 00:29:49,410
+Si lo que estoy...
+Trabajando es con barcos...
+
+761
+00:29:49,609 --> 00:29:53,950
+Con aviones... O con...
+O con coches... ¿Vale?
+
+762
+00:29:54,090 --> 00:29:54,955
+¿Por qué?
+
+763
+00:29:54,979 --> 00:29:57,370
+Porque yo voy a
+tener... Prevent...
+
+764
+00:29:57,930 --> 00:29:59,210
+Prevent... Prevent... Prevent...
+
+765
+00:29:59,540 --> 00:30:00,540
+URL...
+
+766
+00:30:01,870 --> 00:30:03,750
+Base... Base...
+
+767
+00:30:05,230 --> 00:30:06,230
+Start...
+
+768
+00:30:07,200 --> 00:30:07,910
+¿Vale?
+
+769
+00:30:07,911 --> 00:30:09,690
+Yo tengo una URL...
+
+770
+00:30:09,839 --> 00:30:11,610
+Que es esta...
+
+771
+00:30:12,009 --> 00:30:13,530
+¿Qué pasa con esta URL?
+
+772
+00:30:14,379 --> 00:30:16,550
+Si esta URL... Si
+esta URL la veo...
+
+773
+00:30:16,924 --> 00:30:21,190
+Cuando estaba probando la API... ¿Qué
+es lo único que cambiaba de toda esta URL?
+
+774
+00:30:21,909 --> 00:30:24,850
+Lo de coches...
+Marcos... Lo de coches...
+
+775
+00:30:25,210 --> 00:30:28,210
+Marcos... Y... Aviones... ¿Vale?
+
+776
+00:30:28,310 --> 00:30:29,710
+Es decir... Que tengo...
+
+777
+00:30:30,590 --> 00:30:31,610
+Todo esto...
+
+778
+00:30:32,649 --> 00:30:33,769
+Estático en cada petición...
+
+779
+00:30:34,589 --> 00:30:36,890
+Y todo esto... Estático
+en cada petición...
+
+780
+00:30:37,670 --> 00:30:39,410
+Vale... Pues lo
+que puedo hacer...
+
+781
+00:30:41,290 --> 00:30:42,290
+Es...
+
+782
+00:30:43,410 --> 00:30:44,410
+Cojo...
+
+783
+00:30:45,330 --> 00:30:45,826
+¿Vale?
+
+784
+00:30:45,850 --> 00:30:47,190
+Y voy a hacer... Un...
+
+785
+00:30:47,964 --> 00:30:49,070
+Un base Start...
+
+786
+00:30:49,219 --> 00:30:50,630
+Y un base End...
+
+787
+00:30:50,779 --> 00:30:54,470
+De tal manera que el Start...
+Voy a quedármelo solo... Hasta...
+
+788
+00:30:55,590 --> 00:30:56,586
+Coches...
+
+789
+00:30:56,610 --> 00:31:00,590
+Y el otro... Me va a quedar...
+Todo lo que va después de coches...
+
+790
+00:31:00,591 --> 00:31:04,730
+De tal manera que voy a
+tener... Un puzzle... Que es...
+
+791
+00:31:04,830 --> 00:31:05,850
+Inicio...
+
+792
+00:31:08,390 --> 00:31:09,390
+Categoría...
+
+793
+00:31:09,609 --> 00:31:11,850
+Y final...
+
+794
+00:31:12,249 --> 00:31:13,610
+Entonces... ¿Qué hago?
+
+795
+00:31:15,415 --> 00:31:16,336
+Observable...
+
+796
+00:31:16,360 --> 00:31:18,750
+Esto va a devolver...
+Un observable...
+
+797
+00:31:20,590 --> 00:31:21,286
+RxJS...
+
+798
+00:31:21,310 --> 00:31:21,966
+¿Vale?
+
+799
+00:31:21,990 --> 00:31:22,705
+¿De qué?
+
+800
+00:31:22,729 --> 00:31:24,930
+Aquí tenéis que decir...
+Lo que devuelve la API...
+
+801
+00:31:25,390 --> 00:31:25,846
+¿Vale?
+
+802
+00:31:25,870 --> 00:31:26,715
+No...
+
+803
+00:31:26,739 --> 00:31:28,170
+Hasta más adelante... ¿Vale?
+
+804
+00:31:28,270 --> 00:31:32,870
+Hasta finales de curso... No veremos...
+¿Cómo podemos transformar esa información?
+
+805
+00:31:34,645 --> 00:31:39,610
+Entonces... El... No tiene... De momento...
+Lo que vosotros tenéis que decir aquí...
+
+806
+00:31:39,611 --> 00:31:43,870
+Es... Bueno... Yo estoy conectando
+una API... Y esa API me devuelve...
+
+807
+00:31:45,370 --> 00:31:49,830
+Eh... Una... Un tipo de datos... Que
+se llama... API Response Vehicle...
+
+808
+00:31:50,079 --> 00:31:52,039
+Que es la interfaz que hemos declarado
+nosotros...
+
+809
+00:31:52,930 --> 00:31:53,930
+¿Vale?
+
+810
+00:31:54,359 --> 00:31:55,630
+Eso es lo que devuelve la API...
+
+811
+00:31:55,631 --> 00:31:57,835
+Eso es lo que nosotros vamos a devolver
+dentro del observable...
+
+812
+00:31:57,859 --> 00:31:59,590
+El observable al final es una caja...
+
+813
+00:31:59,889 --> 00:32:03,050
+Que dentro tendrá la información
+que tiene la API... ¿Vale?
+
+814
+00:32:03,419 --> 00:32:05,830
+Tomároslo como una
+caja... O un contenedor...
+
+815
+00:32:06,029 --> 00:32:07,690
+Que dentro tiene la información...
+
+816
+00:32:08,620 --> 00:32:11,690
+Eh... Entonces lo que
+hacemos es devolver...
+
+817
+00:32:12,405 --> 00:32:14,630
+Eh... La respuesta...
+
+818
+00:32:14,929 --> 00:32:18,690
+De mi cliente HTTP...
+Haciendo una petición GET...
+
+819
+00:32:19,929 --> 00:32:22,010
+Aquí le decís... Que
+devuelve lo mismo...
+
+820
+00:32:22,259 --> 00:32:23,690
+API Response Vehicles...
+
+821
+00:32:25,110 --> 00:32:25,916
+¿Vale?
+
+822
+00:32:25,940 --> 00:32:26,710
+¿A qué URL?
+
+823
+00:32:26,711 --> 00:32:30,710
+Pues a la URL que hemos
+preparado... Que esto es...
+
+824
+00:32:31,985 --> 00:32:33,930
+URL Base Start...
+
+825
+00:32:34,810 --> 00:32:36,970
+O sea... This.url Base Start...
+
+826
+00:32:37,830 --> 00:32:39,690
+Aquí... Más...
+
+827
+00:32:40,339 --> 00:32:41,930
+La categoría que me están pasando...
+
+828
+00:32:50,080 --> 00:32:51,080
+Más...
+
+829
+00:32:51,399 --> 00:32:53,020
+URL Base...
+
+830
+00:32:57,370 --> 00:32:58,470
+Enter... ¿Vale?
+
+831
+00:32:58,490 --> 00:33:01,210
+Es decir... La URL
+que teníamos...
+
+832
+00:33:01,409 --> 00:33:06,610
+Que tenemos de la API... La es descompuesto...
+En... Parte inicial... Parte final...
+
+833
+00:33:06,709 --> 00:33:07,710
+Que son estáticas...
+
+834
+00:33:08,109 --> 00:33:09,350
+Y la parte dinámica...
+
+835
+00:33:09,730 --> 00:33:10,010
+¿Vale?
+
+836
+00:33:10,011 --> 00:33:13,090
+De tal manera que hago
+una función... Para los tres...
+
+837
+00:33:13,489 --> 00:33:16,630
+Podríais hacer una... Tres
+funciones... No pasa nada...
+
+838
+00:33:16,780 --> 00:33:19,470
+Hacéis tres funciones...
+Coger coches... Coger aviones...
+
+839
+00:33:20,070 --> 00:33:20,986
+Coger... ¿Vale?
+
+840
+00:33:21,010 --> 00:33:24,830
+Yo... Lo que os puedo...
+Eh... Dinamizar... ¿Vale?
+
+841
+00:33:24,910 --> 00:33:27,610
+Os lo... Os lo
+dinamizo... Para hacer el...
+
+842
+00:33:27,809 --> 00:33:30,890
+El código más formateado...
+O refactorizado...
+
+843
+00:33:31,510 --> 00:33:31,790
+¿Vale?
+
+844
+00:33:31,810 --> 00:33:35,630
+A partir de ahí... El... El... Que
+estaría bien de la otra forma... Sí...
+
+845
+00:33:35,631 --> 00:33:36,631
+¿Os lo daría por bueno?
+
+846
+00:33:36,950 --> 00:33:38,450
+Sí... ¿Vale?
+
+847
+00:33:38,870 --> 00:33:39,870
+Pero...
+
+848
+00:33:39,929 --> 00:33:43,610
+Tenéis que... También... Saber ver
+estas cosas... Si estáis en segundo...
+
+849
+00:33:43,611 --> 00:33:44,811
+De un grado superior... ¿Vale?
+
+850
+00:33:45,030 --> 00:33:48,450
+Entonces... Todo lo que podáis...
+Ahorrar de código... ¿Vale?
+
+851
+00:33:49,570 --> 00:33:50,750
+Ahorrarlo... ¿Vale?
+
+852
+00:33:50,790 --> 00:33:54,070
+Entonces... En una función...
+Tenemos... Eh... Todo... ¿Vale?
+
+853
+00:33:54,340 --> 00:33:56,830
+¿Clara el... Cómo funciona
+la función dinámica?
+
+854
+00:33:57,130 --> 00:33:58,130
+Sí... Sí...
+
+855
+00:34:00,290 --> 00:34:04,970
+Sí... Entonces... Con eso...
+Ya puedo invocar... ¿Vale?
+
+856
+00:34:05,174 --> 00:34:09,510
+El listado de vehículos... De la
+API... Para mis... Eh... Componentes...
+
+857
+00:34:09,511 --> 00:34:10,850
+Ya puedo empezar a trabajar...
+
+858
+00:34:11,200 --> 00:34:12,210
+En la...
+
+859
+00:34:12,385 --> 00:34:13,969
+En la parte de los componentes...
+
+860
+00:34:14,850 --> 00:34:15,290
+¿Vale?
+
+861
+00:34:15,291 --> 00:34:17,210
+O las páginas... En
+las vistas... ¿Vale?
+
+862
+00:34:17,740 --> 00:34:21,230
+Entonces tenemos la parte de Airplanes...
+La parte de Boats... Y la parte de Cards...
+
+863
+00:34:21,231 --> 00:34:21,630
+¿Vale?
+
+864
+00:34:21,631 --> 00:34:22,719
+Eh... Voy a cogerme...
+
+865
+00:34:23,690 --> 00:34:24,690
+Voy a cogerme... Este...
+
+866
+00:34:25,140 --> 00:34:28,330
+El header de inicio... Para
+hacer la cabecera común... ¿Vale?
+
+867
+00:34:28,331 --> 00:34:30,050
+Que van a tener...
+
+868
+00:34:30,200 --> 00:34:31,230
+Las páginas...
+
+869
+00:34:31,630 --> 00:34:32,650
+Las páginas...
+
+870
+00:34:38,040 --> 00:34:39,360
+Las páginas... Esto es...
+
+871
+00:34:39,460 --> 00:34:43,400
+Voy a cerrar esto... Ya no me
+hace falta... Ya no me hace falta... Y...
+
+872
+00:34:43,401 --> 00:34:44,401
+No me hace falta...
+
+873
+00:34:46,820 --> 00:34:51,320
+Vale... Entonces la cabecera...
+Básicamente... De las páginas... Me dice...
+
+874
+00:34:51,321 --> 00:34:52,639
+Que va a tener...
+
+875
+00:34:52,840 --> 00:34:57,480
+Un color... Vale... Pero hemos dicho...
+Que cada página... La de barcos...
+
+876
+00:34:57,481 --> 00:34:58,366
+La de aviones...
+
+877
+00:34:58,390 --> 00:35:02,100
+Y la de coches... Van a tener...
+Un color diferente... Es decir...
+
+878
+00:35:02,101 --> 00:35:06,080
+Yo no puedo poner un color... Aquí
+estático y punto... Con lo cual... Eso...
+
+879
+00:35:06,130 --> 00:35:07,140
+Me lo voy a tener...
+
+880
+00:35:07,540 --> 00:35:12,160
+Que traer de una variable... Sí o sí...
+Que será el color... Que va a tener...
+
+881
+00:35:12,780 --> 00:35:13,576
+Vale...
+
+882
+00:35:13,600 --> 00:35:17,880
+Luego el título... Pasa lo mismo...
+Cada una tiene su propio título... Pues...
+
+883
+00:35:17,930 --> 00:35:20,380
+No puedo poner un título
+fijo... Sino que voy a tener que...
+
+884
+00:35:20,555 --> 00:35:21,860
+Coger esto de alguna...
+
+885
+00:35:23,120 --> 00:35:24,120
+Variable...
+
+886
+00:35:25,860 --> 00:35:30,200
+Vale... Y pongo los paréntesis
+ya... Porque... Esas variables... Vale...
+
+887
+00:35:30,201 --> 00:35:31,301
+Las voy a tener que trabajar...
+
+888
+00:35:31,325 --> 00:35:34,020
+Con signals...
+Vale... Entonces... El...
+
+889
+00:35:34,170 --> 00:35:36,600
+Getter de una signals...
+Ya es directamente...
+
+890
+00:35:36,950 --> 00:35:38,400
+Con los paréntesis...
+
+891
+00:35:38,800 --> 00:35:43,700
+El texto está centrado... Vale... Y luego
+además... Tiene un botoncito al inicio...
+
+892
+00:35:43,701 --> 00:35:44,701
+Pues... Ion...
+
+893
+00:35:46,420 --> 00:35:47,420
+Buttons...
+
+894
+00:35:48,540 --> 00:35:49,540
+Slot...
+
+895
+00:35:49,820 --> 00:35:53,520
+Start... Que tiene un...
+
+896
+00:35:53,669 --> 00:35:54,669
+Ion...
+
+897
+00:35:55,600 --> 00:35:56,600
+Ion...
+
+898
+00:36:00,574 --> 00:36:03,930
+Ion... Ion... Ion...
+
+899
+00:36:05,580 --> 00:36:07,600
+Icon... Que... Eh...
+
+900
+00:36:07,960 --> 00:36:10,480
+Esto es... Name... Home...
+
+901
+00:36:11,495 --> 00:36:12,700
+Es la casita... ¿Vale?
+
+902
+00:36:13,090 --> 00:36:16,400
+Además de esa casita...
+Mara... El router link...
+
+903
+00:36:17,830 --> 00:36:18,840
+Angular router...
+
+904
+00:36:19,740 --> 00:36:22,560
+A... Barra... Inicio... ¿Vale?
+
+905
+00:36:22,580 --> 00:36:25,320
+Que me llevará... A
+la página de inicio...
+
+906
+00:36:26,420 --> 00:36:32,240
+Vale... Eh... Cosas que tengo que hacer...
+En el TS de la cabecera... Tengo que...
+
+907
+00:36:32,241 --> 00:36:35,780
+De alguna manera...
+Coger... Y... Ay mierda...
+
+908
+00:36:38,320 --> 00:36:42,160
+Tengo que... Decirle... Que me
+tiene que hacer una signal... ¿Vale?
+
+909
+00:36:42,850 --> 00:36:45,960
+Create signal color... Vale...
+
+910
+00:36:46,410 --> 00:36:47,420
+Pero en realidad...
+
+911
+00:36:48,350 --> 00:36:51,960
+En realidad... Como tal...
+No es una signal normal...
+
+912
+00:36:53,160 --> 00:36:53,736
+¿Vale?
+
+913
+00:36:53,760 --> 00:36:56,440
+Porque lo que... Voy a trabajar
+no es con una signal normal...
+
+914
+00:36:56,490 --> 00:36:57,880
+Sino que es una signal...
+
+915
+00:36:58,080 --> 00:36:59,960
+Que la información viene desde el padre...
+
+916
+00:37:00,950 --> 00:37:04,860
+Para recoger la información desde el
+padre... Lo que tenemos que... Recoger...
+
+917
+00:37:04,910 --> 00:37:05,960
+Es un input...
+
+918
+00:37:08,340 --> 00:37:08,956
+¿Vale?
+
+919
+00:37:08,980 --> 00:37:13,240
+Una variable input... Es una
+signal... Especial... Una input signal...
+
+920
+00:37:13,340 --> 00:37:17,900
+Que lo que hace es...
+Recoge... Eh... El valor del padre.
+
+921
+00:37:18,330 --> 00:37:19,820
+Podéis trabajar también con model.
+
+922
+00:37:20,099 --> 00:37:25,820
+Lo que pasa es que el model se trabaja cuando
+se utiliza también para emitir eventos.
+
+923
+00:37:26,090 --> 00:37:28,340
+Es decir, para comunicar del hijo al
+padre.
+
+924
+00:37:29,080 --> 00:37:32,340
+En este caso no queremos hacer nada del
+hijo al padre, solo del padre al hijo,
+
+925
+00:37:32,500 --> 00:37:34,300
+pues entonces con una input nos vale.
+
+926
+00:37:35,285 --> 00:37:38,540
+Son inputs obligatorias, porque yo sí o sí
+necesito eso del color.
+
+927
+00:37:40,490 --> 00:37:47,000
+Así que le pongo... y puedo especificarle
+además el tipo de datos que tiene que ser.
+
+928
+00:37:47,220 --> 00:37:48,220
+Va a ser un string.
+
+929
+00:37:48,550 --> 00:37:49,600
+Que va a ser el color.
+
+930
+00:37:50,850 --> 00:37:53,000
+Y vamos a tener la otra, que es el título.
+
+931
+00:37:55,390 --> 00:37:56,680
+Que es lo que van a poner.
+
+932
+00:37:59,100 --> 00:38:02,260
+Ahora fijaros que en mi HTML ya me dice...
+Ah, vale.
+
+933
+00:38:02,380 --> 00:38:06,540
+Ahora ya sé que el color y el título me
+los va a pasar el componente padre.
+
+934
+00:38:06,970 --> 00:38:08,540
+Es decir, el que invoque este header.
+
+935
+00:38:10,620 --> 00:38:12,680
+Vale, pues entonces ahora con eso...
+
+936
+00:38:15,270 --> 00:38:17,340
+Ya podemos decir... Bueno, igual luego...
+
+937
+00:38:20,930 --> 00:38:24,780
+Vale, que yo en mi página de Airplanes,
+por ejemplo...
+
+938
+00:38:25,790 --> 00:38:28,300
+Puedo decirle que voy a tener una
+cabecera...
+
+939
+00:38:30,780 --> 00:38:35,400
+Y esa cabecera me dice... Oye, pero la
+cabecera necesito que me especifices...
+
+940
+00:38:35,750 --> 00:38:37,600
+Color... Y título.
+
+941
+00:38:38,380 --> 00:38:39,420
+Pues se lo pasamos.
+
+942
+00:38:41,620 --> 00:38:42,620
+Color...
+
+943
+00:38:45,620 --> 00:38:46,620
+Color...
+
+944
+00:38:47,430 --> 00:38:50,580
+En este caso...
+Los aviones eran...
+
+945
+00:38:51,290 --> 00:38:52,300
+Secondary...
+
+946
+00:38:56,200 --> 00:38:58,540
+Y el título...
+
+947
+00:38:59,629 --> 00:39:00,680
+Airplanes...
+
+948
+00:39:01,180 --> 00:39:02,200
+¿Vale?
+
+949
+00:39:04,410 --> 00:39:05,930
+Y esto lo podréis hacer...
+
+950
+00:39:08,080 --> 00:39:09,090
+Con votes...
+
+951
+00:39:14,150 --> 00:39:16,440
+Sería... Deber... Diary...
+
+952
+00:39:22,720 --> 00:39:25,220
+Y votes...
+
+953
+00:39:25,370 --> 00:39:34,040
+Y con los cards... Que pensaba que... Cards
+y... Cards y... Era el mismo... Primary...
+
+954
+00:39:38,680 --> 00:39:40,700
+Y Cards... ¿Vale?
+
+955
+00:39:42,680 --> 00:39:46,220
+Ahora... La movida
+os decía... Es que...
+
+956
+00:39:46,370 --> 00:39:47,820
+En la parte del content...
+
+957
+00:39:48,640 --> 00:39:49,136
+¿Vale?
+
+958
+00:39:49,160 --> 00:39:51,680
+Es decir... En el
+contenido... De nuestra...
+
+959
+00:39:52,720 --> 00:39:57,400
+De nuestra... En
+nuestras páginas... Eh...
+
+960
+00:39:58,280 --> 00:39:59,016
+También...
+
+961
+00:39:59,040 --> 00:40:00,040
+Tengo que...
+
+962
+00:40:00,700 --> 00:40:02,400
+En... Las tarjetas...
+
+963
+00:40:02,980 --> 00:40:03,676
+¿Vale?
+
+964
+00:40:03,700 --> 00:40:07,500
+Funcionan un poco igual...
+Es decir... Todas... Las tarjetas...
+
+965
+00:40:15,160 --> 00:40:15,956
+¿Vale?
+
+966
+00:40:15,980 --> 00:40:16,980
+Todas las tarjetas...
+
+967
+00:40:17,770 --> 00:40:18,930
+Tienen la misma estructura...
+
+968
+00:40:19,340 --> 00:40:23,880
+Es decir... Voy a tener una colección...
+Que además de la... Va a tener... El...
+
+969
+00:40:23,881 --> 00:40:25,060
+Spiper... ¿Vale?
+
+970
+00:40:25,280 --> 00:40:26,280
+Ahora estaba...
+
+971
+00:40:29,120 --> 00:40:30,120
+¿Vale?
+
+972
+00:40:43,680 --> 00:40:44,496
+¿Vale?
+
+973
+00:40:44,520 --> 00:40:48,620
+Entonces... Eh... Todos tienen... La
+misma estructura... De tarjeta... ¿Vale?
+
+974
+00:40:48,680 --> 00:40:52,680
+En los que... Voy a tener... Las tarjetas...
+Que además... Tienen... El... Slight...
+
+975
+00:40:52,681 --> 00:40:57,240
+Dentro... Y... Eh... Tienen la
+información... Pues... Para...
+
+976
+00:40:59,280 --> 00:41:07,280
+Para eso, hemos construido un componente
+que se llama VehicleList, que será el
+
+977
+00:41:07,281 --> 00:41:12,840
+encargado de recoger la información de la
+API y mostrarla.
+
+978
+00:41:15,410 --> 00:41:23,160
+Pero para eso, voy a necesitar que a mi
+vehículo, a mi VehicleList, me pasen el
+
+979
+00:41:23,260 --> 00:41:30,420
+tipo... El tipo de Vehicle, o
+el VehicleType, me da igual...
+
+980
+00:41:31,820 --> 00:41:37,400
+VehicleType, que voy a utilizar como una
+InputSignal también.
+
+981
+00:41:38,960 --> 00:41:42,040
+Es decir, una Input.requered...
+
+982
+00:41:44,944 --> 00:41:45,944
+...String...
+
+983
+00:41:47,230 --> 00:41:50,780
+Y que le pasen también el color,
+igual que hemos hecho antes.
+
+984
+00:41:52,690 --> 00:41:54,760
+Pues ponemos también aquí...
+
+985
+00:41:55,060 --> 00:41:56,100
+...el color.
+
+986
+00:41:58,450 --> 00:42:00,780
+Vale, con esta información ya puedo
+cargar...
+
+987
+00:42:02,780 --> 00:42:03,736
+...eh...
+
+988
+00:42:03,760 --> 00:42:04,780
+...pues los datos de la API.
+
+989
+00:42:04,781 --> 00:42:07,020
+Es decir, yo puedo ahora...
+
+990
+00:42:07,145 --> 00:42:12,580
+...con un Private ReadOnly
+VehicleService...
+
+991
+00:42:15,510 --> 00:42:17,820
+...de tipo VehicleService...
+
+992
+00:42:19,520 --> 00:42:23,920
+...esto lo inyectamos para
+inicializarlo...
+
+993
+00:42:29,980 --> 00:42:34,330
+...vale, vamos a tener una colección
+también... ...vale, vamos a poner Vehicles...
+
+994
+00:42:34,830 --> 00:42:37,950
+...que va a ser una Signal...
+
+995
+00:42:41,830 --> 00:42:44,490
+...vale... ...inicialmente
+se va vacía...
+
+996
+00:42:44,690 --> 00:42:46,530
+...array vacío de...
+
+997
+00:42:46,630 --> 00:42:47,670
+...eh...
+
+998
+00:42:47,820 --> 00:42:51,910
+...la Interfax... ...si os acordáis que
+teníamos los vehículos... ...vale...
+
+999
+00:42:51,911 --> 00:42:53,770
+...teníamos la Interfax Vehicle...
+
+1000
+00:42:54,270 --> 00:42:55,770
+...o esto hace la colección...
+
+1001
+00:42:56,760 --> 00:42:57,770
+...de vehículos...
+
+1002
+00:43:05,840 --> 00:43:11,010
+...vale, entonces con eso... ...ya
+puedo coger... ...y en el engine init...
+
+1003
+00:43:11,011 --> 00:43:15,590
+...es decir, cuando ya tengo... ...tos los
+valores de las variables... ...decirle...
+
+1004
+00:43:15,591 --> 00:43:16,990
+...oye... ...eh...
+
+1005
+00:43:17,190 --> 00:43:19,330
+...vamos a hacer una función
+que sea... ...loadVehicleS...
+
+1006
+00:43:19,331 --> 00:43:21,690
+...que rellenes los
+vehículos... ...que hay...
+
+1007
+00:43:22,530 --> 00:43:24,030
+...en tu componente...
+
+1008
+00:43:26,620 --> 00:43:34,470
+Esa función lo hace Vehicles, lo que va a
+hacer es llamar al servicio.vehicles.
+
+1009
+00:43:34,930 --> 00:43:39,690
+A esto hay que pasarle la categoría,
+eso lo tengo en el VehicleType,
+
+1010
+00:43:40,630 --> 00:43:42,530
+que me ha pasado el componente padre.
+
+1011
+00:43:45,590 --> 00:43:46,070
+¿Vale?
+
+1012
+00:43:46,071 --> 00:43:49,710
+Acordaros que esto es un Input Signal,
+hay que ponerlos en mayor-menor.
+
+1013
+00:43:50,410 --> 00:43:52,290
+Y lo que hacemos es nos suscribimos.
+
+1014
+00:43:52,960 --> 00:43:54,310
+Esto es un observable.
+
+1015
+00:43:54,530 --> 00:43:57,850
+Al observable hay que suscribirse para
+recoger la información.
+
+1016
+00:43:58,070 --> 00:44:01,930
+Es como entrar al contenedor para sacar lo
+que hay dentro.
+
+1017
+00:44:02,190 --> 00:44:02,746
+¿Vale?
+
+1018
+00:44:02,770 --> 00:44:05,070
+Por eso la suscripción es eso,
+básicamente.
+
+1019
+00:44:08,195 --> 00:44:12,330
+Se llama suscripción porque los
+observables, en vez de emitir un único
+
+1020
+00:44:12,331 --> 00:44:16,470
+valor, como son las APIs, que es un
+observable frío, hay observables calientes
+
+1021
+00:44:16,620 --> 00:44:19,990
+que nos permiten coger información en el
+tiempo.
+
+1022
+00:44:20,110 --> 00:44:24,210
+Es decir, emiten valores y al estar
+suscritos es como estar suscrito a un
+
+1023
+00:44:24,211 --> 00:44:26,590
+boletín de noticias, que te va llegando la
+información.
+
+1024
+00:44:26,870 --> 00:44:27,126
+¿Vale?
+
+1025
+00:44:27,150 --> 00:44:28,310
+Por eso se llama suscripción.
+
+1026
+00:44:28,850 --> 00:44:28,966
+¿Vale?
+
+1027
+00:44:28,990 --> 00:44:31,537
+Mejor de verdad es que en
+este caso las APIs son, como
+
+1028
+00:44:31,612 --> 00:44:34,030
+os digo, observables fríos
+que solo emiten una vez.
+
+1029
+00:44:37,490 --> 00:44:44,150
+Entonces, los valores de la posible
+suscripción es que todo vaya bien,
+
+1030
+00:44:44,450 --> 00:44:45,490
+se representa con el next.
+
+1031
+00:44:46,100 --> 00:44:48,550
+El next también es por lo que decimos de
+la suscripción.
+
+1032
+00:44:48,845 --> 00:44:50,470
+Sería como siguiente valor.
+
+1033
+00:44:50,810 --> 00:44:51,326
+¿Vale?
+
+1034
+00:44:51,350 --> 00:44:52,350
+Que se ha emitido.
+
+1035
+00:44:53,240 --> 00:44:57,290
+Y entonces aquí voy a ponerle value en vez
+del data que me sugiere, para que no os
+
+1036
+00:44:57,640 --> 00:44:59,670
+confundáis con el data de la app.
+
+1037
+00:44:59,820 --> 00:45:00,870
+Vale.
+
+1038
+00:45:00,990 --> 00:45:06,530
+Entonces, en value es donde recojo el
+valor que emite el observable.
+
+1039
+00:45:06,670 --> 00:45:08,690
+Es decir, la información que viene de la
+API.
+
+1040
+00:45:09,110 --> 00:45:11,850
+El objeto que hemos visto en el JSON.
+
+1041
+00:45:12,730 --> 00:45:13,030
+¿Vale?
+
+1042
+00:45:13,050 --> 00:45:15,210
+Es decir, este objeto que está aquí.
+
+1043
+00:45:15,670 --> 00:45:16,546
+¿Vale?
+
+1044
+00:45:16,570 --> 00:45:18,330
+Lo recojo dentro de este value.
+
+1045
+00:45:19,950 --> 00:45:20,950
+Vale.
+
+1046
+00:45:21,320 --> 00:45:28,350
+Pues lo que tengo que hacer es pasar este
+objeto del value, sacar la lista de
+
+1047
+00:45:28,351 --> 00:45:31,050
+vehículos y guardarlo en mi lista de
+vehículos.
+
+1048
+00:45:32,190 --> 00:45:33,210
+Entonces, ¿cómo hago eso?
+
+1049
+00:45:33,740 --> 00:45:36,290
+Bueno, pues tengo mi vehículo.
+
+1050
+00:45:36,610 --> 00:45:37,850
+This.vehicle.
+
+1051
+00:45:39,620 --> 00:45:41,330
+Que es mi lista de vehículos.
+
+1052
+00:45:41,810 --> 00:45:41,890
+¿Vale?
+
+1053
+00:45:41,910 --> 00:45:47,290
+La signal que he preparado para los vehículos
+para añadir datos a una signal es.set.
+
+1054
+00:45:47,790 --> 00:45:51,050
+Con eso establece el contenido,
+el valor del contenido de la signal.
+
+1055
+00:45:51,940 --> 00:45:53,770
+Y a eso le tengo que poner el value.
+
+1056
+00:45:53,864 --> 00:45:55,370
+Que es el objeto entero.
+
+1057
+00:45:55,810 --> 00:45:56,346
+¿Vale?
+
+1058
+00:45:56,370 --> 00:45:57,730
+Pero value es un objeto entero.
+
+1059
+00:45:57,830 --> 00:45:59,070
+Yo quiero acceder a su array.
+
+1060
+00:45:59,950 --> 00:46:02,390
+Pues en este caso el array está dentro de
+data.
+
+1061
+00:46:03,750 --> 00:46:04,176
+¿Vale?
+
+1062
+00:46:04,200 --> 00:46:05,950
+Cada API es diferente.
+
+1063
+00:46:06,950 --> 00:46:08,130
+Cada API es diferente.
+
+1064
+00:46:08,334 --> 00:46:09,450
+¿Qué quiere decir eso?
+
+1065
+00:46:09,850 --> 00:46:13,610
+Que el acceso a la información es
+diferente.
+
+1066
+00:46:15,280 --> 00:46:22,020
+Que la interfaz será diferente cada vez.
+
+1067
+00:46:22,450 --> 00:46:24,280
+Unas veces tendréis la información en
+data.
+
+1068
+00:46:24,880 --> 00:46:27,720
+Otras veces directamente tendréis un array
+de objetos.
+
+1069
+00:46:28,350 --> 00:46:30,020
+Otras veces tendréis un result.
+
+1070
+00:46:30,560 --> 00:46:32,940
+Otras veces... Cada API
+es totalmente diferente.
+
+1071
+00:46:33,089 --> 00:46:35,640
+Entonces, es algo que sí tenéis que
+comprender.
+
+1072
+00:46:36,280 --> 00:46:37,760
+Así como en otras asignaturas.
+
+1073
+00:46:38,030 --> 00:46:39,080
+Vease acceso a datos.
+
+1074
+00:46:39,680 --> 00:46:44,300
+Es todo muy mecánico de... No tengo que
+comprender tanto porque siempre es igual.
+
+1075
+00:46:44,500 --> 00:46:44,820
+¿Vale?
+
+1076
+00:46:44,821 --> 00:46:47,840
+Y puedo hacer A, B, C y funciona.
+
+1077
+00:46:48,120 --> 00:46:49,120
+¿Vale?
+
+1078
+00:46:49,980 --> 00:46:53,340
+Aquí sí que tenéis que entender mucho
+el...
+
+1079
+00:46:54,410 --> 00:46:56,380
+Cómo funcionan los objetos.
+
+1080
+00:46:57,810 --> 00:47:01,220
+Cómo leo un JSON para entender que esto es
+un objeto.
+
+1081
+00:47:01,840 --> 00:47:03,560
+Que esto es un array al que quiero
+acceder.
+
+1082
+00:47:03,880 --> 00:47:04,516
+¿Vale?
+
+1083
+00:47:04,540 --> 00:47:07,180
+Y luego cómo accedo a esos elementos.
+
+1084
+00:47:07,680 --> 00:47:11,080
+Es decir, que cuando me viene la
+información de la API...
+
+1085
+00:47:11,305 --> 00:47:16,440
+Cómo llego a poder guardarlo en mi
+colección que quiero...
+
+1086
+00:47:16,790 --> 00:47:20,300
+La información que... Correcta.
+
+1087
+00:47:21,020 --> 00:47:22,020
+¿Vale?
+
+1088
+00:47:24,200 --> 00:47:28,440
+Entonces, con eso hemos guardado la
+colección de la API en nuestra colección.
+
+1089
+00:47:30,190 --> 00:47:32,500
+Lo otro que puede pasar es que haya un
+error.
+
+1090
+00:47:32,780 --> 00:47:34,120
+Esto es que vaya mal.
+
+1091
+00:47:36,500 --> 00:47:39,620
+Y entonces sacamos en
+consola error... El error.
+
+1092
+00:47:41,220 --> 00:47:42,196
+¿Vale?
+
+1093
+00:47:42,220 --> 00:47:44,520
+Tenemos también la parte del complete.
+
+1094
+00:47:46,240 --> 00:47:48,060
+Que es cuando ha terminado.
+
+1095
+00:47:48,400 --> 00:47:49,400
+Pues hacemos...
+
+1096
+00:47:52,460 --> 00:47:53,460
+El...
+
+1097
+00:47:56,540 --> 00:47:57,540
+Vehicles...
+
+1098
+00:48:00,450 --> 00:48:02,500
+Un mensajito de que ha cargado la
+información.
+
+1099
+00:48:02,900 --> 00:48:03,900
+Y ya está.
+
+1100
+00:48:05,500 --> 00:48:06,056
+¿Vale?
+
+1101
+00:48:06,080 --> 00:48:08,720
+Entonces con eso habríamos cargado la
+información de los vehículos.
+
+1102
+00:48:09,640 --> 00:48:11,640
+Pues si ya tengo la información de los
+vehículos...
+
+1103
+00:48:11,700 --> 00:48:13,100
+Lo siguiente es pintarla.
+
+1104
+00:48:13,640 --> 00:48:14,680
+Es decir, mostrarla.
+
+1105
+00:48:15,870 --> 00:48:17,140
+Pues esto es en el HTML.
+
+1106
+00:48:18,330 --> 00:48:22,860
+Y en el HTML lo que tengo que hacer es...
+
+1107
+00:48:23,800 --> 00:48:24,280
+¿Vale?
+
+1108
+00:48:24,281 --> 00:48:28,160
+El ejercicio me dice que voy a
+tener una serie de tarjetas... ¿Vale?
+
+1109
+00:48:28,220 --> 00:48:29,560
+Que voy a montar.
+
+1110
+00:48:29,660 --> 00:48:30,700
+¿Vale?
+
+1111
+00:48:31,075 --> 00:48:35,700
+Pero esas tarjetas dentro van a tener que
+poder deslizarse horizontalmente.
+
+1112
+00:48:36,710 --> 00:48:38,310
+Para poder deslizarse horizontalmente...
+
+1113
+00:48:38,660 --> 00:48:39,660
+Vimos que...
+
+1114
+00:48:40,490 --> 00:48:43,060
+Lo que utilizábamos en Ionic era Swiper.
+
+1115
+00:48:43,710 --> 00:48:46,240
+Con lo cual tenemos que instalar Swiper en
+nuestra aplicación.
+
+1116
+00:48:47,070 --> 00:48:49,780
+Para instalar Swiper en nuestra aplicación
+son tres pasos.
+
+1117
+00:48:57,550 --> 00:48:59,312
+¿Quién se acuerda de los
+pasos que teníamos que
+
+1118
+00:48:59,313 --> 00:49:00,886
+hacer para instalar
+Swiper en la aplicación?
+
+1119
+00:49:00,910 --> 00:49:03,300
+NPM y Swiper.
+
+1120
+00:49:03,320 --> 00:49:03,916
+Vale.
+
+1121
+00:49:03,940 --> 00:49:04,711
+Primer paso.
+
+1122
+00:49:04,735 --> 00:49:05,860
+Instalar Swiper.
+
+1123
+00:49:06,160 --> 00:49:06,336
+¿Vale?
+
+1124
+00:49:06,360 --> 00:49:09,280
+Tenemos que instalar la dependencia de
+Swiper para poder utilizarla.
+
+1125
+00:49:09,980 --> 00:49:12,320
+NPM install Swiper.
+
+1126
+00:49:13,500 --> 00:49:14,500
+¿Vale?
+
+1127
+00:49:14,970 --> 00:49:19,040
+En la carpeta del proyecto lanzamos NPM
+install Swiper.
+
+1128
+00:49:19,190 --> 00:49:20,380
+Es un paquete, ¿vale?
+
+1129
+00:49:20,680 --> 00:49:23,320
+Que nos instalará en nuestras
+dependencias.
+
+1130
+00:49:26,560 --> 00:49:27,176
+¿Vale?
+
+1131
+00:49:27,200 --> 00:49:28,760
+Le damos y esperamos a que nos instale.
+
+1132
+00:49:29,790 --> 00:49:31,470
+No me hagan la dices que me debe por esto.
+
+1133
+00:49:31,550 --> 00:49:32,816
+Que la EPA se lo debemos subir por encima.
+
+1134
+00:49:32,840 --> 00:49:33,840
+¿Qué pasa?
+
+1135
+00:49:34,200 --> 00:49:35,200
+No me hagan la dices.
+
+1136
+00:49:39,260 --> 00:49:40,280
+Cosa al de la vida.
+
+1137
+00:49:40,940 --> 00:49:43,800
+Es que Angular lo debemos con Werta pero
+muy, muy, muy por encima.
+
+1138
+00:49:44,020 --> 00:49:45,020
+Sí, lo dejo.
+
+1139
+00:49:45,070 --> 00:49:47,600
+Estos tres comandos funcionan y ya está
+puesto.
+
+1140
+00:49:50,220 --> 00:49:51,150
+A ver.
+
+1141
+00:49:51,174 --> 00:49:53,200
+Con eso hemos instalado Swiper.
+
+1142
+00:49:53,560 --> 00:49:54,056
+¿Vale?
+
+1143
+00:49:54,080 --> 00:49:55,120
+NPM install Swiper.
+
+1144
+00:49:55,260 --> 00:49:56,260
+Nos ha instalado Swiper.
+
+1145
+00:49:56,370 --> 00:49:58,680
+Para verificarlo en el package JSON.
+
+1146
+00:49:59,280 --> 00:50:00,280
+Acordaros.
+
+1147
+00:50:02,140 --> 00:50:02,796
+¿Vale?
+
+1148
+00:50:02,820 --> 00:50:03,360
+De hecho, mira.
+
+1149
+00:50:03,361 --> 00:50:04,561
+Voy a aprovechar para cambiar.
+
+1150
+00:50:07,279 --> 00:50:08,279
+¿Verdad?
+
+1151
+00:50:08,360 --> 00:50:11,960
+En el examen es ponerte la versión del
+autor y la descripción también.
+
+1152
+00:50:12,350 --> 00:50:13,350
+No, nada falta.
+
+1153
+00:50:13,380 --> 00:50:14,840
+Con el autor y la versión me vale.
+
+1154
+00:50:17,040 --> 00:50:21,060
+Os fijáis que os tiene que haber añadido
+una línea con Swiper.
+
+1155
+00:50:21,580 --> 00:50:22,580
+¿Vale?
+
+1156
+00:50:23,180 --> 00:50:24,180
+Ahí lo tenemos.
+
+1157
+00:50:24,480 --> 00:50:25,480
+Vale.
+
+1158
+00:50:25,520 --> 00:50:26,466
+Segundo paso.
+
+1159
+00:50:26,490 --> 00:50:27,540
+¿Cuál es el segundo paso?
+
+1160
+00:50:30,060 --> 00:50:30,990
+Reinstalación de Swiper.
+
+1161
+00:50:31,014 --> 00:50:32,580
+Hemos instalado la dependencia.
+
+1162
+00:50:32,760 --> 00:50:33,076
+¿Vale?
+
+1163
+00:50:33,100 --> 00:50:33,936
+Eso ya está.
+
+1164
+00:50:33,960 --> 00:50:34,960
+¿El segundo paso cuál es?
+
+1165
+00:50:37,900 --> 00:50:38,980
+Eh... Integrarlo.
+
+1166
+00:50:40,160 --> 00:50:40,716
+Integrarlo.
+
+1167
+00:50:40,740 --> 00:50:41,820
+¿Pero cómo lo integrabamos?
+
+1168
+00:50:50,330 --> 00:50:51,810
+Era algo que teníamos que hacer aquí.
+
+1169
+00:50:51,960 --> 00:50:52,960
+Componente raíz.
+
+1170
+00:50:56,010 --> 00:50:58,220
+¿Qué teníamos que añadir en el componente
+raíz?
+
+1171
+00:50:59,500 --> 00:51:00,880
+Eh... Teníamos que...
+
+1172
+00:51:11,854 --> 00:51:16,220
+Teníamos... A ver... Teníamos que
+invocar una función que se llama Register.
+
+1173
+00:51:17,205 --> 00:51:21,060
+Esa función cargaba Swiper en nuestra
+aplicación.
+
+1174
+00:51:22,570 --> 00:51:24,400
+Pero nos hacía mal el import.
+
+1175
+00:51:25,060 --> 00:51:28,600
+Entonces teníamos que añadirle a mano en
+el import el bundle.
+
+1176
+00:51:28,980 --> 00:51:29,136
+¿Vale?
+
+1177
+00:51:29,160 --> 00:51:31,340
+Porque por defecto ponía solo Swiper
+Element.
+
+1178
+00:51:32,420 --> 00:51:33,136
+¿Vale?
+
+1179
+00:51:33,160 --> 00:51:38,420
+Entonces Register de Swiper Element Bundle
+es el paso número 2.
+
+1180
+00:51:39,060 --> 00:51:39,796
+¿Vale?
+
+1181
+00:51:39,820 --> 00:51:40,920
+Para trabajar con Swiper.
+
+1182
+00:51:41,790 --> 00:51:42,800
+Paso número 3.
+
+1183
+00:51:44,840 --> 00:51:45,840
+¿Vale?
+
+1184
+00:51:46,100 --> 00:51:47,620
+A ver... Una vez importado.
+
+1185
+00:51:47,940 --> 00:51:49,400
+A ver... Importado, ¿vale?
+
+1186
+00:51:49,460 --> 00:51:50,500
+Ya hemos lanzado Register.
+
+1187
+00:51:50,620 --> 00:51:51,620
+¿Qué teníamos que hacer?
+
+1188
+00:51:51,660 --> 00:51:51,856
+Sí.
+
+1189
+00:51:51,880 --> 00:51:52,880
+En el HTML.
+
+1190
+00:51:53,340 --> 00:51:54,340
+Antes.
+
+1191
+00:51:54,380 --> 00:51:54,816
+Antes.
+
+1192
+00:51:54,840 --> 00:51:55,840
+Antes de la HTML.
+
+1193
+00:51:57,160 --> 00:51:57,746
+¿Vale?
+
+1194
+00:51:57,770 --> 00:52:01,140
+Teníamos que ir ya al componente donde
+fuéramos a utilizar Swiper.
+
+1195
+00:52:01,340 --> 00:52:02,340
+Sí, en el HTML.
+
+1196
+00:52:02,540 --> 00:52:04,660
+Nosotros queremos utilizarlo en el
+RakeList.
+
+1197
+00:52:07,220 --> 00:52:08,896
+Claro, tenemos que usarlo en el RakeList,
+que sería el componente.
+
+1198
+00:52:08,920 --> 00:52:09,516
+¿Vale?
+
+1199
+00:52:09,540 --> 00:52:13,320
+Y la cosa es que Swiper utiliza unas
+etiquetas propias.
+
+1200
+00:52:13,640 --> 00:52:14,000
+¿Vale?
+
+1201
+00:52:14,020 --> 00:52:19,000
+Es decir, utiliza unas etiquetas que se
+llaman Swiper Container y Swiper Slide.
+
+1202
+00:52:19,880 --> 00:52:21,840
+Esas etiquetas HTML, ¿vale?
+
+1203
+00:52:22,400 --> 00:52:25,240
+No son reconocidas por Ionic.
+
+1204
+00:52:25,830 --> 00:52:28,740
+Salvo que le digamos que son etiquetas
+personalizadas.
+
+1205
+00:52:28,900 --> 00:52:30,000
+Y por tanto que las reconozca.
+
+1206
+00:52:30,001 --> 00:52:31,300
+¿Cómo hacemos eso?
+
+1207
+00:52:32,224 --> 00:52:36,420
+Añadiendo en el component del componente
+donde lo vamos a utilizar, ¿vale?
+
+1208
+00:52:36,480 --> 00:52:39,120
+En el arroba component, un array de
+esquemas.
+
+1209
+00:52:40,220 --> 00:52:41,816
+Es verdad, es verdad, es verdad el
+esquema.
+
+1210
+00:52:41,840 --> 00:52:42,256
+¿Vale?
+
+1211
+00:52:42,280 --> 00:52:44,680
+Entonces ponemos aquí esquemas.
+
+1212
+00:52:45,630 --> 00:52:47,900
+Y aquí esto es un array de esquemas.
+
+1213
+00:52:48,510 --> 00:52:53,800
+Y hay que añadir un esquema en cuestión
+que se llama Custom Elements Schema.
+
+1214
+00:52:59,010 --> 00:53:02,674
+Vale, entonces el Custom
+Elements Schema es un esquema
+
+1215
+00:53:02,675 --> 00:53:06,040
+que me permite trabajar
+con etiquetas personalizadas.
+
+1216
+00:53:06,820 --> 00:53:08,940
+Que son las etiquetas que utiliza Swiper.
+
+1217
+00:53:09,640 --> 00:53:10,376
+¿Vale?
+
+1218
+00:53:10,400 --> 00:53:13,963
+Entonces con esto, con esos
+tres pasos, ya puedo utilizar las
+
+1219
+00:53:13,964 --> 00:53:17,700
+etiquetas de Swiper para
+añadir la funcionalidad de Swiper.
+
+1220
+00:53:18,890 --> 00:53:26,540
+Vale, acordaros, instalar, npm install
+Swiper, dos, función register en el app
+
+1221
+00:53:26,565 --> 00:53:34,100
+component TS, cambiando el import a Swiper
+Element Bundle, y tres, en el componente
+
+1222
+00:53:34,650 --> 00:53:39,540
+que vayáis a utilizar Swiper, os ponéis en
+el arroba component, y tenéis que añadir
+
+1223
+00:53:39,690 --> 00:53:42,320
+el array de esquemas con el Custom
+Elements Schema.
+
+1224
+00:53:43,640 --> 00:53:45,220
+Vale, y ahora ya puedo utilizarlo.
+
+1225
+00:53:45,530 --> 00:53:46,620
+En este caso, ¿vale?
+
+1226
+00:53:46,905 --> 00:53:53,320
+Lo que teníamos que hacer era sacar con un
+arroba for un listado de vehículos.
+
+1227
+00:53:54,180 --> 00:53:56,340
+Esto es vehicle of vehicles.
+
+1228
+00:53:58,810 --> 00:54:02,800
+Aquí hay que entrar por el vehicle.id.
+
+1229
+00:54:06,380 --> 00:54:08,800
+Vale, y lo que vais a sacar es...
+
+1230
+00:54:10,020 --> 00:54:12,920
+Tenéis que montar una card por cada
+vehículo.
+
+1231
+00:54:13,154 --> 00:54:14,720
+Pues esto era Ion Card.
+
+1232
+00:54:19,880 --> 00:54:20,880
+Vale.
+
+1233
+00:54:21,420 --> 00:54:22,420
+Y la card...
+
+1234
+00:54:25,780 --> 00:54:26,780
+Bueno.
+
+1235
+00:54:27,790 --> 00:54:30,820
+A ver, como visualmente...
+
+1236
+00:54:31,720 --> 00:54:35,269
+Os explico, como
+visualmente en las capturas
+
+1237
+00:54:35,270 --> 00:54:39,240
+no se ve, no se dice
+la transición, ¿vale?
+
+1238
+00:54:39,340 --> 00:54:42,292
+Daba igual que pusierais
+el contenedor del
+
+1239
+00:54:42,293 --> 00:54:45,180
+Swiper fuera de la
+card o dentro de la card.
+
+1240
+00:54:45,810 --> 00:54:47,080
+¿Cuál es el efecto visual?
+
+1241
+00:54:47,820 --> 00:54:52,840
+El efecto visual es que si yo estoy dentro
+de la card, el contenedor, cuando yo
+
+1242
+00:54:53,090 --> 00:54:56,260
+desplace, solo se desplazará el contenido
+de la card.
+
+1243
+00:54:56,660 --> 00:55:01,640
+Es decir, la información de dentro
+cambiará de esta a esta.
+
+1244
+00:55:02,190 --> 00:55:05,132
+Mientras que si el
+contenedor de Swiper está
+
+1245
+00:55:05,133 --> 00:55:07,680
+fuera, lo que se
+moverá será toda la card.
+
+1246
+00:55:08,240 --> 00:55:08,736
+¿Entendéis?
+
+1247
+00:55:08,760 --> 00:55:09,960
+Con el bordecito y todo.
+
+1248
+00:55:10,910 --> 00:55:14,200
+Vale, entonces lo que cambia es si muevo
+el bordecito entero, es decir,
+
+1249
+00:55:14,430 --> 00:55:18,000
+si muevo la card entera o muevo solo el
+contenido de manera interna.
+
+1250
+00:55:18,200 --> 00:55:18,696
+¿Vale?
+
+1251
+00:55:18,720 --> 00:55:19,720
+Yo lo hice...
+
+1252
+00:55:19,750 --> 00:55:22,780
+Como lo he hecho yo, sé que está hecho de
+manera interna.
+
+1253
+00:55:22,930 --> 00:55:26,440
+Pero que como en la captura solo está el
+resultado final, ¿vale?
+
+1254
+00:55:26,500 --> 00:55:29,780
+No os puse la transición, podríais haberlo
+resuelto de las dos maneras.
+
+1255
+00:55:30,120 --> 00:55:31,120
+¿Vale?
+
+1256
+00:55:31,220 --> 00:55:36,658
+Lo que estoy diciendo es
+que podía estar la card y
+
+1257
+00:55:36,659 --> 00:55:40,320
+el Swiper Container dentro
+o podría estar al revés.
+
+1258
+00:55:40,894 --> 00:55:45,780
+Que podría estar esto y dentro la card.
+
+1259
+00:55:46,080 --> 00:55:46,520
+¿Vale?
+
+1260
+00:55:46,540 --> 00:55:47,540
+Y no pasaría nada.
+
+1261
+00:55:49,700 --> 00:55:50,260
+¿Vale?
+
+1262
+00:55:50,261 --> 00:55:51,600
+En los dos casos estaba bien.
+
+1263
+00:55:53,390 --> 00:55:55,900
+Porque no había la imagen de transición.
+
+1264
+00:55:56,140 --> 00:55:56,200
+¿Vale?
+
+1265
+00:55:56,220 --> 00:55:59,560
+Pero yo la había resuelto con el Container
+dentro de la card.
+
+1266
+00:56:00,690 --> 00:56:04,400
+Vale, entonces el Swiper Container es el
+contenedor, ¿vale?
+
+1267
+00:56:04,460 --> 00:56:10,660
+Que va a permitirme tener diapositivas
+dentro que se desplacen lateralmente.
+
+1268
+00:56:11,240 --> 00:56:11,816
+¿Vale?
+
+1269
+00:56:11,840 --> 00:56:15,000
+Entonces cada diapositiva está dentro de
+un Swiper Slide.
+
+1270
+00:56:17,320 --> 00:56:17,956
+¿Vale?
+
+1271
+00:56:17,980 --> 00:56:19,880
+En este caso tenía dos diapositivas.
+
+1272
+00:56:21,960 --> 00:56:25,380
+La primera es la que tiene todo el
+contenido.
+
+1273
+00:56:25,980 --> 00:56:26,580
+¿Vale?
+
+1274
+00:56:26,581 --> 00:56:28,700
+La que me saca el título.
+
+1275
+00:56:29,280 --> 00:56:29,796
+¿Vale?
+
+1276
+00:56:29,820 --> 00:56:31,700
+Pues esto es un Ion Card Fever.
+
+1277
+00:56:31,701 --> 00:56:34,000
+Ahora Fever.
+
+1278
+00:56:34,001 --> 00:56:35,001
+Ahora Fever.
+
+1279
+00:56:35,400 --> 00:56:38,340
+Que tiene un Ion Card Title.
+
+1280
+00:56:39,795 --> 00:56:44,740
+Que tiene aquí el Vehicle.
+
+1281
+00:56:51,904 --> 00:56:55,080
+Tenemos luego abajo...
+
+1282
+00:57:04,930 --> 00:57:08,590
+Este no lo habíamos visto aún,
+así que me da igual si lo habéis puesto
+
+1283
+00:57:08,591 --> 00:57:11,670
+con fondo, habéis puesto un chip,
+habéis puesto lo que sea.
+
+1284
+00:57:12,240 --> 00:57:15,510
+Eso te voy a decir, que yo he puesto un
+badge.
+
+1285
+00:57:16,015 --> 00:57:19,770
+Si, porque es lo que te digo, que no lo...
+
+1286
+00:57:21,240 --> 00:57:24,890
+No lo habíamos visto aún, pero lo puse,
+no me di cuenta.
+
+1287
+00:57:28,370 --> 00:57:33,810
+Si lo vemos en la siguiente sesión o en la
+otra.
+
+1288
+00:57:34,850 --> 00:57:40,290
+Veamos, es un contenedor de información muy
+parecida al chip, con un fondo de fondo.
+
+1289
+00:57:40,970 --> 00:57:43,250
+Y aquí le poníais el modelo.
+
+1290
+00:57:44,300 --> 00:57:48,430
+Esto es el vehicle.model.
+
+1291
+00:57:48,580 --> 00:57:52,430
+Luego teníamos... El...
+
+1292
+00:57:53,550 --> 00:57:55,610
+El... El...
+
+1293
+00:57:56,505 --> 00:57:57,930
+Esto...
+
+1294
+00:57:58,030 --> 00:57:59,030
+¿Dónde está?
+
+1295
+00:58:01,930 --> 00:58:04,150
+El motor...
+
+1296
+00:58:05,110 --> 00:58:06,110
+Motor...
+
+1297
+00:58:06,150 --> 00:58:07,150
+Model...
+
+1298
+00:58:09,010 --> 00:58:10,370
+Motor... Aquí es el vehicle...
+
+1299
+00:58:11,020 --> 00:58:12,020
+Otro motor...
+
+1300
+00:58:12,090 --> 00:58:14,760
+Otro motor...
+
+1301
+00:58:14,960 --> 00:58:16,460
+Lo mismo, pero con...
+
+1302
+00:58:17,840 --> 00:58:19,600
+Con model... A ver, el...
+
+1303
+00:58:20,434 --> 00:58:21,434
+Model...
+
+1304
+00:58:21,540 --> 00:58:24,060
+El gear lo que pasa es que
+no lo... No lo puse al final.
+
+1305
+00:58:24,450 --> 00:58:25,720
+Aunque lo puse en el...
+
+1306
+00:58:28,520 --> 00:58:32,000
+Este... Lo puse... Lo puse... Lo ponía
+en el enunciado... Me da igual, vale.
+
+1307
+00:58:32,180 --> 00:58:35,280
+Ya, yo no lo puse por el...
+Para... Se le tiene la imagen.
+
+1308
+00:58:36,444 --> 00:58:39,000
+A ver... Me da igual que
+lo habíais puesto, que no.
+
+1309
+00:58:39,440 --> 00:58:42,240
+El... Al final lo importante es que
+pusierais la información y ya está.
+
+1310
+00:58:42,600 --> 00:58:43,096
+Vale.
+
+1311
+00:58:43,120 --> 00:58:43,220
+Vale.
+
+1312
+00:58:43,221 --> 00:58:46,580
+Os lo pongo por el... Porque me lo
+habéis dicho ahora por ponerlo y ya está.
+
+1313
+00:58:46,900 --> 00:58:47,456
+Exacto.
+
+1314
+00:58:47,480 --> 00:58:48,176
+Ya, porque lo mismo.
+
+1315
+00:58:48,200 --> 00:58:48,720
+Por eso.
+
+1316
+00:58:48,721 --> 00:58:49,840
+Bueno... Vale.
+
+1317
+00:58:49,980 --> 00:58:51,200
+Entonces... Eso era...
+
+1318
+00:58:51,350 --> 00:58:53,020
+Lo que es la tarjeta...
+
+1319
+00:58:53,720 --> 00:58:54,880
+Eh... Principal.
+
+1320
+00:58:55,440 --> 00:58:55,616
+Vale.
+
+1321
+00:58:55,640 --> 00:58:58,880
+La segunda tarjeta...
+Tenía que sacar... El precio...
+
+1322
+00:58:59,080 --> 00:59:00,420
+Centrado en color verde.
+
+1323
+00:59:01,320 --> 00:59:02,500
+Pues en la segunda tarjeta...
+
+1324
+00:59:02,800 --> 00:59:04,480
+El SuperSlide... Vale.
+
+1325
+00:59:04,770 --> 00:59:08,200
+Aquí podíais...
+Poner... Un H2...
+
+1326
+00:59:08,580 --> 00:59:10,720
+Para ponerlo
+verde... Ion Text...
+
+1327
+00:59:12,909 --> 00:59:13,909
+Color...
+
+1328
+00:59:14,980 --> 00:59:15,980
+Success...
+
+1329
+00:59:17,280 --> 00:59:18,176
+Vale.
+
+1330
+00:59:18,200 --> 00:59:19,200
+Y aquí le poníais...
+
+1331
+00:59:19,770 --> 00:59:20,800
+El Price.
+
+1332
+00:59:21,260 --> 00:59:22,260
+Esto es...
+
+1333
+00:59:23,359 --> 00:59:26,820
+El... Vehicle... Punto Price.
+
+1334
+00:59:27,714 --> 00:59:32,300
+Y además... Le pasabais... El Pipe
+Currency... Para el dinero... Eh... Si.
+
+1335
+00:59:34,470 --> 00:59:35,740
+En euros.
+
+1336
+00:59:38,650 --> 00:59:40,220
+Por defecto... ¿Cómo
+te lo pondrías?
+
+1337
+00:59:40,300 --> 00:59:41,300
+Si no pones...
+
+1338
+00:59:41,530 --> 00:59:43,680
+El Pipe Currency...
+Eh... Número.
+
+1339
+00:59:43,681 --> 00:59:44,681
+Número.
+
+1340
+00:59:47,720 --> 00:59:48,320
+Número.
+
+1341
+00:59:48,321 --> 00:59:48,776
+Vale.
+
+1342
+00:59:48,800 --> 00:59:52,940
+Eso además... Tiene que estar centrado...
+Pues entonces... Al H2... Le ponéis...
+
+1343
+00:59:52,990 --> 00:59:54,860
+Un Class... Text... Vale.
+
+1344
+00:59:57,180 --> 00:59:59,020
+Y yo creo que con eso...
+
+1345
+01:00:00,089 --> 01:00:01,056
+Vale.
+
+1346
+01:00:01,080 --> 01:00:02,320
+Ese Vehicle List...
+
+1347
+01:00:03,570 --> 01:00:06,780
+Me queda un momento... Y lo...
+Terminamos ya... Y os dejo ir al baño.
+
+1348
+01:00:07,960 --> 01:00:08,496
+Vale.
+
+1349
+01:00:08,520 --> 01:00:13,620
+Ese Vehicle List... Eh... Component...
+Como tal... Había que cargarlo...
+
+1350
+01:00:13,621 --> 01:00:15,620
+En las diferentes
+páginas... Vale.
+
+1351
+01:00:15,720 --> 01:00:17,900
+Es decir... En la
+página de Airplanes...
+
+1352
+01:00:18,150 --> 01:00:23,000
+Pues teníais que decirle... Que ahora...
+Airplanes... Aquí tiene... Un Class...
+
+1353
+01:00:23,910 --> 01:00:25,760
+Y un Padding...
+
+1354
+01:00:25,860 --> 01:00:30,160
+Abajo le ponéis... El
+App... Eh... No he puesto...
+
+1355
+01:00:31,620 --> 01:00:34,350
+Veis... A esto teníais
+que pasarle... El color...
+
+1356
+01:00:36,020 --> 01:00:36,716
+Vale.
+
+1357
+01:00:36,740 --> 01:00:38,180
+Pues este es... Secondary...
+
+1358
+01:00:40,100 --> 01:00:44,300
+Y luego le teníais que
+pasar el... El Type... Creo...
+
+1359
+01:00:44,550 --> 01:00:45,560
+El Type...
+
+1360
+01:00:49,930 --> 01:00:50,930
+Es...
+
+1361
+01:00:51,730 --> 01:00:52,730
+Airplanes...
+
+1362
+01:00:56,960 --> 01:00:57,676
+Vale.
+
+1363
+01:00:57,700 --> 01:00:58,700
+Eso lo copiabais...
+
+1364
+01:00:59,020 --> 01:00:59,966
+Y lo metíais...
+
+1365
+01:00:59,990 --> 01:01:03,360
+En las otras páginas... Vale.
+
+1366
+01:01:03,520 --> 01:01:06,680
+De tal manera que esto
+era... A ver... Tira ahí...
+
+1367
+01:01:09,040 --> 01:01:10,040
+Bows...
+
+1368
+01:01:12,280 --> 01:01:14,020
+Aquí le poníais el Class...
+
+1369
+01:01:15,169 --> 01:01:16,169
+Vale.
+
+1370
+01:01:17,020 --> 01:01:18,160
+Sí... Es que así...
+
+1371
+01:01:18,410 --> 01:01:21,420
+Ya puede pasar por
+que... Y aquí... Le metíais...
+
+1372
+01:01:22,400 --> 01:01:24,800
+Primary... Por ahí... Sí...
+
+1373
+01:01:24,950 --> 01:01:25,950
+Se va mejor...
+
+1374
+01:01:26,040 --> 01:01:30,880
+Más estético... Sí... Más estético... Sí...
+Más... Más... Mucho más limpio... Sí...
+
+1375
+01:01:30,881 --> 01:01:35,120
+Vale... Podíais... Eh... Volvemos
+ahora mismo... Esto es... Si lo veíais...
+
+1376
+01:01:36,569 --> 01:01:38,960
+Pegabais y pegabais...
+El mismo código...
+
+1377
+01:01:39,340 --> 01:01:43,040
+Una y otra vez... Esto lo hacíais...
+En la página de Airplanes TS...
+
+1378
+01:01:43,760 --> 01:01:44,920
+WordPage TS...
+
+1379
+01:01:45,280 --> 01:01:46,720
+CardsPage TS... ¿Vale?
+
+1380
+01:01:49,880 --> 01:01:50,880
+Eh...
+
+1381
+01:01:51,700 --> 01:01:52,720
+La aplicación...
+
+1382
+01:01:54,420 --> 01:01:57,940
+Iconos... Vale... Me falta
+el icono Home... Sí... Sí...
+
+1383
+01:01:58,190 --> 01:02:00,720
+El Home... En el...
+
+1384
+01:02:01,980 --> 01:02:03,960
+En el... En el... Header...
+
+1385
+01:02:04,240 --> 01:02:05,240
+Sí...
+
+1386
+01:02:05,780 --> 01:02:06,780
+Sí...
+
+1387
+01:02:08,490 --> 01:02:10,840
+En el Home...
+
+1388
+01:02:11,190 --> 01:02:16,660
+El Home... Sí...
+
+1389
+01:02:17,210 --> 01:02:24,440
+Por ahí...
+
+1390
+01:02:30,660 --> 01:02:37,140
+Hay que importarlo... Ahora sí.
+
+1391
+01:02:37,384 --> 01:02:40,360
+Vale, y nos ha fallado porque...
+
+1392
+01:02:42,330 --> 01:02:44,520
+API Vehículos Mercen, a ver, vamos a ver
+la web.
+
+1393
+01:02:52,560 --> 01:02:57,760
+A ver, hemos puesto HDP, API Vehículos
+Mercen, API Boats, Get All.
+
+1394
+01:02:59,370 --> 01:03:00,840
+Ahora sí, la URL está bien.
+
+1395
+01:03:01,160 --> 01:03:02,840
+Cuidado, pero puede ser porque está vacío.
+
+1396
+01:03:03,115 --> 01:03:06,500
+O sea, porque dentro del... de Boats no
+habías hecho nada.
+
+1397
+01:03:08,674 --> 01:03:11,180
+No, puede ser que lo hayas escrito mal por
+algo.
+
+1398
+01:03:13,280 --> 01:03:13,916
+¿Ves?
+
+1399
+01:03:13,940 --> 01:03:15,120
+No, vale, sí.
+
+1400
+01:03:16,785 --> 01:03:18,905
+Ah, vale, sí, porque he puesto Boats en
+vez de barcos.
+
+1401
+01:03:18,940 --> 01:03:20,300
+Ah, barcos, barcos, barcos.
+
+1402
+01:03:21,180 --> 01:03:23,440
+He puesto aquí en las que mandan.
+
+1403
+01:03:24,320 --> 01:03:26,640
+Vale, esto, cuando aquí es barcos.
+
+1404
+01:03:28,630 --> 01:03:29,780
+Aquí es coches.
+
+1405
+01:03:31,540 --> 01:03:33,200
+Y aquí es aviones.
+
+1406
+01:03:46,590 --> 01:03:51,660
+Vale, ahí tendríamos los barcos.
+
+1407
+01:03:57,700 --> 01:04:01,960
+Vale, que además, si desplazamos,
+tendríamos el... E-press.
+
+1408
+01:04:02,880 --> 01:04:03,646
+¿Vale?
+
+1409
+01:04:03,670 --> 01:04:04,720
+Tendríamos lo mismo.
+
+1410
+01:04:06,020 --> 01:04:06,561
+Ah, vale.
+
+1411
+01:04:06,585 --> 01:04:09,880
+Y en el home no hemos puesto... Falta...
+Falta... Falta... Falta... Falta...
+
+1412
+01:04:11,060 --> 01:04:12,200
+Falta... Falta...
+
+1413
+01:04:38,999 --> 01:04:41,100
+Falta... Justo
+para darle algo...
+
+1414
+01:04:41,101 --> 01:04:44,660
+Porque en vez de al botón, si lo pones en
+el icono, hay un pixel justo solo para...
+
+1415
+01:04:45,500 --> 01:04:46,500
+Ah, vale.
+
+1416
+01:04:47,160 --> 01:04:48,076
+Para... Que funcione.
+
+1417
+01:04:48,100 --> 01:04:49,436
+Vale, eso es lo que me ha pasado a mí.
+
+1418
+01:04:49,460 --> 01:04:52,780
+Vale, entonces, aquí tendríamos coches.
+
+1419
+01:04:54,240 --> 01:04:55,720
+Aquí tendríamos... Aviones.
+
+1420
+01:04:56,200 --> 01:04:56,976
+Yo supongo que...
+
+1421
+01:04:57,000 --> 01:04:59,260
+Vale, con el... El precio.
+
+1422
+01:05:00,240 --> 01:05:01,500
+Y aquí tendríamos los barcos.
+
+1423
+01:05:02,140 --> 01:05:02,936
+¿Cuál es el precio?
+
+1424
+01:05:02,960 --> 01:05:03,960
+Vale, yo como.
+
+1425
+01:05:05,230 --> 01:05:06,760
+Vale, dudas con el ejercicio.
+
+1426
+01:05:07,180 --> 01:05:08,180
+No, no.
+
+1427
+01:05:08,340 --> 01:05:08,956
+¿No?
+
+1428
+01:05:08,980 --> 01:05:09,976
+¿Todo claro?
+
+1429
+01:05:10,000 --> 01:05:11,000
+Sí.
+
+1430
+01:05:11,060 --> 01:05:12,060
+Vale, a ver.
+
+1431
+01:05:12,220 --> 01:05:13,220
+Eh, repito.
+
+1432
+01:05:13,280 --> 01:05:19,000
+La parte dinámica... Eh... No era tan
+necesaria como... Que la supierais ver.
+
+1433
+01:05:19,160 --> 01:05:20,240
+Es bueno que...
+
+1434
+01:05:20,690 --> 01:05:23,186
+Pues veáis la corrección con la parte
+dinámica para que sepáis...
+
+1435
+01:05:23,210 --> 01:05:24,260
+Como se hace de así.
+
+1436
+01:05:25,660 --> 01:05:26,786
+Vale, pero bueno, podéis hacerlo estático.
+
+1437
+01:05:26,810 --> 01:05:29,300
+Lo que sí que teníais... Es
+que hay haberlo resuelto.
+
+1438
+01:05:29,799 --> 01:05:32,040
+Al final era la teoría que habíamos visto
+en clase.
+
+1439
+01:05:32,940 --> 01:05:34,500
+Es decir, habíamos visto las...
+
+1440
+01:05:35,020 --> 01:05:37,880
+Eh... El Swiper para
+hacer la parte de deslizar.
+
+1441
+01:05:39,280 --> 01:05:40,920
+Habíamos visto...
+Eh... La tarjeta.
+
+1442
+01:05:40,980 --> 01:05:42,300
+Por lo menos con las tarjetas.
+
+1443
+01:05:42,800 --> 01:05:44,100
+Todos deberíais haberlo sacado.
+
+1444
+01:05:44,380 --> 01:05:45,016
+Sí, sí.
+
+1445
+01:05:45,040 --> 01:05:47,700
+Eh... Y luego el Swiper es
+lo que a veces cuesta más.
+
+1446
+01:05:47,879 --> 01:05:49,100
+Por el... Los pasos.
+
+1447
+01:05:49,200 --> 01:05:50,200
+Por seguir los pasos.
+
+1448
+01:05:50,300 --> 01:05:51,680
+Y por ver dónde meto el container.
+
+1449
+01:05:51,681 --> 01:05:53,040
+Y dónde meto el slide.
+
+1450
+01:05:53,840 --> 01:05:54,096
+¿Vale?
+
+1451
+01:05:54,120 --> 01:05:55,420
+Pero eh... Pues eso.
+
+1452
+01:05:55,640 --> 01:05:56,680
+Es un poco más...
+
+1453
+01:05:57,620 --> 01:05:58,256
+Pero...
+
+1454
+01:05:58,280 --> 01:05:59,440
+Esta parte del FAB.
+
+1455
+01:06:00,630 --> 01:06:01,940
+Y sacar el listado.
+
+1456
+01:06:02,640 --> 01:06:03,136
+¿Vale?
+
+1457
+01:06:03,160 --> 01:06:04,420
+Eh... Con las tarjetas.
+
+1458
+01:06:04,460 --> 01:06:06,140
+Eso sí que deberíais haberlo sacado todos.
+
+1459
+01:06:06,840 --> 01:06:07,400
+Vale.
+
+1460
+01:06:07,401 --> 01:06:08,401
+Repito.
+
+1461
+01:06:09,020 --> 01:06:10,600
+Todo lo que no hagáis.
+
+1462
+01:06:10,740 --> 01:06:11,136
+¿Vale?
+
+1463
+01:06:11,160 --> 01:06:12,520
+Todo ejercicio que no hagáis.
+
+1464
+01:06:12,640 --> 01:06:14,420
+Todo ejercicio que os dejéis sin hacer.
+
+1465
+01:06:14,600 --> 01:06:15,330
+O bloquearos.
+
+1466
+01:06:15,354 --> 01:06:16,216
+O lo que sea.
+
+1467
+01:06:16,240 --> 01:06:17,016
+Que no...
+
+1468
+01:06:17,040 --> 01:06:18,320
+Por lo menos intentéis terminar.
+
+1469
+01:06:19,020 --> 01:06:20,940
+Es aprendizaje que no estáis cogiendo.
+
+1470
+01:06:22,200 --> 01:06:22,756
+Eh...
+
+1471
+01:06:22,780 --> 01:06:24,260
+Pasitos que os estáis quedando atrás.
+
+1472
+01:06:24,400 --> 01:06:26,900
+Y entonces... Esa montaña se va
+haciendo cada vez más grande.
+
+1473
+01:06:27,770 --> 01:06:30,440
+Estos ejercicios primeros
+son... Eh... Fáciles.
+
+1474
+01:06:30,469 --> 01:06:32,140
+Pero se van complicando cada vez.
+
+1475
+01:06:32,360 --> 01:06:32,636
+¿Por qué?
+
+1476
+01:06:32,660 --> 01:06:34,640
+Porque en cada
+ejercicio... Eh... Tenemos...
+
+1477
+01:06:34,940 --> 01:06:35,980
+Lo que tiene el ejercicio.
+
+1478
+01:06:36,060 --> 01:06:37,660
+Que es en lo que se basa principalmente.
+
+1479
+01:06:37,760 --> 01:06:40,100
+Pero va incorporando cosas que hemos visto
+en los previos.
+
+1480
+01:06:41,180 --> 01:06:41,596
+¿Vale?
+
+1481
+01:06:41,620 --> 01:06:42,056
+Es decir.
+
+1482
+01:06:42,080 --> 01:06:43,780
+Ya los botones los damos por sabidos.
+
+1483
+01:06:44,140 --> 01:06:45,140
+Ya los menús.
+
+1484
+01:06:45,340 --> 01:06:46,820
+Las cabeceras comunes.
+
+1485
+01:06:46,920 --> 01:06:47,156
+¿Vale?
+
+1486
+01:06:47,180 --> 01:06:47,546
+Todo.
+
+1487
+01:06:47,570 --> 01:06:48,960
+Eso ya lo damos por sabido.
+
+1488
+01:06:49,180 --> 01:06:50,500
+E incorporamos cosas nuevas.
+
+1489
+01:06:50,680 --> 01:06:51,156
+Con lo cual.
+
+1490
+01:06:51,180 --> 01:06:51,636
+Lo que os digo.
+
+1491
+01:06:51,660 --> 01:06:52,616
+La montaña.
+
+1492
+01:06:52,640 --> 01:06:54,320
+La bola se va haciendo cada vez más
+grande.
+
+1493
+01:06:55,120 --> 01:06:55,456
+¿Vale?
+
+1494
+01:06:55,480 --> 01:06:55,700
+Entonces.
+
+1495
+01:06:55,701 --> 01:06:58,940
+El que no haya sido capaz de hacer este
+ejercicio esta semana.
+
+1496
+01:06:58,941 --> 01:07:00,660
+Pues ahora aprovechando el puente.
+
+1497
+01:07:01,560 --> 01:07:02,516
+Eh... Cogeros.
+
+1498
+01:07:02,540 --> 01:07:03,540
+Guardaros un tiempo.
+
+1499
+01:07:03,580 --> 01:07:04,556
+Un ratito.
+
+1500
+01:07:04,580 --> 01:07:05,960
+Para... Eh... Repasarlo.
+
+1501
+01:07:06,100 --> 01:07:07,100
+Para intentar hacerlo.
+
+1502
+01:07:08,360 --> 01:07:09,360
+Para...
+
+1503
+01:07:09,860 --> 01:07:10,860
+Para... Pues eso.
+
+1504
+01:07:11,230 --> 01:07:12,230
+Por lo menos.
+
+1505
+01:07:12,860 --> 01:07:13,676
+Incluso.
+
+1506
+01:07:13,700 --> 01:07:14,616
+Aunque digáis.
+
+1507
+01:07:14,640 --> 01:07:15,980
+Es que ya he visto la corrección.
+
+1508
+01:07:16,060 --> 01:07:16,696
+Lo tengo muy claro.
+
+1509
+01:07:16,720 --> 01:07:16,956
+Vale.
+
+1510
+01:07:16,980 --> 01:07:17,980
+Pues intenta hacerlo tú.
+
+1511
+01:07:18,080 --> 01:07:18,825
+Intenta hacerlo tú.
+
+1512
+01:07:18,849 --> 01:07:19,656
+Sin el vídeo al lado.
+
+1513
+01:07:19,680 --> 01:07:20,056
+El vídeo.
+
+1514
+01:07:20,080 --> 01:07:21,036
+Cógetelo.
+
+1515
+01:07:21,060 --> 01:07:23,380
+Ve si te quedas atrancado haciéndolo.
+
+1516
+01:07:23,720 --> 01:07:24,156
+¿Vale?
+
+1517
+01:07:24,180 --> 01:07:27,180
+Pero intentar hacerlo de cero.
+
+1518
+01:07:27,181 --> 01:07:27,620
+Entonces.
+
+1519
+01:07:27,621 --> 01:07:30,360
+Y entonces eso os ayudará a pues coger
+mecanismos.
+
+1520
+01:07:30,980 --> 01:07:32,440
+Igual que las conexiones a API.
+
+1521
+01:07:32,600 --> 01:07:33,300
+Pues lo mismo.
+
+1522
+01:07:33,324 --> 01:07:36,260
+Eh... Empezar a trabajar
+ya en conectar con APIs.
+
+1523
+01:07:36,775 --> 01:07:40,200
+Porque vamos a conectar con APIs de aquí
+hasta febrero.
+
+1524
+01:07:40,250 --> 01:07:40,860
+Hecho.
+
+1525
+01:07:40,861 --> 01:07:41,861
+Hecho en febrero.
+
+1526
+01:07:42,040 --> 01:07:44,060
+Vosotros vais a conectar a vuestra propia
+API.
+
+1527
+01:07:44,205 --> 01:07:45,820
+Vosotros vais a desarrollar vuestra API.
+
+1528
+01:07:46,250 --> 01:07:48,650
+Y esa API es a la que tendréis que
+conectar desde el trabajo.
+
+1529
+01:07:49,480 --> 01:07:49,896
+Entonces.
+
+1530
+01:07:49,920 --> 01:07:50,920
+Vosotros vais a entrar.
+
+1531
+01:07:51,420 --> 01:07:51,816
+Bien.
+
+1532
+01:07:51,840 --> 01:07:51,985
+No.
+
+1533
+01:07:52,009 --> 01:07:54,489
+Que entonces la tarea directamente te la
+entrego por la ciudad.
+
+1534
+01:07:54,540 --> 01:07:54,856
+Es decir.
+
+1535
+01:07:54,880 --> 01:07:55,900
+Lo que tengo ahora lo...
+
+1536
+01:07:56,300 --> 01:07:57,360
+Lo vuelvo a revisar.
+
+1537
+01:07:57,520 --> 01:07:58,520
+Entrega lo que tengas.
+
+1538
+01:07:58,720 --> 01:07:59,016
+Claro.
+
+1539
+01:07:59,040 --> 01:07:59,536
+Yo te lo leo.
+
+1540
+01:07:59,560 --> 01:08:01,056
+Lo que tengas por lo que no has hecho y
+funciona.
+
+1541
+01:08:01,080 --> 01:08:01,576
+Claro.
+
+1542
+01:08:01,600 --> 01:08:03,156
+Yo lo que quiero ver es que habéis hecho.
+
+1543
+01:08:03,180 --> 01:08:03,500
+Aporte.
+
+1544
+01:08:03,501 --> 01:08:04,176
+Ya.
+
+1545
+01:08:04,200 --> 01:08:04,956
+Si tengo que ver.
+
+1546
+01:08:04,980 --> 01:08:09,480
+Pues ya veré cada uno el... El... Yo sé
+más o menos ya lo que hace cada uno.
+
+1547
+01:08:09,660 --> 01:08:10,880
+Entonces voy viendo...
+
+1548
+01:08:11,700 --> 01:08:12,406
+Eh... Pues...
+
+1549
+01:08:12,430 --> 01:08:13,540
+De los que entregáis.
+
+1550
+01:08:13,720 --> 01:08:14,506
+Pues a ver.
+
+1551
+01:08:14,530 --> 01:08:15,540
+Si tengo alguna duda.
+
+1552
+01:08:15,660 --> 01:08:16,295
+Pues entonces ya pido.
+
+1553
+01:08:16,319 --> 01:08:16,906
+A ver.
+
+1554
+01:08:16,930 --> 01:08:18,279
+Lo terminó completo.
+
+1555
+01:08:18,560 --> 01:08:18,856
+No.
+
+1556
+01:08:18,880 --> 01:08:19,880
+Hasta donde llegó.
+
+1557
+01:08:20,359 --> 01:08:20,656
+Vale.
+
+1558
+01:08:20,680 --> 01:08:22,140
+Es un poco para ver el trabajo.
+
+1559
+01:08:22,380 --> 01:08:23,460
+Por donde va... Vale.
+
+1560
+01:08:23,680 --> 01:08:26,020
+Entonces te envío con los defectos que
+tenga.
+
+1561
+01:08:26,370 --> 01:08:28,439
+Y mientras repaso por mi cuenta de forma
+paralelada.
+
+1562
+01:08:29,880 --> 01:08:30,880
+Si.
+
+1563
+01:08:33,600 --> 01:08:34,600
+No.
+
+1564
+01:08:35,740 --> 01:08:36,196
+El proyecto.
+
+1565
+01:08:36,220 --> 01:08:37,240
+El proyecto.
+
+1566
+01:08:37,439 --> 01:08:39,580
+Lo comprimís sin...
+Quita la carpeta.
+
+1567
+01:08:39,840 --> 01:08:40,636
+No de módulo.
+
+1568
+01:08:40,660 --> 01:08:40,936
+Si.
+
+1569
+01:08:40,960 --> 01:08:41,396
+Mira.
+
+1570
+01:08:41,420 --> 01:08:42,420
+Venís al proyecto.
+
+1571
+01:08:43,180 --> 01:08:44,180
+Botón derecho.
+
+1572
+01:08:45,260 --> 01:08:46,260
+Open.
+
+1573
+01:08:46,560 --> 01:08:47,560
+Inexplorer.
+
+1574
+01:08:48,810 --> 01:08:50,700
+Eso te abre la carpeta del proyecto.
+
+1575
+01:08:50,859 --> 01:08:51,859
+Vale.
+
+1576
+01:08:52,090 --> 01:08:53,450
+Dentro de la carpeta del proyecto.
+
+1577
+01:08:54,020 --> 01:08:55,020
+Tú coges.
+
+1578
+01:08:55,319 --> 01:08:56,036
+Haces.
+
+1579
+01:08:56,060 --> 01:08:57,060
+Control A.
+
+1580
+01:08:57,260 --> 01:08:57,536
+Bueno.
+
+1581
+01:08:57,560 --> 01:08:58,560
+Control E.
+
+1582
+01:08:59,679 --> 01:09:01,859
+Eh... Eso te selecciona
+todas las carpetas.
+
+1583
+01:09:02,610 --> 01:09:03,620
+De ahí con el control.
+
+1584
+01:09:04,240 --> 01:09:05,116
+Vale.
+
+1585
+01:09:05,140 --> 01:09:06,140
+Coges el nodo de módulos.
+
+1586
+01:09:06,350 --> 01:09:07,520
+Y lo te seleccionas.
+
+1587
+01:09:08,640 --> 01:09:09,859
+Si coges el punto angular.
+
+1588
+01:09:10,140 --> 01:09:11,600
+Lo seleccionas también por si acaso.
+
+1589
+01:09:12,479 --> 01:09:12,716
+Vale.
+
+1590
+01:09:12,740 --> 01:09:14,180
+Que es la caché de angular.
+
+1591
+01:09:14,920 --> 01:09:15,920
+El que.
+
+1592
+01:09:16,370 --> 01:09:18,080
+Porque son carpetas que.
+
+1593
+01:09:18,300 --> 01:09:19,616
+Igual que yo podría quitar también.
+
+1594
+01:09:19,640 --> 01:09:20,640
+El Visual Studio Code.
+
+1595
+01:09:20,760 --> 01:09:21,760
+Esto no me hace falta.
+
+1596
+01:09:21,960 --> 01:09:22,960
+Son carpetas.
+
+1597
+01:09:23,300 --> 01:09:24,300
+Eh... Que mira.
+
+1598
+01:09:24,720 --> 01:09:25,979
+La... El nodo de módulos.
+
+1599
+01:09:26,210 --> 01:09:29,880
+Son todos los módulos que mete el...
+El NPM para que funcione el proyecto.
+
+1600
+01:09:30,520 --> 01:09:31,415
+Que pasa.
+
+1601
+01:09:31,439 --> 01:09:32,436
+Que eso.
+
+1602
+01:09:32,460 --> 01:09:33,196
+Está integrado.
+
+1603
+01:09:33,220 --> 01:09:34,359
+Dentro del Package.json.
+
+1604
+01:09:34,460 --> 01:09:35,540
+En el objeto dependencies.
+
+1605
+01:09:36,340 --> 01:09:36,716
+Entonces.
+
+1606
+01:09:36,740 --> 01:09:37,646
+Cuando yo.
+
+1607
+01:09:37,670 --> 01:09:38,516
+Cargo el proyecto.
+
+1608
+01:09:38,540 --> 01:09:39,540
+Sin el nodo de módulos.
+
+1609
+01:09:39,740 --> 01:09:40,616
+Eh... Lo que tengo que hacer.
+
+1610
+01:09:40,640 --> 01:09:41,720
+Es ejecutar en la terminal.
+
+1611
+01:09:41,800 --> 01:09:42,800
+Un NPM install.
+
+1612
+01:09:43,500 --> 01:09:43,720
+Entonces.
+
+1613
+01:09:43,721 --> 01:09:44,380
+Automáticamente.
+
+1614
+01:09:44,381 --> 01:09:45,236
+El mira.
+
+1615
+01:09:45,260 --> 01:09:45,896
+Todas las dependencias.
+
+1616
+01:09:45,920 --> 01:09:46,920
+Y las descarga.
+
+1617
+01:09:47,500 --> 01:09:48,406
+Que pasa.
+
+1618
+01:09:48,430 --> 01:09:49,859
+Que la diferencia está.
+
+1619
+01:09:50,240 --> 01:09:50,636
+En.
+
+1620
+01:09:50,660 --> 01:09:51,596
+Que si yo.
+
+1621
+01:09:51,620 --> 01:09:52,276
+Esto.
+
+1622
+01:09:52,300 --> 01:09:53,340
+Lo comprimo.
+
+1623
+01:09:53,479 --> 01:09:54,616
+Que es lo que tenéis que hacer.
+
+1624
+01:09:54,640 --> 01:09:55,640
+Es.
+
+1625
+01:09:56,720 --> 01:09:58,120
+Eh... Enviar.
+
+1626
+01:09:58,280 --> 01:09:58,480
+Enviar.
+
+1627
+01:09:58,481 --> 01:09:59,481
+Enviar.
+
+1628
+01:09:59,920 --> 01:10:00,536
+Vale.
+
+1629
+01:10:00,560 --> 01:10:01,560
+Carpeta comprimida.
+
+1630
+01:10:01,900 --> 01:10:02,900
+Vale.
+
+1631
+01:10:03,500 --> 01:10:04,560
+Eh... Proyecto.
+
+1632
+01:10:06,135 --> 01:10:06,936
+Vale.
+
+1633
+01:10:06,960 --> 01:10:07,756
+La diferencia está.
+
+1634
+01:10:07,780 --> 01:10:08,116
+En que.
+
+1635
+01:10:08,140 --> 01:10:08,816
+Este proyecto.
+
+1636
+01:10:08,840 --> 01:10:09,200
+Ocupa.
+
+1637
+01:10:09,220 --> 01:10:10,220
+100k.
+
+1638
+01:10:10,520 --> 01:10:10,920
+Vale.
+
+1639
+01:10:10,921 --> 01:10:13,100
+Si añadimos el nodo de módulos.
+
+1640
+01:10:14,360 --> 01:10:15,360
+Mira lo que pasa.
+
+1641
+01:10:23,500 --> 01:10:23,996
+Vale.
+
+1642
+01:10:24,020 --> 01:10:25,220
+Sube a 300 megas.
+
+1643
+01:10:25,710 --> 01:10:26,720
+Y eso no es lo peor.
+
+1644
+01:10:26,860 --> 01:10:27,216
+Lo peor.
+
+1645
+01:10:27,240 --> 01:10:28,100
+Los 300 megas.
+
+1646
+01:10:28,120 --> 01:10:29,220
+Podrían ser asumibles.
+
+1647
+01:10:29,850 --> 01:10:31,010
+El problema viene aquí abajo.
+
+1648
+01:10:31,644 --> 01:10:32,660
+Eh... ¿Dónde están?
+
+1649
+01:10:32,740 --> 01:10:33,740
+Aquí.
+
+1650
+01:10:35,325 --> 01:10:36,360
+34.000 archivos.
+
+1651
+01:10:37,000 --> 01:10:37,316
+Vale.
+
+1652
+01:10:37,340 --> 01:10:37,776
+Entonces.
+
+1653
+01:10:37,800 --> 01:10:38,800
+Solo comprimir.
+
+1654
+01:10:39,000 --> 01:10:39,716
+Y descomprimir.
+
+1655
+01:10:39,740 --> 01:10:40,800
+34.000 archivos.
+
+1656
+01:10:40,940 --> 01:10:42,000
+Supone que a vosotros.
+
+1657
+01:10:42,110 --> 01:10:43,520
+Va a estar entre 5 y 10 minutos.
+
+1658
+01:10:43,639 --> 01:10:44,639
+Comprimiendo.
+
+1659
+01:10:44,920 --> 01:10:46,460
+Y yo voy a estar entre 5 y 10 minutos.
+
+1660
+01:10:46,880 --> 01:10:47,796
+Descomprimiendo.
+
+1661
+01:10:47,820 --> 01:10:48,300
+Entonces.
+
+1662
+01:10:48,315 --> 01:10:49,256
+Si juntas eso.
+
+1663
+01:10:49,280 --> 01:10:50,280
+Por 100 alumnos.
+
+1664
+01:10:51,020 --> 01:10:52,020
+Eh... Son.
+
+1665
+01:10:52,110 --> 01:10:53,320
+Muchos minutos de mi vida.
+
+1666
+01:10:53,380 --> 01:10:54,380
+Tirados a la basura.
+
+1667
+01:10:55,240 --> 01:10:56,056
+Entonces.
+
+1668
+01:10:56,080 --> 01:10:56,836
+Eh... Eso.
+
+1669
+01:10:56,860 --> 01:10:57,806
+Comparado con.
+
+1670
+01:10:57,830 --> 01:10:59,020
+Ejecutar el npm install.
+
+1671
+01:10:59,260 --> 01:10:59,796
+Que a lo mejor.
+
+1672
+01:10:59,820 --> 01:11:01,040
+En 10 segundos.
+
+1673
+01:11:01,140 --> 01:11:02,496
+Me han descargado todos los paquetes.
+
+1674
+01:11:02,520 --> 01:11:02,756
+Pues.
+
+1675
+01:11:02,780 --> 01:11:03,240
+Es.
+
+1676
+01:11:03,241 --> 01:11:04,241
+Mucho más rápido.
+
+1677
+01:11:04,720 --> 01:11:05,720
+Entonces por eso.
+
+1678
+01:11:05,870 --> 01:11:10,020
+Por eso el... Eh... Y punto
+angular es una carpeta de caché.
+
+1679
+01:11:10,980 --> 01:11:13,060
+En este momento ocupa solo 10 megas.
+
+1680
+01:11:13,120 --> 01:11:14,600
+Porque es un proyecto muy sencillito.
+
+1681
+01:11:15,060 --> 01:11:15,296
+Vale.
+
+1682
+01:11:15,320 --> 01:11:17,340
+Pero conforme vas desarrollando el
+proyecto.
+
+1683
+01:11:17,560 --> 01:11:18,600
+Se va haciendo más grande.
+
+1684
+01:11:19,340 --> 01:11:21,610
+Y puede llegar a ocupar gigas enteros.
+
+1685
+01:11:22,720 --> 01:11:22,941
+Entonces.
+
+1686
+01:11:22,965 --> 01:11:24,920
+Esa carpeta de punto angular también.
+
+1687
+01:11:25,420 --> 01:11:26,420
+Eh... Se quita.
+
+1688
+01:11:26,700 --> 01:11:28,300
+Entonces por eso se quitan las carpetas.
+
+1689
+01:11:28,510 --> 01:11:30,060
+La de punto visual studio code.
+
+1690
+01:11:30,220 --> 01:11:31,220
+Que es el...
+
+1691
+01:11:32,040 --> 01:11:34,390
+Es del propio visual studio code.
+
+1692
+01:11:34,970 --> 01:11:36,050
+El... Eh...
+
+1693
+01:11:36,860 --> 01:11:37,930
+Cache que tiene por ahí.
+
+1694
+01:11:38,110 --> 01:11:39,110
+No ocupa casi nada.
+
+1695
+01:11:39,490 --> 01:11:40,456
+Y menos.
+
+1696
+01:11:40,480 --> 01:11:41,606
+Si no utilizas visual studio code.
+
+1697
+01:11:41,630 --> 01:11:42,566
+Es donde mete los plugins.
+
+1698
+01:11:42,590 --> 01:11:43,590
+Donde mete todo.
+
+1699
+01:11:44,370 --> 01:11:45,016
+Exacto.
+
+1700
+01:11:45,040 --> 01:11:46,710
+Y el punto idea es lo mismo.
+
+1701
+01:11:46,910 --> 01:11:49,570
+Pero para... Para la
+parte de intelijota.
+
+1702
+01:11:50,470 --> 01:11:51,470
+Vale.
+
+1703
+01:11:51,530 --> 01:11:52,086
+Entonces.
+
+1704
+01:11:52,110 --> 01:11:52,966
+Lo mismo.
+
+1705
+01:11:52,990 --> 01:11:53,726
+No pasa nada.
+
+1706
+01:11:53,750 --> 01:11:55,190
+Porque cuando tu abres el proyecto.
+
+1707
+01:11:55,370 --> 01:11:56,710
+En el... En el...
+
+1708
+01:11:57,710 --> 01:11:58,286
+WebStorm.
+
+1709
+01:11:58,310 --> 01:11:58,506
+Vale.
+
+1710
+01:11:58,530 --> 01:12:00,450
+Ya automáticamente te generará esa carpeta
+idea.
+
+1711
+01:12:00,800 --> 01:12:02,160
+Y si lo abres en el visual studio.
+
+1712
+01:12:02,300 --> 01:12:03,900
+Te generará la carpeta de visual studio.
+
+1713
+01:12:04,410 --> 01:12:05,770
+Entonces todo eso es prescindible.
+
+1714
+01:12:05,900 --> 01:12:07,670
+Si quieres alguna vez.
+
+1715
+01:12:07,930 --> 01:12:09,210
+Ver todo lo que es prescindible.
+
+1716
+01:12:09,310 --> 01:12:09,466
+Vale.
+
+1717
+01:12:09,490 --> 01:12:10,206
+Hay un fichero.
+
+1718
+01:12:10,230 --> 01:12:11,230
+Que es el gitignore.
+
+1719
+01:12:11,990 --> 01:12:14,050
+Que es lo mismo que cuando subes a github.
+
+1720
+01:12:14,680 --> 01:12:16,850
+Lo que github le dice a...
+
+1721
+01:12:17,050 --> 01:12:18,910
+Lo que el proyecto le dice a github.
+
+1722
+01:12:19,420 --> 01:12:20,950
+Que es prescindible.
+
+1723
+01:12:21,390 --> 01:12:21,626
+Vale.
+
+1724
+01:12:21,650 --> 01:12:22,910
+A la hora de subir el proyecto.
+
+1725
+01:12:23,130 --> 01:12:23,726
+Y ahí dentro.
+
+1726
+01:12:23,750 --> 01:12:24,331
+Si te fijas.
+
+1727
+01:12:24,355 --> 01:12:26,035
+Están esas carpetas que estábamos
+hablando.
+
+1728
+01:12:27,430 --> 01:12:28,590
+Estas son las de compilación.
+
+1729
+01:12:29,430 --> 01:12:29,650
+Vale.
+
+1730
+01:12:29,651 --> 01:12:33,990
+Las de... El ww es cuando creas
+la carpeta compiada del proyecto.
+
+1731
+01:12:34,350 --> 01:12:34,506
+Vale.
+
+1732
+01:12:34,530 --> 01:12:35,730
+La versión web del proyecto.
+
+1733
+01:12:36,195 --> 01:12:40,150
+Platforms es cuando ya hagas la
+compilación para android o para xcode.
+
+1734
+01:12:41,635 --> 01:12:42,760
+Plugins que tengas.
+
+1735
+01:12:43,370 --> 01:12:44,186
+Lo que sea.
+
+1736
+01:12:44,210 --> 01:12:48,190
+El bist es la carpeta también de la
+compilación final.
+
+1737
+01:12:48,690 --> 01:12:49,690
+Carpeta temporal.
+
+1738
+01:12:50,305 --> 01:12:52,030
+¿Son dos carpetas que están ya creadas?
+
+1739
+01:12:52,250 --> 01:12:52,946
+No.
+
+1740
+01:12:52,970 --> 01:12:55,130
+Que se pueden crear
+a lo largo... Es decir.
+
+1741
+01:12:55,325 --> 01:12:57,370
+Si yo ejecuto el comando ionic build.
+
+1742
+01:12:57,750 --> 01:12:58,146
+Vale.
+
+1743
+01:12:58,170 --> 01:12:59,470
+Él me creará la carpeta.
+
+1744
+01:13:00,715 --> 01:13:01,715
+Www.
+
+1745
+01:13:02,410 --> 01:13:03,450
+Y la carpeta bist.
+
+1746
+01:13:04,010 --> 01:13:04,466
+¿Por qué?
+
+1747
+01:13:04,490 --> 01:13:08,650
+Porque generará los archivos javascript
+necesarios para la compilación final.
+
+1748
+01:13:08,800 --> 01:13:09,830
+Entonces, claro.
+
+1749
+01:13:10,000 --> 01:13:13,050
+Todas esas carpetas no tienen sentido a la
+hora de mover el proyecto.
+
+1750
+01:13:13,310 --> 01:13:13,746
+Vale.
+
+1751
+01:13:13,770 --> 01:13:15,050
+Ya sea a un...
+
+1752
+01:13:15,635 --> 01:13:16,990
+Repositorio como github.
+
+1753
+01:13:17,150 --> 01:13:19,010
+O para moverlo a... A tu casa.
+
+1754
+01:13:19,210 --> 01:13:20,246
+O para llevártelo a otro lado.
+
+1755
+01:13:20,270 --> 01:13:21,066
+O lo que sea.
+
+1756
+01:13:21,090 --> 01:13:23,890
+Entonces, todo esto son elementos
+prescindibles.
+
+1757
+01:13:24,150 --> 01:13:25,150
+¿Vale?
+
+1758
+01:13:25,340 --> 01:13:27,870
+Que no hacen falta para mover el proyecto
+de un lado a otro.
+
+1759
+01:13:28,150 --> 01:13:28,510
+¿Vale?
+
+1760
+01:13:28,530 --> 01:13:30,910
+Son carpetas que se pueden generar pues
+dependiendo del IDE.
+
+1761
+01:13:31,210 --> 01:13:35,610
+Dependiendo de... El... Si has
+generado algo con el proyecto.
+
+1762
+01:13:36,050 --> 01:13:36,786
+Etc.
+
+1763
+01:13:36,810 --> 01:13:37,810
+¿Vale?
+
+1764
+01:13:38,200 --> 01:13:40,310
+Entonces, es todo elementos prescindibles.
+
+1765
+01:13:41,190 --> 01:13:41,986
+Entonces, por eso.
+
+1766
+01:13:42,010 --> 01:13:43,010
+Para moverlo.
+
+1767
+01:13:43,150 --> 01:13:43,876
+Sobre todo.
+
+1768
+01:13:43,900 --> 01:13:44,970
+Que vamos a lo principal.
+
+1769
+01:13:45,455 --> 01:13:46,646
+Que es quitar el no de módules.
+
+1770
+01:13:46,670 --> 01:13:47,670
+Y el botón.
+
+1771
+01:13:48,790 --> 01:13:49,706
+Y con eso ya.
+
+1772
+01:13:49,730 --> 01:13:50,646
+Nombre y apellidos.
+
+1773
+01:13:50,670 --> 01:13:51,406
+El comprimido.
+
+1774
+01:13:51,430 --> 01:13:52,430
+Y lo entregáis.
+
+1775
+01:13:55,210 --> 01:13:55,766
+¿Vale?
+
+1776
+01:13:55,790 --> 01:13:56,346
+¿Dudas?
+
+1777
+01:13:56,370 --> 01:13:56,726
+¿Alguna?
+
+1778
+01:13:56,750 --> 01:13:57,750
+Con esto.
+
+1779
+01:13:59,030 --> 01:14:00,030
+Vale.
+
+1780
+01:14:01,110 --> 01:14:02,110
+Eh... Pues nada.
+
+1781
+01:14:02,390 --> 01:14:04,110
+Eh... Por mí hoy os podéis ir.
+
+1782
+01:14:04,270 --> 01:14:04,706
+Ya.
+
+1783
+01:14:04,730 --> 01:14:04,870
+¿Vale?
+
+1784
+01:14:04,871 --> 01:14:05,970
+No hay nada más que hacer.
+
+1785
+01:14:06,470 --> 01:14:08,150
+Eh... Era corregir
+este ejercicio.
+
+1786
+01:14:08,410 --> 01:14:09,410
+Y... Y ya está.
+
+1787
+01:14:10,310 --> 01:14:14,170
+Eh... Más teniendo luego
+lo... Lo otro y... O sea.
+
+1788
+01:14:14,355 --> 01:14:16,176
+El IP que hay muchos que la tenéis con
+validada.
+
+1789
+01:14:16,200 --> 01:14:17,086
+Y no sé si vendéis.
+
+1790
+01:14:17,110 --> 01:14:17,386
+Y no.
+
+1791
+01:14:17,410 --> 01:14:18,410
+Sí.
+
+1792
+01:14:18,950 --> 01:14:19,686
+Vale.
+
+1793
+01:14:19,710 --> 01:14:20,706
+Sobre todo.
+
+1794
+01:14:20,730 --> 01:14:22,870
+Eh... Lo que quiero dejar claro.
+
+1795
+01:14:23,030 --> 01:14:24,030
+Que ya os lo dejé ayer.
+
+1796
+01:14:24,770 --> 01:14:27,130
+Es... Eh... Que
+aprovechéis ahora.
+
+1797
+01:14:27,340 --> 01:14:28,460
+Estos cuatro días de puente.
+
+1798
+01:14:28,915 --> 01:14:30,035
+Yo sé que algunos viajaréis.
+
+1799
+01:14:30,110 --> 01:14:30,590
+O lo que sea.
+
+1800
+01:14:30,591 --> 01:14:31,406
+O sea.
+
+1801
+01:14:31,430 --> 01:14:32,730
+Pero... Aprovechar ahora.
+
+1802
+01:14:32,950 --> 01:14:33,950
+Para poneros al día.
+
+1803
+01:14:34,310 --> 01:14:35,306
+En...
+
+1804
+01:14:35,330 --> 01:14:36,330
+En... Sobre todo.
+
+1805
+01:14:36,750 --> 01:14:37,950
+En lo que es la parte de Java.
+
+1806
+01:14:38,010 --> 01:14:39,210
+Lo que es la parte de Angular.
+
+1807
+01:14:39,630 --> 01:14:40,116
+¿Vale?
+
+1808
+01:14:40,140 --> 01:14:41,530
+Porque Ionic corresponde a...
+
+1809
+01:14:41,830 --> 01:14:42,870
+Estamos trabajando con Angular.
+
+1810
+01:14:42,871 --> 01:14:44,350
+Es una parte de programativa.
+
+1811
+01:14:44,570 --> 01:14:45,476
+Bien.
+
+1812
+01:14:45,500 --> 01:14:47,670
+En el de disponeros al día.
+
+1813
+01:14:47,671 --> 01:14:48,106
+¿Vale?
+
+1814
+01:14:48,130 --> 01:14:50,630
+Para... Para poder
+retomar las asignaturas.
+
+1815
+01:14:50,910 --> 01:14:51,206
+¿Vale?
+
+1816
+01:14:51,230 --> 01:14:52,230
+Porque si no lo os digo.
+
+1817
+01:14:52,460 --> 01:14:54,990
+En la montaña se va a hacer más,
+más, más y más grande.
+
+1818
+01:14:54,991 --> 01:14:59,010
+No pongáis excusas de... no, es que ya
+estoy perdido porque no estáis perdidos.
+
+1819
+01:14:59,300 --> 01:15:02,190
+Pero tenéis que volver a enganchar.
+
+1820
+01:15:03,130 --> 01:15:03,686
+¿Vale?
+
+1821
+01:15:03,710 --> 01:15:08,870
+Al final es... Mi puerta está abierta
+siempre para cualquier duda que tengáis,
+
+1822
+01:15:09,030 --> 01:15:11,990
+para cualquier problema, para lo que sea,
+la tenéis abierta.
+
+1823
+01:15:12,550 --> 01:15:16,530
+Ahora, en lo que os decía, la pelota está
+en vuestro tejado ahora de dedicarle horas
+
+1824
+01:15:16,805 --> 01:15:20,130
+a esto si verdaderamente es lo que queréis
+hacer.
+
+1825
+01:15:20,230 --> 01:15:20,946
+¿Vale?
+
+1826
+01:15:20,970 --> 01:15:25,570
+Porque ahora mismo el nivel lo tenéis por
+debajo de por donde debería estar.
+
+1827
+01:15:26,590 --> 01:15:27,590
+¿Vale?
+
+1828
+01:15:28,830 --> 01:15:29,786
+¿Alguna duda?
+
+1829
+01:15:29,810 --> 01:15:33,550
+Los de casa... No sé si ahora... Está
+abuelo, está abuelo, está abuelo.
+
+1830
+01:15:33,551 --> 01:15:34,146
+Está abuelo.
+
+1831
+01:15:34,170 --> 01:15:35,530
+Porque se había ido por la muerte.
+
+1832
+01:15:37,860 --> 01:15:39,366
+Pero... Es que como hay varios álvaros...
+
+1833
+01:15:39,390 --> 01:15:41,270
+Estoy en tu sitio.
+
+1834
+01:15:45,680 --> 01:15:46,730
+Yo no tengo puente.
+
+1835
+01:15:47,180 --> 01:15:49,646
+Si no, ya me lo has dejado claro cuando
+has dicho que venías mañana.
+
+1836
+01:15:49,670 --> 01:15:50,710
+Está aburrido, trabaja.
+
+1837
+01:15:50,930 --> 01:15:52,510
+Para ellos no se llaman.
+
+1838
+01:15:54,410 --> 01:15:55,410
+Entonces, ¿todo claro?
+
+1839
+01:15:55,730 --> 01:15:56,730
+¿Lo tenéis?
+
+1840
+01:15:59,790 --> 01:16:00,790
+Pues eso.
+
+1841
+01:16:00,980 --> 01:16:04,010
+Cualquier cosa, mi puerta está abierta.
+
+1842
+01:16:04,270 --> 01:16:04,426
+¿Vale?
+
+1843
+01:16:04,450 --> 01:16:06,470
+Pero poneros al día y...
+
+1844
+01:16:07,960 --> 01:16:10,470
+El siguiente día ya tenemos martes...
+
+1845
+01:16:10,670 --> 01:16:13,090
+Martes, que no martes...
+No, martes no nos tocó.
+
+1846
+01:16:13,290 --> 01:16:14,066
+No, miércoles.
+
+1847
+01:16:14,090 --> 01:16:14,470
+El miércoles.
+
+1848
+01:16:14,490 --> 01:16:15,606
+O sea, que ya tendremos el miércoles.
+
+1849
+01:16:15,630 --> 01:16:16,630
+Sí.
+
+1850
+01:16:16,785 --> 01:16:18,231
+Vale, pues ya nos vemos el miércoles.
+
+1851
+01:16:18,255 --> 01:16:21,150
+Después de que tengáis la mañana con
+Jaime, os tendré después.
+
+1852
+01:16:21,540 --> 01:16:26,410
+Sí, porque de hecho tenemos PSP ese día,
+o sea... Pues empezaremos teoría nueva.
+
+1853
+01:16:26,570 --> 01:16:26,966
+Ah, no, no.
+
+1854
+01:16:26,990 --> 01:16:28,166
+Tenemos que seguir correciendo.
+
+1855
+01:16:28,190 --> 01:16:28,650
+Madre mía.
+
+1856
+01:16:28,651 --> 01:16:29,290
+No, no, no.
+
+1857
+01:16:29,310 --> 01:16:30,266
+No, no, no.
+
+1858
+01:16:30,290 --> 01:16:32,990
+O sea, espabilar
+para llegar... Ya, puta.
+
+1859
+01:16:33,490 --> 01:16:34,490
+Bueno, no.
+
+1860
+01:16:35,030 --> 01:16:36,930
+Con suerte terminamos un ejercicio.
+
+1861
+01:16:37,130 --> 01:16:38,366
+Pero los días seguidos correciendo.
+
+1862
+01:16:38,390 --> 01:16:39,390
+No, no, a ver.
+
+1863
+01:16:39,980 --> 01:16:41,290
+El próximo día es el último.
+
+1864
+01:16:41,530 --> 01:16:47,770
+Lo que no se corrija el miércoles ese,
+pues se quedará sin corregir y eso que...
+
+1865
+01:16:48,350 --> 01:16:49,350
+Entendéis.
+
+1866
+01:16:49,445 --> 01:16:51,010
+Eh, así que...
+
+1867
+01:16:52,550 --> 01:16:53,550
+Eso es lo que hay.
+
+1868
+01:16:54,370 --> 01:16:54,626
+¿Vale?
+
+1869
+01:16:54,650 --> 01:16:57,870
+El más no puedo... No
+puedo coger porque...
+
+1870
+01:16:58,320 --> 01:16:59,930
+Es lo que... Lo que tengo.
+
+1871
+01:17:00,900 --> 01:17:05,010
+Y tenemos que ver la teoría de hilos ya y
+tenemos que hacer ejercicios de hilos y...
+
+1872
+01:17:05,011 --> 01:17:05,426
+Y todo.
+
+1873
+01:17:05,450 --> 01:17:06,206
+¿Vale?
+
+1874
+01:17:06,230 --> 01:17:07,230
+La vida sigue.
+
+1875
+01:17:07,650 --> 01:17:08,186
+¿Vale?
+
+1876
+01:17:08,210 --> 01:17:08,826
+Así que eso.
+
+1877
+01:17:08,850 --> 01:17:09,766
+De momento.
+
+1878
+01:17:09,790 --> 01:17:15,070
+Desconectar lo que podáis el puente,
+pasarlo bien y...
+
+1879
+01:17:16,570 --> 01:17:19,310
+Y poneros al día en lo que podáis de
+programación y ángulo.
+
+1880
+01:17:19,490 --> 01:17:20,406
+¿Vale?
+
+1881
+01:17:20,430 --> 01:17:20,926
+Vale.
+
+1882
+01:17:20,950 --> 01:17:21,950
+Vale, chiquets.
+
+1883
+01:17:22,685 --> 01:17:24,270
+Os dejo hoy un buen descanso.
+
+1884
+01:17:24,271 --> 01:17:25,271
+Vale.
+
+1885
+01:17:25,960 --> 01:17:27,010
+¡Hasta luego, Álvaro!
+
+1886
+01:17:33,170 --> 01:17:35,190
+Falta su... A vosotros.
+
+1887
+01:17:35,710 --> 01:17:37,090
+De verdad, falta
+su... All right.
+
+1888
+01:17:37,390 --> 01:17:38,390
+All right.
+
+1889
+01:17:39,180 --> 01:17:41,086
+Lo único que nos incendió Jojo en nueve
+veces es...
+
+1890
+01:17:41,110 --> 01:17:41,946
+Se le ha quedado grabando.
+
+1891
+01:17:41,970 --> 01:17:42,970
+¡Ja, ja, ja!
+

@@ -1,0 +1,24 @@
+<ion-content>
+
+<swiper-container>
+  @for (slide of slides; track slide.texto){
+    <swiper-slide>
+      <div class="ion-display-flex ion-flex-column center">
+        <div class="ion-display-flex ion-justify-content-center">
+          <img [src]="slide.image" alt="" >
+        </div>
+        <ion-card-content class="ion-text-center">
+          <div class="w-50">
+            <ion-text [color]="slide.color">{{slide.texto}}</ion-text>
+            @if ($last){
+              <p><ion-button routerLink="/materials" [color]="slide.color">EMPEZAR</ion-button></p>
+            }
+          </div>
+
+        </ion-card-content>
+      </div>
+    </swiper-slide>
+  }
+</swiper-container>
+
+</ion-content>

@@ -1,0 +1,4824 @@
+1
+00:00:00,650 --> 00:00:01,660
+Bueno, arrancamos.
+
+2
+00:00:03,650 --> 00:00:05,200
+Os refresco, ¿vale?
+
+3
+00:00:05,320 --> 00:00:09,440
+Hasta ahora lo que habíamos hecho,
+una aplicación, ¿vale?
+
+4
+00:00:09,500 --> 00:00:13,660
+Donde habíamos visto cómo añadir un menú
+lateral a la aplicación.
+
+5
+00:00:14,990 --> 00:00:19,300
+Habíamos visto luego diferentes
+componentes, cómo era el alert,
+
+6
+00:00:19,520 --> 00:00:22,400
+que nos permitía mandar mensajes al
+usuario.
+
+7
+00:00:23,860 --> 00:00:29,080
+Además, podíamos interactuar con el
+usuario mediante inputs.
+
+8
+00:00:30,000 --> 00:00:30,581
+¿Vale?
+
+9
+00:00:30,605 --> 00:00:31,685
+Para trabajar con el texto.
+
+10
+00:00:31,975 --> 00:00:35,280
+Incluso podíamos trabajar con,
+bueno, cualquier tipo de input.
+
+11
+00:00:35,489 --> 00:00:39,660
+Veíamos también ejemplos de cómo trabajar
+con el radio.
+
+12
+00:00:40,109 --> 00:00:45,200
+Además, lo vinculábamos al color del
+botón.
+
+13
+00:00:46,199 --> 00:00:50,400
+Vimos también el action sheet,
+¿vale?
+
+14
+00:00:50,420 --> 00:00:56,660
+Que nos sacaba ese menú desde la parte
+inferior de la pantalla.
+
+15
+00:00:56,661 --> 00:00:57,740
+¿Vale?
+
+16
+00:00:57,760 --> 00:01:03,760
+Un menú que tenía botones y tenía...
+Además, podía tener iconos asociados.
+
+17
+00:01:06,149 --> 00:01:12,260
+Vimos también ejemplos de contenedores
+como el avatar, ¿vale?
+
+18
+00:01:12,300 --> 00:01:13,360
+Un contenedor de imágenes.
+
+19
+00:01:14,049 --> 00:01:18,700
+Que nos ponía ese contenedor redondo,
+¿vale?
+
+20
+00:01:18,800 --> 00:01:19,800
+Para las imágenes.
+
+21
+00:01:19,969 --> 00:01:25,060
+La podíamos incluir dentro de chips,
+que eran elementos pequeños que tenían
+
+22
+00:01:25,659 --> 00:01:27,700
+texto y podían tener imagen.
+
+23
+00:01:28,759 --> 00:01:30,780
+Lo veíamos también dentro de...
+
+24
+00:01:32,159 --> 00:01:34,960
+Dentro de... Ítems, ¿vale?
+
+25
+00:01:35,040 --> 00:01:39,380
+Donde podíamos colocar el avatar al
+principio o al final.
+
+26
+00:01:40,059 --> 00:01:42,780
+Veíamos también otro contenedor de
+imágenes, que era el thumbnail.
+
+27
+00:01:43,449 --> 00:01:45,180
+Que en vez de ser redondo, era cuadrado.
+
+28
+00:01:45,829 --> 00:01:48,900
+Y lo mismo podíamos añadirlo al principio
+o al final.
+
+29
+00:01:50,840 --> 00:01:56,260
+El otro elemento que vimos del contenedor
+y funcional eran los botones del grid.
+
+30
+00:01:57,280 --> 00:01:57,856
+¿Vale?
+
+31
+00:01:57,880 --> 00:02:00,560
+Los botones que vimos, las diferentes
+propiedades que teníamos.
+
+32
+00:02:00,800 --> 00:02:02,680
+El expand, el fill, el shape.
+
+33
+00:02:04,524 --> 00:02:07,420
+Y luego vimos cómo trabajar con el grid.
+
+34
+00:02:07,560 --> 00:02:12,960
+De manera que podíamos hacer nuestra
+aplicación, responsive, trabajando con las
+
+35
+00:02:13,010 --> 00:02:16,080
+columnas y el tamaño de las columnas en
+función del dispositivo.
+
+36
+00:02:16,550 --> 00:02:21,060
+Vimos que podíamos trabajar con el size,
+size small, size medium, size large,
+
+37
+00:02:21,500 --> 00:02:23,220
+size XL, etc.
+
+38
+00:02:24,460 --> 00:02:25,286
+¿Vale?
+
+39
+00:02:25,310 --> 00:02:27,520
+Eso es lo que habíamos visto hasta ahora.
+
+40
+00:02:28,830 --> 00:02:29,950
+Ahora, ¿qué vamos a ver hoy?
+
+41
+00:02:30,230 --> 00:02:31,860
+Hoy vamos a añadir, ¿vale?
+
+42
+00:02:31,920 --> 00:02:37,820
+A nuestro menú, tres nuevos elementos,
+donde vamos a ver las cards.
+
+43
+00:02:38,240 --> 00:02:45,220
+Un contenedor que nos va a permitir
+trabajar con el elemento básico de las
+
+44
+00:02:45,420 --> 00:02:46,620
+aplicaciones, ¿vale?
+
+45
+00:02:47,695 --> 00:02:51,280
+Donde vamos a poder añadir texto,
+imágenes, etc.
+
+46
+00:02:52,190 --> 00:02:55,540
+Veremos diferentes ejemplos que podemos
+utilizar en las cards.
+
+47
+00:02:56,040 --> 00:02:58,420
+Luego veremos también el fab.
+
+48
+00:02:59,025 --> 00:03:01,000
+El fab es un floating action button,
+¿vale?
+
+49
+00:03:01,060 --> 00:03:05,532
+Que es un botón que
+aparece en las aplicaciones
+
+50
+00:03:05,533 --> 00:03:09,160
+por encima del contenido
+en una posición fija.
+
+51
+00:03:09,340 --> 00:03:16,460
+Vea ser el compose del gmail o el generar
+nuevo tweet de x, por ejemplo.
+
+52
+00:03:17,440 --> 00:03:22,520
+O tendríamos también las slides.
+
+53
+00:03:22,720 --> 00:03:30,060
+Las slides es el elemento de
+desplazamiento lateral, ¿vale?
+
+54
+00:03:30,440 --> 00:03:36,140
+Ya sea carruseles de imágenes o podemos
+trabajar con las stories de Instagram,
+
+55
+00:03:36,540 --> 00:03:37,540
+etc.
+
+56
+00:03:37,620 --> 00:03:38,040
+¿Vale?
+
+57
+00:03:38,060 --> 00:03:41,120
+Todo el desplazamiento de elementos
+laterales.
+
+58
+00:03:42,160 --> 00:03:42,536
+¿Vale?
+
+59
+00:03:42,560 --> 00:03:44,540
+Entonces vamos a ver un poco esos tres
+elementos.
+
+60
+00:03:45,600 --> 00:03:47,900
+Vamos a empezar a trabajar con las cards.
+
+61
+00:03:47,950 --> 00:03:53,240
+Para eso vamos a hacer una página que
+controle las cards.
+
+62
+00:03:53,810 --> 00:03:55,320
+Ionic dentro de nuestro proyecto.
+
+63
+00:03:55,595 --> 00:03:56,920
+Ionic generate page.
+
+64
+00:03:57,280 --> 00:03:59,240
+Pages barra card.
+
+65
+00:04:00,920 --> 00:04:02,560
+Menos menos expect.
+
+66
+00:04:03,280 --> 00:04:04,280
+Igual.
+
+67
+00:04:05,220 --> 00:04:06,016
+A face.
+
+68
+00:04:06,040 --> 00:04:06,440
+¿Vale?
+
+69
+00:04:06,441 --> 00:04:12,060
+Os recuerdo que el repositorio con el
+proyecto completo lo tenéis en...
+
+70
+00:04:13,840 --> 00:04:15,320
+en mi repositorio, ¿vale?
+
+71
+00:04:15,624 --> 00:04:19,060
+Y la teoría la tenéis publicada en el
+campus, ¿vale?
+
+72
+00:04:19,079 --> 00:04:20,079
+Para seguir las clases.
+
+73
+00:04:20,430 --> 00:04:27,020
+Así yo me centro en hacer el ejemplo y
+vosotros podéis atender tranquilamente
+
+74
+00:04:27,021 --> 00:04:31,520
+teniendo ahí el código y el paso a paso de
+lo que estamos haciendo.
+
+75
+00:04:31,880 --> 00:04:32,880
+¿Vale?
+
+76
+00:04:33,390 --> 00:04:35,860
+Cualquier duda, de todas formas,
+me la podéis ir planteando.
+
+77
+00:04:36,660 --> 00:04:38,660
+¿Cuál era la... ¿El comando?
+
+78
+00:04:41,600 --> 00:04:45,740
+Ionic generate page para crear una página
+y luego ya la ruta.
+
+79
+00:04:46,700 --> 00:04:47,296
+¿Vale?
+
+80
+00:04:47,320 --> 00:04:54,060
+Repito que no tenéis que hacer nada porque
+lo tenéis ya hecho en el repositorio y
+
+81
+00:04:54,061 --> 00:04:57,440
+tenéis además el paso a paso de las... las
+instrucciones que yo voy diciendo,
+
+82
+00:04:57,600 --> 00:05:00,680
+que yo voy haciendo, lo tenéis en la
+teoría del campus, ¿vale?
+
+83
+00:05:01,280 --> 00:05:02,600
+O sea, miramos y ya.
+
+84
+00:05:02,720 --> 00:05:03,426
+¿Qué?
+
+85
+00:05:03,450 --> 00:05:04,450
+O sea, miramos y ya.
+
+86
+00:05:05,220 --> 00:05:07,300
+Sí, exacto, que atendéis y ya está.
+
+87
+00:05:07,320 --> 00:05:11,040
+No hace falta que vayáis copiando detrás
+de mí ni haciendo nada, ¿vale?
+
+88
+00:05:11,420 --> 00:05:13,440
+Para... así podéis centraros en atender.
+
+89
+00:05:16,970 --> 00:05:18,490
+Entonces, una vez tenemos la página...
+
+90
+00:05:20,650 --> 00:05:21,680
+A ver, silencio.
+
+91
+00:05:22,030 --> 00:05:24,815
+Una vez tenemos la
+página, lo que hacíamos es
+
+92
+00:05:24,816 --> 00:05:28,620
+añadir a nuestro menú
+que teníamos para el...
+
+93
+00:05:29,370 --> 00:05:31,280
+para la página principal y para el menú
+lateral.
+
+94
+00:05:32,180 --> 00:05:36,480
+Habíamos hecho un fichero JSON de donde nos
+nutríamos para hacer las opciones del menú.
+
+95
+00:05:37,600 --> 00:05:43,280
+Pues vamos a añadir una nueva opción del
+menú que va a ser la parte de la card.
+
+96
+00:05:44,360 --> 00:05:45,360
+Duplicamos.
+
+97
+00:05:45,890 --> 00:05:50,220
+Le digo que voy a tener ahora ejemplos de
+cards.
+
+98
+00:05:51,530 --> 00:05:53,680
+El icono será card.
+
+99
+00:05:55,210 --> 00:05:56,700
+Y la ruta será card.
+
+100
+00:05:58,760 --> 00:05:59,641
+¿Vale?
+
+101
+00:05:59,665 --> 00:06:02,616
+El icono del card lo tenemos
+del primer ejemplo que
+
+102
+00:06:02,617 --> 00:06:06,420
+hicimos, con lo cual no hay
+que añadirlo al app component.
+
+103
+00:06:07,180 --> 00:06:08,136
+¿Vale?
+
+104
+00:06:08,160 --> 00:06:11,158
+Acordaros que añadíamos
+los iconos al app component
+
+105
+00:06:11,159 --> 00:06:13,640
+dentro de una función
+que se llamaba daicons.
+
+106
+00:06:13,735 --> 00:06:16,400
+De tal manera que estaban accesibles ya en
+toda nuestra aplicación.
+
+107
+00:06:17,045 --> 00:06:19,637
+En nuestro caso, lo
+usaremos tanto en el menú
+
+108
+00:06:19,638 --> 00:06:22,360
+de la página de inicio
+como en el menú lateral.
+
+109
+00:06:24,780 --> 00:06:29,140
+Vale, dicho eso y ya he añadido nuestro
+elemento al menú, ya podemos trabajar en él.
+
+110
+00:06:30,320 --> 00:06:33,040
+Vale, la card, como os he dicho,
+es un contenedor.
+
+111
+00:06:33,180 --> 00:06:36,760
+Con lo cual, vamos a trabajar todo en el
+html.
+
+112
+00:06:38,860 --> 00:06:41,080
+Esto será... vamos a hacer primero el ion
+header.
+
+113
+00:06:41,860 --> 00:06:45,500
+Recordaros que esto nos pedía un title,
+obligatoriamente.
+
+114
+00:06:46,560 --> 00:06:47,560
+Ahí viene.
+
+115
+00:06:49,990 --> 00:06:51,140
+App header.
+
+116
+00:06:51,780 --> 00:06:54,420
+Vale, nuestra cabecera que nos pide un
+título.
+
+117
+00:06:56,220 --> 00:06:57,640
+Vamos a poner cards.
+
+118
+00:07:04,280 --> 00:07:07,180
+Vamos a ponerle un padding a todo nuestro
+contenido.
+
+119
+00:07:08,120 --> 00:07:09,160
+Y trabajamos.
+
+120
+00:07:09,540 --> 00:07:12,200
+Vale, vamos a trabajar en ejemplos de
+cards.
+
+121
+00:07:16,660 --> 00:07:17,561
+H2...
+
+122
+00:07:17,585 --> 00:07:19,260
+Vamos a ponerle card...
+
+123
+00:07:27,840 --> 00:07:33,020
+Vale, entonces, la etiqueta que corresponde
+para montar una card es ion card.
+
+124
+00:07:34,030 --> 00:07:36,980
+Ese ion card puede recibir varios
+atributos.
+
+125
+00:07:37,565 --> 00:07:42,280
+Vale, los más destacables
+son... Tenemos el modo, ¿vale?
+
+126
+00:07:42,340 --> 00:07:47,352
+Yo puedo forzar que una
+card se vea igual en todos los
+
+127
+00:07:47,353 --> 00:07:51,780
+dispositivos, forzándole una
+visibilidad según el sistema operativo.
+
+128
+00:07:52,020 --> 00:07:54,473
+De tal manera que si yo
+le pongo el modo IOS, en
+
+129
+00:07:54,474 --> 00:07:57,520
+todos los dispositivos se
+va a ver igual que en IOS.
+
+130
+00:07:57,870 --> 00:08:03,160
+Esto es, que en los Android se verá con el
+mismo estilo que se ve en los IOS.
+
+131
+00:08:03,250 --> 00:08:06,920
+Si no lo pongo, cada una tiene su propio
+estilo de tarjeta.
+
+132
+00:08:07,060 --> 00:08:09,340
+Ahora los veremos que son un poco
+diferentes.
+
+133
+00:08:10,420 --> 00:08:13,460
+Y a la tarjeta también le puedo poner un
+color de fondo.
+
+134
+00:08:13,461 --> 00:08:15,980
+Voy a ponerle, por ejemplo, primary.
+
+135
+00:08:20,800 --> 00:08:25,560
+Vale, eso automáticamente le aplicará el
+color primary a mi tarjeta.
+
+136
+00:08:26,520 --> 00:08:31,811
+Una tarjeta, además, es un
+contenedor que va a tener
+
+137
+00:08:31,812 --> 00:08:34,960
+estructura o puede tener
+estructura de una página.
+
+138
+00:08:35,259 --> 00:08:39,580
+Esto es, puede tener un Ion Card Header,
+vale?
+
+139
+00:08:39,659 --> 00:08:44,480
+Que será la cabecera, donde, bueno,
+podemos colocar el Ion Card Title,
+
+140
+00:08:44,920 --> 00:08:46,640
+que será el título de la tarjeta.
+
+141
+00:08:49,669 --> 00:08:54,420
+Y podemos colocarle también el Subtitle,
+que será el subtítulo.
+
+142
+00:09:02,949 --> 00:09:09,580
+Destacar que el título y el subtítulo,
+vale, los de Apple invierten el orden,
+
+143
+00:09:10,080 --> 00:09:10,276
+vale?
+
+144
+00:09:10,300 --> 00:09:14,089
+Aunque nosotros le
+pongamos el título arriba y el
+
+145
+00:09:14,090 --> 00:09:20,140
+subtítulo bajo, ellos por
+defecto lo ponen a la inversa.
+
+146
+00:09:20,240 --> 00:09:23,080
+Y pondrán siempre el subtítulo arriba y el
+título bajo.
+
+147
+00:09:23,280 --> 00:09:28,640
+Mientras que Android sí que nos respeta,
+vale, como lo hayamos puesto nosotros.
+
+148
+00:09:40,319 --> 00:09:44,260
+Vale, ahí tendríamos una tarjetita.
+
+149
+00:09:55,539 --> 00:09:58,440
+Vale, tenemos ahora nuestro nuevo elemento
+Cards en el menú.
+
+150
+00:09:59,789 --> 00:10:01,220
+Y aquí tendríamos una tarjeta.
+
+151
+00:10:01,300 --> 00:10:04,640
+Fijaros que, aunque nosotros le hemos
+puesto Title y Subtitle, luego,
+
+152
+00:10:05,349 --> 00:10:07,240
+vale, Ion invierte el orden.
+
+153
+00:10:08,999 --> 00:10:12,860
+Vale, además aplicando el estilo de su
+tarjeta.
+
+154
+00:10:13,984 --> 00:10:18,580
+Aunque yo estoy en un Pixel 10,
+vale, me está mostrando el estilo de IOS.
+
+155
+00:10:21,319 --> 00:10:28,920
+Si yo cambio el modo a AMD, que es
+Material Design, automáticamente el modo
+
+156
+00:10:29,369 --> 00:10:31,280
+cambia a Android.
+
+157
+00:10:32,129 --> 00:10:34,009
+Vale, esta es la tarjeta predefinida de
+Android.
+
+158
+00:10:34,859 --> 00:10:39,820
+Fijaros que el Title y el Subtitle en
+Android sí que lo mantienen.
+
+159
+00:10:43,380 --> 00:10:44,380
+Vale.
+
+160
+00:10:46,129 --> 00:10:49,000
+El color, pues podemos cambiar el color
+para...
+
+161
+00:10:53,059 --> 00:10:54,640
+Cambiar el color de esa tarjeta.
+
+162
+00:11:10,320 --> 00:11:11,320
+Vale.
+
+163
+00:11:14,420 --> 00:11:15,420
+Más.
+
+164
+00:11:16,420 --> 00:11:17,420
+Dime.
+
+165
+00:11:19,249 --> 00:11:20,435
+Si no le pones el modo, se cambia
+automáticamente el modo.
+
+166
+00:11:20,459 --> 00:11:23,000
+Sí, detecta el modo del sistema operativo.
+
+167
+00:11:23,160 --> 00:11:26,883
+Es decir, si yo no pongo
+modo, automáticamente la card
+
+168
+00:11:26,884 --> 00:11:29,900
+se mostrará, según el sistema
+operativo, que tengamos.
+
+169
+00:11:30,045 --> 00:11:32,280
+Por ejemplo, aquí tengo un Pixel 10 de
+Android.
+
+170
+00:11:32,281 --> 00:11:34,340
+Vale, se pone el modo Android.
+
+171
+00:11:35,160 --> 00:11:39,978
+Si yo paso a un iPhone,
+automáticamente, cuando
+
+172
+00:11:39,979 --> 00:11:43,380
+cargue el iPhone, lo
+pone como modo Android.
+
+173
+00:11:44,080 --> 00:11:44,356
+Vale.
+
+174
+00:11:44,380 --> 00:11:48,027
+Entonces, el modo lo
+que hace es forzar que la
+
+175
+00:11:48,028 --> 00:11:50,880
+visibilidad en todos los
+dispositivos sea igual.
+
+176
+00:11:54,735 --> 00:11:55,735
+Vale.
+
+177
+00:11:56,310 --> 00:12:02,070
+A las cards le podemos aplicar también un
+Ion Item.
+
+178
+00:12:03,650 --> 00:12:04,650
+Vale.
+
+179
+00:12:04,689 --> 00:12:06,310
+Esto es, yo puedo colocar un Ion Item.
+
+180
+00:12:06,780 --> 00:12:08,950
+De color Primary.
+
+181
+00:12:12,439 --> 00:12:15,510
+El Ion Item, además, puede tener Ion Icon.
+
+182
+00:12:17,549 --> 00:12:18,790
+Vamos a ponerle un Pin.
+
+183
+00:12:21,790 --> 00:12:26,790
+El Icon dentro del Ion Item puede tener
+Slot.
+
+184
+00:12:27,590 --> 00:12:28,126
+Vale.
+
+185
+00:12:28,150 --> 00:12:29,870
+Vamos a ponerle uno al principio.
+
+186
+00:12:30,530 --> 00:12:33,190
+Y vamos a ponerle otro al final.
+
+187
+00:12:39,959 --> 00:12:41,480
+Puedo tener también un texto.
+
+188
+00:12:44,280 --> 00:12:46,620
+O sea... Lo que sea.
+
+189
+00:12:48,000 --> 00:12:49,000
+Vale.
+
+190
+00:12:52,400 --> 00:12:55,200
+Y luego puedo tener un Ion Content.
+
+191
+00:12:59,160 --> 00:13:02,810
+Ion Cart Content con la información.
+
+192
+00:13:11,785 --> 00:13:15,670
+Acordaros que los iconos, para poder
+utilizarlos...
+
+193
+00:13:16,919 --> 00:13:21,330
+Tenemos que importarlos con la función Add
+Icons.
+
+194
+00:13:29,629 --> 00:13:33,470
+En este caso, hemos puesto el Pin y el
+Roque.
+
+195
+00:13:39,779 --> 00:13:42,270
+Hay que importar esos iconos.
+
+196
+00:13:54,789 --> 00:13:57,320
+Y una vez los hemos importado,
+ya lo cargamos.
+
+197
+00:14:03,899 --> 00:14:08,440
+Así tendríamos la car con un ítem en la
+parte superior.
+
+198
+00:14:10,495 --> 00:14:14,160
+Podríamos incluso centrar ese texto si
+quisiéramos.
+
+199
+00:14:15,139 --> 00:14:18,700
+Podríamos decir al Label que fuera Class
+TextCenter.
+
+200
+00:14:21,344 --> 00:14:23,580
+Entonces el texto nos lo centra.
+
+201
+00:14:24,880 --> 00:14:25,880
+¿Sí?
+
+202
+00:14:31,579 --> 00:14:33,960
+Podemos también tener tarjetas con imagen.
+
+203
+00:14:35,040 --> 00:14:36,040
+Ion Card.
+
+204
+00:14:39,674 --> 00:14:41,490
+En la que tenga Ion Card Header.
+
+205
+00:14:49,420 --> 00:14:50,420
+Dime.
+
+206
+00:14:55,959 --> 00:15:00,617
+A ver, el Ionic como
+tal es un framework que
+
+207
+00:15:00,618 --> 00:15:04,370
+trabaja para hacer
+aplicaciones híbridas.
+
+208
+00:15:04,371 --> 00:15:08,430
+Esto es, aplicaciones para web.
+
+209
+00:15:08,650 --> 00:15:09,026
+¿Vale?
+
+210
+00:15:09,050 --> 00:15:10,050
+VPA.
+
+211
+00:15:11,690 --> 00:15:14,030
+Aplicaciones VPA que son las progresivas.
+
+212
+00:15:14,210 --> 00:15:15,590
+Aplicaciones de web progresivas.
+
+213
+00:15:16,749 --> 00:15:18,330
+Web Progressive Applications.
+
+214
+00:15:18,625 --> 00:15:20,787
+Que es básicamente,
+puedes hacer aplicaciones
+
+215
+00:15:20,788 --> 00:15:22,630
+responsive para
+diferentes dispositivos.
+
+216
+00:15:22,690 --> 00:15:23,690
+Lo que hemos visto.
+
+217
+00:15:23,810 --> 00:15:27,070
+Pero también puede hacer, mediante
+Capacitor, aplicaciones para Android.
+
+218
+00:15:27,250 --> 00:15:29,370
+Aplicaciones para Ion.
+
+219
+00:15:32,230 --> 00:15:40,230
+Como tal, es una estructura de Front para
+mostrar la información.
+
+220
+00:15:40,545 --> 00:15:44,810
+De hecho, todos los componentes son
+visuales en cuanto a que hacen algo.
+
+221
+00:15:45,190 --> 00:15:46,190
+¿Vale?
+
+222
+00:15:46,469 --> 00:15:48,890
+Pero ese algo necesita una lógica por
+detrás.
+
+223
+00:15:49,829 --> 00:15:52,770
+Esa lógica por detrás se la da otro
+framework.
+
+224
+00:15:53,619 --> 00:15:58,030
+Tú puedes elegir montarlo con Angular,
+montarlo con React o montarlo con Vue.
+
+225
+00:15:58,510 --> 00:15:58,886
+¿Vale?
+
+226
+00:15:58,910 --> 00:15:59,950
+Te dan las tres opciones.
+
+227
+00:16:00,209 --> 00:16:02,809
+Nosotros lo hacemos con Angular porque en
+el centro se ve Angular.
+
+228
+00:16:03,030 --> 00:16:03,505
+¿Vale?
+
+229
+00:16:03,529 --> 00:16:08,830
+Se ve en lenguaje de marca, se ve en
+segundo y se ve ahora en Ionic también.
+
+230
+00:16:10,599 --> 00:16:13,433
+Entonces, como tal
+Angular se encarga de lo
+
+231
+00:16:13,434 --> 00:16:16,250
+que es la parte lógica
+del proyecto por detrás.
+
+232
+00:16:16,465 --> 00:16:20,410
+Toda la parte del enrotamiento,
+toda la parte de la estructura de
+
+233
+00:16:20,609 --> 00:16:24,230
+componentes, toda la parte de Single Page
+Application.
+
+234
+00:16:24,820 --> 00:16:26,830
+Entonces, toda esa parte corresponde a
+Angular.
+
+235
+00:16:27,889 --> 00:16:32,610
+Entonces, por encima, la última capa
+vendría a ser la capa de Ionic,
+
+236
+00:16:32,789 --> 00:16:36,910
+que es la que nos da las etiquetas de
+crear elementos, los componentes,
+
+237
+00:16:37,270 --> 00:16:38,950
+el realizar acciones, lo que sea.
+
+238
+00:16:39,510 --> 00:16:42,750
+Pero toda la parte de lógica va por
+Angular.
+
+239
+00:16:46,570 --> 00:16:47,570
+Vale.
+
+240
+00:16:47,730 --> 00:16:51,404
+Entonces, por ejemplo,
+tengo aquí la cabecera
+
+241
+00:16:51,405 --> 00:16:54,610
+con el título y yo puedo
+añadir una imagen.
+
+242
+00:16:55,670 --> 00:17:01,390
+Ionic nos proporciona una imagen dentro de
+Assets que se llama Shapes SVG.
+
+243
+00:17:01,739 --> 00:17:05,474
+Es un gráfico vectorial que
+me permite que, aunque
+
+244
+00:17:05,475 --> 00:17:08,910
+crezca el tamaño de esa
+imagen, no se deforme.
+
+245
+00:17:10,099 --> 00:17:12,170
+Entonces, para maquetar nos va muy bien.
+
+246
+00:17:13,369 --> 00:17:14,530
+Aquí me da igual.
+
+247
+00:17:15,689 --> 00:17:18,329
+Vamos a poner la imagen y luego vamos a
+ponerle un texto.
+
+248
+00:17:18,379 --> 00:17:24,750
+En el Ion Card Content, ponemos el texto.
+
+249
+00:17:35,120 --> 00:17:36,036
+Vale.
+
+250
+00:17:36,060 --> 00:17:39,560
+Y tendríamos una card con imagen aquí
+abajo.
+
+251
+00:17:40,229 --> 00:17:45,840
+Vamos a ponerle Ion Card al header.
+
+252
+00:17:45,900 --> 00:17:46,900
+Vamos a ponerle un color.
+
+253
+00:17:54,890 --> 00:17:55,666
+Vale.
+
+254
+00:17:55,690 --> 00:17:58,150
+Y tendríamos ahí otro tipo de tarjeta.
+
+255
+00:17:58,170 --> 00:18:00,530
+En este caso, una tarjeta con imagen.
+
+256
+00:18:01,310 --> 00:18:02,310
+¿Sí?
+
+257
+00:18:04,350 --> 00:18:05,350
+Vale.
+
+258
+00:18:05,699 --> 00:18:08,990
+Incluso podríais ponerle aquí que esto
+tuviera aquí un Ion Card.
+
+259
+00:18:10,210 --> 00:18:11,210
+Subtitle.
+
+260
+00:18:20,989 --> 00:18:28,240
+Es decir, al final tenéis una serie de
+elementos que los podéis colocar con un
+
+261
+00:18:28,240 --> 00:18:31,260
+poco el orden que vosotros queráis según
+la tarjeta que queráis construir.
+
+262
+00:18:31,994 --> 00:18:35,220
+Al final yo os voy a dar, como os decía,
+diferentes ejemplos.
+
+263
+00:18:35,500 --> 00:18:36,500
+¿Vale?
+
+264
+00:18:37,679 --> 00:18:40,740
+Ejemplos de tarjetas en los que vamos a
+ver los diferentes atributos.
+
+265
+00:18:40,741 --> 00:18:48,020
+Pero luego vosotros ya podréis investigar
+con la card para crear la tarjeta que más
+
+266
+00:18:48,021 --> 00:18:53,500
+se ajuste a lo que necesitéis para cuando
+estéis desarrollando vuestra aplicación.
+
+267
+00:18:53,700 --> 00:18:54,180
+¿Vale?
+
+268
+00:18:54,200 --> 00:18:55,400
+En función de las necesidades.
+
+269
+00:18:57,009 --> 00:19:01,700
+La última tarjeta que vamos a ver es la
+personalizada.
+
+270
+00:19:01,889 --> 00:19:07,700
+Es decir, cómo trabajar con la tarjeta con
+estilos personalizados.
+
+271
+00:19:08,970 --> 00:19:09,980
+¿Vale?
+
+272
+00:19:10,060 --> 00:19:13,920
+Entonces lo que voy a hacer para eso es
+crear unos estilos.
+
+273
+00:19:15,409 --> 00:19:17,560
+Voy a irme al Carpage SSSS.
+
+274
+00:19:18,879 --> 00:19:23,920
+Y vamos a crearle unos estilos para la
+tarjeta.
+
+275
+00:19:24,320 --> 00:19:25,020
+¿Vale?
+
+276
+00:19:25,021 --> 00:19:27,860
+Vamos a crear un estilo para el fondo.
+
+277
+00:19:30,970 --> 00:19:31,970
+Vale.
+
+278
+00:19:32,640 --> 00:19:33,640
+El...
+
+279
+00:19:34,419 --> 00:19:40,820
+La tarjeta, como tal, tiene dos
+propiedades SS propias de Johnny.
+
+280
+00:19:41,300 --> 00:19:41,856
+¿Vale?
+
+281
+00:19:41,880 --> 00:19:45,320
+Para acceder, uno, al color de fondo de la
+tarjeta.
+
+282
+00:19:45,819 --> 00:19:49,460
+Dos, para acceder al color del texto de la
+tarjeta.
+
+283
+00:19:50,359 --> 00:19:52,100
+Esas propiedades, ¿vale?
+
+284
+00:19:52,280 --> 00:19:55,480
+Accedemos con ellas con menos menos
+delante.
+
+285
+00:19:55,780 --> 00:19:56,300
+¿Vale?
+
+286
+00:19:56,301 --> 00:19:59,157
+Cuando veáis menos
+menos en una variable, es que
+
+287
+00:19:59,158 --> 00:20:02,880
+estamos accediendo a
+una propiedad de... de Ionic.
+
+288
+00:20:03,169 --> 00:20:05,240
+En este caso, quiero acceder al
+background.
+
+289
+00:20:07,785 --> 00:20:08,660
+¿Vale?
+
+290
+00:20:08,661 --> 00:20:13,520
+Y voy a decirle que coja el color dark.
+
+291
+00:20:15,599 --> 00:20:17,360
+También quiero acceder al color.
+
+292
+00:20:18,439 --> 00:20:24,960
+En este caso, vamos a ponerle un
+color que sea, eh... un azul celeste.
+
+293
+00:20:25,230 --> 00:20:27,300
+Vamos a ponerle...
+
+294
+00:20:30,699 --> 00:20:32,760
+Vamos a hacer también...
+
+295
+00:20:36,320 --> 00:20:37,840
+Vegetar title.
+
+296
+00:20:43,239 --> 00:20:46,180
+Al title le vamos a poner un color
+parecido.
+
+297
+00:20:54,089 --> 00:20:56,380
+Y luego al subtitle...
+
+298
+00:21:00,319 --> 00:21:01,700
+Vamos a ponerle...
+
+299
+00:21:13,669 --> 00:21:15,320
+otro color también a azul marino.
+
+300
+00:21:15,880 --> 00:21:16,356
+¿Vale?
+
+301
+00:21:16,380 --> 00:21:19,324
+De tal manera que hemos hecho un color
+para el subtítulo, un color para el título.
+
+302
+00:21:19,325 --> 00:21:19,645
+..
+
+303
+00:21:19,669 --> 00:21:22,780
+y un color para el resto de la tarjeta...
+
+304
+00:21:23,294 --> 00:21:25,060
+incluyendo el fondo en negro.
+
+305
+00:21:27,100 --> 00:21:27,736
+¿Vale?
+
+306
+00:21:27,760 --> 00:21:31,360
+Si vamos al html...
+yo ahora a la card...
+
+307
+00:21:33,460 --> 00:21:34,096
+¿Vale?
+
+308
+00:21:34,120 --> 00:21:36,220
+Le puedo decir...
+
+309
+00:21:36,719 --> 00:21:37,760
+que esta card...
+
+310
+00:21:38,009 --> 00:21:41,420
+va a tener un class... bg-card.
+
+311
+00:21:43,889 --> 00:21:47,060
+Esto además va a tener
+un ion... card-header...
+
+312
+00:21:48,384 --> 00:21:51,060
+que va a tener ion-card-title...
+
+313
+00:21:51,809 --> 00:21:55,020
+que le vamos a poner... el bg...
+
+314
+00:21:56,894 --> 00:22:01,560
+bg-title...
+bg-title... ahí está...
+
+315
+00:22:02,139 --> 00:22:03,580
+esto será el title...
+
+316
+00:22:06,049 --> 00:22:08,100
+y luego tendremos...
+el subtitle...
+
+317
+00:22:11,645 --> 00:22:16,050
+que tendrá... el subtitle...
+
+318
+00:22:21,830 --> 00:22:22,626
+¿Vale?
+
+319
+00:22:22,650 --> 00:22:27,830
+Luego tendremos
+ion-card-content... que tendrá... ¿Vale?
+
+320
+00:22:40,640 --> 00:22:42,280
+Esa card personalizada...
+
+321
+00:22:43,839 --> 00:22:45,780
+se vería...
+
+322
+00:22:47,219 --> 00:22:48,220
+así...
+
+323
+00:22:48,919 --> 00:22:49,940
+¿Vale?
+
+324
+00:22:49,941 --> 00:22:52,160
+entonces
+tendríamos... el title...
+
+325
+00:22:52,500 --> 00:22:53,500
+el subtitle...
+
+326
+00:22:54,129 --> 00:22:57,440
+el texto general de la card...
+y el color general de la card...
+
+327
+00:22:57,441 --> 00:22:59,880
+con el menos-menos
+background... ¿Vale?
+
+328
+00:22:59,881 --> 00:23:02,280
+Es decir... para
+trabajar con la...
+
+329
+00:23:03,254 --> 00:23:06,120
+pues la parte personalizada...
+pues directamente...
+
+330
+00:23:06,669 --> 00:23:08,180
+con las propiedades de css...
+
+331
+00:23:09,220 --> 00:23:11,800
+eh... con menos-menos... ¿Vale?
+
+332
+00:23:11,840 --> 00:23:14,760
+menos-menos background... para
+el fondo... menos-menos color...
+
+333
+00:23:15,184 --> 00:23:17,560
+para el... el color...
+
+334
+00:23:21,270 --> 00:23:22,270
+¿Sí?
+
+335
+00:23:22,850 --> 00:23:23,870
+¿Dudas?
+
+336
+00:23:23,950 --> 00:23:24,950
+¿De las cards?
+
+337
+00:23:28,339 --> 00:23:29,350
+Muy bien...
+
+338
+00:23:31,174 --> 00:23:36,290
+Pues pasamos... a... el siguiente elemento...
+que es el... Floating-Action-Button...
+
+339
+00:23:42,239 --> 00:23:47,260
+Vamos a quedar... ahora...
+el... Floating-Action-Button...
+
+340
+00:23:49,000 --> 00:23:52,260
+Vale... Como ya os decía... el
+Floating-Action-Button... es un botón...
+
+341
+00:23:53,700 --> 00:23:54,495
+eh...
+
+342
+00:23:54,519 --> 00:23:58,430
+botón flotante... que está... en la
+aplicación... por encima del contenido...
+
+343
+00:23:59,300 --> 00:23:59,636
+¿Vale?
+
+344
+00:23:59,660 --> 00:24:00,660
+Por eso... eh...
+
+345
+00:24:01,260 --> 00:24:02,236
+flotante...
+
+346
+00:24:02,260 --> 00:24:03,236
+eh...
+
+347
+00:24:03,260 --> 00:24:04,186
+permanecerá...
+
+348
+00:24:04,210 --> 00:24:05,560
+estático... en una posición...
+
+349
+00:24:05,709 --> 00:24:08,260
+al margen del resto del contenido...
+
+350
+00:24:09,395 --> 00:24:10,395
+eh...
+
+351
+00:24:11,240 --> 00:24:12,240
+entonces...
+
+352
+00:24:12,300 --> 00:24:13,300
+vamos a...
+
+353
+00:24:13,529 --> 00:24:15,460
+añadirlo en nuestro menú...
+
+354
+00:24:17,409 --> 00:24:21,460
+antes de empezar a trabajar con él... vamos
+a decirle... que va a llamarse... FAB...
+
+355
+00:24:22,459 --> 00:24:24,920
+el icono va a ser... un coche...
+
+356
+00:24:25,219 --> 00:24:26,630
+vamos a ponerle ruta... FAB...
+
+357
+00:24:27,780 --> 00:24:28,790
+vamos a añadir...
+
+358
+00:24:29,449 --> 00:24:30,460
+ese coche...
+
+359
+00:24:40,139 --> 00:24:41,180
+muy bien...
+
+360
+00:24:41,979 --> 00:24:43,420
+y ya pasamos... a...
+
+361
+00:24:43,719 --> 00:24:44,740
+abrir...
+
+362
+00:24:44,840 --> 00:24:45,860
+el FAB...
+
+363
+00:24:58,000 --> 00:25:02,660
+vale... para mostrar... esa parte
+de... flotante... que os decía...
+
+364
+00:25:02,661 --> 00:25:06,920
+por encima del contenido...
+vamos a generar... un array...
+
+365
+00:25:07,680 --> 00:25:13,680
+eh... de elementos vacíos... vale... vamos
+a hacer un array... de 100 elementos...
+
+366
+00:25:14,644 --> 00:25:20,200
+para poder iterarlo... y el... y así tener
+un contenido... con scroll... y que...
+
+367
+00:25:20,201 --> 00:25:23,140
+podáis ver... el
+efecto del FAB...
+
+368
+00:25:23,240 --> 00:25:24,085
+voy a poner...
+
+369
+00:25:24,109 --> 00:25:27,420
+nuestra cabecera...
+con su título...
+
+370
+00:25:42,740 --> 00:25:45,160
+vale... entonces... vamos
+a hacer... un Ion List...
+
+371
+00:25:47,320 --> 00:25:50,000
+de dentro... va
+a tener... ítems...
+
+372
+00:25:50,600 --> 00:25:55,000
+eh... por el array... pues
+vamos a tener... ítem... off data...
+
+373
+00:25:56,380 --> 00:25:58,000
+extracto... al index...
+
+374
+00:25:58,820 --> 00:26:03,000
+vale... y entonces... recorro el
+array... y monto 100... Ion Items...
+
+375
+00:26:07,610 --> 00:26:09,340
+vale... voy a
+poner... Ion Level...
+
+376
+00:26:18,249 --> 00:26:20,160
+y aquí le vamos
+a poner... dolar...
+
+377
+00:26:25,755 --> 00:26:28,030
+vale... eso me generará...
+100 elementos...
+
+378
+00:26:28,680 --> 00:26:30,120
+voy a ponerle
+también... un footer...
+
+379
+00:26:30,439 --> 00:26:32,000
+el footer... es igual...
+
+380
+00:26:32,660 --> 00:26:34,980
+es un elemento... igual que el
+header... pero está colocado...
+
+381
+00:26:34,981 --> 00:26:36,000
+en la parte inferior...
+
+382
+00:26:37,220 --> 00:26:40,900
+vale... pero la estructura es... igual...
+es decir... puede tener un toolbar...
+
+383
+00:26:40,901 --> 00:26:42,181
+igual que le pasaba al header...
+
+384
+00:26:42,960 --> 00:26:45,150
+y dentro... puedo
+tener... un title...
+
+385
+00:26:47,529 --> 00:26:53,230
+que sea... esto... es un... un... yo al
+toolbar... además... le puedo dar...
+
+386
+00:26:54,744 --> 00:26:56,910
+al texto... o
+sea... al toolbar...
+
+387
+00:26:57,110 --> 00:26:58,150
+un color...
+
+388
+00:27:02,300 --> 00:27:03,300
+ese...
+
+389
+00:27:28,045 --> 00:27:30,830
+vale... entonces...
+yo puedo tener... mi...
+
+390
+00:27:31,579 --> 00:27:32,830
+voy a ponerlo con el pixel...
+
+391
+00:27:40,080 --> 00:27:43,860
+vale... yo puedo tener... como os decía...
+mi página de fav... que va a tener...
+
+392
+00:27:43,861 --> 00:27:45,200
+100 elementos...
+
+393
+00:27:46,460 --> 00:27:48,220
+vale... tiene una cabecera...
+
+394
+00:27:48,419 --> 00:27:49,440
+y un footer...
+
+395
+00:27:50,200 --> 00:27:51,200
+vale...
+
+396
+00:27:52,660 --> 00:27:56,780
+vale... entonces... para montar el
+fab... lo puedo poner... donde quiera...
+
+397
+00:27:56,781 --> 00:27:59,240
+porque va a estar por encima...
+
+398
+00:28:00,160 --> 00:28:00,965
+entonces...
+
+399
+00:28:00,989 --> 00:28:03,100
+lo que tengo que
+invocar... es... ion...
+
+400
+00:28:04,540 --> 00:28:05,540
+fab...
+
+401
+00:28:08,445 --> 00:28:10,810
+vale... lo primero que
+hay que decirle al fab...
+
+402
+00:28:10,959 --> 00:28:16,230
+es que va a estar... fijo en
+una posición... vale... el slot...
+
+403
+00:28:17,365 --> 00:28:21,061
+fixe... vale... eso ya
+hace que el... ese...
+
+404
+00:28:21,062 --> 00:28:24,910
+ese elemento... se
+quede fijo... en una...
+
+405
+00:28:25,209 --> 00:28:27,690
+en un lugar...
+vale... que lugar...
+
+406
+00:28:27,889 --> 00:28:31,110
+pues eso es lo que tenemos
+que decirle a la combinación... el...
+
+407
+00:28:31,111 --> 00:28:35,730
+el posicionamiento del
+fab... funciona... en base a...
+
+408
+00:28:35,731 --> 00:28:38,230
+tres posiciones horizontales...
+y tres posiciones verticales...
+
+409
+00:28:39,070 --> 00:28:41,530
+esto es... como si os
+imaginara... es un 3 en raya...
+
+410
+00:28:42,410 --> 00:28:45,510
+vale... entonces... ¿Qué
+posiciones tengo horizontales?
+
+411
+00:28:47,009 --> 00:28:50,430
+Pues hay una variable que se llama
+horizontal, ¿vale?
+
+412
+00:28:50,490 --> 00:28:56,310
+Que me permite trabajar con start,
+center y end.
+
+413
+00:28:56,610 --> 00:28:57,386
+¿Vale?
+
+414
+00:28:57,410 --> 00:28:59,530
+Para definir las tres posiciones
+horizontales.
+
+415
+00:28:59,999 --> 00:29:02,830
+Nosotros lo queremos colocar a la derecha.
+
+416
+00:29:04,169 --> 00:29:05,430
+¿Qué posición colocaríamos?
+
+417
+00:29:05,729 --> 00:29:07,070
+Entre start, center y end.
+
+418
+00:29:07,071 --> 00:29:08,071
+End.
+
+419
+00:29:10,210 --> 00:29:11,210
+Muy bien.
+
+420
+00:29:12,609 --> 00:29:15,250
+Pondíamos a la derecha con el end.
+
+421
+00:29:15,839 --> 00:29:21,190
+Y luego la vertical es la otra opción en
+las que tenemos que poner top,
+
+422
+00:29:21,619 --> 00:29:22,990
+bottom y center.
+
+423
+00:29:23,910 --> 00:29:24,910
+¿Vale?
+
+424
+00:29:25,339 --> 00:29:29,090
+Top para arriba, bottom para abajo y
+center en el medio.
+
+425
+00:29:29,530 --> 00:29:30,130
+¿Vale?
+
+426
+00:29:30,131 --> 00:29:34,290
+Entonces, si lo queremos colocar abajo a
+la derecha, ¿qué pondríamos?
+
+427
+00:29:35,010 --> 00:29:36,010
+El botón.
+
+428
+00:29:40,030 --> 00:29:40,770
+¿Vale?
+
+429
+00:29:40,771 --> 00:29:46,090
+Con eso ya nos colocaría nuestro FAB abajo
+a la derecha en un espacio reservado.
+
+430
+00:29:47,690 --> 00:29:48,690
+¿Vale?
+
+431
+00:29:49,159 --> 00:29:56,330
+El FAB como tal va a tener dentro un ión
+FAB button.
+
+432
+00:29:56,670 --> 00:29:57,086
+¿Vale?
+
+433
+00:29:57,110 --> 00:30:00,750
+Que va a ser el botón asociado a ese FAB.
+
+434
+00:30:01,689 --> 00:30:02,710
+que estamos colocando.
+
+435
+00:30:11,039 --> 00:30:14,750
+Y ese botón tendrá asociado un icono.
+
+436
+00:30:16,099 --> 00:30:17,530
+Ión Icon.
+
+437
+00:30:21,710 --> 00:30:22,710
+¿Vale?
+
+438
+00:30:22,810 --> 00:30:25,650
+Vamos a ponerle, por ejemplo, el icono A.
+
+439
+00:30:34,549 --> 00:30:39,580
+De tal manera que esto me genera
+automáticamente...
+
+440
+00:30:39,929 --> 00:30:43,600
+En mi página que
+teníamos... Ah, vale.
+
+441
+00:30:43,700 --> 00:30:44,700
+Me falta...
+
+442
+00:30:45,529 --> 00:30:50,620
+Eh... Acordaros que al poner un icono hay
+que añadir el icono.
+
+443
+00:30:50,980 --> 00:30:51,980
+¿Vale?
+
+444
+00:30:52,224 --> 00:30:53,580
+Función Add Icons.
+
+445
+00:30:57,630 --> 00:30:58,630
+Vale.
+
+446
+00:30:59,669 --> 00:31:04,590
+Y vamos a añadir el botón o el icono Add.
+
+447
+00:31:10,470 --> 00:31:11,046
+¿Vale?
+
+448
+00:31:11,070 --> 00:31:11,886
+Lo importamos.
+
+449
+00:31:11,910 --> 00:31:12,910
+Y ahora sí...
+
+450
+00:31:18,989 --> 00:31:21,520
+Vemos nuestro FAB button aquí abajo.
+
+451
+00:31:21,840 --> 00:31:22,056
+¿Vale?
+
+452
+00:31:22,080 --> 00:31:23,080
+Dentro del FAB.
+
+453
+00:31:23,660 --> 00:31:24,080
+¿Vale?
+
+454
+00:31:24,100 --> 00:31:27,400
+Veis que lo está colocando abajo a la
+derecha porque le hemos dicho abajo derecha.
+
+455
+00:31:27,401 --> 00:31:30,740
+Si le dijéramos...
+
+456
+00:31:33,840 --> 00:31:37,780
+Eh... Center button, por
+ejemplo, pues nos lo colocaría...
+
+457
+00:31:38,610 --> 00:31:39,640
+En medio.
+
+458
+00:31:40,440 --> 00:31:41,440
+¿Vale?
+
+459
+00:31:43,695 --> 00:31:44,695
+Vale.
+
+460
+00:31:45,779 --> 00:31:50,100
+Yo a ese FAB button puedo ponerle un
+evento click para que haga algo.
+
+461
+00:31:50,480 --> 00:31:50,896
+¿Vale?
+
+462
+00:31:50,920 --> 00:31:54,420
+Lo que hablábamos antes del Compose para
+generar un nuevo email.
+
+463
+00:31:54,840 --> 00:31:55,840
+Lo que sea.
+
+464
+00:31:55,879 --> 00:31:57,140
+O podemos...
+
+465
+00:31:57,880 --> 00:31:59,960
+Eh... Abrir un submenú.
+
+466
+00:32:01,059 --> 00:32:03,160
+Esto es que cuando le den al botón...
+
+467
+00:32:03,559 --> 00:32:05,300
+Abra un...
+
+468
+00:32:05,880 --> 00:32:07,140
+Eh... Una serie de opciones.
+
+469
+00:32:08,219 --> 00:32:10,540
+Esto se hace con IonFAB List.
+
+470
+00:32:14,040 --> 00:32:14,816
+¿Vale?
+
+471
+00:32:14,840 --> 00:32:18,500
+IonFAB List me genera una lista.
+
+472
+00:32:18,750 --> 00:32:19,800
+Una lista de opciones.
+
+473
+00:32:20,279 --> 00:32:22,860
+Pero yo a esa lista le tengo que decir por
+dónde va a salir.
+
+474
+00:32:23,839 --> 00:32:25,840
+Esa opción de por dónde va a salir...
+
+475
+00:32:26,239 --> 00:32:27,720
+Se lanza con el SIDE.
+
+476
+00:32:30,540 --> 00:32:31,540
+Vale.
+
+477
+00:32:31,719 --> 00:32:34,700
+Y el SIDE tiene
+las mismas... Eh...
+
+478
+00:32:34,849 --> 00:32:36,920
+Dimensiones que teníamos antes...
+
+479
+00:32:37,120 --> 00:32:38,140
+En el...
+
+480
+00:32:38,340 --> 00:32:39,580
+En el... En el FAB.
+
+481
+00:32:41,599 --> 00:32:43,120
+En la parte de horizontal y vertical.
+
+482
+00:32:43,121 --> 00:32:47,000
+Esto que es... Que yo
+tengo las cuatro... Eh...
+
+483
+00:32:47,919 --> 00:32:50,300
+Las cuatro direcciones de...
+
+484
+00:32:51,099 --> 00:32:55,240
+Start, End, Top y Bottom.
+
+485
+00:32:55,780 --> 00:32:56,276
+¿Vale?
+
+486
+00:32:56,300 --> 00:32:59,000
+Para ver hacia dónde sale el submenú.
+
+487
+00:32:59,619 --> 00:33:05,380
+Obviamente, si vosotros habéis puesto el
+botón en el...
+
+488
+00:33:05,381 --> 00:33:09,720
+En el Start, no podéis sacar el submenú
+por el Start.
+
+489
+00:33:09,999 --> 00:33:13,500
+Si lo habéis puesto en el Top,
+no podéis sacar el submenú por el Top.
+
+490
+00:33:14,309 --> 00:33:17,200
+Si lo habéis puesto en el End,
+no podéis sacar el submenú por el End.
+
+491
+00:33:17,799 --> 00:33:20,620
+Y si está en el botón, no podéis sacar el
+submenú por el botón.
+
+492
+00:33:20,740 --> 00:33:21,036
+¿Por qué?
+
+493
+00:33:21,060 --> 00:33:23,080
+Porque se saldría de la vista.
+
+494
+00:33:23,969 --> 00:33:26,378
+Entonces tenéis que
+sacarlo siempre por el lado
+
+495
+00:33:26,379 --> 00:33:28,600
+contrario a donde
+habéis colocado el botón.
+
+496
+00:33:28,679 --> 00:33:31,680
+Salvo que esté colocado en el centro,
+que puede salir por los cuatro notos.
+
+497
+00:33:33,189 --> 00:33:40,840
+De tal manera que nosotros, si lo hemos
+colocado en el end y en el botón...
+
+498
+00:33:41,189 --> 00:33:43,920
+¿Por dónde podemos sacar el submenú?
+
+499
+00:33:46,419 --> 00:33:47,840
+Por el top, por ejemplo.
+
+500
+00:33:50,189 --> 00:33:54,180
+Vale, y la lista es una lista de
+FabButtons.
+
+501
+00:33:54,529 --> 00:33:58,020
+Entonces dentro vamos a tener
+IonFabButton.
+
+502
+00:33:59,879 --> 00:34:02,740
+A ese FabButton tendrá un IonIcon.
+
+503
+00:34:04,439 --> 00:34:06,280
+Vale, que vamos a poner...
+
+504
+00:34:07,620 --> 00:34:08,620
+Logo...
+
+505
+00:34:10,040 --> 00:34:11,040
+YouTube.
+
+506
+00:34:16,270 --> 00:34:17,320
+Voy a ponerle...
+
+507
+00:34:19,560 --> 00:34:20,600
+Logo... Logo...
+
+508
+00:34:25,179 --> 00:34:26,175
+Logo...
+
+509
+00:34:26,199 --> 00:34:27,199
+Eh... GitHub.
+
+510
+00:34:30,910 --> 00:34:32,139
+Vale, voy a hacer otra lista.
+
+511
+00:34:35,410 --> 00:34:36,820
+¿Por dónde más puedo sacarlos?
+
+512
+00:34:37,490 --> 00:34:39,770
+Si he sacado una por el top, ¿qué lado me
+queda por sacar?
+
+513
+00:34:46,630 --> 00:34:48,590
+El Start nos queda aquí, ¿vale?
+
+514
+00:34:48,690 --> 00:34:49,690
+Para la izquierda.
+
+515
+00:34:50,030 --> 00:34:51,030
+Muy bien.
+
+516
+00:34:51,195 --> 00:34:53,850
+Y aquí pues ponemos logo...
+
+517
+00:34:55,270 --> 00:34:56,270
+Eh...
+
+518
+00:34:57,560 --> 00:34:58,560
+Google...
+
+519
+00:35:03,880 --> 00:35:04,880
+TikTok...
+
+520
+00:35:06,190 --> 00:35:07,590
+Y luego...
+
+521
+00:35:18,439 --> 00:35:19,520
+Eh...
+
+522
+00:35:21,064 --> 00:35:26,840
+Es que el X no me acuerdo
+cómo era ahora... Ahora el...
+
+523
+00:35:27,890 --> 00:35:29,380
+Logos de Blu...
+
+524
+00:35:44,650 --> 00:35:45,650
+Están...
+
+525
+00:35:45,700 --> 00:35:47,210
+Todos los logos aquí abajo...
+
+526
+00:35:55,020 --> 00:35:57,630
+¿Dónde está el logo X?
+
+527
+00:36:02,340 --> 00:36:03,340
+¿Vale?
+
+528
+00:36:08,640 --> 00:36:09,640
+Vale.
+
+529
+00:36:12,335 --> 00:36:15,680
+Vale, entonces tendríamos ahí los
+diferentes logos.
+
+530
+00:36:18,540 --> 00:36:21,740
+Eso acordaros que tenemos que añadirlo,
+¿vale?
+
+531
+00:36:21,741 --> 00:36:25,760
+A nuestros iconos.
+
+532
+00:36:25,900 --> 00:36:26,276
+¿Vale?
+
+533
+00:36:26,300 --> 00:36:29,580
+Pues entonces aquí pondríamos logo
+Facebook.
+
+534
+00:36:58,340 --> 00:36:59,016
+¿Vale?
+
+535
+00:36:59,040 --> 00:37:00,420
+Y habría que importarlos.
+
+536
+00:37:28,450 --> 00:37:29,126
+¿Vale?
+
+537
+00:37:29,150 --> 00:37:33,310
+Y fijaros que ahora cuando lo abrimos,
+cuando le hacemos clic en el botón,
+
+538
+00:37:34,730 --> 00:37:40,670
+automáticamente nos abre un submenú con
+todas esas opciones que hemos puesto.
+
+539
+00:37:42,580 --> 00:37:49,630
+Si quisiéramos además que nos abriera,
+por ejemplo, Github.
+
+540
+00:37:50,530 --> 00:37:51,530
+¿Qué?
+
+541
+00:37:51,740 --> 00:37:53,990
+Podemos hacer un HRS.
+
+542
+00:37:54,310 --> 00:37:54,916
+¿Vale?
+
+543
+00:37:54,940 --> 00:38:00,230
+Como vamos a ir a que nos abra el
+navegador, vamos a hacer un HRS con un
+
+544
+00:38:00,231 --> 00:38:03,870
+target blank para que lo abra dentro de
+otro...
+
+545
+00:38:06,330 --> 00:38:06,930
+¿Vale?
+
+546
+00:38:06,931 --> 00:38:07,010
+¿Vale?
+
+547
+00:38:07,011 --> 00:38:09,130
+Que no lo abra en la propia página de la
+aplicación.
+
+548
+00:38:09,810 --> 00:38:10,446
+¿Vale?
+
+549
+00:38:10,470 --> 00:38:15,370
+Entonces abriría el navegador del
+dispositivo con esa...
+
+550
+00:38:17,560 --> 00:38:19,390
+con esa URL.
+
+551
+00:38:19,410 --> 00:38:22,770
+Vamos a ponerle http2.barra.barra.
+
+552
+00:38:23,890 --> 00:38:26,930
+.github.com
+
+553
+00:38:35,724 --> 00:38:36,970
+¿Vale?
+
+554
+00:38:37,050 --> 00:38:38,950
+De tal forma que...
+
+555
+00:38:40,910 --> 00:38:41,930
+Le damos aquí...
+
+556
+00:38:43,285 --> 00:38:45,330
+Y nos llevaría a esa página.
+
+557
+00:38:47,050 --> 00:38:48,050
+¿Vale?
+
+558
+00:38:49,880 --> 00:38:53,850
+Vale, pero yo puedo, por ejemplo,
+querer darle color a una de...
+
+559
+00:38:53,975 --> 00:38:55,890
+a esos iconos para que no esté tan soso.
+
+560
+00:38:56,260 --> 00:39:02,430
+Podríamos decirle que a YouTube yo quiero
+que el icono...
+
+561
+00:39:07,150 --> 00:39:08,170
+Venga, color...
+
+562
+00:39:13,170 --> 00:39:14,170
+Danger.
+
+563
+00:39:17,150 --> 00:39:17,766
+¿Vale?
+
+564
+00:39:17,790 --> 00:39:23,170
+Pero esto es el rojo... Este rojo
+es el rojo de... de la aplicación.
+
+565
+00:39:23,660 --> 00:39:25,630
+Que es un rojo pastelado.
+
+566
+00:39:25,870 --> 00:39:26,870
+¿Vale?
+
+567
+00:39:26,980 --> 00:39:28,950
+Pero yo puedo querer el rojo de YouTube.
+
+568
+00:39:29,240 --> 00:39:30,270
+Que es un rojo puro.
+
+569
+00:39:31,630 --> 00:39:33,630
+Entonces, si quiero hacer eso...
+
+570
+00:39:34,190 --> 00:39:34,596
+¿Vale?
+
+571
+00:39:34,620 --> 00:39:35,690
+Tengo que...
+
+572
+00:39:37,050 --> 00:39:39,230
+Ir a la página de Ionic Framework.
+
+573
+00:39:45,810 --> 00:39:48,400
+Y buscar una cosa que se llama Color
+Generator.
+
+574
+00:39:52,380 --> 00:39:53,710
+Vale, en el Color Generator...
+
+575
+00:39:54,930 --> 00:39:55,626
+Vosotros...
+
+576
+00:39:55,650 --> 00:40:00,690
+Tenemos aquí los nueve colores... Que
+vimos... Que tiene la aplicación de Ionic.
+
+577
+00:40:00,830 --> 00:40:01,686
+¿Os acordáis?
+
+578
+00:40:01,710 --> 00:40:02,710
+Sí.
+
+579
+00:40:02,780 --> 00:40:07,090
+Primary, Psycho, Ordinary, Terter... Y son
+los colores principales de la aplicación.
+
+580
+00:40:07,880 --> 00:40:09,750
+Success, Warning y Danger para esta dos.
+
+581
+00:40:09,751 --> 00:40:10,356
+Tenemos...
+
+582
+00:40:10,380 --> 00:40:12,650
+La en medio humedad para la escala de
+grises.
+
+583
+00:40:13,630 --> 00:40:14,630
+Vale.
+
+584
+00:40:15,000 --> 00:40:17,950
+Yo puedo... Cambiar
+mi aplicación...
+
+585
+00:40:18,050 --> 00:40:19,090
+Para...
+
+586
+00:40:19,290 --> 00:40:21,170
+Tener los colores que yo quiera.
+
+587
+00:40:22,070 --> 00:40:22,430
+¿Vale?
+
+588
+00:40:22,431 --> 00:40:24,750
+Esos son los que me da Ionic por defecto.
+
+589
+00:40:24,950 --> 00:40:25,126
+¿Vale?
+
+590
+00:40:25,150 --> 00:40:26,150
+Con sus tonos pastel.
+
+591
+00:40:26,615 --> 00:40:27,710
+Pero... Eh...
+
+592
+00:40:27,810 --> 00:40:31,970
+Podemos establecer... Nuestro... Nuestra
+gama de colores para nuestra aplicación.
+
+593
+00:40:32,780 --> 00:40:35,180
+¿Con qué color queréis que identifiquemos
+nuestra aplicación?
+
+594
+00:40:36,750 --> 00:40:37,750
+Bueno, en rosa.
+
+595
+00:40:38,830 --> 00:40:39,610
+En rosa.
+
+596
+00:40:39,611 --> 00:40:40,611
+Sí.
+
+597
+00:40:41,190 --> 00:40:42,190
+Me gusta.
+
+598
+00:40:42,940 --> 00:40:43,990
+Vamos a coger el rosa.
+
+599
+00:40:46,030 --> 00:40:47,550
+Y no puedo poner el hashtag y ya está.
+
+600
+00:40:48,020 --> 00:40:50,530
+No, porque el
+color es más... Eh...
+
+601
+00:40:50,730 --> 00:40:52,350
+Complejo que solo poner el hashtag.
+
+602
+00:40:53,030 --> 00:40:54,030
+Vale.
+
+603
+00:40:54,310 --> 00:40:55,890
+Entonces, vamos a coger...
+
+604
+00:40:56,440 --> 00:40:57,530
+Un rosa...
+
+605
+00:40:59,110 --> 00:41:00,370
+Esto es morado.
+
+606
+00:41:08,340 --> 00:41:09,550
+Este rosa, ¿te va bien?
+
+607
+00:41:10,490 --> 00:41:11,490
+Sí.
+
+608
+00:41:11,870 --> 00:41:12,586
+Vale.
+
+609
+00:41:12,610 --> 00:41:13,610
+Vamos a coger ese.
+
+610
+00:41:14,055 --> 00:41:17,710
+Vamos a coger...
+El... Secondary.
+
+611
+00:41:18,625 --> 00:41:21,810
+Un tono de rosa... Más oscuro.
+
+612
+00:41:22,190 --> 00:41:22,466
+Vale.
+
+613
+00:41:22,490 --> 00:41:23,490
+Más tirando a morado.
+
+614
+00:41:30,160 --> 00:41:30,856
+Vale.
+
+615
+00:41:30,880 --> 00:41:32,980
+Y el tertiary... Vamos
+a coger uno más claro.
+
+616
+00:41:44,460 --> 00:41:45,220
+Voy, voy.
+
+617
+00:41:45,240 --> 00:41:46,240
+Ahora os explico eso.
+
+618
+00:41:47,440 --> 00:41:48,060
+Vale.
+
+619
+00:41:48,061 --> 00:41:49,500
+Fijaros que ahora...
+
+620
+00:41:49,900 --> 00:41:51,780
+Mi aplicación... Vale.
+
+621
+00:41:51,940 --> 00:41:53,560
+Ha cambiado al tema rosa.
+
+622
+00:41:54,660 --> 00:41:55,656
+¿Lo veis?
+
+623
+00:41:55,680 --> 00:41:56,456
+Sí.
+
+624
+00:41:56,480 --> 00:41:57,480
+Vale.
+
+625
+00:41:57,510 --> 00:41:59,860
+Pues entonces vamos
+a... Si nos gusta, vale.
+
+626
+00:42:00,140 --> 00:42:01,140
+Nos da aquí el preview.
+
+627
+00:42:01,500 --> 00:42:01,716
+Vale.
+
+628
+00:42:01,740 --> 00:42:02,371
+Decimos, vale.
+
+629
+00:42:02,395 --> 00:42:04,435
+Sí, se ajusta a lo que yo quiero para mi
+aplicación.
+
+630
+00:42:05,125 --> 00:42:09,440
+Entonces, si os fijáis aquí abajo,
+nos ha generado un... Un... Un... CSS.
+
+631
+00:42:10,380 --> 00:42:11,380
+Vale.
+
+632
+00:42:12,170 --> 00:42:13,240
+Para la...
+
+633
+00:42:13,690 --> 00:42:14,700
+Todos estos colores.
+
+634
+00:42:16,020 --> 00:42:17,020
+Vale.
+
+635
+00:42:17,280 --> 00:42:18,096
+Vale.
+
+636
+00:42:18,120 --> 00:42:19,260
+Entonces, cogemos ese CSS.
+
+637
+00:42:21,010 --> 00:42:25,900
+Y en nuestra aplicación hay una carpeta
+que se llama...
+
+638
+00:42:26,600 --> 00:42:27,600
+Themes.
+
+639
+00:42:27,940 --> 00:42:28,940
+Vale.
+
+640
+00:42:29,040 --> 00:42:30,040
+El... El theme.
+
+641
+00:42:30,400 --> 00:42:32,800
+Y luego dentro hay un archivo que se llama
+variables.scss.
+
+642
+00:42:34,780 --> 00:42:37,500
+Nosotros pegamos ahí ese fichero.
+
+643
+00:42:38,620 --> 00:42:39,620
+Vale.
+
+644
+00:42:44,600 --> 00:42:47,010
+Sí, esos son los nueve colores que tiene
+mi aplicación.
+
+645
+00:42:47,330 --> 00:42:47,546
+Vale.
+
+646
+00:42:47,570 --> 00:42:51,470
+Los estoy sobreescribiendo para definir el
+tema de mi aplicación.
+
+647
+00:42:51,870 --> 00:42:52,146
+Vale.
+
+648
+00:42:52,170 --> 00:42:54,977
+Estoy sobreescribiendo el
+tema por defecto que pone
+
+649
+00:42:54,978 --> 00:42:58,530
+Yonic con el tema que yo
+voy a utilizar en mi aplicación.
+
+650
+00:42:59,530 --> 00:43:05,750
+Fijaros que automáticamente en la aplicación
+que nosotros teníamos ahora es rosa.
+
+651
+00:43:06,940 --> 00:43:09,824
+Es decir, ahora vamos
+al inicio y fijaros que
+
+652
+00:43:09,825 --> 00:43:12,530
+nuestra aplicación
+trabaja con el color rosa.
+
+653
+00:43:14,020 --> 00:43:16,550
+Si vamos a cualquiera de las páginas que
+teníamos antes...
+
+654
+00:43:18,090 --> 00:43:18,726
+Vale.
+
+655
+00:43:18,750 --> 00:43:21,010
+Ahora todo lo ha cambiado con esos
+colores.
+
+656
+00:43:22,190 --> 00:43:23,190
+¿Sí?
+
+657
+00:43:23,290 --> 00:43:24,290
+Sí.
+
+658
+00:43:24,530 --> 00:43:25,530
+Vale.
+
+659
+00:43:25,690 --> 00:43:26,710
+Pero yo quería...
+
+660
+00:43:26,711 --> 00:43:31,630
+Hemos dicho que lo que yo quería era
+conseguir un color rojo que fuera rojo puro.
+
+661
+00:43:31,709 --> 00:43:33,750
+Es decir, este Danger...
+
+662
+00:43:34,150 --> 00:43:39,230
+Pues quiero que sea el 255 con 0 de verde
+y 0 de azul.
+
+663
+00:43:41,410 --> 00:43:42,276
+¿Vale?
+
+664
+00:43:42,300 --> 00:43:44,330
+Ese rojo... Rojo intenso.
+
+665
+00:43:44,850 --> 00:43:45,266
+Vale.
+
+666
+00:43:45,290 --> 00:43:50,890
+Fijaros que el Danger efectivamente al
+cambiarlo me ha puesto ese color rojo intenso.
+
+667
+00:43:51,730 --> 00:43:52,146
+Vale.
+
+668
+00:43:52,170 --> 00:43:53,410
+Pues vamos a copiar ese Danger.
+
+669
+00:43:59,790 --> 00:44:08,070
+Y lo que vamos a hacer es montarlo al
+final de nuestra lista de colores del tema.
+
+670
+00:44:11,930 --> 00:44:12,930
+Vamos aquí.
+
+671
+00:44:14,230 --> 00:44:16,230
+Y nos venimos al final de nuestra lista de
+colores.
+
+672
+00:44:16,660 --> 00:44:22,430
+Y vamos a decirle que vamos a añadir un
+color que se va a llamar YouTube.
+
+673
+00:44:26,910 --> 00:44:29,400
+De tal manera que donde pone Danger...
+
+674
+00:44:31,510 --> 00:44:36,360
+Vamos a crear unas variables que se va a
+llamar YouTube.
+
+675
+00:44:37,690 --> 00:44:40,500
+Eso estoy creando unas variables...
+
+676
+00:44:41,080 --> 00:44:41,360
+¿Vale?
+
+677
+00:44:41,380 --> 00:44:44,880
+Es decir, seis variables con su color
+asociado.
+
+678
+00:44:45,820 --> 00:44:46,636
+¿Vale?
+
+679
+00:44:46,660 --> 00:44:50,380
+En este caso son las seis variables que
+van a definir el color YouTube.
+
+680
+00:44:50,381 --> 00:44:53,100
+Pero no estoy definiendo el color YouTube.
+
+681
+00:44:53,380 --> 00:44:56,780
+Aún no puedo en las etiquetas color poner
+el color YouTube.
+
+682
+00:44:56,980 --> 00:44:58,420
+Yo tengo que definir ese color.
+
+683
+00:44:59,180 --> 00:45:00,180
+Dime.
+
+684
+00:45:00,670 --> 00:45:02,406
+¿Pero tú ahí solo estás modificando una
+variable?
+
+685
+00:45:02,430 --> 00:45:04,460
+Estoy creando seis variables en realidad.
+
+686
+00:45:06,040 --> 00:45:08,080
+¿Pero no es la variable YouTube?
+
+687
+00:45:10,900 --> 00:45:13,850
+No, estoy creando una variable llamada
+IonColorYouTube.
+
+688
+00:45:14,125 --> 00:45:16,450
+Una variable llamada IonColorYouTube RGB.
+
+689
+00:45:16,950 --> 00:45:19,650
+Una variable llamada IonColorYouTube
+Contrast.
+
+690
+00:45:20,170 --> 00:45:20,570
+¿Vale?
+
+691
+00:45:20,571 --> 00:45:23,730
+Que son seis variables diferentes con sus
+seis valores asociados.
+
+692
+00:45:24,610 --> 00:45:27,770
+Ahora es cuando voy a crear una clase...
+
+693
+00:45:28,390 --> 00:45:29,006
+¿Vale?
+
+694
+00:45:29,030 --> 00:45:30,270
+Que se va a llamar...
+
+695
+00:45:30,420 --> 00:45:34,270
+Punto IonColorYouTube.
+
+696
+00:45:37,150 --> 00:45:37,866
+¿Vale?
+
+697
+00:45:37,890 --> 00:45:41,950
+Que esta clase es la que sí va a definir
+el color YouTube.
+
+698
+00:45:42,390 --> 00:45:46,230
+Y ese color YouTube tiene que tener seis
+variables.
+
+699
+00:45:48,990 --> 00:45:50,210
+Parecido a lo de arriba.
+
+700
+00:45:51,420 --> 00:45:52,610
+¿Vale?
+
+701
+00:45:52,780 --> 00:45:53,890
+Es...
+
+702
+00:45:55,444 --> 00:45:58,650
+En realidad es IonColor.
+
+703
+00:45:59,740 --> 00:46:01,830
+Bueno, todo esto es IonColor...
+
+704
+00:46:02,030 --> 00:46:05,130
+Esto es IonColorBase.
+
+705
+00:46:06,050 --> 00:46:09,230
+Esto es IonColorBaseRGB.
+
+706
+00:46:12,890 --> 00:46:14,930
+Esto es IonColorContrast.
+
+707
+00:46:22,190 --> 00:46:23,190
+Vale.
+
+708
+00:46:23,390 --> 00:46:25,350
+Y el valor... ¿Vale?
+
+709
+00:46:25,370 --> 00:46:27,730
+Hay que cambiarlo por el correspondiente.
+
+710
+00:46:28,030 --> 00:46:29,030
+Es decir...
+
+711
+00:46:29,280 --> 00:46:32,290
+Aquí ponme... El...
+
+712
+00:46:32,940 --> 00:46:34,350
+El YouTube...
+
+713
+00:46:36,300 --> 00:46:38,070
+IonColorYouTube...
+IonColorYouTube... Base.
+
+714
+00:46:38,330 --> 00:46:39,330
+El normal.
+
+715
+00:46:41,450 --> 00:46:43,290
+Y pon... Importante.
+
+716
+00:46:50,200 --> 00:46:53,630
+Y abajo ponme
+también... Este... Este...
+
+717
+00:46:54,990 --> 00:46:55,990
+Esto...
+
+718
+00:46:56,840 --> 00:46:58,230
+Ahora lo cambiamos...
+Ahora lo cambiamos...
+
+719
+00:46:58,231 --> 00:47:00,350
+Porque cada uno tiene que tener su
+variable.
+
+720
+00:47:02,270 --> 00:47:02,986
+¿Vale?
+
+721
+00:47:03,010 --> 00:47:06,490
+Entonces... Este
+será el YouTube RGB.
+
+722
+00:47:08,170 --> 00:47:10,650
+Esto será el YouTube Contrast.
+
+723
+00:47:12,180 --> 00:47:13,890
+Este será el Contrast RGB.
+
+724
+00:47:16,290 --> 00:47:17,310
+Este será el Save.
+
+725
+00:47:20,000 --> 00:47:21,630
+Y este será el Latif.
+
+726
+00:47:22,630 --> 00:47:23,630
+¿Vale?
+
+727
+00:47:23,890 --> 00:47:30,250
+Entonces estoy definiendo el color YouTube
+o la variable YouTube como color
+
+728
+00:47:30,650 --> 00:47:37,570
+definiéndole seis valores a su color base,
+su color base RGB, su color de contraste,
+
+729
+00:47:38,050 --> 00:47:42,570
+su color de contraste, su color de
+contraste RGB, su sombra y su tinta.
+
+730
+00:47:44,310 --> 00:47:45,330
+¿Vale?
+
+731
+00:47:45,790 --> 00:47:46,790
+¿Vale?
+
+732
+00:47:47,800 --> 00:47:49,570
+Entonces... Ahora...
+
+733
+00:47:50,970 --> 00:47:51,970
+Yo...
+
+734
+00:47:52,139 --> 00:47:53,870
+En mi aplicación...
+
+735
+00:47:55,030 --> 00:47:57,830
+Donde antes teníamos el color Danger...
+
+736
+00:47:58,230 --> 00:47:59,870
+Puedo utilizar ahora...
+
+737
+00:48:00,405 --> 00:48:01,990
+El color YouTube.
+
+738
+00:48:08,110 --> 00:48:09,190
+Fijaros que...
+
+739
+00:48:09,540 --> 00:48:10,610
+Ahora en mi aplicación...
+
+740
+00:48:16,110 --> 00:48:17,130
+Si voy al Fab...
+
+741
+00:48:18,830 --> 00:48:19,656
+¿Vale?
+
+742
+00:48:19,680 --> 00:48:22,030
+Ahora sí tengo ese color rojo intenso.
+
+743
+00:48:28,830 --> 00:48:29,830
+¿Lo veis?
+
+744
+00:48:30,030 --> 00:48:31,030
+Sí.
+
+745
+00:48:32,890 --> 00:48:35,670
+Pues así podéis crear vuestras variables
+de color.
+
+746
+00:48:36,070 --> 00:48:36,606
+¿Vale?
+
+747
+00:48:36,630 --> 00:48:39,270
+Para... Eh... Trabajarlas
+con... Con Angular.
+
+748
+00:48:40,180 --> 00:48:41,230
+O sea, perdón, con Ionic.
+
+749
+00:48:45,340 --> 00:48:46,650
+¿Dudas de esto?
+
+750
+00:48:49,430 --> 00:48:50,430
+¿Todo claro?
+
+751
+00:48:51,410 --> 00:48:52,410
+¿Todo claro?
+
+752
+00:48:52,890 --> 00:48:53,771
+Vale.
+
+753
+00:48:53,795 --> 00:48:57,330
+Paramos hasta la una... Y a la una
+vemos el último elemento de hoy.
+
+754
+00:48:57,550 --> 00:48:57,786
+¿Vale?
+
+755
+00:48:57,810 --> 00:48:59,090
+Que son las slides.
+
+756
+00:49:07,450 --> 00:49:08,246
+Vale.
+
+757
+00:49:08,270 --> 00:49:10,120
+Hemos visto... El contenedor...
+
+758
+00:49:10,650 --> 00:49:12,070
+Un contenedor como son las cards.
+
+759
+00:49:12,810 --> 00:49:14,910
+Hemos visto... El... El...
+
+760
+00:49:15,510 --> 00:49:15,606
+El...
+
+761
+00:49:15,630 --> 00:49:16,630
+Fab...
+
+762
+00:49:16,710 --> 00:49:18,020
+Que era el botón flotante.
+
+763
+00:49:18,021 --> 00:49:19,160
+¿Vale?
+
+764
+00:49:19,220 --> 00:49:21,020
+Que nos permitiría sacar...
+
+765
+00:49:21,474 --> 00:49:23,780
+Eh... Un listado de opciones.
+
+766
+00:49:24,300 --> 00:49:25,020
+¿Vale?
+
+767
+00:49:25,021 --> 00:49:26,680
+Lo último que vamos a ver hoy...
+
+768
+00:49:26,980 --> 00:49:28,020
+Son las slides.
+
+769
+00:49:28,720 --> 00:49:29,036
+¿Vale?
+
+770
+00:49:29,060 --> 00:49:30,060
+O el desplazamiento...
+
+771
+00:49:30,880 --> 00:49:33,300
+Eh... Horizontal de elementos.
+
+772
+00:49:34,680 --> 00:49:36,500
+Vamos a tener un contenedor...
+
+773
+00:49:37,270 --> 00:49:41,480
+Que nos va a permitir... Dentro del
+contenedor... Desplazar los elementos.
+
+774
+00:49:43,180 --> 00:49:43,976
+¿Vale?
+
+775
+00:49:44,000 --> 00:49:46,120
+Entonces... Para instalar...
+
+776
+00:49:47,040 --> 00:49:47,916
+Bueno...
+
+777
+00:49:47,940 --> 00:49:49,000
+El...
+
+778
+00:49:49,980 --> 00:49:50,980
+Las slides...
+
+779
+00:49:54,850 --> 00:49:55,900
+Las slides...
+
+780
+00:49:56,300 --> 00:49:57,136
+¿Vale?
+
+781
+00:49:57,160 --> 00:49:59,660
+Eh... Desde la versión 6...
+
+782
+00:50:00,300 --> 00:50:02,820
+Ionic decidió... Trasladar el...
+
+783
+00:50:03,650 --> 00:50:04,700
+El tiempo de trabajo...
+
+784
+00:50:04,900 --> 00:50:05,900
+Dedicado a las slides...
+
+785
+00:50:07,360 --> 00:50:08,700
+A otros departamentos.
+
+786
+00:50:08,935 --> 00:50:10,840
+De tal manera que... Eh...
+
+787
+00:50:11,040 --> 00:50:14,780
+Lo que ellos hacían... Que era coger
+una dependencia... Que era Sweeper...
+
+788
+00:50:14,880 --> 00:50:17,100
+Y... Reordenarla en...
+
+789
+00:50:17,704 --> 00:50:19,010
+Etiquetas... Iones slides...
+
+790
+00:50:19,550 --> 00:50:20,780
+Iones slides...
+
+791
+00:50:22,540 --> 00:50:24,740
+Pasaron a... Eh...
+
+792
+00:50:25,250 --> 00:50:26,250
+A recomendar...
+
+793
+00:50:26,415 --> 00:50:29,140
+La instalación directamente...
+Del paquete de Sweeper... ¿Vale?
+
+794
+00:50:29,160 --> 00:50:31,780
+Que siguen trabajando
+en ellas... Es muy potente...
+
+795
+00:50:33,000 --> 00:50:36,930
+Es un paquete para Javascript... Y
+entonces... Eh... Nos recomendó el uso...
+
+796
+00:50:37,464 --> 00:50:41,360
+Para... Para trabajar con ellas
+directamente... Y así ellos poder centrarse...
+
+797
+00:50:41,361 --> 00:50:43,850
+En el resto de componentes...
+Y funcionalidades de Ionic...
+
+798
+00:50:44,250 --> 00:50:48,530
+Entonces... Para instalar Sweeper...
+Y poder utilizarlo... Hay que hacer...
+
+799
+00:50:48,531 --> 00:50:49,531
+Tres pasos...
+
+800
+00:50:52,470 --> 00:50:55,070
+Vale... Voy a
+instalar primero...
+
+801
+00:50:56,030 --> 00:50:58,850
+La... Página... Donde
+vamos a trabajar...
+
+802
+00:50:59,470 --> 00:51:00,470
+Esto va a ser...
+
+803
+00:51:02,210 --> 00:51:03,210
+Slides...
+
+804
+00:51:11,370 --> 00:51:13,790
+Vale... Y voy a...
+Aprovechar... Para...
+
+805
+00:51:15,250 --> 00:51:16,250
+Añadir...
+
+806
+00:51:16,910 --> 00:51:18,810
+Un elemento a mi menú...
+
+807
+00:51:19,540 --> 00:51:20,540
+Que va a ser...
+
+808
+00:51:21,190 --> 00:51:22,190
+Slides...
+
+809
+00:51:22,680 --> 00:51:24,250
+El icon... Va a ser...
+
+810
+00:51:25,250 --> 00:51:26,250
+Album...
+
+811
+00:51:26,850 --> 00:51:27,870
+Y aquí va a ser...
+
+812
+00:51:29,850 --> 00:51:33,370
+Slides... Y vamos a
+añadir... Es icono de Album...
+
+813
+00:51:47,800 --> 00:51:52,150
+Entonces os decía que... Para
+añadir las Slides a nuestro proyecto...
+
+814
+00:51:53,930 --> 00:51:58,530
+Lo que tenemos que hacer... Son
+tres pasos... Paso número uno...
+
+815
+00:51:58,780 --> 00:52:03,230
+Instalar Sweeper...
+Esto es... NPM...
+
+816
+00:52:03,455 --> 00:52:06,030
+Instal... Sweeper...
+
+817
+00:52:07,250 --> 00:52:10,970
+Eso... Instalará la dependencia de
+Sweeper... Que nos va a permitir...
+
+818
+00:52:10,971 --> 00:52:16,890
+Trabajar con... Eh... Esos Slides...
+Vale... Esas diapositivas... Eh...
+
+819
+00:52:17,910 --> 00:52:18,910
+Horizontales...
+
+820
+00:52:20,990 --> 00:52:24,190
+Vale... Esto es un
+paquete... Que...
+
+821
+00:52:25,080 --> 00:52:28,330
+Que... Añade a
+nuestras dependencias...
+
+822
+00:52:30,760 --> 00:52:32,080
+Normalmente es bastante rápido...
+
+823
+00:52:32,270 --> 00:52:33,270
+Ahí está...
+
+824
+00:52:35,090 --> 00:52:36,670
+Vale... A ver...
+
+825
+00:52:38,750 --> 00:52:40,070
+Silencio... El...
+
+826
+00:52:40,715 --> 00:52:42,890
+Una vez tenemos instalado Sweeper...
+
+827
+00:52:43,090 --> 00:52:45,910
+El siguiente paso es cargarlo en la
+aplicación...
+
+828
+00:52:46,010 --> 00:52:47,070
+Para cargarlo...
+
+829
+00:52:48,440 --> 00:52:49,790
+Arriba del todo...
+
+830
+00:52:49,890 --> 00:52:51,070
+Antes del Component...
+
+831
+00:52:52,200 --> 00:52:54,010
+Vamos a invocar una función que se
+llama...
+
+832
+00:52:55,370 --> 00:52:56,370
+Register...
+
+833
+00:52:56,810 --> 00:52:59,070
+Register es una función de Sweeper...
+
+834
+00:52:59,630 --> 00:53:00,076
+Vale...
+
+835
+00:53:00,100 --> 00:53:01,420
+Nos lo tiene que reconocer ahí...
+
+836
+00:53:02,000 --> 00:53:05,250
+Y nos generará un import
+automáticamente... De Sweeper...
+
+837
+00:53:06,130 --> 00:53:08,090
+Pero el import lo hace incompleto...
+
+838
+00:53:08,240 --> 00:53:09,480
+Entonces hay que modificarle...
+
+839
+00:53:10,220 --> 00:53:13,290
+De Sweeper Element... A
+Sweeper Element... Bundle...
+
+840
+00:53:15,040 --> 00:53:16,250
+Una vez lo tenemos...
+
+841
+00:53:17,190 --> 00:53:18,036
+Vale...
+
+842
+00:53:18,060 --> 00:53:19,110
+Lo siguiente...
+
+843
+00:53:19,235 --> 00:53:21,110
+El tercer y último paso es...
+
+844
+00:53:21,410 --> 00:53:23,290
+En el componente o elemento...
+
+845
+00:53:23,640 --> 00:53:25,250
+La página donde lo queramos utilizar...
+
+846
+00:53:27,580 --> 00:53:28,610
+Vale...
+
+847
+00:53:28,760 --> 00:53:32,030
+En el TS... Tenemos
+que añadir...
+
+848
+00:53:33,630 --> 00:53:35,490
+En el... Arroba Component...
+
+849
+00:53:35,995 --> 00:53:38,250
+Un... Array de esquemas...
+
+850
+00:53:39,884 --> 00:53:43,970
+Donde vamos a
+añadir... El Custom...
+
+851
+00:53:46,610 --> 00:53:48,490
+El Custom...
+Custom... Elements...
+
+852
+00:53:52,790 --> 00:53:53,790
+Esquema...
+
+853
+00:53:56,110 --> 00:53:57,990
+Vale... De Angular Core...
+
+854
+00:53:58,730 --> 00:54:01,010
+Y ya está... Vale...
+Entonces... Paso 1...
+
+855
+00:54:01,110 --> 00:54:02,370
+NPM Install Sweeper...
+
+856
+00:54:02,910 --> 00:54:06,910
+Paso 2... Función Register...
+Con el import correcto... Paso 3...
+
+857
+00:54:07,110 --> 00:54:08,910
+Añadir el Array de esquemas...
+
+858
+00:54:09,510 --> 00:54:12,294
+En el componente...
+Ahora ya... Si que podemos
+
+859
+00:54:12,295 --> 00:54:15,870
+trabajar... Directamente...
+En ese... Eh...
+
+860
+00:54:18,150 --> 00:54:20,730
+En esos slides...
+Vale... Para montar...
+
+861
+00:54:23,070 --> 00:54:24,070
+Vale...
+
+862
+00:54:24,510 --> 00:54:27,870
+Para el ejemplo... Que vamos a hacer de
+slides... Que vamos a hacer un ejemplo...
+
+863
+00:54:27,871 --> 00:54:28,771
+De... Eh...
+
+864
+00:54:28,795 --> 00:54:32,310
+Tutorial de aplicación...
+Vale... Que sería la primera...
+
+865
+00:54:32,810 --> 00:54:34,170
+La bienvenida de una aplicación...
+
+866
+00:54:34,510 --> 00:54:40,330
+Lo vamos a hacer... Dando unos estilos...
+Que ocupen el 100%... De la vista... Eh...
+
+867
+00:54:40,980 --> 00:54:43,130
+O por lo menos
+del content... Vale...
+
+868
+00:54:43,330 --> 00:54:47,850
+Con unas cards centrales... Que...
+Nos muestren un poco de texto...
+
+869
+00:54:47,950 --> 00:54:52,930
+Y una imagen... Entonces... Para
+ello... Lo que vamos a hacer es...
+
+870
+00:54:53,030 --> 00:54:56,530
+Una... Darle... Unos
+pequeños estilos...
+
+871
+00:54:57,290 --> 00:55:00,090
+Vale... A nuestras
+tarjetas... Para...
+
+872
+00:55:00,440 --> 00:55:03,790
+Conseguir esa
+visualización... Vale...
+
+873
+00:55:05,250 --> 00:55:07,450
+Así que vamos a hacer una
+clase... Que se va a llamar...
+
+874
+00:55:08,310 --> 00:55:09,310
+SlideFull...
+
+875
+00:55:10,470 --> 00:55:12,610
+Vale... Que será
+la que controle...
+
+876
+00:55:13,360 --> 00:55:15,070
+El 100% de la altura...
+
+877
+00:55:18,600 --> 00:55:19,770
+Vamos a hacer...
+
+878
+00:55:20,374 --> 00:55:22,070
+Estilos para la tarjeta...
+
+879
+00:55:23,315 --> 00:55:26,450
+A la cual le vamos a decir...
+Que va a tener un ancho...
+
+880
+00:55:27,210 --> 00:55:27,986
+Y alto...
+
+881
+00:55:28,010 --> 00:55:30,070
+De 300 píxeles...
+
+882
+00:55:33,939 --> 00:55:38,100
+Vamos a decirle también...
+Que va a tener un margin...
+
+883
+00:55:40,040 --> 00:55:43,740
+Para que esté
+centrado... Auto... 10%...
+
+884
+00:55:45,779 --> 00:55:46,779
+Auto...
+
+885
+00:55:49,004 --> 00:55:50,004
+Si...
+
+886
+00:55:57,995 --> 00:56:00,870
+Vale... Vale... Y luego
+vamos a controlar la imagen...
+
+887
+00:56:02,010 --> 00:56:03,450
+Vale... Para que ocupe...
+
+888
+00:56:03,600 --> 00:56:04,970
+100 píxeles...
+
+889
+00:56:09,940 --> 00:56:11,510
+Y esté centrada...
+
+890
+00:56:11,910 --> 00:56:12,950
+Textalign...
+
+891
+00:56:24,980 --> 00:56:28,180
+Y margin drive...
+Auto... Vale...
+
+892
+00:56:28,480 --> 00:56:33,720
+Con esto tendremos... La car
+centrada... Con un tamaño de 300x300...
+
+893
+00:56:34,020 --> 00:56:37,680
+Y luego la imagen... Que vamos a
+colocar en la car... La tendremos...
+
+894
+00:56:37,930 --> 00:56:39,700
+A 100 píxeles... Y centrada...
+
+895
+00:56:40,000 --> 00:56:41,620
+En la parte superior...
+
+896
+00:56:42,120 --> 00:56:44,720
+Vamos a montar... Un array...
+
+897
+00:56:44,870 --> 00:56:46,580
+De diapositivas...
+
+898
+00:56:47,560 --> 00:56:52,580
+Que sean... Un
+array... De objetos...
+
+899
+00:56:54,154 --> 00:56:57,620
+Que van a tener... Título...
+
+900
+00:56:58,735 --> 00:57:00,080
+De tipo string...
+
+901
+00:57:03,255 --> 00:57:04,255
+Descripción...
+
+902
+00:57:04,880 --> 00:57:06,640
+De tipo string...
+
+903
+00:57:08,100 --> 00:57:09,100
+Imagen...
+
+904
+00:57:09,775 --> 00:57:10,900
+De tipo string...
+
+905
+00:57:14,930 --> 00:57:16,040
+¿Vale?
+
+906
+00:57:16,041 --> 00:57:18,440
+Vamos a ponerle... La primera...
+
+907
+00:57:24,920 --> 00:57:26,110
+Poner... Eh...
+
+908
+00:57:26,310 --> 00:57:29,870
+Comparte... Vamos
+
+909
+00:57:33,060 --> 00:57:37,360
+a ponerle... En la
+descripción... Que sea...
+
+910
+00:57:37,560 --> 00:57:41,980
+Mira... Y comparte... Tus...
+
+911
+00:57:43,720 --> 00:57:45,980
+Increíbles... Fotos...
+
+912
+00:57:46,540 --> 00:57:47,540
+De...
+
+913
+00:57:51,550 --> 00:57:55,630
+Vale... Y luego vamos a ponerle... La
+ruta de la imagen... Que vamos a ponerla...
+
+914
+00:57:55,631 --> 00:57:57,210
+Dentro de assets...
+
+915
+00:57:57,990 --> 00:58:00,210
+Una carpeta... Que
+sean imágenes...
+
+916
+00:58:09,550 --> 00:58:14,090
+Vale... Voy a ir... A la carpeta de imágenes...
+Que tengo por aquí... Voy a irme a...
+
+917
+00:58:14,590 --> 00:58:15,266
+Progresa...
+
+918
+00:58:15,290 --> 00:58:17,030
+Vamos a ir...
+A... S... A... A...
+
+919
+00:58:18,520 --> 00:58:21,710
+Voy a cogerme... Estas
+imágenes... Y las voy a traer...
+
+920
+00:58:24,320 --> 00:58:25,870
+Al proyecto... Al proyecto...
+
+921
+00:58:26,590 --> 00:58:27,830
+Acordaros que...
+
+922
+00:58:28,180 --> 00:58:33,870
+Dentro de la carpeta assets... En imágenes...
+Vale... Voy a traerme esas imágenes...
+
+923
+00:58:59,640 --> 00:59:02,920
+Vale... Tu música...
+
+924
+00:59:08,130 --> 00:59:14,000
+Tu música... Esta es...
+Toda... Tu música...
+
+925
+00:59:41,520 --> 00:59:42,880
+Lo tenemos...
+
+926
+00:59:44,610 --> 00:59:49,460
+Nunca... Nunca...
+Olvides nada...
+
+927
+01:00:17,384 --> 01:00:20,050
+Tu ubicación...
+
+928
+01:00:38,120 --> 01:00:41,800
+Vale... Un array de cuatro
+elementos... Con título... Descripción...
+
+929
+01:00:41,900 --> 01:00:44,400
+E imagen... Vale... Lo
+que vamos a hacer...
+
+930
+01:00:44,700 --> 01:00:47,480
+En nuestro HTML...
+
+931
+01:00:51,500 --> 01:00:58,210
+Estos son slides... Vale... Vamos
+a... Montar... Esas diapositivas...
+
+932
+01:00:58,960 --> 01:01:01,810
+Vamos a poner
+aquí el flash... Vale...
+
+933
+01:01:04,144 --> 01:01:06,060
+Vale... ¿Cómo montamos eso?
+
+934
+01:01:10,130 --> 01:01:11,160
+A ver...
+
+935
+01:01:11,360 --> 01:01:12,116
+¿Nos callamos ya?
+
+936
+01:01:12,140 --> 01:01:13,140
+¿O qué?
+
+937
+01:01:13,710 --> 01:01:14,740
+Los Javis...
+
+938
+01:01:20,124 --> 01:01:22,110
+Entonces... Para meter...
+
+939
+01:01:23,240 --> 01:01:26,190
+Las slides... Vale...
+Necesito un contenedor...
+
+940
+01:01:27,410 --> 01:01:29,570
+El contenedor de
+Sweeper... Es Sweeper...
+
+941
+01:01:32,110 --> 01:01:33,110
+Container...
+
+942
+01:01:36,680 --> 01:01:38,560
+Vale... Lo añadimos...
+
+943
+01:01:38,760 --> 01:01:42,040
+A nuestras tags personalizadas...
+Vale... Y quiero iterar...
+
+944
+01:01:42,740 --> 01:01:46,900
+O montar... Una diapositiva... Por cada
+uno... De los elementos de mi array...
+
+945
+01:01:47,250 --> 01:01:52,500
+Para hacer la iteración... Lo que
+utilizamos es... El... Arroba for...
+
+946
+01:01:54,740 --> 01:01:55,476
+Vale...
+
+947
+01:01:55,500 --> 01:01:59,360
+Y dentro del arroba for... Le decimos que...
+Por cada diapositiva... De mi array...
+
+948
+01:02:00,500 --> 01:02:02,800
+Diapositivas... Que
+traquee... Por el index...
+
+949
+01:02:04,060 --> 01:02:06,100
+Y me... Que me montes un...
+
+950
+01:02:07,200 --> 01:02:11,740
+Sweeper... Slide... Vale... Una
+diapositiva... Una diapositiva de Sweeper...
+
+951
+01:02:12,740 --> 01:02:18,140
+Esto... Montará una... Por cada elemento...
+De la array... Slides... En total...
+
+952
+01:02:18,141 --> 01:02:22,560
+Cuatro... Que son las que hemos...
+Hecho... Vale... Cada Sweeper... Slide...
+
+953
+01:02:22,561 --> 01:02:25,940
+Lo que vamos a decirle...
+Además... Es que coja la clase...
+
+954
+01:02:26,190 --> 01:02:28,080
+Que hemos hecho... De CSS...
+
+955
+01:02:29,720 --> 01:02:30,740
+Slides... Slides...
+
+956
+01:02:31,040 --> 01:02:32,300
+Full...
+
+957
+01:02:32,650 --> 01:02:37,480
+Y dentro... Lo que vamos
+a hacer es un... Ion Card...
+
+958
+01:02:39,290 --> 01:02:40,760
+Vamos a ponerle...
+
+959
+01:02:40,960 --> 01:02:42,080
+Modo Ios...
+
+960
+01:02:43,720 --> 01:02:46,080
+Y vamos a ponerle...
+Una imagen...
+
+961
+01:02:49,649 --> 01:02:52,820
+Que va a coger la
+imagen de... Slides...
+
+962
+01:02:53,550 --> 01:02:54,306
+Punto...
+
+963
+01:02:54,330 --> 01:02:55,330
+I.M.G.
+
+964
+01:02:59,735 --> 01:03:02,820
+Aquí en el alt... Puedo
+poner el... Slides... Punto...
+
+965
+01:03:02,920 --> 01:03:03,920
+Título...
+
+966
+01:03:05,040 --> 01:03:06,040
+Vale...
+
+967
+01:03:06,120 --> 01:03:08,060
+Vamos a ponerle...
+Un Ion Card...
+
+968
+01:03:09,510 --> 01:03:10,540
+Header...
+
+969
+01:03:12,100 --> 01:03:13,720
+Que tenga... Ion Card...
+
+970
+01:03:18,860 --> 01:03:21,550
+Title... Que sea... El Slides...
+
+971
+01:03:23,550 --> 01:03:25,130
+Punto... Título...
+
+972
+01:03:26,890 --> 01:03:29,450
+Ion Card... Content...
+
+973
+01:03:31,530 --> 01:03:32,550
+Que tenga...
+
+974
+01:03:32,714 --> 01:03:33,714
+El...
+
+975
+01:03:35,050 --> 01:03:36,050
+Slides...
+
+976
+01:03:36,130 --> 01:03:37,650
+Punto... Descript...
+
+977
+01:03:39,550 --> 01:03:43,690
+A la imagen... A la imagen...
+Además... Vamos a aplicarle... La clase...
+
+978
+01:03:43,990 --> 01:03:45,010
+Slides...
+
+979
+01:03:45,590 --> 01:03:46,316
+Image...
+
+980
+01:03:46,340 --> 01:03:48,010
+Que hemos definido...
+
+981
+01:03:49,280 --> 01:03:51,430
+Vale... Y ya... Eh...
+
+982
+01:03:51,640 --> 01:03:53,010
+Lo tendríamos...
+
+983
+01:03:54,970 --> 01:03:58,930
+Entonces... Sweeper... Container...
+Para el contenedor... De las diferentes...
+
+984
+01:03:58,931 --> 01:04:03,070
+Diapositivas... Vale... Donde
+vamos a aplicar... El Sweeper... O el...
+
+985
+01:04:03,270 --> 01:04:07,290
+El desplazamiento... Lateral... Hacemos
+un For... Para recorrer... El Array...
+
+986
+01:04:07,440 --> 01:04:11,050
+Y dentro... Tenemos... Cada
+diapositiva... Con Sweeper Slide...
+
+987
+01:04:12,000 --> 01:04:15,090
+Dentro de Slide... Pues el contenido...
+Que va a tener... Cada diapositiva...
+
+988
+01:04:15,091 --> 01:04:17,050
+En nuestro caso... Va
+a ser... Una tarjeta...
+
+989
+01:04:17,570 --> 01:04:22,550
+Con un texto... Y una imagen... En la
+imagen... Entonces... Básicamente... Esto...
+
+990
+01:04:22,551 --> 01:04:23,551
+Visualmente...
+
+991
+01:04:24,350 --> 01:04:27,230
+Se transforma...
+En... Lo siguiente...
+
+992
+01:04:31,460 --> 01:04:33,510
+Y vamos a la página de Slides...
+
+993
+01:04:33,660 --> 01:04:35,690
+Aquí tenemos... Nuestra Slide...
+
+994
+01:04:36,640 --> 01:04:39,470
+Y las podemos...
+Desplazar... Horizontalmente...
+
+995
+01:04:40,630 --> 01:04:41,630
+¿Lo veis?
+
+996
+01:04:42,990 --> 01:04:45,770
+Pues eso... Son... Las Slides...
+
+997
+01:04:49,980 --> 01:04:51,130
+¿Dudas de las Slides?
+
+998
+01:04:52,040 --> 01:04:53,090
+¿Todos claro?
+
+999
+01:04:53,091 --> 01:04:54,091
+¿Cómo funciona?
+
+1000
+01:04:55,320 --> 01:04:59,470
+Pues entonces... Si lo tenéis tan
+claro... Os pongo el ejercicio ahora...
+
+1001
+01:04:59,471 --> 01:05:00,990
+Y lo empezáis... ¿Vale?
+
+1002
+01:05:01,050 --> 01:05:06,090
+Tenéis una horita... Y cuarto... Para
+avanzar hoy... Mucho del trabajo...
+
+1003
+01:05:08,330 --> 01:05:12,210
+Así que... Es un repaso... De lo que
+hemos visto hoy... En la teoría... ¿Vale?
+
+1004
+01:05:12,270 --> 01:05:14,090
+Tanto las Slides...
+Como el Fab...
+
+1005
+01:05:16,630 --> 01:05:18,130
+Como el... El...
+
+1006
+01:05:18,970 --> 01:05:20,250
+Las Cards...
+
+1007
+01:05:21,214 --> 01:05:23,710
+Ejercicio... Voy... Os
+lo pongo ya a mí...
+
+1008
+01:05:24,110 --> 01:05:25,026
+¿Cómo?
+
+1009
+01:05:25,050 --> 01:05:26,670
+Bueno... Ejercicio 1...
+
+1010
+01:05:28,205 --> 01:05:29,790
+Ejercicio... Este es el 3...
+
+1011
+01:05:34,140 --> 01:05:37,700
+Este es el 4...
+
+1012
+01:05:39,525 --> 01:05:43,650
+Este es el 4...
+
+1013
+01:05:46,450 --> 01:05:49,890
+And 1...
+
+1014
+01:05:53,470 --> 01:05:55,930
+Ejercicio 1...
+
+1015
+01:05:59,990 --> 01:06:08,670
+Ejercicio 1... Para ello
+corregiremos... El 4... Este es el 4...
+
+1016
+01:06:14,245 --> 01:06:15,910
+¿Estás allá?
+
+1017
+01:06:33,970 --> 01:06:38,230
+Este... 4... Ejercicio 1...
+
+1018
+01:07:09,540 --> 01:07:10,540
+Vale.
+
+1019
+01:07:12,220 --> 01:07:15,680
+A ver, en tareas, ¿vale?
+
+1020
+01:07:21,335 --> 01:07:23,180
+Os tiene que aparecer el ejercicio 3.
+
+1021
+01:07:29,444 --> 01:07:30,266
+¿Vale?
+
+1022
+01:07:30,290 --> 01:07:34,090
+Dice, crear un app que traerá la
+información del endpoint de la API de
+
+1023
+01:07:34,091 --> 01:07:40,270
+vehículos cuyos tres endpoints son API
+vehículos de aviones, coches y barcos,
+
+1024
+01:07:40,410 --> 01:07:40,510
+¿vale?
+
+1025
+01:07:40,511 --> 01:07:47,130
+Esto es un fichero JSON, ¿vale?
+
+1026
+01:07:47,785 --> 01:07:51,710
+Es decir, una API que nos ofrece un
+fichero JSON, lo tenéis que tratar igual
+
+1027
+01:07:51,711 --> 01:07:56,730
+que tratamos en la primera sesión para
+cargar el menú JSON, ¿vale?
+
+1028
+01:07:56,770 --> 01:08:02,210
+Es decir, montamos un servicio,
+una función que conecte con el servicio,
+
+1029
+01:08:02,390 --> 01:08:05,039
+solo que en vez de
+poner la dirección local del
+
+1030
+01:08:05,040 --> 01:08:07,870
+JSON, pondréis una
+URL del navegador, ¿vale?
+
+1031
+01:08:07,871 --> 01:08:09,070
+Que son estas tres URLs.
+
+1032
+01:08:10,550 --> 01:08:14,950
+Eso os devolverá... ¿Vale?
+
+1033
+01:08:15,010 --> 01:08:17,870
+Eso os devolverá un objeto JSON,
+¿vale?
+
+1034
+01:08:18,245 --> 01:08:20,109
+Con la información correspondiente.
+
+1035
+01:08:20,340 --> 01:08:22,010
+En este caso es un OK.
+
+1036
+01:08:22,011 --> 01:08:25,290
+Si todo ha ido bien, OK True, como la API
+que estamos montando.
+
+1037
+01:08:26,040 --> 01:08:31,090
+Y luego data que tendrá el array de
+vuestros aviones, coches o barcos.
+
+1038
+01:08:31,830 --> 01:08:32,346
+¿Vale?
+
+1039
+01:08:32,370 --> 01:08:33,570
+¿Qué tenéis que hacer con eso?
+
+1040
+01:08:33,830 --> 01:08:35,529
+Pues mira, tenéis unas imágenes...
+
+1041
+01:08:38,189 --> 01:08:38,705
+¿Vale?
+
+1042
+01:08:38,729 --> 01:08:40,090
+Entonces, la página inicial...
+
+1043
+01:08:41,380 --> 01:08:42,410
+Ah, bueno, no tengo...
+
+1044
+01:08:42,810 --> 01:08:45,810
+Bueno, pues la página inicial...
+
+1045
+01:08:47,400 --> 01:08:49,090
+Es... eh... esto...
+
+1046
+01:08:53,130 --> 01:08:53,609
+¿Vale?
+
+1047
+01:08:53,610 --> 01:08:56,130
+Básicamente tendréis la página inicial,
+¿vale?
+
+1048
+01:08:56,131 --> 01:08:59,229
+Con un título y en el centro, un FAB.
+
+1049
+01:09:00,060 --> 01:09:02,149
+El FAB, cuando le hagáis clic...
+
+1050
+01:09:06,450 --> 01:09:08,569
+Os tiene que abrir tres opciones.
+
+1051
+01:09:09,200 --> 01:09:12,670
+Opción de barcos, opción de aviones,
+opción de coches.
+
+1052
+01:09:12,990 --> 01:09:13,990
+¿Vale?
+
+1053
+01:09:14,100 --> 01:09:17,170
+Si le dais a cualquiera de ellas,
+iréis a la página correspondiente.
+
+1054
+01:09:18,950 --> 01:09:20,569
+Página de coches.
+
+1055
+01:09:22,670 --> 01:09:23,266
+¿Vale?
+
+1056
+01:09:23,290 --> 01:09:26,130
+Tendréis la información de los coches,
+¿vale?
+
+1057
+01:09:26,315 --> 01:09:27,315
+En tarjetas.
+
+1058
+01:09:27,710 --> 01:09:29,310
+Ahí, toda la información de los coches.
+
+1059
+01:09:30,570 --> 01:09:33,510
+Y cuando desplacéis un coche hacia la
+derecha...
+
+1060
+01:09:33,660 --> 01:09:34,780
+Bueno, hacia la izquierda...
+
+1061
+01:09:36,110 --> 01:09:38,590
+Os aparecerá la tarjeta con su precio.
+
+1062
+01:09:39,950 --> 01:09:40,950
+¿Vale?
+
+1063
+01:09:41,990 --> 01:09:42,990
+Lo mismo...
+
+1064
+01:09:43,650 --> 01:09:44,830
+Lo mismo en las tres...
+
+1065
+01:09:45,510 --> 01:09:46,529
+En las tres páginas.
+
+1066
+01:09:47,210 --> 01:09:47,806
+¿Vale?
+
+1067
+01:09:47,830 --> 01:09:49,729
+Es decir, si lo hacéis en la de barcos...
+
+1068
+01:09:50,280 --> 01:09:52,970
+Os saldrá la información de
+los barcos... Y al desplazar...
+
+1069
+01:09:53,270 --> 01:09:55,190
+El dinero del barco...
+
+1070
+01:09:55,640 --> 01:09:56,850
+Y en las de aviones...
+
+1071
+01:09:57,300 --> 01:09:58,310
+Lo mismo.
+
+1072
+01:09:59,910 --> 01:10:00,566
+¿Vale?
+
+1073
+01:10:00,590 --> 01:10:02,290
+Os saldrá el avión...
+
+1074
+01:10:02,690 --> 01:10:04,730
+Y si lo desplazáis, os sale su precio.
+
+1075
+01:10:06,390 --> 01:10:07,390
+¿Vale?
+
+1076
+01:10:08,870 --> 01:10:09,910
+Si lo desplazáis...
+
+1077
+01:10:10,300 --> 01:10:12,650
+Al desplazarlo... Al
+desplazarlo horizontalmente.
+
+1078
+01:10:12,955 --> 01:10:13,955
+Vale, vale, vale.
+
+1079
+01:10:15,290 --> 01:10:16,770
+Me interesa con una animación...
+
+1080
+01:10:16,970 --> 01:10:17,990
+¿Vale?
+
+1081
+01:10:22,000 --> 01:10:24,780
+No, se sale el...
+Cuando lo desplazas...
+
+1082
+01:10:24,880 --> 01:10:26,560
+Te pone la otra tarjeta.
+
+1083
+01:10:27,080 --> 01:10:28,080
+Vale.
+
+1084
+01:10:28,960 --> 01:10:29,960
+Desplazáis...
+
+1085
+01:10:30,070 --> 01:10:31,940
+Es cara de delante y cara de detrás.
+
+1086
+01:10:32,125 --> 01:10:33,220
+Como si dijéramos...
+
+1087
+01:10:33,840 --> 01:10:34,416
+¿Vale?
+
+1088
+01:10:34,440 --> 01:10:35,640
+Uno... La uno y la dos.
+
+1089
+01:10:37,760 --> 01:10:38,760
+¿Todo claro?
+
+1090
+01:10:38,990 --> 01:10:41,446
+O sea, lo de arriba es una
+tarjeta... Lo de arriba es una tarjeta...
+
+1091
+01:10:41,470 --> 01:10:44,520
+A ver, es una tarjeta...
+Pero el contenido...
+
+1092
+01:10:44,521 --> 01:10:46,300
+Este es el contenido de la primera
+diapositiva...
+
+1093
+01:10:46,301 --> 01:10:47,876
+Y este es el contenido de la segunda
+diapositiva.
+
+1094
+01:10:47,900 --> 01:10:49,840
+Si va... Si va... Pero
+no veas el precio.
+
+1095
+01:10:50,200 --> 01:10:50,616
+Exacto.
+
+1096
+01:10:50,640 --> 01:10:54,160
+Si lo desplazas... Sale el precio... Y
+si vuelves... Vuelve a la parte original.
+
+1097
+01:10:56,520 --> 01:10:57,520
+¿Alguna duda más?
+
+1098
+01:10:58,300 --> 01:10:59,300
+¿Todo claro?
+
+1099
+01:11:00,540 --> 01:11:01,540
+Pues a la trabajar...
+
+1100
+01:11:01,840 --> 01:11:02,840
+La hora que queda.
+

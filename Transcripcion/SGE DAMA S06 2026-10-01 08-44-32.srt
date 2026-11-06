@@ -1,0 +1,2900 @@
+1
+00:00:01,150 --> 00:00:03,770
+Voy a haceros un pequeño resumen de por
+dónde íbamos.
+
+2
+00:00:05,659 --> 00:00:09,650
+Vale, a ver, os refresco un poco la
+memoria.
+
+3
+00:00:11,190 --> 00:00:19,190
+Hicimos un proyecto con Node en el que,
+bueno, creamos primero un Package JSON,
+
+4
+00:00:20,700 --> 00:00:26,704
+un Package JSON que le añadimos
+nuestras dependencias para
+
+5
+00:00:26,705 --> 00:00:30,090
+montar el servidor que íbamos
+a necesitar, que era Cores.
+
+6
+00:00:30,850 --> 00:00:33,890
+A la parte de quién podía conectarse a la
+API.
+
+7
+00:00:35,350 --> 00:00:43,350
+Dotem, que era para guardar de manera
+segura las variables, ¿vale?
+
+8
+00:00:43,890 --> 00:00:44,890
+Sensibles.
+
+9
+00:00:45,874 --> 00:00:47,474
+Es lo que serán las variables del corno.
+
+10
+00:00:48,299 --> 00:00:51,410
+Express, que es el que tendrá toda la
+funcionalidad del servidor.
+
+11
+00:00:53,445 --> 00:00:55,999
+Mongoose, que es el ORM
+que nos permitirá hacer
+
+12
+00:00:56,000 --> 00:00:59,410
+la conversión de objetos
+JavaScript a documentos.
+
+13
+00:01:00,250 --> 00:01:02,450
+Besson, que guarda MongoDB.
+
+14
+00:01:03,374 --> 00:01:10,330
+Y Morgan, que nos ayudaba con las
+peticiones que venían a la API,
+
+15
+00:01:10,470 --> 00:01:11,870
+darnos información adicional.
+
+16
+00:01:12,410 --> 00:01:12,886
+¿Vale?
+
+17
+00:01:12,910 --> 00:01:19,330
+En qué peticiones venían, en qué endpoint
+y qué respuesta del servidor había.
+
+18
+00:01:19,650 --> 00:01:20,650
+Y el tiempo que tardaba.
+
+19
+00:01:20,950 --> 00:01:21,950
+Vale.
+
+20
+00:01:23,419 --> 00:01:26,430
+Eso, eh... es lo que hicimos el otro día.
+
+21
+00:01:28,490 --> 00:01:29,306
+Vale.
+
+22
+00:01:29,330 --> 00:01:34,870
+Luego tenemos el index.js, que era el
+archivo inicial de la aplicación.
+
+23
+00:01:34,970 --> 00:01:38,410
+Lo lanzábamos desde Node, ¿vale?
+
+24
+00:01:38,550 --> 00:01:39,690
+Node-menos-watch.
+
+25
+00:01:40,019 --> 00:01:41,668
+Lo poníamos como
+desarrollo, mientras
+
+26
+00:01:41,669 --> 00:01:44,590
+estuviéramos desarrollando,
+para que recompilara.
+
+27
+00:01:44,591 --> 00:01:48,050
+En menos-menos-watch lo que hacía era
+recompilar, si modificábamos cualquier fichero.
+
+28
+00:01:48,874 --> 00:01:50,894
+El start será, cuando la
+tengamos terminada, pues que
+
+29
+00:01:50,895 --> 00:01:54,210
+arranque la aplicación
+directamente lanzando el index.js.
+
+30
+00:01:55,009 --> 00:01:59,150
+Y ese index, como os decía, pues era un
+archivo que cargaba Express.
+
+31
+00:01:59,710 --> 00:02:00,286
+¿Vale?
+
+32
+00:02:00,310 --> 00:02:05,190
+Nos cargaba Express y nos cargaba la
+información que tuviéramos en el fichero .temp.
+
+33
+00:02:06,379 --> 00:02:09,120
+También, eh... con ello,
+definíamos una variable
+
+34
+00:02:09,121 --> 00:02:11,510
+port, que era el puerto
+en el que íbamos a trabajar.
+
+35
+00:02:12,680 --> 00:02:16,850
+Si estaba en el fichero de entorno,
+lo cargábamos.
+
+36
+00:02:17,220 --> 00:02:18,790
+Si no, cargábamos el puerto 3000.
+
+37
+00:02:20,580 --> 00:02:26,350
+Y luego añadíamos lo que es el middleware,
+las aplicaciones intermedias que iban a...
+
+38
+00:02:27,040 --> 00:02:29,490
+ayudarnos con la... con la API.
+
+39
+00:02:30,435 --> 00:02:33,010
+Esto era, las que habíamos visto en
+dependencias.
+
+40
+00:02:33,264 --> 00:02:35,830
+Cores, eh... Morgan...
+
+41
+00:02:37,150 --> 00:02:41,390
+Y luego, le decíamos que nuestra API iba a
+trabajar con ficheros JSON, de tal manera
+
+42
+00:02:41,391 --> 00:02:44,650
+que íbamos a poder, eh... devolver
+la información en formato JSON.
+
+43
+00:02:47,434 --> 00:02:49,533
+Trabajábamos con las
+rutas de nuestra API, es
+
+44
+00:02:49,534 --> 00:02:51,830
+decir, que rutas iba a
+gestionar nuestra API.
+
+45
+00:02:51,831 --> 00:02:57,150
+En principio íbamos a controlar la ruta,
+barra API, V1, Movies, para los endpoints
+
+46
+00:02:57,300 --> 00:02:59,570
+de las películas que estábamos haciendo.
+
+47
+00:03:00,820 --> 00:03:03,710
+Mientras que el resto de rutas,
+las...
+
+48
+00:03:03,711 --> 00:03:07,410
+Eh... pues te damos un mensaje genérico
+que redireccionaba al usuario.
+
+49
+00:03:08,400 --> 00:03:13,370
+Eh... o notificaba al usuario que la API
+estaba en... en esa dirección.
+
+50
+00:03:13,750 --> 00:03:13,950
+¿Vale?
+
+51
+00:03:13,970 --> 00:03:15,950
+En barra API, barra V1, barra Movies.
+
+52
+00:03:17,830 --> 00:03:21,623
+Vale, eh... dicho eso,
+eh... lo último que
+
+53
+00:03:21,624 --> 00:03:24,830
+hacíamos era lanzar
+la... eh... el servidor.
+
+54
+00:03:25,390 --> 00:03:26,510
+Os recuerdo que...
+
+55
+00:03:27,460 --> 00:03:29,530
+Os recuerdo que el servidor, ¿vale?
+
+56
+00:03:29,570 --> 00:03:31,670
+Lo que hace es escuchar peticiones.
+
+57
+00:03:31,904 --> 00:03:33,850
+Esto era como un camarero en un
+restaurante.
+
+58
+00:03:34,755 --> 00:03:39,470
+Entonces estamos escuchando peticiones con
+el listen, eh... de spray.
+
+59
+00:03:40,850 --> 00:03:42,710
+Y básicamente escuchamos en un puerto.
+
+60
+00:03:42,830 --> 00:03:44,890
+Escuchamos las peticiones que vengan en un
+puerto.
+
+61
+00:03:44,891 --> 00:03:50,130
+En nuestro caso era el puerto 3000 o el
+que hubiera definido el servidor.
+
+62
+00:03:50,310 --> 00:03:50,550
+¿Vale?
+
+63
+00:03:50,570 --> 00:03:52,290
+Acordaos que la habíamos guardado aquí.
+
+64
+00:03:53,800 --> 00:03:56,090
+Con eso ya la aplicación arrancaba.
+
+65
+00:03:57,010 --> 00:03:59,870
+Al arrancar le decíamos que conectara con
+la base de datos.
+
+66
+00:04:00,350 --> 00:04:03,550
+Hicimos un fichero database que
+configuraba con la base de datos.
+
+67
+00:04:04,000 --> 00:04:07,190
+Acordaos que la URL la teníamos guardada
+en el fichero de entorno.
+
+68
+00:04:09,365 --> 00:04:12,490
+En el .em que habíamos puesto en la raíz
+del servidor.
+
+69
+00:04:13,150 --> 00:04:13,926
+¿Vale?
+
+70
+00:04:13,950 --> 00:04:16,029
+Usuario, contraseña, la URL.
+
+71
+00:04:17,190 --> 00:04:20,829
+Y luego poníamos el nombre de la base de
+datos entre la barra y el interrogante.
+
+72
+00:04:21,110 --> 00:04:21,329
+¿Vale?
+
+73
+00:04:21,350 --> 00:04:23,070
+Aquí poníamos el nombre de la base de
+datos.
+
+74
+00:04:24,400 --> 00:04:25,830
+Con eso conectábamos.
+
+75
+00:04:26,010 --> 00:04:27,010
+Goose connect.
+
+76
+00:04:27,530 --> 00:04:28,890
+Y si todo iba bien.
+
+77
+00:04:29,030 --> 00:04:30,710
+Acordaos que esto funcionaba con promesas.
+
+78
+00:04:30,750 --> 00:04:31,750
+Si todo iba bien.
+
+79
+00:04:32,750 --> 00:04:35,010
+Pues sacábamos un mensaje de que
+conectados.
+
+80
+00:04:35,230 --> 00:04:36,870
+Si no, sacábamos el...
+
+81
+00:04:38,010 --> 00:04:39,390
+La consola de error.
+
+82
+00:04:42,110 --> 00:04:44,690
+Con el mensaje de error.
+
+83
+00:04:45,790 --> 00:04:46,790
+¿Vale?
+
+84
+00:04:48,890 --> 00:04:49,826
+¿Qué más?
+
+85
+00:04:49,850 --> 00:04:50,870
+Con eso, ¿vale?
+
+86
+00:04:50,930 --> 00:04:52,610
+Teníamos ya la conexión a la base de
+datos.
+
+87
+00:04:52,670 --> 00:04:54,390
+Pues lo siguiente que hicimos fue el
+modelo.
+
+88
+00:04:54,790 --> 00:04:55,346
+¿Vale?
+
+89
+00:04:55,370 --> 00:04:59,050
+Definimos el modelo de datos que iban a
+tener nuestros documentos.
+
+90
+00:04:59,450 --> 00:05:01,610
+Los documentos que vamos a guardar en la
+base de datos.
+
+91
+00:05:02,370 --> 00:05:02,530
+¿Vale?
+
+92
+00:05:02,550 --> 00:05:04,230
+Entonces dijimos que iban a ser películas.
+
+93
+00:05:04,350 --> 00:05:05,350
+Definimos su esquema.
+
+94
+00:05:05,630 --> 00:05:05,886
+¿Vale?
+
+95
+00:05:05,910 --> 00:05:06,910
+Esquema de Mongoose.
+
+96
+00:05:10,090 --> 00:05:11,090
+¿Qué iban a tener?
+
+97
+00:05:11,330 --> 00:05:12,330
+Pues título.
+
+98
+00:05:12,710 --> 00:05:13,830
+Luego entre llaves.
+
+99
+00:05:14,150 --> 00:05:16,770
+Así montábamos un objeto para definir ese
+título.
+
+100
+00:05:16,970 --> 00:05:18,130
+¿Qué propiedades iba a tener?
+
+101
+00:05:18,560 --> 00:05:20,670
+Entre ellas qué tipo de datos iba a ser.
+
+102
+00:05:21,510 --> 00:05:22,710
+Si iba a ser obligatorio o no.
+
+103
+00:05:23,390 --> 00:05:25,130
+Podríamos poner también default.
+
+104
+00:05:25,400 --> 00:05:26,450
+Un valor por defecto.
+
+105
+00:05:26,630 --> 00:05:27,630
+Si queríamos.
+
+106
+00:05:27,790 --> 00:05:28,246
+Etcétera.
+
+107
+00:05:28,270 --> 00:05:28,350
+¿Vale?
+
+108
+00:05:28,370 --> 00:05:29,730
+O más opciones que no vamos a ver.
+
+109
+00:05:30,950 --> 00:05:31,350
+¿Vale?
+
+110
+00:05:31,370 --> 00:05:33,230
+Vimos que podíamos ponerle el tipo number.
+
+111
+00:05:33,510 --> 00:05:34,376
+El tipo string.
+
+112
+00:05:34,400 --> 00:05:35,850
+También teníamos el tipo boolean.
+
+113
+00:05:36,910 --> 00:05:37,226
+¿Vale?
+
+114
+00:05:37,250 --> 00:05:38,690
+Y luego vimos arrays.
+
+115
+00:05:39,190 --> 00:05:40,490
+Cómo montar un array.
+
+116
+00:05:40,945 --> 00:05:42,265
+Por ejemplo, el array de géneros.
+
+117
+00:05:42,410 --> 00:05:47,950
+Vimos que teníamos que ponerle los
+corchetes alrededor del tipo.
+
+118
+00:05:48,350 --> 00:05:48,630
+¿Vale?
+
+119
+00:05:48,631 --> 00:05:50,210
+De las llaves del objeto.
+
+120
+00:05:51,100 --> 00:05:52,690
+Y luego el objeto.
+
+121
+00:05:52,910 --> 00:05:55,870
+Si queríamos definir un objeto,
+pues abríamos las llaves de objeto.
+
+122
+00:05:56,180 --> 00:05:59,710
+Y dentro definíamos los atributos igual
+que los habíamos definido antes.
+
+123
+00:06:00,665 --> 00:06:01,665
+Vale.
+
+124
+00:06:01,785 --> 00:06:06,790
+Con eso teníamos nuestro modelo
+completamente definido.
+
+125
+00:06:07,790 --> 00:06:09,310
+Lo que teníamos que era exportarlo.
+
+126
+00:06:10,190 --> 00:06:11,430
+Bueno, lo definíamos aquí.
+
+127
+00:06:11,890 --> 00:06:12,426
+Como tal.
+
+128
+00:06:12,450 --> 00:06:12,550
+¿Vale?
+
+129
+00:06:12,570 --> 00:06:14,410
+Le decíamos que en mongoose.model.
+
+130
+00:06:15,330 --> 00:06:16,510
+El nombre del modelo.
+
+131
+00:06:17,070 --> 00:06:18,410
+El esquema que lo definía.
+
+132
+00:06:18,780 --> 00:06:20,300
+Que era el que habíamos definido aquí.
+
+133
+00:06:20,500 --> 00:06:22,830
+Por cierto, esto de version key,
+false y timestamp.
+
+134
+00:06:22,910 --> 00:06:24,530
+Son las opciones del esquema.
+
+135
+00:06:24,950 --> 00:06:25,386
+¿Vale?
+
+136
+00:06:25,410 --> 00:06:30,210
+Donde le decimos que no queremos la
+variable de control de versiones.
+
+137
+00:06:31,220 --> 00:06:36,330
+Y sí que queremos los controles de tiempo
+de creación y actualización.
+
+138
+00:06:36,590 --> 00:06:43,170
+De tal manera que cada vez que cree o
+actualice el documento, automáticamente,
+
+139
+00:06:43,250 --> 00:06:47,230
+mongo me pondrá la hora a la que ha
+sucedido eso.
+
+140
+00:06:47,231 --> 00:06:50,910
+A la hora a la que ha sido creado o a la
+hora a la que ha sido actualizado.
+
+141
+00:06:53,060 --> 00:06:57,774
+Dicho eso, pues ya lo que
+hacíamos era exportamos, como os
+
+142
+00:06:57,775 --> 00:07:01,310
+decía, el modelo que tiene el
+nombre y el esquema asociado.
+
+143
+00:07:01,890 --> 00:07:03,430
+Podíamos definirle la colección.
+
+144
+00:07:03,625 --> 00:07:04,625
+Esto era optativo.
+
+145
+00:07:04,660 --> 00:07:07,240
+Si no poníamos el nombre de
+la colección, automáticamente lo
+
+146
+00:07:07,241 --> 00:07:09,950
+que hacía es coger el nombre
+del modelo y le añadía una S.
+
+147
+00:07:10,400 --> 00:07:14,870
+En este caso, si no hubiéramos puesto
+esto, se crearía la colección movies.
+
+148
+00:07:17,570 --> 00:07:21,869
+Vale, y con eso,
+conteniendo el modelo ya, lo
+
+149
+00:07:21,870 --> 00:07:25,990
+que definíamos era
+funciones de nuestra API.
+
+150
+00:07:26,620 --> 00:07:29,930
+Vale, que eran funciones que iban a llamar
+a la base de datos para hacer algo.
+
+151
+00:07:30,670 --> 00:07:31,930
+En nuestro caso, pues un CRUD.
+
+152
+00:07:32,820 --> 00:07:37,830
+Para empezar el CRUD, lo que hicimos es el
+insertar.
+
+153
+00:07:38,490 --> 00:07:42,310
+Para poder ejecutar el CRUD, vamos a
+necesitar el modelo que acabamos de definir.
+
+154
+00:07:42,630 --> 00:07:45,010
+Vale, pues ese modelo lo importamos.
+
+155
+00:07:46,260 --> 00:07:51,510
+Y con ese modelo, lo que hacemos es,
+en la función AdMovie, vale, las
+
+156
+00:07:51,610 --> 00:07:54,590
+funciones, os recuerdo que eran
+asíncronas, porque no sabíamos cuánto iba
+
+157
+00:07:54,591 --> 00:07:57,590
+a tardar la base de datos en devolvernos
+la respuesta.
+
+158
+00:07:58,600 --> 00:08:01,550
+Y esas funciones tenían dos parámetros,
+el request y el response.
+
+159
+00:08:01,970 --> 00:08:07,470
+El request viene de la petición del
+usuario, es decir, la información que nos
+
+160
+00:08:07,471 --> 00:08:09,430
+está mandando el usuario al hacer la
+petición.
+
+161
+00:08:10,195 --> 00:08:14,630
+Y el response es la parte de nuestra
+respuesta, la respuesta del servidor.
+
+162
+00:08:14,930 --> 00:08:15,930
+Dime.
+
+163
+00:08:23,280 --> 00:08:27,500
+No, no, a ver, es o es asíncrona o no es
+asíncrona.
+
+164
+00:08:28,515 --> 00:08:32,679
+Si queremos tiempo de respuesta,
+eso ya es en la parte de la conexión.
+
+165
+00:08:33,369 --> 00:08:35,780
+Vale, le dices cuánto tiempo de respuesta
+quieres.
+
+166
+00:08:36,309 --> 00:08:38,960
+Y si quieres reintentar la petición o no.
+
+167
+00:08:39,400 --> 00:08:42,500
+Vale, entonces esa configuración está en
+la conexión con la base de datos.
+
+168
+00:08:50,019 --> 00:08:57,180
+Entonces, lo que hacíamos en la funcional
+movie era coger una variable, my movie,
+
+169
+00:08:57,480 --> 00:08:57,916
+¿vale?
+
+170
+00:08:57,940 --> 00:09:03,000
+O ya, como la quisierais llamar,
+que lo que iba a guardar era el modelo,
+
+171
+00:09:03,720 --> 00:09:04,110
+¿vale?
+
+172
+00:09:04,134 --> 00:09:11,220
+Entonces, un nuevo modelo rellenado con
+los datos de la petición del usuario,
+
+173
+00:09:12,059 --> 00:09:16,160
+el cuerpo del mensaje HTTP que me mandaba
+el usuario.
+
+174
+00:09:16,260 --> 00:09:20,160
+Es decir, el usuario hace una petición
+HTTP, en este caso será una petición POST,
+
+175
+00:09:20,814 --> 00:09:26,960
+que dentro de su body llevará información
+asociada.
+
+176
+00:09:27,960 --> 00:09:32,326
+Entonces, lo que estamos
+haciendo es acceder al mensaje
+
+177
+00:09:32,327 --> 00:09:36,780
+HTTP que ha mandado el
+usuario y acceder al body.
+
+178
+00:09:37,339 --> 00:09:40,560
+El body viene a ser como el body de una
+página web.
+
+179
+00:09:40,660 --> 00:09:43,360
+¿Os acordáis que tenía head y tenía body?
+
+180
+00:09:43,780 --> 00:09:44,415
+Sí.
+
+181
+00:09:44,439 --> 00:09:46,140
+Pues esto es parecido, ¿vale?
+
+182
+00:09:46,420 --> 00:09:52,280
+Los mensajes de HTTP tienen cabecera,
+que serán los headers, y luego tienen un
+
+183
+00:09:52,281 --> 00:09:55,320
+body que es el cuerpo del mensaje,
+que es donde se manda la información.
+
+184
+00:09:56,140 --> 00:09:56,796
+¿Vale?
+
+185
+00:09:56,820 --> 00:09:58,840
+Lo veréis ahora en POSTMAN, lo veréis más
+claro.
+
+186
+00:10:00,155 --> 00:10:01,580
+Y entonces, con ese...
+
+187
+00:10:03,274 --> 00:10:05,260
+con ese objeto, ¿vale?
+
+188
+00:10:05,380 --> 00:10:10,040
+MyMovie, lo que hacíamos es lanzar la
+función .save de Mongoose.
+
+189
+00:10:10,280 --> 00:10:15,960
+Esa función .save lo que hace es insertar
+en la base de datos.
+
+190
+00:10:16,840 --> 00:10:17,376
+¿Vale?
+
+191
+00:10:17,400 --> 00:10:20,240
+Entonces, lo que hace es, con la
+información que ha recibido en el body,
+
+192
+00:10:20,935 --> 00:10:22,560
+lo inserta en la base de datos.
+
+193
+00:10:22,740 --> 00:10:23,216
+¿Vale?
+
+194
+00:10:23,240 --> 00:10:29,140
+Comprueba que los campos correspondan a lo
+definido en el modelo.
+
+195
+00:10:30,644 --> 00:10:34,320
+Básicamente, si el campo es obligatorio,
+pues tiene que estar.
+
+196
+00:10:34,480 --> 00:10:37,540
+Entonces, mira que haya title,
+mira que haya año, mira que haya director,
+
+197
+00:10:37,960 --> 00:10:38,316
+todo.
+
+198
+00:10:38,340 --> 00:10:39,340
+¿Vale?
+
+199
+00:10:39,369 --> 00:10:41,940
+Todo dentro del objeto que está
+recibiendo.
+
+200
+00:10:44,940 --> 00:10:46,320
+Y lo guarda.
+
+201
+00:10:47,559 --> 00:10:49,380
+Si todo va bien, ¿vale?
+
+202
+00:10:50,250 --> 00:10:54,660
+Se hace la petición y todo es correcto,
+pues entonces devolvemos un status 201.
+
+203
+00:10:54,889 --> 00:10:56,860
+201 es created, ¿vale?
+
+204
+00:10:56,960 --> 00:10:58,060
+El estado created.
+
+205
+00:10:58,280 --> 00:10:59,960
+Ya os dije que en...
+
+206
+00:11:00,879 --> 00:11:03,800
+En proyecto, vamos a ver, la semana que
+viene ya lo vemos.
+
+207
+00:11:04,209 --> 00:11:06,780
+En el controller, veremos las...
+
+208
+00:11:06,781 --> 00:11:12,260
+Respuestas de la API, pero las veremos con
+nombre, ¿vale?
+
+209
+00:11:12,340 --> 00:11:16,660
+Es decir, veremos los created,
+los ok, los not found, ¿vale?
+
+210
+00:11:16,700 --> 00:11:17,700
+Con nombre.
+
+211
+00:11:17,839 --> 00:11:19,280
+Mientras que aquí, ¿vale?
+
+212
+00:11:19,320 --> 00:11:20,560
+Los definimos con números.
+
+213
+00:11:21,380 --> 00:11:21,540
+¿Vale?
+
+214
+00:11:21,541 --> 00:11:25,750
+Entonces vais a tener que entender y saber
+tanto los números como las...
+
+215
+00:11:27,190 --> 00:11:30,290
+Las respuestas en texto, ¿vale?
+
+216
+00:11:30,390 --> 00:11:31,850
+De los diferentes estados.
+
+217
+00:11:32,459 --> 00:11:36,750
+Básicamente vamos a trabajar con el...
+Ya lo seguimos viendo, que son el 200 ok.
+
+218
+00:11:37,429 --> 00:11:39,210
+201 el created.
+
+219
+00:11:40,950 --> 00:11:44,270
+Luego el 400 para el...
+
+220
+00:11:45,890 --> 00:11:47,390
+El... El... El... El
+bad request.
+
+221
+00:11:48,190 --> 00:11:50,410
+Veremos el 403 que es el forbidden.
+
+222
+00:11:51,189 --> 00:11:53,130
+Veremos el 404 que es el not found.
+
+223
+00:11:53,890 --> 00:11:54,376
+¿Vale?
+
+224
+00:11:54,400 --> 00:11:56,950
+Y... Y el 500 que es el server.
+
+225
+00:11:57,535 --> 00:11:59,150
+Eh... Internal server error.
+
+226
+00:12:00,170 --> 00:12:00,650
+¿Vale?
+
+227
+00:12:00,651 --> 00:12:01,651
+Poquito más.
+
+228
+00:12:03,430 --> 00:12:04,850
+Eh... Dicho eso.
+
+229
+00:12:06,809 --> 00:12:10,530
+Como os decía, si hay un error...
+Bueno, si hay un 201 es un created.
+
+230
+00:12:10,755 --> 00:12:11,930
+Se ha creado correctamente.
+
+231
+00:12:12,499 --> 00:12:13,690
+Y devolvemos ese mensaje.
+
+232
+00:12:13,810 --> 00:12:14,850
+Película creada.
+
+233
+00:12:15,719 --> 00:12:18,990
+Si no, si hay un error... Pues
+entonces lo controlamos con el catch.
+
+234
+00:12:19,350 --> 00:12:21,690
+Y... Eh... Lanzamos
+el status 400.
+
+235
+00:12:22,470 --> 00:12:23,470
+Para el request.
+
+236
+00:12:23,910 --> 00:12:24,370
+¿Vale?
+
+237
+00:12:24,371 --> 00:12:26,470
+Y el mensaje de error correspondiente.
+
+238
+00:12:26,650 --> 00:12:26,890
+¿Vale?
+
+239
+00:12:26,891 --> 00:12:28,890
+El mensaje que haya capturado el error.
+
+240
+00:12:29,639 --> 00:12:30,850
+Pues aquí lo lanzamos.
+
+241
+00:12:32,930 --> 00:12:33,566
+¿Vale?
+
+242
+00:12:33,590 --> 00:12:34,650
+Eso lo exportamos.
+
+243
+00:12:36,129 --> 00:12:37,350
+Para utilizarlo ¿Dónde?
+
+244
+00:12:37,390 --> 00:12:38,790
+Utilizarlo en las rutas.
+
+245
+00:12:38,990 --> 00:12:39,330
+¿Vale?
+
+246
+00:12:39,350 --> 00:12:42,230
+Las rutas es lo que va a controlar los
+endpoints.
+
+247
+00:12:42,231 --> 00:12:44,970
+En este caso, un endpoint, ¿Vale?
+
+248
+00:12:45,110 --> 00:12:48,070
+Está asociado a una URL...
+
+249
+00:12:48,849 --> 00:12:50,450
+Y una petición.
+
+250
+00:12:51,160 --> 00:12:52,170
+¿Esto qué quiere decir?
+
+251
+00:12:52,230 --> 00:12:53,230
+Una función...
+
+252
+00:12:53,899 --> 00:12:55,930
+Que va a traer el mensaje HTTP.
+
+253
+00:12:56,330 --> 00:12:58,670
+Yo os decía antes que
+el mensaje HTTP... ¿Vale?
+
+254
+00:12:58,671 --> 00:13:00,510
+Viene a una URL...
+
+255
+00:13:01,309 --> 00:13:02,590
+Y viene con una función...
+
+256
+00:13:03,510 --> 00:13:04,070
+¿Vale?
+
+257
+00:13:04,071 --> 00:13:07,490
+Las funciones de HTTP que
+vamos a ver... Son las funciones...
+
+258
+00:13:07,491 --> 00:13:11,930
+Get para coger información... La
+función post para insertar información...
+
+259
+00:13:12,029 --> 00:13:14,250
+Putty patch para actualizar información...
+
+260
+00:13:14,499 --> 00:13:16,530
+Y delete para borrar información...
+
+261
+00:13:17,770 --> 00:13:18,406
+¿Vale?
+
+262
+00:13:18,430 --> 00:13:20,790
+De tal manera que...
+
+263
+00:13:23,239 --> 00:13:27,050
+Lo que hacemos en este caso es con el
+router...
+
+264
+00:13:27,399 --> 00:13:28,850
+Vamos a hacer una función post...
+
+265
+00:13:29,310 --> 00:13:29,866
+¿Vale?
+
+266
+00:13:29,890 --> 00:13:30,890
+Que vamos a insertar...
+
+267
+00:13:31,599 --> 00:13:33,950
+Le decimos que la subruta es la barra...
+
+268
+00:13:34,679 --> 00:13:35,990
+Esto se añade...
+
+269
+00:13:37,169 --> 00:13:39,130
+Es una subruta porque se añade...
+
+270
+00:13:39,529 --> 00:13:42,190
+A las rutas que tenemos definidas en el
+index.
+
+271
+00:13:42,589 --> 00:13:45,110
+De tal manera que...
+Si yo a ese fichero...
+
+272
+00:13:45,910 --> 00:13:46,635
+MovieRoute...
+
+273
+00:13:46,659 --> 00:13:50,410
+Estoy llegando a barra... Desde
+barra API barra V1 barra Movies...
+
+274
+00:13:50,939 --> 00:13:56,630
+Las URLs que ponemos aquí... Vienen de
+barra API barra V1 barra Movies... ¿Vale?
+
+275
+00:13:56,979 --> 00:13:59,230
+Es decir, poner la barra...
+Significa lo mismo que poner...
+
+276
+00:13:59,231 --> 00:14:01,190
+Barra API barra V1 barra Movies...
+
+277
+00:14:02,050 --> 00:14:02,346
+¿Vale?
+
+278
+00:14:02,370 --> 00:14:02,835
+Entonces...
+
+279
+00:14:02,859 --> 00:14:04,430
+En ese caso lanzaríamos la función...
+
+280
+00:14:05,730 --> 00:14:06,730
+AddMovie...
+
+281
+00:14:07,625 --> 00:14:08,850
+En postman...
+
+282
+00:14:11,139 --> 00:14:13,770
+Y aquí es donde creo que...
+Que nos quedamos el otro día...
+
+283
+00:14:15,010 --> 00:14:15,586
+¿Vale?
+
+284
+00:14:15,610 --> 00:14:19,370
+Con el... La instalación de postman...
+Y todo eso si no recuerdo mal... ¿No?
+
+285
+00:14:27,630 --> 00:14:28,206
+¿Vale?
+
+286
+00:14:28,230 --> 00:14:30,450
+En postman teníais que
+tener... Una colección...
+
+287
+00:14:30,599 --> 00:14:31,870
+Que se llamara...
+
+288
+00:14:32,590 --> 00:14:33,590
+Eh...
+
+289
+00:14:33,710 --> 00:14:35,490
+Que se llamara
+películas... ¿Vale?
+
+290
+00:14:35,510 --> 00:14:36,510
+O algo de películas...
+
+291
+00:14:41,430 --> 00:14:43,590
+O sea, a ver... Vosotros
+tendréis una colección solo...
+
+292
+00:14:45,390 --> 00:14:49,270
+Yo la había llamado...
+Mongoose... Movies Mongo...
+
+293
+00:14:57,700 --> 00:14:58,260
+¿Vale?
+
+294
+00:14:58,261 --> 00:15:00,080
+Y ahí habíamos hecho
+una... New Request...
+
+295
+00:15:00,819 --> 00:15:03,940
+Que era... Post... Eh...
+
+296
+00:15:04,880 --> 00:15:08,080
+Post... Postmovies... Addmovies...
+Como la hubierais querido llamar...
+
+297
+00:15:15,690 --> 00:15:16,415
+¿Vale?
+
+298
+00:15:16,439 --> 00:15:21,370
+Es decir... Que en el tipo... Del
+request... Iba a ser de tipo post... ¿Vale?
+
+299
+00:15:21,430 --> 00:15:22,670
+Para enviar información...
+
+300
+00:15:23,719 --> 00:15:26,890
+Y luego... Dentro... La
+habíamos puesto entre llaves...
+
+301
+00:15:26,891 --> 00:15:31,940
+Al ponerlo entre dos llaves... Lo que
+hace es... Eh... Recoger una variable...
+
+302
+00:15:32,590 --> 00:15:33,130
+¿Vale?
+
+303
+00:15:33,150 --> 00:15:36,950
+Una variable que vamos a hacer... La de
+entorno... Para que sea común... A nuestra...
+
+304
+00:15:37,099 --> 00:15:38,099
+A nuestra colección...
+
+305
+00:15:38,410 --> 00:15:38,930
+¿Vale?
+
+306
+00:15:38,931 --> 00:15:41,250
+Aquí en el desplegable...
+Le podéis... Collection...
+
+307
+00:15:42,549 --> 00:15:47,930
+Y en la url... Que ponemos... Pues es
+la url... Que estamos gastando en la...
+
+308
+00:15:48,079 --> 00:15:53,490
+En nuestra API... Esto es básicamente...
+Nuestra máquina... Localhost...
+
+309
+00:15:53,491 --> 00:15:56,430
+Dos puntos... Tres mil... Acordaros
+que funcionaba en el tres mil...
+
+310
+00:15:56,431 --> 00:15:59,910
+Si no definíamos un
+puerto... Barra... Pv1...
+
+311
+00:16:04,490 --> 00:16:05,315
+Moody's...
+
+312
+00:16:05,339 --> 00:16:06,370
+Luego...
+
+313
+00:16:07,369 --> 00:16:11,110
+Teníamos una pestañita... Aquí
+abajo... Que veis que... Tiene params...
+
+314
+00:16:11,111 --> 00:16:14,310
+Autorización... Headers...
+Body... Scripts... Y settings... ¿Vale?
+
+315
+00:16:14,890 --> 00:16:17,550
+Vale... Eso es información...
+De la petición HTTP...
+
+316
+00:16:17,699 --> 00:16:19,750
+Que se va a lanzar...
+
+317
+00:16:20,785 --> 00:16:22,950
+Eh... En nuestro caso... ¿Vale?
+
+318
+00:16:23,030 --> 00:16:26,070
+Ahora vamos a centrarnos... En el
+body... Esto es lo que queremos...
+
+319
+00:16:26,319 --> 00:16:27,650
+Para andar en el post...
+
+320
+00:16:27,849 --> 00:16:30,130
+Si os acordáis...
+Hemos... Recogíamos...
+
+321
+00:16:30,429 --> 00:16:35,990
+El request.body... Pues aquí es donde vamos
+a... Enviar... Ese body... Y ese body...
+
+322
+00:16:35,991 --> 00:16:40,290
+Lo vamos a enviar... En formato JSON...
+Para eso... Hay que ponerle aquí... Row...
+
+323
+00:16:40,291 --> 00:16:40,470
+¿Vale?
+
+324
+00:16:40,471 --> 00:16:42,190
+Lo vamos a pasar... En crudo...
+
+325
+00:16:43,110 --> 00:16:47,190
+Directamente... Y aquí...
+Rellenamos... El JSON...
+
+326
+00:16:48,030 --> 00:16:51,170
+Y básicamente... Lo que tenemos
+que hacer es... Pues poner una película...
+
+327
+00:16:52,639 --> 00:16:55,270
+Si no recuerdo
+mal... En la última...
+
+328
+00:16:58,159 --> 00:17:00,070
+En la última ya os
+lo mandé... ¿Vale?
+
+329
+00:17:00,190 --> 00:17:01,550
+En el... En el...
+
+330
+00:17:03,215 --> 00:17:05,150
+Sí, porque este es el de actualizar...
+
+331
+00:17:06,869 --> 00:17:08,790
+Creo... Y este es el de Alien...
+
+332
+00:17:10,429 --> 00:17:12,030
+El mismo que tengo yo aquí...
+
+333
+00:17:16,000 --> 00:17:16,555
+¿Vale?
+
+334
+00:17:16,579 --> 00:17:20,460
+Entonces... Eso... Si lo teníais
+bien... Teníais que darle a enviar...
+
+335
+00:17:21,880 --> 00:17:23,120
+Bueno... Lo que teníamos que...
+
+336
+00:17:23,664 --> 00:17:25,819
+Haber arrancado
+la API... Si no...
+
+337
+00:17:26,419 --> 00:17:27,619
+Nos íbamos a comer un mojón...
+
+338
+00:17:28,869 --> 00:17:30,760
+Y para arrancar nuestra API...
+
+339
+00:17:31,159 --> 00:17:33,000
+Teníamos que ir a nuestra terminal...
+
+340
+00:17:34,449 --> 00:17:38,240
+Y lanzar el script... Que habíamos dicho...
+De desarrollo en el Package JSON...
+
+341
+00:17:38,241 --> 00:17:42,660
+Si no se acorreais... En el Package JSON...
+Habíamos montado un script... Dev...
+
+342
+00:17:44,200 --> 00:17:44,920
+¿Vale?
+
+343
+00:17:44,940 --> 00:17:48,200
+Un script Dev... Y lo
+que queríamos escoger...
+
+344
+00:17:48,399 --> 00:17:49,620
+Ese script...
+
+345
+00:17:50,169 --> 00:17:52,900
+O arrancar...
+Iniciar... Ese script...
+
+346
+00:17:53,920 --> 00:17:54,725
+¿Vale?
+
+347
+00:17:54,749 --> 00:17:56,700
+Para hacerlo es... NPM...
+
+348
+00:17:58,649 --> 00:18:03,500
+NPM Run... Para lanzar los scripts...
+Y luego... El nombre del script...
+
+349
+00:18:03,501 --> 00:18:04,700
+En este caso...
+
+350
+00:18:05,980 --> 00:18:07,060
+Dev... ¿Vale?
+
+351
+00:18:07,061 --> 00:18:10,820
+Entonces le dís al Play... Porque el Play...
+Lo que va a lanzaros... Es el Start...
+
+352
+00:18:10,821 --> 00:18:11,585
+El Start...
+
+353
+00:18:11,609 --> 00:18:16,340
+No recompila... Cuando...
+Cuando arranque...
+
+354
+00:18:32,710 --> 00:18:33,470
+¿Vale?
+
+355
+00:18:33,471 --> 00:18:38,350
+Eso se arranca la... La aplicación...
+Eso cargará... El fichero .em...
+
+356
+00:18:45,630 --> 00:18:46,630
+¿Vale?
+
+357
+00:18:46,829 --> 00:18:50,470
+Los siguientes... Escucharán el
+puerto 3000... Y los siguientes...
+
+358
+00:18:50,471 --> 00:18:51,590
+Conectará con la base...
+
+359
+00:19:01,090 --> 00:19:02,090
+¿Vale?
+
+360
+00:19:02,479 --> 00:19:07,010
+Una vez ha conectado... Ya
+podemos... Enviar... En la petición...
+
+361
+00:19:08,169 --> 00:19:10,890
+Ahora si la API... Si
+que está en marcha...
+
+362
+00:19:15,010 --> 00:19:16,910
+Y si que tendremos una respuesta...
+
+363
+00:19:17,209 --> 00:19:18,210
+Para aquí...
+
+364
+00:19:32,820 --> 00:19:34,500
+Ahora ya si que debería estar...
+
+365
+00:20:11,774 --> 00:20:14,650
+Ahora si...
+
+366
+00:20:19,190 --> 00:20:21,110
+Ahora si... ¿Vale?
+
+367
+00:20:24,310 --> 00:20:25,710
+¿Vale?
+
+368
+00:20:25,711 --> 00:20:25,866
+¿Vale?
+
+369
+00:20:25,890 --> 00:20:27,490
+Que es la respuesta de nuestro servidor.
+
+370
+00:20:31,070 --> 00:20:32,070
+¿Vale?
+
+371
+00:20:32,554 --> 00:20:33,810
+Pero para verlo...
+
+372
+00:20:34,730 --> 00:20:37,470
+Pues tendríamos que ir a la base de datos
+para verificarlo.
+
+373
+00:20:37,730 --> 00:20:38,770
+Lo que vamos a hacer es...
+
+374
+00:20:39,259 --> 00:20:41,350
+Poder verlo directamente desde nuestra
+API.
+
+375
+00:20:41,510 --> 00:20:44,710
+Es decir, vamos a hacer un endpoint en la
+API que nos permita...
+
+376
+00:20:45,199 --> 00:20:48,990
+Ver qué información hay
+en la... En la base de datos.
+
+377
+00:20:50,169 --> 00:20:52,610
+Así que en el controller vamos a hacer
+otra función.
+
+378
+00:20:54,699 --> 00:20:55,790
+Vamos a hacer...
+
+379
+00:20:56,239 --> 00:20:57,279
+Con el movie controller...
+
+380
+00:20:57,594 --> 00:20:59,910
+Punto getMovies.
+
+381
+00:21:02,950 --> 00:21:03,706
+¿Vale?
+
+382
+00:21:03,730 --> 00:21:05,450
+Esto va a ser una función asíncrona.
+
+383
+00:21:09,470 --> 00:21:10,870
+RequestResponse.
+
+384
+00:21:14,070 --> 00:21:15,070
+¿Vale?
+
+385
+00:21:15,119 --> 00:21:22,530
+Y vamos a tener... Movie.find.
+
+386
+00:21:27,250 --> 00:21:28,200
+Await.
+
+387
+00:21:28,224 --> 00:21:30,670
+Movie.find.
+
+388
+00:21:34,449 --> 00:21:37,130
+Si todo va bien...
+
+389
+00:21:37,629 --> 00:21:38,670
+Pues
+
+390
+00:21:41,809 --> 00:21:43,250
+vamos a hacer un response...
+
+391
+00:21:43,669 --> 00:21:44,860
+Punto status...
+
+392
+00:21:47,260 --> 00:21:48,260
+200...
+
+393
+00:21:49,700 --> 00:21:50,700
+Jason...
+
+394
+00:21:53,679 --> 00:21:55,420
+Vamos a devolver...
+
+395
+00:21:55,570 --> 00:22:01,200
+Vamos a devolver...
+Vamos a devolver...
+
+396
+00:22:01,449 --> 00:22:05,100
+En un array... Que
+vamos a llamarlo movies...
+
+397
+00:22:06,714 --> 00:22:08,240
+Vamos a devolver...
+
+398
+00:22:08,680 --> 00:22:09,680
+La...
+
+399
+00:22:09,844 --> 00:22:13,660
+Data que va a devolver...
+La... Base de datos...
+
+400
+00:22:14,109 --> 00:22:15,800
+Base de datos...
+
+401
+00:22:16,449 --> 00:22:18,820
+Ahora... Si no...
+
+402
+00:22:20,970 --> 00:22:23,200
+Vamos a coger el error...
+
+403
+00:22:32,100 --> 00:22:37,370
+Y... Hacemos un res...
+Punto status... 400... 400...
+
+404
+00:22:37,769 --> 00:22:39,070
+Con status...
+
+405
+00:22:39,790 --> 00:22:41,170
+False...
+
+406
+00:22:41,270 --> 00:22:42,290
+Y mensaje...
+
+407
+00:22:46,710 --> 00:22:48,110
+Error...
+
+408
+00:23:00,810 --> 00:23:02,210
+Error...
+
+409
+00:23:03,109 --> 00:23:04,190
+De nuestro modelo...
+
+410
+00:23:04,839 --> 00:23:05,970
+Punto find... ¿Vale?
+
+411
+00:23:05,990 --> 00:23:09,610
+A la base de datos... Eso ejecuta
+un find en la base de datos...
+
+412
+00:23:09,859 --> 00:23:11,290
+El find vacío...
+
+413
+00:23:11,489 --> 00:23:16,190
+Es como el select asterisco... Acordaros...
+Que me devuelve... Toda la información...
+
+414
+00:23:16,191 --> 00:23:21,270
+Pues... Eso lo cojo... Si todo ha ido bien...
+Lo cojo una variable... Llamada data...
+
+415
+00:23:21,320 --> 00:23:24,650
+Acordaros que esta es... La
+promesa de que todo ha ido bien...
+
+416
+00:23:24,749 --> 00:23:28,070
+Estamos trabajando con promesas...
+Por eso... Trabajamos con el punto den...
+
+417
+00:23:28,071 --> 00:23:29,830
+Y el punto car... ¿Vale?
+
+418
+00:23:29,831 --> 00:23:32,770
+En la segunda evaluación... Ya
+trabajaremos con objetos... Que es...
+
+419
+00:23:32,771 --> 00:23:34,650
+Coger la información...
+Que viene aquí...
+
+420
+00:23:34,799 --> 00:23:36,350
+En el await...
+
+421
+00:23:37,110 --> 00:23:40,790
+Entonces... Con promesas... Es directamente...
+Pues si la promesa... Ha ido bien...
+
+422
+00:23:40,889 --> 00:23:44,470
+Significa que... Me ha devuelto algo...
+A la base de datos... Eso lo cojo...
+
+423
+00:23:44,471 --> 00:23:45,355
+En data...
+
+424
+00:23:45,379 --> 00:23:47,430
+Y lo que hago...
+Básicamente... Es...
+
+425
+00:23:47,579 --> 00:23:48,850
+Sacar una respuesta...
+
+426
+00:23:49,049 --> 00:23:51,490
+Con status 200... De
+que ha ido bien... ¿Vale?
+
+427
+00:23:51,491 --> 00:23:53,310
+En formato JSON...
+
+428
+00:23:53,559 --> 00:23:55,870
+Digo que el status... Es true...
+
+429
+00:23:59,050 --> 00:24:01,330
+Objeto... Bueno... En
+una RAID MOVIES...
+
+430
+00:24:01,950 --> 00:24:03,350
+Devuelvo... La información...
+
+431
+00:24:06,830 --> 00:24:07,525
+¿Vale?
+
+432
+00:24:07,549 --> 00:24:11,290
+Si hay error... Pues esto es...
+El error de siempre... En 400...
+
+433
+00:24:11,291 --> 00:24:13,350
+Con el mensaje de error...
+
+434
+00:24:15,480 --> 00:24:21,510
+Eso... Tenemos que asociarlo...
+A una ruta... ¿Lo tenéis?
+
+435
+00:24:23,190 --> 00:24:24,190
+Esto...
+
+436
+00:24:24,299 --> 00:24:26,610
+Entonces lo asociamos a una ruta...
+
+437
+00:24:27,009 --> 00:24:30,590
+En este caso... Quiero coger
+información... Router.get...
+
+438
+00:24:32,139 --> 00:24:34,670
+La voy a coger en la RAID...
+
+439
+00:24:35,970 --> 00:24:36,610
+¿Vale?
+
+440
+00:24:36,630 --> 00:24:40,670
+Y mi función se llama... Get
+MOVIES... Dentro del MOVI CONTROL...
+
+441
+00:24:52,650 --> 00:24:53,290
+¿Vale?
+
+442
+00:24:53,291 --> 00:24:55,870
+Nuestra API recompilará...
+
+443
+00:25:00,050 --> 00:25:02,590
+Y entonces... La
+podemos probar...
+
+444
+00:25:08,120 --> 00:25:08,760
+¿Vale?
+
+445
+00:25:08,761 --> 00:25:10,780
+En el postman...
+
+446
+00:25:12,879 --> 00:25:15,279
+Lo que hacemos es... Lo que
+hacemos es... Un nuevo request...
+
+447
+00:25:15,440 --> 00:25:15,656
+¿Vale?
+
+448
+00:25:15,680 --> 00:25:17,780
+Botón derecho... Add request...
+
+449
+00:25:19,099 --> 00:25:21,780
+O le dais al más... Que
+tiene al lado... Add request...
+
+450
+00:25:22,450 --> 00:25:23,530
+La cuestión es que en el...
+
+451
+00:25:23,829 --> 00:25:26,960
+Request que os cuide...
+Cogemos de tipo get...
+
+452
+00:25:27,359 --> 00:25:29,860
+Y volvemos a poner... Y volvemos a poner
+la variable... Que hemos creado antes...
+
+453
+00:25:29,860 --> 00:25:31,360
+Base URL...
+
+454
+00:25:31,659 --> 00:25:34,920
+La misma URL... Que vamos a
+trabajar en todos los endpoints...
+
+455
+00:25:35,019 --> 00:25:36,860
+Fijaros que es la URL base de...
+
+456
+00:25:37,429 --> 00:25:38,660
+Mi servidor...
+
+457
+00:25:39,309 --> 00:25:43,020
+Y el endpoint base... Que
+hemos puesto en el index.js...
+
+458
+00:25:45,629 --> 00:25:46,660
+Si le dais a send...
+
+459
+00:25:47,609 --> 00:25:48,820
+Aquí os debería devolver...
+
+460
+00:25:49,495 --> 00:25:51,700
+Una colección... Con
+las películas que tenéis...
+
+461
+00:25:53,780 --> 00:25:54,316
+¿Vale?
+
+462
+00:25:54,340 --> 00:25:58,620
+Yo tengo dos... La que creamos el
+otro día... Y la que he creado hoy...
+
+463
+00:26:01,019 --> 00:26:02,170
+¿Os salen las películas?
+
+464
+00:26:02,171 --> 00:26:03,171
+¿A todos?
+
+465
+00:26:04,879 --> 00:26:06,439
+Si ¿Alguien no les salen las películas?
+
+466
+00:26:06,970 --> 00:26:09,170
+A mi... Que había
+asesido en el ver...
+
+467
+00:26:13,690 --> 00:26:14,690
+¿El controller?
+
+468
+00:26:15,390 --> 00:26:16,215
+No...
+
+469
+00:26:16,239 --> 00:26:17,470
+Es la de...
+
+470
+00:26:17,570 --> 00:26:18,570
+¿El postman?
+
+471
+00:26:18,889 --> 00:26:20,450
+Voy a ir...
+
+472
+00:26:25,445 --> 00:26:26,445
+No...
+
+473
+00:26:46,310 --> 00:26:47,390
+No... No...
+
+474
+00:26:48,290 --> 00:26:50,870
+Si... Si... No... No...
+No... No... No... No...
+
+475
+00:28:00,080 --> 00:28:01,080
+No...
+
+476
+00:31:22,030 --> 00:31:26,710
+Vale... Pues... Ya tenemos
+el... Verlas todas... Muy bien...
+
+477
+00:31:26,710 --> 00:31:30,650
+Lo siguiente que vamos a hacer...
+Es... Ver... Una... Bueno... En casa...
+
+478
+00:31:30,651 --> 00:31:33,410
+Alguien que tenga algún problema...
+
+479
+00:31:34,629 --> 00:31:38,410
+Que tenga que ver con la clase... No...
+Los personales... No me lo merecen...
+
+480
+00:31:48,790 --> 00:31:51,740
+Tengo más gente... De clase
+conectada al team... Es que después...
+
+481
+00:31:57,700 --> 00:32:01,480
+El... El... El postman... No te
+aparece mucho... Pero... ¿Lo tienes?
+
+482
+00:32:01,764 --> 00:32:03,960
+En casa...
+
+483
+00:32:27,360 --> 00:32:31,140
+Mira a ver... El base url... Mira a
+ver... El base url... Que estás poniendo...
+
+484
+00:32:31,141 --> 00:32:32,740
+Que no le estás
+poniendo... La SD...
+
+485
+00:32:33,500 --> 00:32:34,500
+Segure...
+
+486
+00:32:37,430 --> 00:32:38,306
+¿Sabes?
+
+487
+00:32:38,330 --> 00:32:39,135
+Porque a veces...
+
+488
+00:32:39,159 --> 00:32:40,159
+Tienes que poner...
+
+489
+00:32:41,550 --> 00:32:42,550
+HTTP...
+
+490
+00:32:42,589 --> 00:32:44,270
+Es quitarle la SD... La HTTPS...
+
+491
+00:32:45,690 --> 00:32:50,690
+En vez de esa... Pon... HTTP...
+Dos puntos... Barra barra...
+
+492
+00:32:56,239 --> 00:32:57,290
+Ya te va... ¿No?
+
+493
+00:32:58,550 --> 00:33:02,190
+Vale... Pensar que no estamos... Haciendo
+la... No la estamos haciendo... Segura...
+
+494
+00:33:02,191 --> 00:33:04,670
+Porque para eso...
+Necesitamos el...
+
+495
+00:33:05,219 --> 00:33:09,530
+El certificado de seguridad...
+Vale... Es un... Hasta falsearlo...
+
+496
+00:33:09,990 --> 00:33:10,990
+Es un...
+
+497
+00:33:11,269 --> 00:33:13,570
+Un cordial... Vale... Entonces...
+Lo estamos haciendo...
+
+498
+00:33:14,250 --> 00:33:15,250
+Directamente...
+
+499
+00:33:15,650 --> 00:33:16,650
+Público...
+
+500
+00:33:18,950 --> 00:33:19,870
+¿Tienes que...?
+
+501
+00:33:19,871 --> 00:33:21,190
+Sí... A ver... El...
+
+502
+00:33:21,340 --> 00:33:25,290
+Tienes que... Pagar...
+El... El... La certificación...
+
+503
+00:33:25,810 --> 00:33:28,290
+Vale... Creo que lo lleva...
+Los de moneda y timbre...
+
+504
+00:33:29,190 --> 00:33:29,846
+Y...
+
+505
+00:33:29,870 --> 00:33:32,930
+Y... Y ya está... Pero... Es eso...
+Es... Tienes que pagar... A ver...
+
+506
+00:33:32,931 --> 00:33:37,010
+Te puedes falsearlo... Puedes montar un
+fichero... Que te falsea... El certificado...
+
+507
+00:33:37,011 --> 00:33:37,430
+Pero...
+
+508
+00:33:37,454 --> 00:33:42,290
+Para lo que nos ocupa... Que es enseñar...
+Y eso... No vale la pena... Pero vamos...
+
+509
+00:33:42,291 --> 00:33:47,330
+Que... Que no tiene mucho misterio...
+Es más... Por el incordio de... Eh...
+
+510
+00:33:47,790 --> 00:33:50,710
+Uno... O pagar el certificado
+de seguridad... Si tuviera que...
+
+511
+00:33:50,860 --> 00:33:53,830
+Si hubiera que pagarlo... Por cada
+uno de vosotros... Para hacerlo... Eso...
+
+512
+00:33:53,831 --> 00:33:57,290
+Y por cada... Que montamos...
+Al final... Es un... Follar...
+
+513
+00:33:57,689 --> 00:34:00,390
+Y luego... Lo otro
+que es... Pues... El...
+
+514
+00:34:00,539 --> 00:34:04,450
+Montar un certificado... Falso...
+Que en realidad... Solo te sirve... Para...
+
+515
+00:34:04,649 --> 00:34:08,230
+Que veáis vosotros... En la parte segura...
+Que luego cuando lo quieras hacer...
+
+516
+00:34:08,231 --> 00:34:11,489
+No te sirve... Porque tienes que
+hacer el de verdad... Entonces al final...
+
+517
+00:34:11,890 --> 00:34:15,630
+Es enseñarte algo... Que
+sirve solo para local... Para...
+
+518
+00:34:16,680 --> 00:34:20,070
+Para poder apuntar a una S... A
+una HTTPS... En vez de una HTTPS...
+
+519
+00:34:22,610 --> 00:34:25,610
+Vale... Eh... Entonces el
+resto... ¿Todos bien en casa?
+
+520
+00:34:31,480 --> 00:34:35,060
+Vale... Entonces tenemos
+el... El get de todos... Vale...
+
+521
+00:34:35,335 --> 00:34:38,739
+Lo siguiente es coger
+el... El get de uno... Vale...
+
+522
+00:34:38,740 --> 00:34:41,040
+En vez de coger todas las
+películas... Ahora vamos a decirle...
+
+523
+00:34:41,041 --> 00:34:45,639
+Que queremos una película... Vamos
+a hacer el... Movie Control... Punto...
+
+524
+00:34:45,765 --> 00:34:46,765
+Get Movie...
+
+525
+00:34:49,320 --> 00:34:54,300
+Lo mismo... Funciona
+así... Con el... Pues... Y el...
+
+526
+00:34:56,719 --> 00:35:00,020
+Response... Vale... En este
+caso... Lo que vamos a hacer...
+
+527
+00:35:00,120 --> 00:35:03,160
+Es... Eh... El...
+
+528
+00:35:04,780 --> 00:35:07,500
+Weight... Del... Movie...
+
+529
+00:35:08,530 --> 00:35:10,160
+Punto... Find...
+
+530
+00:35:11,200 --> 00:35:12,800
+Find... Find... Find ID...
+
+531
+00:35:13,420 --> 00:35:14,460
+Vale...
+
+532
+00:35:14,735 --> 00:35:17,280
+Tenemos que buscar
+por ID... Ese ID...
+
+533
+00:35:17,430 --> 00:35:24,300
+Lo vamos a coger... De... La información
+que nos da el usuario... Vale... Punto...
+
+534
+00:35:24,301 --> 00:35:27,400
+Params... Vale... Es
+decir... Nos van a pasar...
+
+535
+00:35:27,500 --> 00:35:29,020
+La ID por parámetro...
+
+536
+00:35:29,870 --> 00:35:31,480
+Y luego... El...
+
+537
+00:35:31,680 --> 00:35:35,580
+Parámetro que queremos es
+el ID... Vale... Vamos a hacer...
+
+538
+00:35:36,205 --> 00:35:40,020
+Si todo va bien... Esto
+nos devolverá una data...
+
+539
+00:35:41,540 --> 00:35:42,540
+Ahora...
+
+540
+00:35:42,770 --> 00:35:45,320
+Nos puede devolver una
+data... Pero... ¿Qué puede pasar?
+
+541
+00:35:45,640 --> 00:35:50,340
+Que todo vaya bien... Vale... Pero
+el ID no lo encuentre... Es decir...
+
+542
+00:35:50,390 --> 00:35:51,440
+Que esa data...
+
+543
+00:35:51,790 --> 00:35:57,360
+Realmente no estará... Eh... Será
+nula... Es decir... Habrá ido todo bien...
+
+544
+00:35:57,460 --> 00:36:01,860
+Pero la data es nula... Porque no ha
+encontrado el elemento... O... Habrá...
+
+545
+00:36:01,861 --> 00:36:04,480
+O si lo habrá encontrado... Y
+entonces la data tendrá valor...
+
+546
+00:36:04,680 --> 00:36:07,860
+Lo que vamos a diferenciar es dos
+casos... Vamos a diferenciar los casos...
+
+547
+00:36:07,861 --> 00:36:09,060
+En los que... Si...
+
+548
+00:36:09,460 --> 00:36:10,840
+Tenga una data válida...
+
+549
+00:36:11,190 --> 00:36:12,920
+Y en los que no...
+
+550
+00:36:19,160 --> 00:36:22,600
+Entonces... Si, si... Tengo una data
+válida... Significa que encontré el ID...
+
+551
+00:36:22,601 --> 00:36:24,500
+Y por tanto encontré el elemento...
+
+552
+00:36:24,880 --> 00:36:32,880
+Pues entonces lo que hago es un res
+.status200.json...
+
+553
+00:36:35,230 --> 00:36:40,020
+Y devolvemos la
+información... Status true...
+
+554
+00:36:43,040 --> 00:36:46,280
+Eh... Eh... Y... Movie data...
+
+555
+00:36:49,070 --> 00:36:51,380
+Ha ido todo bien... Pues
+devolvemos la información...
+
+556
+00:36:52,860 --> 00:36:54,160
+Pero puede ser que...
+
+557
+00:36:54,410 --> 00:36:57,880
+No haya encontrado el elemento... Pues
+entonces... Si no ha encontrado el elemento...
+
+558
+00:36:57,881 --> 00:37:00,380
+Lo que tengo que hacer es un res.status...
+
+559
+00:37:02,399 --> 00:37:04,980
+404... El 404 es el estado...
+
+560
+00:37:05,660 --> 00:37:06,660
+NotFound...
+
+561
+00:37:06,930 --> 00:37:12,000
+Y... Eh... En formato json...
+Pues devolvemos la respuesta...
+
+562
+00:37:13,740 --> 00:37:15,640
+Esto es un status false...
+
+563
+00:37:16,390 --> 00:37:17,660
+Y el message...
+
+564
+00:37:17,810 --> 00:37:21,400
+Viene a ser... Movie...
+
+565
+00:37:23,259 --> 00:37:24,440
+NotFound...
+
+566
+00:37:29,625 --> 00:37:32,210
+Esto era si todo va bien...
+
+567
+00:37:33,010 --> 00:37:34,030
+Si va mal...
+
+568
+00:37:34,180 --> 00:37:35,210
+Pues cut...
+
+569
+00:37:38,660 --> 00:37:39,690
+Error...
+
+570
+00:37:41,410 --> 00:37:43,130
+Res... Punto... Status...
+
+571
+00:37:44,910 --> 00:37:45,910
+400...
+
+572
+00:37:46,610 --> 00:37:47,610
+Eh...
+
+573
+00:37:48,170 --> 00:37:49,170
+Status...
+
+574
+00:37:50,030 --> 00:37:51,030
+False...
+
+575
+00:37:52,370 --> 00:37:53,370
+Message...
+
+576
+00:38:05,170 --> 00:38:06,210
+Sí... Eh...
+
+577
+00:38:08,480 --> 00:38:11,510
+A ver, he cambiado también
+Movie... En vez de Movies... ¿Vale?
+
+578
+00:38:11,530 --> 00:38:13,150
+De lo anterior... ¿Vale?
+
+579
+00:38:13,170 --> 00:38:15,910
+Porque lo que vemos ahora es una única
+película...
+
+580
+00:38:17,460 --> 00:38:18,850
+Y he añadido el else para...
+
+581
+00:38:19,350 --> 00:38:23,030
+El if y el else para... Controlar
+si... Eh... Ha devuelto...
+
+582
+00:38:23,031 --> 00:38:25,271
+Hemos encontrado el idea o no hemos
+encontrado el idea...
+
+583
+00:38:26,310 --> 00:38:26,490
+¿Vale?
+
+584
+00:38:26,510 --> 00:38:28,970
+El catch... Siempre
+es igual... ¿Vale?
+
+585
+00:38:29,230 --> 00:38:30,230
+Entonces... ¿El qué?
+
+586
+00:38:32,210 --> 00:38:34,370
+El más bajo la
+foto... El catch...
+
+587
+00:38:35,380 --> 00:38:37,460
+Por eso os digo que como el catch es
+siempre igual...
+
+588
+00:38:50,270 --> 00:38:52,090
+Vale... Lo que es
+diferente es esto...
+
+589
+00:38:56,955 --> 00:39:03,300
+Tengo que tener en cuenta que ahora es...
+Terminamos esto... Hay... Treinta y...
+
+590
+00:39:03,301 --> 00:39:04,440
+Cinco... Cinco, ¿no?
+
+591
+00:39:06,080 --> 00:39:11,120
+No, mentira... Hay veinticinco...
+Hay veinticinco... O sea, ya... Ja...
+
+592
+00:39:11,121 --> 00:39:13,300
+Venga, pues hacemos el router...
+
+593
+00:39:14,580 --> 00:39:15,580
+Eh...
+
+594
+00:39:16,560 --> 00:39:17,146
+Vale...
+
+595
+00:39:17,170 --> 00:39:18,420
+Ruta parecida... ¿Vale?
+
+596
+00:39:18,440 --> 00:39:20,320
+Ahora ya vamos a movie... ¿Vale?
+
+597
+00:39:20,515 --> 00:39:23,200
+Lo que pasa es que tengo que coger un
+parámetro...
+
+598
+00:39:23,820 --> 00:39:27,060
+Vale... Para coger parámetro...
+Lo ponemos con los dos puntos...
+
+599
+00:39:27,360 --> 00:39:29,920
+Pero no lo voy a poder
+poner... Directamente...
+
+600
+00:39:30,460 --> 00:39:31,460
+En...
+
+601
+00:39:32,225 --> 00:39:34,220
+En la raíz... ¿Vale?
+
+602
+00:39:34,300 --> 00:39:34,616
+¿Por qué?
+
+603
+00:39:34,640 --> 00:39:38,380
+Porque si no... Lo que estaría cogiendo
+es cualquier información... Que venga...
+
+604
+00:39:38,705 --> 00:39:41,480
+Con tipo get...
+Eh... La raíz... ¿Vale?
+
+605
+00:39:41,500 --> 00:39:45,740
+La estaría cogiendo directamente en el
+parámetro... Entonces si hay otra ruta...
+
+606
+00:39:45,741 --> 00:39:46,741
+Por ejemplo...
+
+607
+00:39:49,750 --> 00:39:52,060
+Una ruta que sea... Eh...
+
+608
+00:39:52,940 --> 00:39:53,980
+Barra melón...
+
+609
+00:39:55,080 --> 00:39:58,060
+No... La podría coger...
+Si yo lo pusiera así...
+
+610
+00:39:59,880 --> 00:40:00,400
+¿Vale?
+
+611
+00:40:00,401 --> 00:40:02,180
+Porque se lo comería la variable...
+
+612
+00:40:02,280 --> 00:40:05,760
+Esto lo que hace es... Cojo toda la
+información... Que venga después de la barra...
+
+613
+00:40:05,761 --> 00:40:10,320
+Con una variable llamada IDE... Entonces
+para evitar eso... Lo que hacemos es...
+
+614
+00:40:10,321 --> 00:40:12,240
+Ponemos una subruta... ¿Vale?
+
+615
+00:40:12,241 --> 00:40:16,940
+En este caso movie... Para coger... Esa
+película... Y así ya... No me cogería...
+
+616
+00:40:17,620 --> 00:40:19,980
+Las rutas que hayan por debajo...
+
+617
+00:40:20,230 --> 00:40:21,840
+Acordaros que esto
+es secuencial... ¿Vale?
+
+618
+00:40:21,841 --> 00:40:23,000
+Y le de arriba a abajo...
+
+619
+00:40:24,090 --> 00:40:25,660
+Y ese movie IDE... ¿Vale?
+
+620
+00:40:25,720 --> 00:40:27,720
+Para verlo... Y ya
+con eso terminamos...
+
+621
+00:40:29,310 --> 00:40:31,020
+Hacéis una nueva petición...
+
+622
+00:40:31,680 --> 00:40:32,120
+¿Vale?
+
+623
+00:40:32,121 --> 00:40:36,300
+Lo que vais a necesitar en la petición...
+Es... Uno de los IDs... Que teníais...
+
+624
+00:40:36,450 --> 00:40:37,720
+En el buscar todos...
+
+625
+00:40:38,620 --> 00:40:40,760
+Entonces hacéis...
+Un nuevo al request...
+
+626
+00:40:41,160 --> 00:40:42,660
+A la base url...
+
+627
+00:40:42,910 --> 00:40:45,480
+Ahora le tenemos que
+añadir detrás... Barra movie...
+
+628
+00:40:46,460 --> 00:40:47,396
+Barra...
+
+629
+00:40:47,420 --> 00:40:48,840
+Y ponemos aquí...
+
+630
+00:40:49,190 --> 00:40:50,280
+El ID...
+
+631
+00:40:50,480 --> 00:40:54,180
+La base url es siempre la misma...
+Sí... La base url es siempre la misma...
+
+632
+00:40:54,181 --> 00:40:58,240
+Barra movie... Sí... Lo que hemos
+añadido es el... Barra movie... Barra...
+
+633
+00:40:58,440 --> 00:40:59,680
+Y luego lo que...
+
+634
+00:40:59,780 --> 00:41:00,900
+Hemos terminado... ¿Vale?
+
+635
+00:41:01,030 --> 00:41:03,440
+Esto acordaros que
+acaba en... API V1 movies...
+
+636
+00:41:04,350 --> 00:41:06,670
+Entonces lo que está
+concatenando... Es el API V1 movies...
+
+637
+00:41:07,440 --> 00:41:10,540
+Con... Barra movie...
+Barra... El ID...
+
+638
+00:41:11,450 --> 00:41:13,420
+Si le dais a buscar...
+Os debería encontrar...
+
+639
+00:41:13,570 --> 00:41:15,020
+Una película... ¿Vale?
+
+640
+00:41:15,080 --> 00:41:16,460
+La que habéis puesto con el ID...
+
+641
+00:41:16,910 --> 00:41:17,940
+Con el API V1...
+
+642
+00:41:18,920 --> 00:41:22,500
+Vale... Entonces hay que revisar... El
+endpoint... Porque no te está encontrando...
+
+643
+00:41:22,501 --> 00:41:26,240
+El endpoint que has puesto...
+El de... Barra API V1... Movie...
+
+644
+00:41:30,600 --> 00:41:32,100
+Vale... Entonces
+lo dejamos aquí...
+
+645
+00:41:33,360 --> 00:41:34,360
+El...
+
+646
+00:41:34,570 --> 00:41:38,860
+Luego tengo clase con vosotros...
+Tenemos que corregir PSP... ¿Vale?
+
+647
+00:41:39,650 --> 00:41:43,620
+Y después de PSP... Si queréis revisamos
+esto... Como el ejercicio de SGE...
+
+648
+00:41:43,621 --> 00:41:46,000
+Está corregido ya...
+Esta semana... ¿Vale?
+
+649
+00:41:46,100 --> 00:41:47,100
+Pues entonces...
+
+650
+00:41:47,620 --> 00:41:49,780
+Retrovamos tranquilamente la API...
+
+651
+00:41:49,930 --> 00:41:50,980
+No es que se quede...
+
+652
+00:41:52,324 --> 00:41:55,180
+Vale... Lo dejamos aquí... No es
+que se quede... No es que se quede...
+
+653
+00:41:55,181 --> 00:41:57,741
+No es que se quede... No es que
+se quede... No es que se quede...
+

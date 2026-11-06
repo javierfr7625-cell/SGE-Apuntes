@@ -1,0 +1,639 @@
+<!DOCTYPE html><html lang="es" class="dark" data-astro-cid-lcdefpme><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SGE Examen Progresa - Guía Rápida Ionic v8 &amp; Angular Standalone</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>:root{--bg-body:#090d16;--bg-surface:#0f172a;--bg-card:#141e33;--bg-subtle:#1e293b;--text-main:#f1f5f9;--text-muted:#94a3b8;--accent:#38bdf8;--accent-glow:#38bdf833;--accent-hover:#0284c7;--border:#22324e;--border-focus:#38bdf8;--code-bg:#070b14;--success:#10b981;--danger:#ef4444;--warning:#f59e0b;--radius-sm:6px;--radius-md:10px;--radius-lg:14px}[data-astro-cid-lcdefpme]{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background-color:var(--bg-body);color:var(--text-main);flex-direction:column;min-height:100vh;font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.6;display:flex}header[data-astro-cid-lcdefpme]{z-index:100;backdrop-filter:blur(12px);border-bottom:1px solid var(--border);background:#090d16eb;padding:12px 24px;position:sticky;top:0}.header-inner[data-astro-cid-lcdefpme]{flex-direction:column;gap:12px;max-width:1440px;margin:0 auto;display:flex}.top-row[data-astro-cid-lcdefpme]{flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;display:flex}.logo-area[data-astro-cid-lcdefpme]{align-items:center;gap:12px;display:flex}.logo-icon[data-astro-cid-lcdefpme]{font-size:1.6rem;font-weight:900}.logo-text[data-astro-cid-lcdefpme] h1[data-astro-cid-lcdefpme]{letter-spacing:-.02em;color:#fff;font-size:1.25rem;font-weight:800}.badge-pill[data-astro-cid-lcdefpme]{text-transform:uppercase;letter-spacing:.04em;border-radius:9999px;padding:3px 9px;font-size:.72rem;font-weight:700}.badge-ionic[data-astro-cid-lcdefpme]{color:#38bdf8;background:#38bdf826;border:1px solid #38bdf84d}.badge-belda[data-astro-cid-lcdefpme]{color:#10b981;background:#10b98126;border:1px solid #10b9814d}.search-bar-container[data-astro-cid-lcdefpme]{flex:1;min-width:280px;max-width:580px;position:relative}.search-input[data-astro-cid-lcdefpme]{background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--radius-md);color:#fff;outline:none;width:100%;padding:10px 18px 10px 42px;font-size:.92rem;transition:all .2s;box-shadow:inset 0 2px 4px #0000004d}.search-input[data-astro-cid-lcdefpme]:focus{border-color:var(--border-focus);box-shadow:0 0 0 3px var(--accent-glow)}.search-icon-svg[data-astro-cid-lcdefpme]{color:var(--text-muted);pointer-events:none;font-size:1rem;position:absolute;top:50%;left:14px;transform:translateY(-50%)}.shortcut-hint[data-astro-cid-lcdefpme]{background:var(--code-bg);border:1px solid var(--border);color:var(--text-muted);border-radius:4px;padding:2px 6px;font-family:Fira Code,monospace;font-size:.7rem;position:absolute;top:50%;right:12px;transform:translateY(-50%)}.btn-checklist[data-astro-cid-lcdefpme]{color:#fff;border-radius:var(--radius-md);cursor:pointer;background:linear-gradient(135deg,#0284c7,#2563eb);border:none;align-items:center;gap:8px;padding:9px 18px;font-size:.86rem;font-weight:700;transition:all .2s;display:flex;box-shadow:0 4px 12px #0284c74d}.btn-checklist[data-astro-cid-lcdefpme]:hover{transform:translateY(-1px);box-shadow:0 6px 16px #0284c773}.filter-tags[data-astro-cid-lcdefpme]{scrollbar-width:none;gap:8px;padding-bottom:4px;display:flex;overflow-x:auto}.filter-tags[data-astro-cid-lcdefpme]::-webkit-scrollbar{display:none}.tag-chip[data-astro-cid-lcdefpme]{background:var(--bg-surface);color:var(--text-muted);border:1px solid var(--border);cursor:pointer;white-space:nowrap;border-radius:9999px;padding:5px 14px;font-size:.8rem;font-weight:600;transition:all .15s}.tag-chip[data-astro-cid-lcdefpme]:hover{background:var(--bg-subtle);color:#fff;border-color:#3b82f6}.tag-chip[data-astro-cid-lcdefpme].active{background:var(--accent);color:#090d16;border-color:var(--accent);box-shadow:0 2px 8px var(--accent-glow);font-weight:800}.app-container[data-astro-cid-lcdefpme]{flex:1;grid-template-columns:290px 1fr;gap:28px;width:100%;max-width:1440px;margin:0 auto;padding:24px;display:grid}@media (width<=1040px){.app-container[data-astro-cid-lcdefpme]{grid-template-columns:1fr}.toc-sidebar[data-astro-cid-lcdefpme]{display:none}}.toc-sidebar[data-astro-cid-lcdefpme]{background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--radius-lg);scrollbar-width:thin;max-height:calc(100vh - 160px);padding:18px;position:sticky;top:140px;overflow-y:auto}.toc-title[data-astro-cid-lcdefpme]{text-transform:uppercase;letter-spacing:.08em;color:var(--accent);align-items:center;gap:6px;margin-bottom:14px;font-size:.78rem;font-weight:800;display:flex}.toc-list[data-astro-cid-lcdefpme]{flex-direction:column;gap:4px;list-style:none;display:flex}.toc-link[data-astro-cid-lcdefpme]{border-radius:var(--radius-sm);color:var(--text-muted);align-items:center;gap:8px;padding:8px 12px;font-size:.84rem;font-weight:500;text-decoration:none;transition:all .15s;display:flex}.toc-link[data-astro-cid-lcdefpme]:hover{background:var(--bg-subtle);color:#fff}.toc-link[data-astro-cid-lcdefpme] .num[data-astro-cid-lcdefpme]{color:var(--accent);font-family:Fira Code,monospace;font-size:.75rem;font-weight:700}.golden-banner[data-astro-cid-lcdefpme]{border-radius:var(--radius-lg);background:linear-gradient(135deg,#ef444426 0%,#b91c1c40 100%);border:1px solid #ef444466;margin-bottom:28px;padding:20px;position:relative;overflow:hidden}.golden-banner[data-astro-cid-lcdefpme]:before{content:"";background:var(--danger);width:5px;position:absolute;top:0;bottom:0;left:0}.golden-header[data-astro-cid-lcdefpme]{align-items:center;gap:10px;margin-bottom:12px;display:flex}.golden-header[data-astro-cid-lcdefpme] h2[data-astro-cid-lcdefpme]{color:#fecaca;font-size:1.15rem;font-weight:800}.golden-grid[data-astro-cid-lcdefpme]{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:14px;display:grid}.golden-card[data-astro-cid-lcdefpme]{border-radius:var(--radius-md);background:#0f172a99;border:1px solid #ef444440;flex-direction:column;gap:4px;padding:12px 14px;font-size:.85rem;display:flex}.golden-card[data-astro-cid-lcdefpme] strong[data-astro-cid-lcdefpme]{color:#f87171;align-items:center;gap:6px;display:flex}.models-feed[data-astro-cid-lcdefpme]{flex-direction:column;gap:32px;display:flex}.model-card[data-astro-cid-lcdefpme]{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);scroll-margin-top:155px;transition:all .2s;overflow:hidden}@keyframes pulseGlow{0%{border-color:#38bdf8;box-shadow:0 0 #38bdf8cc}50%{border-color:#38bdf8;box-shadow:0 0 0 12px #38bdf840}to{box-shadow:0 0 #38bdf800}}.card-highlight[data-astro-cid-lcdefpme]{animation:1.6s ease-out pulseGlow;border-color:#38bdf8!important}.active-filter-bar[data-astro-cid-lcdefpme]{border-radius:var(--radius-md);background:#38bdf81a;border:1px solid #38bdf84d;justify-content:space-between;align-items:center;margin-bottom:20px;padding:10px 16px;font-size:.88rem;display:none}.active-filter-bar[data-astro-cid-lcdefpme].show{display:flex}.btn-reset-filter[data-astro-cid-lcdefpme]{background:var(--accent);color:#090d16;cursor:pointer;border:none;border-radius:9999px;padding:4px 12px;font-size:.78rem;font-weight:700}.model-card[data-astro-cid-lcdefpme]:hover{border-color:#3b82f6;box-shadow:0 8px 30px #00000059}.card-top[data-astro-cid-lcdefpme]{border-bottom:1px solid var(--border);background:#0f192b;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:18px 24px;display:flex}.card-id-title[data-astro-cid-lcdefpme]{align-items:center;gap:12px;display:flex}.card-num[data-astro-cid-lcdefpme]{background:var(--accent);color:#090d16;border-radius:var(--radius-sm);padding:4px 10px;font-family:Fira Code,monospace;font-size:.85rem;font-weight:900}.card-title[data-astro-cid-lcdefpme]{color:#fff;font-size:1.22rem;font-weight:800}.trigger-pill[data-astro-cid-lcdefpme]{color:var(--accent);background:#38bdf81a;border:1px solid #38bdf84d;border-radius:9999px;padding:5px 12px;font-family:Fira Code,monospace;font-size:.78rem;font-weight:600}.card-content[data-astro-cid-lcdefpme]{flex-direction:column;gap:20px;padding:24px;display:flex}.info-callout[data-astro-cid-lcdefpme]{background:var(--bg-surface);border-left:4px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:12px 16px;font-size:.88rem}.info-callout[data-astro-cid-lcdefpme] strong[data-astro-cid-lcdefpme]{color:var(--accent)}.recipe-steps[data-astro-cid-lcdefpme]{flex-direction:column;gap:8px;padding-left:20px;font-size:.92rem;display:flex}.recipe-steps[data-astro-cid-lcdefpme] li[data-astro-cid-lcdefpme] strong[data-astro-cid-lcdefpme]{color:#fff}.code-box[data-astro-cid-lcdefpme]{background:var(--code-bg);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden}.code-bar[data-astro-cid-lcdefpme]{border-bottom:1px solid var(--border);color:var(--text-muted);background:#090d16;justify-content:space-between;align-items:center;padding:8px 16px;font-family:Fira Code,monospace;font-size:.78rem;display:flex}.btn-copy[data-astro-cid-lcdefpme]{background:var(--bg-subtle);color:var(--text-main);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;align-items:center;gap:5px;padding:4px 10px;font-size:.75rem;font-weight:600;transition:all .15s;display:flex}.btn-copy[data-astro-cid-lcdefpme]:hover{background:var(--accent);color:#090d16;border-color:var(--accent)}pre[data-astro-cid-lcdefpme]{color:#e2e8f0;padding:16px;font-family:Fira Code,Consolas,Monaco,monospace;font-size:.85rem;line-height:1.6;overflow-x:auto}.rubric-grid[data-astro-cid-lcdefpme]{grid-template-columns:1fr 1fr;gap:16px;display:grid}@media (width<=768px){.rubric-grid[data-astro-cid-lcdefpme]{grid-template-columns:1fr}}.rubric-card[data-astro-cid-lcdefpme]{border-radius:var(--radius-md);padding:14px 18px;font-size:.85rem}.rubric-positive[data-astro-cid-lcdefpme]{background:#10b98114;border:1px solid #10b98140}.rubric-positive[data-astro-cid-lcdefpme] h4[data-astro-cid-lcdefpme]{color:var(--success);align-items:center;gap:6px;margin-bottom:8px;display:flex}.rubric-negative[data-astro-cid-lcdefpme]{background:#ef444414;border:1px solid #ef444440}.rubric-negative[data-astro-cid-lcdefpme] h4[data-astro-cid-lcdefpme]{color:var(--danger);align-items:center;gap:6px;margin-bottom:8px;display:flex}.rubric-card[data-astro-cid-lcdefpme] ul[data-astro-cid-lcdefpme]{flex-direction:column;gap:4px;padding-left:18px;display:flex}.tree-card[data-astro-cid-lcdefpme]{background:var(--code-bg);border:1px solid var(--border);border-radius:var(--radius-md);margin:14px 0;overflow:hidden}.tree-header[data-astro-cid-lcdefpme]{color:var(--accent);border-bottom:1px solid var(--border);background:#090d16;align-items:center;gap:8px;padding:8px 16px;font-family:Fira Code,monospace;font-size:.8rem;font-weight:700;display:flex}.tree-content[data-astro-cid-lcdefpme]{color:#e2e8f0;margin:0;padding:16px;font-family:Fira Code,Consolas,Monaco,monospace;font-size:.86rem;line-height:1.6;overflow-x:auto;white-space:pre!important}.tree-content[data-astro-cid-lcdefpme] .folder[data-astro-cid-lcdefpme]{color:#38bdf8;font-weight:700}.tree-content[data-astro-cid-lcdefpme] .file[data-astro-cid-lcdefpme]{color:#f1f5f9;font-weight:600}.tree-content[data-astro-cid-lcdefpme] .comment[data-astro-cid-lcdefpme]{color:#64748b;font-style:italic}.modal-overlay[data-astro-cid-lcdefpme]{backdrop-filter:blur(6px);z-index:200;background:#04070dcc;justify-content:center;align-items:center;padding:20px;display:none;position:fixed;inset:0}.modal-overlay[data-astro-cid-lcdefpme].active{display:flex}.modal-window[data-astro-cid-lcdefpme]{background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--radius-lg);width:100%;max-width:650px;max-height:90vh;padding:26px;overflow-y:auto;box-shadow:0 20px 40px #0009}.modal-head[data-astro-cid-lcdefpme]{border-bottom:1px solid var(--border);justify-content:space-between;align-items:center;margin-bottom:20px;padding-bottom:12px;display:flex}.modal-head[data-astro-cid-lcdefpme] h3[data-astro-cid-lcdefpme]{color:var(--accent);font-size:1.25rem;font-weight:800}.close-btn[data-astro-cid-lcdefpme]{color:var(--text-muted);cursor:pointer;background:0 0;border:none;font-size:1.6rem;line-height:1}.check-items-list[data-astro-cid-lcdefpme]{flex-direction:column;gap:14px;list-style:none;display:flex}.check-item[data-astro-cid-lcdefpme]{cursor:pointer;border-radius:var(--radius-sm);align-items:flex-start;gap:12px;padding:8px 10px;font-size:.92rem;transition:background .15s;display:flex}.check-item[data-astro-cid-lcdefpme]:hover{background:var(--bg-card)}.check-item[data-astro-cid-lcdefpme] input[data-astro-cid-lcdefpme][type=checkbox]{width:20px;height:20px;accent-color:var(--accent);cursor:pointer;margin-top:4px}footer[data-astro-cid-lcdefpme]{border-top:1px solid var(--border);text-align:center;color:var(--text-muted);background:var(--bg-surface);margin-top:auto;padding:24px;font-size:.85rem}pre code.hljs{padding:0;display:block;overflow-x:auto;color:#abb2bf!important;background:0 0!important;font-family:Fira Code,Consolas,Monaco,monospace!important;font-size:.85rem!important;line-height:1.6!important}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#c678dd!important;font-weight:600!important}.hljs-string,.hljs-regexp,.hljs-addition,.hljs-attribute{color:#98c379!important}.hljs-title.function_,.hljs-function,.hljs-section{color:#61afef!important;font-weight:600!important}.hljs-title.class_,.hljs-class .hljs-title,.hljs-type,.hljs-built_in{color:#e5c07b!important;font-weight:600!important}.hljs-meta,.hljs-symbol,.hljs-bullet{color:#e5c07b!important;font-weight:700!important}.hljs-attr,.hljs-variable,.hljs-template-variable,.hljs-params,.hljs-number,.hljs-literal{color:#d19a66!important}.hljs-comment,.hljs-quote{color:#768390!important;font-style:italic!important}.hljs-tag{color:#abb2bf!important}.hljs-name{color:#e06c75!important;font-weight:600!important}.hljs-selector-class,.hljs-selector-id,.hljs-selector-attr{color:#e5c07b!important}
+</style></head><body data-astro-cid-lcdefpme><!-- Top Sticky Navigation & Search --><header data-astro-cid-lcdefpme><div class="header-inner" data-astro-cid-lcdefpme><div class="top-row" data-astro-cid-lcdefpme><div class="logo-area" data-astro-cid-lcdefpme><span class="logo-icon" data-astro-cid-lcdefpme>⚡</span><div class="logo-text" data-astro-cid-lcdefpme><h1 data-astro-cid-lcdefpme>SGE Examen Rápido</h1></div><span class="badge-pill badge-ionic" data-astro-cid-lcdefpme>Ionic v8 + Angular Standalone</span><span class="badge-pill badge-belda" data-astro-cid-lcdefpme>Francisco Belda</span></div><div class="search-bar-container" data-astro-cid-lcdefpme><span class="search-icon-svg" data-astro-cid-lcdefpme>🔍</span><input type="text" id="globalSearch" class="search-input" placeholder="Buscar por concepto, archivo, trigger (ej: author, zelda, modal, infinite, structure)..." autofocus data-astro-cid-lcdefpme><span class="shortcut-hint" data-astro-cid-lcdefpme>Ctrl + F</span></div><button class="btn-checklist" id="openChecklistBtn" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>📋</span> Checklist de Entrega</button></div><!-- Tag Filters --><div class="filter-tags" id="tagFilters" data-astro-cid-lcdefpme><button class="tag-chip active" data-filter="all" data-astro-cid-lcdefpme>✨ Todos</button><button class="tag-chip" data-filter="inicio" data-astro-cid-lcdefpme>🛠️ 0. Guía Inicio & Setup</button><button class="tag-chip" data-filter="critico" data-astro-cid-lcdefpme>🚨 Puntos Fatales</button><button class="tag-chip" data-filter="zelda" data-astro-cid-lcdefpme>🗡️ Simulacro Zelda</button><button class="tag-chip" data-filter="menu" data-astro-cid-lcdefpme>📑 Menú Lateral</button><button class="tag-chip" data-filter="modal" data-astro-cid-lcdefpme>🪟 Modales Inline</button><button class="tag-chip" data-filter="infinite" data-astro-cid-lcdefpme>🔄 Infinite Scroll</button><button class="tag-chip" data-filter="swiper" data-astro-cid-lcdefpme>🎠 Diapositivas Swiper</button><button class="tag-chip" data-filter="refresher" data-astro-cid-lcdefpme>⬇️ Refresher/Skeleton</button><button class="tag-chip" data-filter="searchbar" data-astro-cid-lcdefpme>🔎 Searchbar/Pipe</button><button class="tag-chip" data-filter="segment" data-astro-cid-lcdefpme>📊 Segments/URL</button><button class="tag-chip" data-filter="toast" data-astro-cid-lcdefpme>🍞 Toast Service</button><button class="tag-chip" data-filter="alert" data-astro-cid-lcdefpme>⚠️ Alert Controller</button><button class="tag-chip" data-filter="i18n" data-astro-cid-lcdefpme>🌍 Multilenguaje</button></div></div></header><!-- App Body Layout --><div class="app-container" data-astro-cid-lcdefpme><!-- Sidebar Navigation --><aside class="toc-sidebar" data-astro-cid-lcdefpme><div class="toc-title" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>📑</span> Índice Rápido</div><ul class="toc-list" data-astro-cid-lcdefpme><li data-astro-cid-lcdefpme><a href="#guia-inicio" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>00</span> Guía Inicio & Setup Cero</a></li><li data-astro-cid-lcdefpme><a href="#setup-critico" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>01</span> Setup Base & Providers</a></li><li data-astro-cid-lcdefpme><a href="#modelo-api" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>02</span> Consumo API REST + Signals</a></li><li data-astro-cid-lcdefpme><a href="#modelo-swiper" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>03</span> Diapositivas Swiper</a></li><li data-astro-cid-lcdefpme><a href="#modelo-menu" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>04</span> Menú con Avatar Toggle</a></li><li data-astro-cid-lcdefpme><a href="#modelo-modal" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>05</span> Modal Inline willDismiss</a></li><li data-astro-cid-lcdefpme><a href="#modelo-infinite" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>06</span> Infinite Scroll (Listas)</a></li><li data-astro-cid-lcdefpme><a href="#modelo-refresher" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>07</span> Refresher y Skeleton</a></li><li data-astro-cid-lcdefpme><a href="#modelo-search" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>08</span> Searchbar + Filtro Pipe</a></li><li data-astro-cid-lcdefpme><a href="#modelo-segment" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>09</span> Segments + QueryParams</a></li><li data-astro-cid-lcdefpme><a href="#modelo-toast" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>10</span> Toast Service Central</a></li><li data-astro-cid-lcdefpme><a href="#modelo-alert" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>11</span> Alert Controller</a></li><li data-astro-cid-lcdefpme><a href="#modelo-i18n" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>12</span> Multilenguaje i18n</a></li><li data-astro-cid-lcdefpme><a href="#cheat-sheet" class="toc-link" data-astro-cid-lcdefpme><span class="num" data-astro-cid-lcdefpme>13</span> Cheat-Sheet y addIcons</a></li></ul></aside><!-- Main Content Area --><main data-astro-cid-lcdefpme><!-- Critical Warning Banner --><section class="golden-banner" id="bannerCritico" data-astro-cid-lcdefpme><div class="golden-header" data-astro-cid-lcdefpme><span style="font-size: 1.4rem;" data-astro-cid-lcdefpme>🚨</span><h2 data-astro-cid-lcdefpme>REGLAS DE ORO DE FRANCISCO BELDA (AUDITORÍA OFICIAL)</h2></div><p style="font-size: 0.88rem; color: #fecaca;" data-astro-cid-lcdefpme>Detectadas en las correcciones del simulacro y transcripciones de clase. Comprueba estos 5 puntos antes de escribir código:</p><div class="golden-grid" data-astro-cid-lcdefpme><div class="golden-card" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>👤 package.json -> Autor</strong><span data-astro-cid-lcdefpme>Poner <code data-astro-cid-lcdefpme>"author": "Tu Nombre"</code> en package.json. Es lo primero que revisa al abrir el zip.</span></div><div class="golden-card" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>🌐 main.ts -> HttpClient</strong><span data-astro-cid-lcdefpme>Añadir <code data-astro-cid-lcdefpme>provideHttpClient(withFetch())</code> en providers o la app fallará con pantalla blanca.</span></div><div class="golden-card" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>🎠 app.component.ts -> Swiper</strong><span data-astro-cid-lcdefpme>Llamar a <code data-astro-cid-lcdefpme>register()</code> de Swiper y <code data-astro-cid-lcdefpme>CUSTOM_ELEMENTS_SCHEMA</code> en la página de slides.</span></div><div class="golden-card" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>🔗 ion-menu -> contentId</strong><span data-astro-cid-lcdefpme>El <code data-astro-cid-lcdefpme>contentId</code> del menú DEBE ser idéntico al <code data-astro-cid-lcdefpme>id</code> del <code data-astro-cid-lcdefpme>ion-content</code> o la app se bloquea.</span></div><div class="golden-card" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>🛑 Infinite & Refresher</strong><span data-astro-cid-lcdefpme>Llamar SIEMPRE a <code data-astro-cid-lcdefpme>event.target.complete()</code> o el spinner se quedará cargando para siempre.</span></div></div></section><!-- Active Filter Notice --><div class="active-filter-bar" id="filterNotice" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>🔍 Mostrando filtro: <strong id="filterName" data-astro-cid-lcdefpme>Todos</strong> (<span id="matchCount" data-astro-cid-lcdefpme>14</span> modelos encontrados)</span><button class="btn-reset-filter" id="btnResetFilter" data-astro-cid-lcdefpme>Mostrar Todos</button></div><!-- Feed of Models --><div class="models-feed" id="modelsFeed" data-astro-cid-lcdefpme><!-- SECCIÓN: GUÍA DE INICIO Y SETUP DESDE CERO --><article class="model-card" data-tags="inicio setup critico" id="guia-inicio" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>00</span><h3 class="card-title" data-astro-cid-lcdefpme>Guía de Inicio y Setup desde Cero (Estructura y Comandos)</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Crear proyecto en blanco", "Estructura de carpetas", "CLI commands"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="info-callout" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>Objetivo:</strong> Crear un proyecto Angular Standalone limpio en Ionic v8 sin archivos basura, generando la estructura de carpetas que exige el profesor (`models/`, `services/`, `pages/`, `components/`, `assets/`).</div><h4 style="color: #fff; margin-top: 10px;" data-astro-cid-lcdefpme>1. Comando de Creación Oficial (Terminal)</h4><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>PowerShell / Bash</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-bash" data-astro-cid-lcdefpme><span class="hljs-comment"># 1. Crear proyecto blank en Angular Standalone (Sin módulos viejos)</span>
+ionic start mi-examen blank --<span class="hljs-built_in">type</span>=angular --standalone
+
+<span class="hljs-comment"># 2. Entrar a la carpeta</span>
+<span class="hljs-built_in">cd</span> mi-examen
+
+<span class="hljs-comment"># 3. Instalar Swiper para las diapositivas</span>
+npm install swiper
+
+<span class="hljs-comment"># (Opcional) Si el examen pide multilenguaje:</span>
+npm install @ngx-translate/core @ngx-translate/http-loader</code></pre></div><h4 style="color: #fff; margin-top: 10px;" data-astro-cid-lcdefpme>2. Arquitectura de Carpetas Exigida</h4><p style="font-size: 0.88rem; color: var(--text-muted);" data-astro-cid-lcdefpme>Crea estas carpetas dentro de <code data-astro-cid-lcdefpme>src/app/</code> y <code data-astro-cid-lcdefpme>src/assets/</code> para tener todo organizado según el criterio del profesor:</p><div class="tree-card" data-astro-cid-lcdefpme><div class="tree-header" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>📁</span> Arquitectura de Carpetas Oficial (src/)</div><pre class="tree-content" data-astro-cid-lcdefpme><code class="nohighlight" data-astro-cid-lcdefpme><span class="folder" data-astro-cid-lcdefpme>src/</span>
+├── <span class="folder" data-astro-cid-lcdefpme>app/</span>
+│   ├── <span class="folder" data-astro-cid-lcdefpme>common/</span>
+│   │   └── <span class="folder" data-astro-cid-lcdefpme>models/</span>          <span class="comment" data-astro-cid-lcdefpme>← Interfaces TypeScript / DTOs (ej: zelda.model.ts)</span>
+│   ├── <span class="folder" data-astro-cid-lcdefpme>components/</span>          <span class="comment" data-astro-cid-lcdefpme>← Componentes modulares (ej: menu/, header/)</span>
+│   ├── <span class="folder" data-astro-cid-lcdefpme>pages/</span>               <span class="comment" data-astro-cid-lcdefpme>← Pantallas enlazadas a rutas (ej: inicio/, materials/)</span>
+│   ├── <span class="folder" data-astro-cid-lcdefpme>pipes/</span>               <span class="comment" data-astro-cid-lcdefpme>← Pipes de búsqueda personalizada (ej: filtro.pipe.ts)</span>
+│   └── <span class="folder" data-astro-cid-lcdefpme>services/</span>            <span class="comment" data-astro-cid-lcdefpme>← Servicios HTTP y Toast (ej: zelda.service.ts, toast.service.ts)</span>
+├── <span class="folder" data-astro-cid-lcdefpme>assets/</span>
+│   ├── <span class="folder" data-astro-cid-lcdefpme>data/</span>                <span class="comment" data-astro-cid-lcdefpme>← Ficheros JSON locales de prueba (ej: menu.json)</span>
+│   ├── <span class="folder" data-astro-cid-lcdefpme>i18n/</span>                <span class="comment" data-astro-cid-lcdefpme>← Traducciones (es.json, en.json) si hay multilenguaje</span>
+│   └── <span class="folder" data-astro-cid-lcdefpme>images/</span>              <span class="comment" data-astro-cid-lcdefpme>← Imágenes (AmongUs.jpg, logo.png, etc.)</span>
+└── <span class="folder" data-astro-cid-lcdefpme>environments/</span>
+    └── <span class="file" data-astro-cid-lcdefpme>environment.ts</span>       <span class="comment" data-astro-cid-lcdefpme>← URLBase de la API: https://botw-compendium.herokuapp.com/api/v3</span></code></pre></div><h4 style="color: #fff; margin-top: 10px;" data-astro-cid-lcdefpme>3. Comandos CLI para Generar Artefactos sin Archivos Basura</h4><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>Comandos de Generación Rápida</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-bash" data-astro-cid-lcdefpme><span class="hljs-comment"># 📄 Crear Páginas (sin spec de test):</span>
+ionic g page pages/inicio --spec=<span class="hljs-literal">false</span>
+ionic g page pages/materials --spec=<span class="hljs-literal">false</span>
+
+<span class="hljs-comment"># 🧩 Crear Componentes Standalone:</span>
+ionic g c components/menu --standalone --spec=<span class="hljs-literal">false</span>
+ionic g c components/header --standalone --spec=<span class="hljs-literal">false</span>
+
+<span class="hljs-comment"># 💉 Crear Servicios (sin spec):</span>
+ionic g s services/zelda --skip-tests
+ionic g s services/toast --skip-tests
+
+<span class="hljs-comment"># 🔍 Crear Pipe de Filtrado:</span>
+ionic g pipe pipes/filtro --standalone</code></pre></div><h4 style="color: #fff; margin-top: 10px;" data-astro-cid-lcdefpme>4. Enrutamiento Inicial (`src/app/app.routes.ts`)</h4><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/app.routes.ts</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { <span class="hljs-title class_">Routes</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/router&#x27;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-attr">routes</span>: <span class="hljs-title class_">Routes</span> = [
+  {
+    <span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;&#x27;</span>,
+    <span class="hljs-attr">redirectTo</span>: <span class="hljs-string">&#x27;inicio&#x27;</span>,
+    <span class="hljs-attr">pathMatch</span>: <span class="hljs-string">&#x27;full&#x27;</span>,
+  },
+  {
+    <span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;inicio&#x27;</span>,
+    <span class="hljs-attr">loadComponent</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/inicio/inicio.page&#x27;</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">m</span>) =&gt;</span> m.<span class="hljs-property">InicioPage</span>),
+  },
+  {
+    <span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;materials&#x27;</span>,
+    <span class="hljs-attr">loadComponent</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/materials/materials.page&#x27;</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">m</span>) =&gt;</span> m.<span class="hljs-property">MaterialsPage</span>),
+  },
+];</code></pre></div></div></article><!-- MODELO 1: SETUP CRÍTICO Y PROVIDERS --><article class="model-card" data-tags="setup critico" id="setup-critico" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>01</span><h3 class="card-title" data-astro-cid-lcdefpme>Configuración Crítica de `package.json`, `main.ts` y Swiper</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Configuración Base", "package.json", "provideHttpClient"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="info-callout" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>Archivos clave:</strong> <code data-astro-cid-lcdefpme>package.json</code>, <code data-astro-cid-lcdefpme>src/main.ts</code>, <code data-astro-cid-lcdefpme>src/app/app.component.ts</code>, <code data-astro-cid-lcdefpme>src/environments/environment.ts</code>.</div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>package.json (Autor Obligatorio)</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-json" data-astro-cid-lcdefpme><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;examen-sge&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1.0.0&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;author&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Tu Nombre y Apellidos&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;description&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Examen de SGE Primera Evaluacion&quot;</span>
+<span class="hljs-punctuation">}</span></code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/main.ts (Providers Globales)</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { bootstrapApplication } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/platform-browser&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">RouteReuseStrategy</span>, provideRouter, withComponentInputBinding, withPreloading, <span class="hljs-title class_">PreloadAllModules</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/router&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">IonicRouteStrategy</span>, provideIonicAngular } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@ionic/angular/standalone&#x27;</span>;
+<span class="hljs-keyword">import</span> { provideHttpClient, withFetch } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/common/http&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">AppComponent</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./app/app.component&#x27;</span>;
+<span class="hljs-keyword">import</span> { routes } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./app/app.routes&#x27;</span>;
+
+<span class="hljs-title function_">bootstrapApplication</span>(<span class="hljs-title class_">AppComponent</span>, {
+  <span class="hljs-attr">providers</span>: [
+    { <span class="hljs-attr">provide</span>: <span class="hljs-title class_">RouteReuseStrategy</span>, <span class="hljs-attr">useClass</span>: <span class="hljs-title class_">IonicRouteStrategy</span> },
+    <span class="hljs-title function_">provideIonicAngular</span>(),
+    <span class="hljs-title function_">provideHttpClient</span>(<span class="hljs-title function_">withFetch</span>()), <span class="hljs-comment">// &lt;-- OBLIGATORIO PARA HttpClient</span>
+    <span class="hljs-title function_">provideRouter</span>(routes, <span class="hljs-title function_">withPreloading</span>(<span class="hljs-title class_">PreloadAllModules</span>), <span class="hljs-title function_">withComponentInputBinding</span>()),
+  ],
+});</code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/app.component.ts (Registro de Swiper)</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { <span class="hljs-title class_">Component</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/core&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">IonApp</span>, <span class="hljs-title class_">IonRouterOutlet</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@ionic/angular/standalone&#x27;</span>;
+<span class="hljs-keyword">import</span> { register } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;swiper/element/bundle&#x27;</span>;
+
+<span class="hljs-title function_">register</span>(); <span class="hljs-comment">// &lt;-- OBLIGATORIO PARA SWIPER DIAPOSITIVAS</span>
+
+<span class="hljs-meta">@Component</span>({
+  <span class="hljs-attr">selector</span>: <span class="hljs-string">&#x27;app-root&#x27;</span>,
+  <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">&#x27;app.component.html&#x27;</span>,
+  <span class="hljs-attr">standalone</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">imports</span>: [<span class="hljs-title class_">IonApp</span>, <span class="hljs-title class_">IonRouterOutlet</span>],
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AppComponent</span> {}</code></pre></div></div></article><!-- MODELO 2: API REST + SIGNALS --><article class="model-card" data-tags="zelda api critico" id="modelo-api" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>02</span><h3 class="card-title" data-astro-cid-lcdefpme>Consumo de API REST Externa con DTOs y Signals</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Dada la API...", "Cargar información de la API", "Lista con imagen y descripción"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="info-callout" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>Anatomía:</strong> <code data-astro-cid-lcdefpme>src/app/common/models/zelda.model.ts</code>, <code data-astro-cid-lcdefpme>src/app/services/zelda.service.ts</code>, <code data-astro-cid-lcdefpme>src/app/pages/materials/materials.page.ts</code> y <code data-astro-cid-lcdefpme>.html</code>.</div><ol class="recipe-steps" data-astro-cid-lcdefpme><li data-astro-cid-lcdefpme>Definir interfaz DTO de la respuesta en <code data-astro-cid-lcdefpme>zelda.model.ts</code>.</li><li data-astro-cid-lcdefpme>Inyectar <code data-astro-cid-lcdefpme>HttpClient</code> en el servicio y devolver <code data-astro-cid-lcdefpme>Observable&lt;ApiResponseZelda&gt;</code>.</li><li data-astro-cid-lcdefpme>Declarar <code data-astro-cid-lcdefpme>materials = signal&lt;ZeldaMaterial[]&gt;([])</code> en el componente.</li><li data-astro-cid-lcdefpme>Cargar en <code data-astro-cid-lcdefpme>ngOnInit()</code> con <code data-astro-cid-lcdefpme>this.materials.set(res.data)</code>.</li><li data-astro-cid-lcdefpme>Pintar en el HTML con <code data-astro-cid-lcdefpme>@for (m of materials(); track m.id)</code>.</li></ol><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/common/models/zelda.model.ts</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">ApiResponseZelda</span> {
+  <span class="hljs-attr">data</span>: <span class="hljs-title class_">ZeldaMaterial</span>[];
+  <span class="hljs-attr">message</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">status</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">ZeldaMaterial</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">description</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">image</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">category</span>: <span class="hljs-built_in">string</span>;
+}</code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/services/zelda.service.ts</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { inject, <span class="hljs-title class_">Injectable</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/core&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">HttpClient</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/common/http&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">Observable</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;rxjs&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">ApiResponseZelda</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;../common/models/zelda.model&#x27;</span>;
+<span class="hljs-keyword">import</span> { environment } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;../../environments/environment&#x27;</span>;
+
+<span class="hljs-meta">@Injectable</span>({
+  <span class="hljs-attr">providedIn</span>: <span class="hljs-string">&#x27;root&#x27;</span>
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ZeldaService</span> {
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">readonly</span> <span class="hljs-attr">http</span>: <span class="hljs-title class_">HttpClient</span> = <span class="hljs-title function_">inject</span>(<span class="hljs-title class_">HttpClient</span>);
+
+  <span class="hljs-title function_">getMaterials</span>(): <span class="hljs-title class_">Observable</span>&lt;<span class="hljs-title class_">ApiResponseZelda</span>&gt; {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">http</span>.<span class="hljs-property">get</span>&lt;<span class="hljs-title class_">ApiResponseZelda</span>&gt;(
+      <span class="hljs-string">`<span class="hljs-subst">${environment.URLBase}</span>/category/materials`</span>
+    );
+  }
+}</code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/pages/materials/materials.page.html</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-html" data-astro-cid-lcdefpme><span class="hljs-tag">&lt;<span class="hljs-name">ion-content</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;materials-page&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ion-list</span>&gt;</span>
+    @for (material of materials(); track material.id) {
+      <span class="hljs-tag">&lt;<span class="hljs-name">ion-item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-avatar</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;end&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span> [<span class="hljs-attr">src</span>]=<span class="hljs-string">&quot;material.image&quot;</span> [<span class="hljs-attr">alt</span>]=<span class="hljs-string">&quot;material.name&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ion-avatar</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-text-capitalize&quot;</span>&gt;</span>{{ material.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ material.description }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ion-label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ion-item</span>&gt;</span>
+    }
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ion-list</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ion-content</span>&gt;</span></code></pre></div></div></article><!-- MODELO 3: SWIPER SLIDES --><article class="model-card" data-tags="swiper zelda critico" id="modelo-swiper" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>03</span><h3 class="card-title" data-astro-cid-lcdefpme>Secuencia de Diapositivas (Swiper / Slides)</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Secuencia de 3 diapositivas", "La tercera tendrá un botón para ir a la siguiente página"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="info-callout" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>Atención:</strong> En <code data-astro-cid-lcdefpme>inicio.page.ts</code> es OBLIGATORIO añadir <code data-astro-cid-lcdefpme>schemas: [CUSTOM_ELEMENTS_SCHEMA]</code>.</div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/pages/inicio/inicio.page.ts</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { <span class="hljs-title class_">Component</span>, <span class="hljs-variable constant_">CUSTOM_ELEMENTS_SCHEMA</span>, <span class="hljs-title class_">OnInit</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/core&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">CommonModule</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/common&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">RouterLink</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/router&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">IonContent</span>, <span class="hljs-title class_">IonButton</span>, <span class="hljs-title class_">IonText</span>, <span class="hljs-title class_">IonCardContent</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@ionic/angular/standalone&#x27;</span>;
+
+<span class="hljs-meta">@Component</span>({
+  <span class="hljs-attr">selector</span>: <span class="hljs-string">&#x27;app-inicio&#x27;</span>,
+  <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">&#x27;./inicio.page.html&#x27;</span>,
+  <span class="hljs-attr">styleUrls</span>: [<span class="hljs-string">&#x27;./inicio.page.scss&#x27;</span>],
+  <span class="hljs-attr">standalone</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">schemas</span>: [<span class="hljs-variable constant_">CUSTOM_ELEMENTS_SCHEMA</span>], <span class="hljs-comment">// &lt;-- OBLIGATORIO</span>
+  <span class="hljs-attr">imports</span>: [<span class="hljs-title class_">IonContent</span>, <span class="hljs-title class_">IonButton</span>, <span class="hljs-title class_">IonText</span>, <span class="hljs-title class_">IonCardContent</span>, <span class="hljs-title class_">RouterLink</span>, <span class="hljs-title class_">CommonModule</span>]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">InicioPage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">OnInit</span> {
+  slides = [
+    { <span class="hljs-attr">texto</span>: <span class="hljs-string">&#x27;En este examen utilizaremos componentes de Ionic&#x27;</span>, <span class="hljs-attr">image</span>: <span class="hljs-string">&#x27;assets/images/logo.avif&#x27;</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&#x27;primary&#x27;</span> },
+    { <span class="hljs-attr">texto</span>: <span class="hljs-string">&#x27;Pero trabajaremos con la API del Zelda&#x27;</span>, <span class="hljs-attr">image</span>: <span class="hljs-string">&#x27;assets/images/link.jpg&#x27;</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&#x27;secondary&#x27;</span> },
+    { <span class="hljs-attr">texto</span>: <span class="hljs-string">&#x27;Para lograr el ansiado aprobado&#x27;</span>, <span class="hljs-attr">image</span>: <span class="hljs-string">&#x27;assets/images/approved.png&#x27;</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&#x27;success&#x27;</span> }
+  ];
+
+  <span class="hljs-title function_">ngOnInit</span>(<span class="hljs-params"></span>) {}
+}</code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/pages/inicio/inicio.page.html</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-html" data-astro-cid-lcdefpme><span class="hljs-tag">&lt;<span class="hljs-name">ion-content</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">swiper-container</span> <span class="hljs-attr">pagination</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+    @for (slide of slides; track slide.texto) {
+      <span class="hljs-tag">&lt;<span class="hljs-name">swiper-slide</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-display-flex ion-flex-column ion-justify-content-center ion-align-items-center&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100vh; padding: 24px;&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-display-flex ion-justify-content-center ion-margin-bottom&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> [<span class="hljs-attr">src</span>]=<span class="hljs-string">&quot;slide.image&quot;</span> [<span class="hljs-attr">alt</span>]=<span class="hljs-string">&quot;slide.texto&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;max-height: 250px; object-fit: contain;&quot;</span> /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ion-card-content</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-text-center&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ion-text</span> [<span class="hljs-attr">color</span>]=<span class="hljs-string">&quot;slide.color&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>{{ slide.texto }}<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ion-text</span>&gt;</span>
+            @if ($last) {
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-margin-top&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ion-button</span> <span class="hljs-attr">routerLink</span>=<span class="hljs-string">&quot;/materials&quot;</span> [<span class="hljs-attr">color</span>]=<span class="hljs-string">&quot;slide.color&quot;</span> <span class="hljs-attr">shape</span>=<span class="hljs-string">&quot;round&quot;</span>&gt;</span>
+                  EMPEZAR
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ion-button</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            }
+          <span class="hljs-tag">&lt;/<span class="hljs-name">ion-card-content</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-slide</span>&gt;</span>
+    }
+  <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-container</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ion-content</span>&gt;</span></code></pre></div></div></article><!-- MODELO 4: MENU CON AVATAR --><article class="model-card" data-tags="menu zelda critico" id="modelo-menu" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>04</span><h3 class="card-title" data-astro-cid-lcdefpme>Menú Lateral con Avatar y Toggle en Cabecera</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Menú con ion-menu-toggle con Avatar y aparecerá por la izquierda"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="info-callout" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>Error Fatal de Examen:</strong> El <code data-astro-cid-lcdefpme>contentId</code> de <code data-astro-cid-lcdefpme>&lt;ion-menu&gt;</code> DEBE coincidir con el <code data-astro-cid-lcdefpme>id</code> de <code data-astro-cid-lcdefpme>&lt;ion-content&gt;</code> de la página.</div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/components/menu/menu.component.html</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-html" data-astro-cid-lcdefpme><span class="hljs-tag">&lt;<span class="hljs-name">ion-menu</span> <span class="hljs-attr">side</span>=<span class="hljs-string">&quot;start&quot;</span> <span class="hljs-attr">menuId</span>=<span class="hljs-string">&quot;menu-among-us&quot;</span> <span class="hljs-attr">contentId</span>=<span class="hljs-string">&quot;materials-page&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ion-content</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-padding&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-display-flex ion-justify-content-center ion-margin-bottom&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ion-avatar</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 80px; height: 80px;&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/images/AmongUs.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Avatar&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ion-avatar</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-text-center&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">ion-text</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;primary&quot;</span>&gt;</span>Nombre del Alumno<span class="hljs-tag">&lt;/<span class="hljs-name">ion-text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-text-center&quot;</span>&gt;</span>1998<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-list</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ion-menu-toggle</span> <span class="hljs-attr">auto-hide</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-item</span> <span class="hljs-attr">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ion-icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;settings&quot;</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;primary&quot;</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;start&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ion-icon</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ion-label</span>&gt;</span>Ajustes<span class="hljs-tag">&lt;/<span class="hljs-name">ion-label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ion-item</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ion-menu-toggle</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ion-menu-toggle</span> <span class="hljs-attr">auto-hide</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-item</span> <span class="hljs-attr">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ion-icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;cog&quot;</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;primary&quot;</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;start&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ion-icon</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ion-label</span>&gt;</span>Preferencias<span class="hljs-tag">&lt;/<span class="hljs-name">ion-label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ion-item</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ion-menu-toggle</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ion-list</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ion-content</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ion-menu</span>&gt;</span></code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>Cabecera en materials.page.html</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-html" data-astro-cid-lcdefpme><span class="hljs-tag">&lt;<span class="hljs-name">ion-header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-no-border&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ion-toolbar</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-menu-toggle</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;start&quot;</span> <span class="hljs-attr">menu</span>=<span class="hljs-string">&quot;menu-among-us&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ion-avatar</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;cursor: pointer; margin-left: 8px;&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/images/AmongUs.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Abrir Menú&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ion-avatar</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ion-menu-toggle</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-title</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;primary&quot;</span>&gt;</span>Materials<span class="hljs-tag">&lt;/<span class="hljs-name">ion-title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ion-toolbar</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ion-header</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">app-menu</span> /&gt;</span>
+
+<span class="hljs-comment">&lt;!-- EL ID DEBE COINCIDIR EXACTO CON contentId --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ion-content</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;materials-page&quot;</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">ion-content</span>&gt;</span></code></pre></div></div></article><!-- MODELO 5: MODAL INLINE --><article class="model-card" data-tags="modal zelda critico" id="modelo-modal" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>05</span><h3 class="card-title" data-astro-cid-lcdefpme>Modal Inline con `willDismiss` y Retorno de Datos</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Botón que lanzará un modal", "Generar número aleatorio", "Toast Aceptar/Cancel"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="info-callout" data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>Estructura:</strong> Enlace mediante <code data-astro-cid-lcdefpme>trigger="abrir-modal"</code> y captura del rol en <code data-astro-cid-lcdefpme>(willDismiss)="onWillDismiss($event)"</code>.</div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>materials.page.html (Modal Inline con ng-template)</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-html" data-astro-cid-lcdefpme><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-text-center ion-margin&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ion-button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;abrir-modal&quot;</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;primary&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;power&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ion-icon</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ion-button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ion-modal</span> #<span class="hljs-attr">miModal</span> <span class="hljs-attr">trigger</span>=<span class="hljs-string">&quot;abrir-modal&quot;</span> (<span class="hljs-attr">willDismiss</span>)=<span class="hljs-string">&quot;onWillDismiss($event)&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ng-template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-header</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ion-toolbar</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-buttons</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;start&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ion-button</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;primary&quot;</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">&quot;miModal.dismiss(null, &#x27;cancel&#x27;)&quot;</span>&gt;</span>CANCEL<span class="hljs-tag">&lt;/<span class="hljs-name">ion-button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ion-buttons</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-buttons</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;end&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ion-button</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;primary&quot;</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">&quot;miModal.dismiss(null, &#x27;aceptar&#x27;)&quot;</span>&gt;</span>ACEPTAR<span class="hljs-tag">&lt;/<span class="hljs-name">ion-button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ion-buttons</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ion-toolbar</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ion-header</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-content</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-padding&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-display-flex ion-justify-content-center ion-margin-top&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-button</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;success&quot;</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">&quot;generateRandom()&quot;</span>&gt;</span>RANDOM<span class="hljs-tag">&lt;/<span class="hljs-name">ion-button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-text-center ion-margin-top&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-text</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;success&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;font-size: 28px; font-weight: bold;&quot;</span>&gt;</span>{{ randomNumber() }}<span class="hljs-tag">&lt;/<span class="hljs-name">ion-text</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ion-content</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ng-template</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ion-modal</span>&gt;</span></code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>materials.page.ts (Lógica de Dismiss)</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme>randomNumber = signal&lt;<span class="hljs-built_in">number</span>&gt;(<span class="hljs-number">0</span>);
+
+<span class="hljs-keyword">protected</span> <span class="hljs-title function_">generateRandom</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> total = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">materials</span>().<span class="hljs-property">length</span>;
+  <span class="hljs-keyword">if</span> (total &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">randomNumber</span>.<span class="hljs-title function_">set</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * total));
+  }
+}
+
+<span class="hljs-keyword">protected</span> <span class="hljs-title function_">onWillDismiss</span>(<span class="hljs-params"><span class="hljs-attr">event</span>: <span class="hljs-title class_">CustomEvent</span></span>) {
+  <span class="hljs-keyword">if</span> (event.<span class="hljs-property">detail</span>.<span class="hljs-property">role</span> === <span class="hljs-string">&#x27;cancel&#x27;</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">toastService</span>.<span class="hljs-title function_">showToast</span>(<span class="hljs-string">&#x27;Cancelado&#x27;</span>, <span class="hljs-string">&#x27;danger&#x27;</span>);
+  }
+  <span class="hljs-keyword">if</span> (event.<span class="hljs-property">detail</span>.<span class="hljs-property">role</span> === <span class="hljs-string">&#x27;aceptar&#x27;</span>) {
+    <span class="hljs-keyword">const</span> item = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">materials</span>()[<span class="hljs-variable language_">this</span>.<span class="hljs-title function_">randomNumber</span>()];
+    <span class="hljs-keyword">const</span> nombre = item ? item.<span class="hljs-property">name</span> : <span class="hljs-string">&#x27;Elemento&#x27;</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">toastService</span>.<span class="hljs-title function_">showToast</span>(<span class="hljs-string">&#x27;Aceptado: &#x27;</span> + nombre, <span class="hljs-string">&#x27;primary&#x27;</span>);
+  }
+}</code></pre></div></div></article><!-- MODELO 6: INFINITE SCROLL --><article class="model-card" data-tags="infinite critico" id="modelo-infinite" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>06</span><h3 class="card-title" data-astro-cid-lcdefpme>Listas Infinitas (Infinite Scroll) con Bloqueo</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Infinite Scroll", "Paginación continua", "Bloquear al llegar al final"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>infinite.page.ts</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { <span class="hljs-title class_">Component</span>, inject, <span class="hljs-title class_">OnInit</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/core&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">InfiniteScrollCustomEvent</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@ionic/angular&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">DataService</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;../../services/data.service&#x27;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">InfinitePage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">OnInit</span> {
+  <span class="hljs-keyword">private</span> dataService = <span class="hljs-title function_">inject</span>(<span class="hljs-title class_">DataService</span>);
+  <span class="hljs-attr">items</span>: <span class="hljs-built_in">any</span>[] = [];
+  currentPage = <span class="hljs-number">1</span>;
+
+  <span class="hljs-title function_">ngOnInit</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">loadData</span>();
+  }
+
+  <span class="hljs-title function_">loadData</span>(<span class="hljs-params"><span class="hljs-attr">event</span>?: <span class="hljs-title class_">InfiniteScrollCustomEvent</span></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">dataService</span>.<span class="hljs-title function_">getItems</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">currentPage</span>).<span class="hljs-title function_">subscribe</span>({
+      <span class="hljs-attr">next</span>: <span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span>.<span class="hljs-title function_">push</span>(...res.<span class="hljs-property">results</span>);
+
+        <span class="hljs-comment">// 1. COMPLETAR SIEMPRE EL EVENTO</span>
+        event?.<span class="hljs-property">target</span>.<span class="hljs-title function_">complete</span>();
+
+        <span class="hljs-comment">// 2. DESACTIVAR AL LLEGAR AL FINAL DE LA COLECCIÓN</span>
+        <span class="hljs-keyword">if</span> (event &amp;&amp; res.<span class="hljs-property">total_pages</span> === <span class="hljs-variable language_">this</span>.<span class="hljs-property">currentPage</span>) {
+          event.<span class="hljs-property">target</span>.<span class="hljs-property">disabled</span> = <span class="hljs-literal">true</span>;
+          <span class="hljs-keyword">return</span>;
+        }
+
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">currentPage</span>++;
+      },
+      <span class="hljs-attr">error</span>: <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(err);
+        event?.<span class="hljs-property">target</span>.<span class="hljs-title function_">complete</span>();
+      }
+    });
+  }
+}</code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>infinite.page.html</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-html" data-astro-cid-lcdefpme><span class="hljs-tag">&lt;<span class="hljs-name">ion-content</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ion-list</span>&gt;</span>
+    @for (item of items; track item.id) {
+      <span class="hljs-tag">&lt;<span class="hljs-name">ion-item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{ item.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ item.description }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ion-label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ion-item</span>&gt;</span>
+    }
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ion-list</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">ion-infinite-scroll</span> <span class="hljs-attr">threshold</span>=<span class="hljs-string">&quot;150px&quot;</span> (<span class="hljs-attr">ionInfinite</span>)=<span class="hljs-string">&quot;loadData($event)&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-infinite-scroll-content</span>
+      <span class="hljs-attr">loadingSpinner</span>=<span class="hljs-string">&quot;crescent&quot;</span>
+      <span class="hljs-attr">loadingText</span>=<span class="hljs-string">&quot;Cargando siguientes elementos...&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ion-infinite-scroll-content</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ion-infinite-scroll</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ion-content</span>&gt;</span></code></pre></div></div></article><!-- MODELO 7: REFRESHER Y SKELETON --><article class="model-card" data-tags="refresher" id="modelo-refresher" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>07</span><h3 class="card-title" data-astro-cid-lcdefpme>Pull to Refresh (`ion-refresher`) y Skeleton Text Animado</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Arrastre hacia abajo para recargar", "Placeholder skeleton animado"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>refresher.page.html</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-html" data-astro-cid-lcdefpme><span class="hljs-tag">&lt;<span class="hljs-name">ion-content</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-padding&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ion-refresher</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;fixed&quot;</span> (<span class="hljs-attr">ionRefresh</span>)=<span class="hljs-string">&quot;doRefresh($event)&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-refresher-content</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ion-refresher-content</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ion-refresher</span>&gt;</span>
+
+  @if (items.length === 0 &amp;&amp; !skeleton) {
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-text-center&quot;</span>&gt;</span>Arrastre hacia abajo para recargar<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+  } @else if (skeleton) {
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-list</span>&gt;</span>
+      @for (i of [1,2,3,4,5]; track i) {
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-item</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ion-avatar</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;start&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ion-skeleton-text</span> [<span class="hljs-attr">animated</span>]=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ion-skeleton-text</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">ion-avatar</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ion-label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">ion-skeleton-text</span> [<span class="hljs-attr">animated</span>]=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 60%;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ion-skeleton-text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">ion-skeleton-text</span> [<span class="hljs-attr">animated</span>]=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 80%;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ion-skeleton-text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">ion-label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ion-item</span>&gt;</span>
+      }
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ion-list</span>&gt;</span>
+  } @else {
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-list</span>&gt;</span>
+      @for (item of items; track item.id) {
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-item</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ion-label</span>&gt;</span>{{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">ion-label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ion-item</span>&gt;</span>
+      }
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ion-list</span>&gt;</span>
+  }
+<span class="hljs-tag">&lt;/<span class="hljs-name">ion-content</span>&gt;</span></code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>refresher.page.ts</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-title function_">doRefresh</span>(<span class="hljs-params"><span class="hljs-attr">event</span>: <span class="hljs-built_in">any</span></span>) {
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">skeleton</span> = <span class="hljs-literal">true</span>;
+  <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span> = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>({ <span class="hljs-attr">length</span>: <span class="hljs-number">10</span> }, <span class="hljs-function">(<span class="hljs-params">_, i</span>) =&gt;</span> ({ <span class="hljs-attr">id</span>: i + <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">`Elemento <span class="hljs-subst">${i + <span class="hljs-number">1</span>}</span>`</span> }));
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">skeleton</span> = <span class="hljs-literal">false</span>;
+    event.<span class="hljs-property">target</span>.<span class="hljs-title function_">complete</span>(); <span class="hljs-comment">// &lt;-- OBLIGATORIO</span>
+  }, <span class="hljs-number">1500</span>);
+}</code></pre></div></div></article><!-- MODELO 8: SEARCHBAR Y PIPE --><article class="model-card" data-tags="searchbar" id="modelo-search" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>08</span><h3 class="card-title" data-astro-cid-lcdefpme>Barra de Búsqueda (`ion-searchbar`) + Pipe de Filtro</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Barra de búsqueda", "Filtrar por texto en tiempo real", "Pipe filtro"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/pipes/filtro.pipe.ts (Pipe Standalone)</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { <span class="hljs-title class_">Pipe</span>, <span class="hljs-title class_">PipeTransform</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/core&#x27;</span>;
+
+<span class="hljs-meta">@Pipe</span>({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;filtro&#x27;</span>,
+  <span class="hljs-attr">standalone</span>: <span class="hljs-literal">true</span>
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FiltroPipe</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">PipeTransform</span> {
+  <span class="hljs-title function_">transform</span>(<span class="hljs-attr">lista</span>: <span class="hljs-built_in">any</span>[], <span class="hljs-attr">texto</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">columna</span>: <span class="hljs-built_in">string</span>): <span class="hljs-built_in">any</span>[] {
+    <span class="hljs-keyword">if</span> (!lista) <span class="hljs-keyword">return</span> [];
+    <span class="hljs-keyword">if</span> (!texto || texto.<span class="hljs-title function_">trim</span>() === <span class="hljs-string">&#x27;&#x27;</span>) <span class="hljs-keyword">return</span> lista;
+
+    <span class="hljs-keyword">const</span> term = texto.<span class="hljs-title function_">toLowerCase</span>();
+    <span class="hljs-keyword">return</span> lista.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> {
+      <span class="hljs-keyword">const</span> val = item[columna];
+      <span class="hljs-keyword">return</span> val ? val.<span class="hljs-title function_">toString</span>().<span class="hljs-title function_">toLowerCase</span>().<span class="hljs-title function_">includes</span>(term) : <span class="hljs-literal">false</span>;
+    });
+  }
+}</code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>search.page.html</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-html" data-astro-cid-lcdefpme><span class="hljs-tag">&lt;<span class="hljs-name">ion-header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ion-toolbar</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-title</span>&gt;</span>Buscar<span class="hljs-tag">&lt;/<span class="hljs-name">ion-title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ion-toolbar</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ion-toolbar</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ion-searchbar</span> <span class="hljs-attr">animated</span>=<span class="hljs-string">&quot;true&quot;</span> (<span class="hljs-attr">ionInput</span>)=<span class="hljs-string">&quot;buscar($event)&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Buscar...&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ion-searchbar</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ion-toolbar</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ion-header</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ion-content</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ion-padding&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ion-list</span>&gt;</span>
+    @for (item of items | filtro: textoBuscar: &#x27;name&#x27;; track item.id) {
+      <span class="hljs-tag">&lt;<span class="hljs-name">ion-item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ion-label</span>&gt;</span>{{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">ion-label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ion-item</span>&gt;</span>
+    }
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ion-list</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ion-content</span>&gt;</span></code></pre></div></div></article><!-- MODELO 9: SEGMENTS --><article class="model-card" data-tags="segment zelda" id="modelo-segment" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>09</span><h3 class="card-title" data-astro-cid-lcdefpme>Segmentos sincronizados con Query Params y Componente Hijo</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Segment", "Cambiar categoría en la URL", "Componente con @Input()"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>segments.page.ts (Padre)</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-title function_">segmentChanged</span>(<span class="hljs-params"><span class="hljs-attr">event</span>: <span class="hljs-built_in">any</span></span>) {
+  <span class="hljs-keyword">const</span> cat = event.<span class="hljs-property">detail</span>.<span class="hljs-property">value</span>;
+  <span class="hljs-keyword">if</span> (cat) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">currentCategory</span> = cat;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">router</span>.<span class="hljs-title function_">navigate</span>([], {
+      <span class="hljs-attr">queryParams</span>: { <span class="hljs-attr">category</span>: cat },
+      <span class="hljs-attr">queryParamsHandling</span>: <span class="hljs-string">&#x27;merge&#x27;</span>
+    });
+  }
+}</code></pre></div><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>segment-content.component.ts (Hijo con ngOnChanges)</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-meta">@Input</span>() category!: <span class="hljs-built_in">string</span>;
+
+<span class="hljs-title function_">ngOnChanges</span>(<span class="hljs-attr">changes</span>: <span class="hljs-title class_">SimpleChanges</span>): <span class="hljs-built_in">void</span> {
+  <span class="hljs-keyword">if</span> (changes[<span class="hljs-string">&#x27;category&#x27;</span>] &amp;&amp; <span class="hljs-variable language_">this</span>.<span class="hljs-property">category</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">fetchData</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">category</span>);
+  }
+}</code></pre></div></div></article><!-- MODELO 10: TOAST --><article class="model-card" data-tags="toast zelda critico" id="modelo-toast" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>10</span><h3 class="card-title" data-astro-cid-lcdefpme>Servicio Centralizado de Toast</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Toast de aviso", "ToastController", "Mensaje dinámico"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/services/toast.service.ts</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { inject, <span class="hljs-title class_">Injectable</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/core&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">ToastController</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@ionic/angular/standalone&#x27;</span>;
+
+<span class="hljs-meta">@Injectable</span>({
+  <span class="hljs-attr">providedIn</span>: <span class="hljs-string">&#x27;root&#x27;</span>
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ToastService</span> {
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">readonly</span> toastCtrl = <span class="hljs-title function_">inject</span>(<span class="hljs-title class_">ToastController</span>);
+
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">showToast</span>(<span class="hljs-params"><span class="hljs-attr">message</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&#x27;primary&#x27;</span> | <span class="hljs-string">&#x27;danger&#x27;</span> | <span class="hljs-string">&#x27;success&#x27;</span> | <span class="hljs-string">&#x27;warning&#x27;</span> = <span class="hljs-string">&#x27;primary&#x27;</span>, <span class="hljs-attr">duration</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">2000</span></span>) {
+    <span class="hljs-keyword">const</span> toast = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">toastCtrl</span>.<span class="hljs-title function_">create</span>({
+      message,
+      color,
+      duration,
+      <span class="hljs-attr">position</span>: <span class="hljs-string">&#x27;bottom&#x27;</span>,
+      <span class="hljs-attr">buttons</span>: [{ <span class="hljs-attr">text</span>: <span class="hljs-string">&#x27;OK&#x27;</span>, <span class="hljs-attr">role</span>: <span class="hljs-string">&#x27;cancel&#x27;</span> }]
+    });
+    <span class="hljs-keyword">await</span> toast.<span class="hljs-title function_">present</span>();
+  }
+}</code></pre></div></div></article><!-- MODELO 11: ALERT --><article class="model-card" data-tags="alert" id="modelo-alert" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>11</span><h3 class="card-title" data-astro-cid-lcdefpme>Alert Controller con Inputs de Texto o Radios</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Alert con Input", "Pedir datos al usuario mediante alerta"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>alert.page.ts</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { <span class="hljs-title class_">Component</span>, inject } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/core&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">AlertController</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@ionic/angular/standalone&#x27;</span>;
+
+<span class="hljs-meta">@Component</span>({ ... })
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AlertExamplePage</span> {
+  <span class="hljs-keyword">private</span> alertCtrl = <span class="hljs-title function_">inject</span>(<span class="hljs-title class_">AlertController</span>);
+
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">abrirAlertConInput</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> alert = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">alertCtrl</span>.<span class="hljs-title function_">create</span>({
+      <span class="hljs-attr">header</span>: <span class="hljs-string">&#x27;Registro&#x27;</span>,
+      <span class="hljs-attr">subHeader</span>: <span class="hljs-string">&#x27;Ingrese sus datos&#x27;</span>,
+      <span class="hljs-attr">inputs</span>: [
+        { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;nombre&#x27;</span>, <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;text&#x27;</span>, <span class="hljs-attr">placeholder</span>: <span class="hljs-string">&#x27;Tu Nombre&#x27;</span> },
+        { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;email&#x27;</span>, <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;email&#x27;</span>, <span class="hljs-attr">placeholder</span>: <span class="hljs-string">&#x27;correo@ejemplo.com&#x27;</span> }
+      ],
+      <span class="hljs-attr">buttons</span>: [
+        { <span class="hljs-attr">text</span>: <span class="hljs-string">&#x27;Cancelar&#x27;</span>, <span class="hljs-attr">role</span>: <span class="hljs-string">&#x27;cancel&#x27;</span> },
+        {
+          <span class="hljs-attr">text</span>: <span class="hljs-string">&#x27;Guardar&#x27;</span>,
+          <span class="hljs-attr">handler</span>: <span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Datos recogidos:&#x27;</span>, data);
+          }
+        }
+      ]
+    });
+    <span class="hljs-keyword">await</span> alert.<span class="hljs-title function_">present</span>();
+  }
+}</code></pre></div></div></article><!-- MODELO 12: I18N MULTILENGUAJE --><article class="model-card" data-tags="i18n" id="modelo-i18n" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>12</span><h3 class="card-title" data-astro-cid-lcdefpme>Sistema Multilenguaje con ngx-translate</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"Multilenguaje", "ngx-translate", "Cambiar idioma con ActionSheet"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>src/app/services/translate-config.service.ts</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { inject, <span class="hljs-title class_">Injectable</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/core&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">TranslateService</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@ngx-translate/core&#x27;</span>;
+
+<span class="hljs-meta">@Injectable</span>({ <span class="hljs-attr">providedIn</span>: <span class="hljs-string">&#x27;root&#x27;</span> })
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TranslateConfigService</span> {
+  <span class="hljs-keyword">private</span> translate = <span class="hljs-title function_">inject</span>(<span class="hljs-title class_">TranslateService</span>);
+
+  <span class="hljs-title function_">initLanguage</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> saved = <span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">getItem</span>(<span class="hljs-string">&#x27;lang&#x27;</span>) || <span class="hljs-variable language_">this</span>.<span class="hljs-property">translate</span>.<span class="hljs-title function_">getBrowserLang</span>() || <span class="hljs-string">&#x27;es&#x27;</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">translate</span>.<span class="hljs-title function_">setDefaultLang</span>(saved);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">translate</span>.<span class="hljs-title function_">use</span>(saved);
+  }
+
+  <span class="hljs-title function_">setLanguage</span>(<span class="hljs-params"><span class="hljs-attr">lang</span>: <span class="hljs-built_in">string</span></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">translate</span>.<span class="hljs-title function_">use</span>(lang);
+    <span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">setItem</span>(<span class="hljs-string">&#x27;lang&#x27;</span>, lang);
+  }
+}</code></pre></div></div></article><!-- CHEAT-SHEET --><article class="model-card" data-tags="setup" id="cheat-sheet" data-astro-cid-lcdefpme><div class="card-top" data-astro-cid-lcdefpme><div class="card-id-title" data-astro-cid-lcdefpme><span class="card-num" data-astro-cid-lcdefpme>13</span><h3 class="card-title" data-astro-cid-lcdefpme>Cheat-Sheet Rápido y Registro de Iconos (addIcons)</h3></div><span class="trigger-pill" data-astro-cid-lcdefpme>"addIcons", "Comandos útiles", "Quick copy"</span></div><div class="card-content" data-astro-cid-lcdefpme><div class="code-box" data-astro-cid-lcdefpme><div class="code-bar" data-astro-cid-lcdefpme><span data-astro-cid-lcdefpme>addIcons Habituales en app.component.ts</span><button class="btn-copy" data-astro-cid-lcdefpme>Copiar</button></div><pre data-astro-cid-lcdefpme><code class="language-typescript" data-astro-cid-lcdefpme><span class="hljs-keyword">import</span> { addIcons } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;ionicons&#x27;</span>;
+<span class="hljs-keyword">import</span> {
+  power, settings, cog, search, close, refresh,
+  arrowBack, trash, add, menu, flame, heart, star, car
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;ionicons/icons&#x27;</span>;
+
+<span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">addIcons</span>({
+    power, settings, cog, search, close, refresh,
+    arrowBack, trash, add, menu, flame, heart, star, car
+  });
+}</code></pre></div></div></article></div></main></div><!-- CHECKLIST MODAL --><div class="modal-overlay" id="checklistModal" data-astro-cid-lcdefpme><div class="modal-window" data-astro-cid-lcdefpme><div class="modal-head" data-astro-cid-lcdefpme><h3 data-astro-cid-lcdefpme>📋 Checklist Obligatorio de Entrega</h3><button class="close-btn" id="closeChecklistBtn" data-astro-cid-lcdefpme>&times;</button></div><ul class="check-items-list" data-astro-cid-lcdefpme><li data-astro-cid-lcdefpme><label class="check-item" data-astro-cid-lcdefpme><input type="checkbox" id="chk-author" data-astro-cid-lcdefpme><div data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>1. package.json:</strong> He puesto mi nombre y apellidos en <code data-astro-cid-lcdefpme>"author": "..."</code> y la versión.</div></label></li><li data-astro-cid-lcdefpme><label class="check-item" data-astro-cid-lcdefpme><input type="checkbox" id="chk-http" data-astro-cid-lcdefpme><div data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>2. main.ts:</strong> He añadido <code data-astro-cid-lcdefpme>provideHttpClient(withFetch())</code> en providers.</div></label></li><li data-astro-cid-lcdefpme><label class="check-item" data-astro-cid-lcdefpme><input type="checkbox" id="chk-swiper" data-astro-cid-lcdefpme><div data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>3. Swiper:</strong> He llamado a <code data-astro-cid-lcdefpme>register()</code> en <code data-astro-cid-lcdefpme>app.component.ts</code> y añadido <code data-astro-cid-lcdefpme>CUSTOM_ELEMENTS_SCHEMA</code> en la página de diapositivas.</div></label></li><li data-astro-cid-lcdefpme><label class="check-item" data-astro-cid-lcdefpme><input type="checkbox" id="chk-menu" data-astro-cid-lcdefpme><div data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>4. Conexión Menú:</strong> El <code data-astro-cid-lcdefpme>contentId</code> de <code data-astro-cid-lcdefpme>&lt;ion-menu&gt;</code> coincide con el <code data-astro-cid-lcdefpme>id</code> de <code data-astro-cid-lcdefpme>&lt;ion-content&gt;</code>.</div></label></li><li data-astro-cid-lcdefpme><label class="check-item" data-astro-cid-lcdefpme><input type="checkbox" id="chk-complete" data-astro-cid-lcdefpme><div data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>5. complete() en eventos:</strong> Tanto el Infinite Scroll como el Refresher llaman a <code data-astro-cid-lcdefpme>event.target.complete()</code>.</div></label></li><li data-astro-cid-lcdefpme><label class="check-item" data-astro-cid-lcdefpme><input type="checkbox" id="chk-console" data-astro-cid-lcdefpme><div data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>6. Consola limpia (F12):</strong> He abierto DevTools y no hay ningún error en rojo al navegar o interactuar.</div></label></li><li data-astro-cid-lcdefpme><label class="check-item" data-astro-cid-lcdefpme><input type="checkbox" id="chk-recording" data-astro-cid-lcdefpme><div data-astro-cid-lcdefpme><strong data-astro-cid-lcdefpme>7. Grabación activa:</strong> He iniciado el software de captura de pantalla antes de empezar la prueba.</div></label></li></ul><div style="margin-top: 24px; text-align: right;" data-astro-cid-lcdefpme><button class="btn-checklist" id="closeChecklistBottomBtn" style="margin-left: auto;" data-astro-cid-lcdefpme>Entendido / Guardar</button></div></div></div><footer data-astro-cid-lcdefpme><p data-astro-cid-lcdefpme>Guía de Resolución Rápida para Examen SGE - Noviembre 2026 - Francisco Belda</p></footer><!-- Highlight.js Standalone IIFE (Offline & file:/// Compatible) --><script src="./highlighter.bundle.js"></script><!-- Client-side Interactive Scripts --><script>
+    // Initialize Syntax Highlighting
+    if (window.hljs) {
+      window.hljs.highlightAll();
+    }
+
+    // Elements
+    const searchInput = document.getElementById('globalSearch');
+    const cards = document.querySelectorAll('.model-card');
+    const tagButtons = document.querySelectorAll('.tag-chip');
+    const filterNotice = document.getElementById('filterNotice');
+    const filterName = document.getElementById('filterName');
+    const matchCount = document.getElementById('matchCount');
+    const btnResetFilter = document.getElementById('btnResetFilter');
+    let currentFilter = 'all';
+
+    function resetAllFilters() {
+      currentFilter = 'all';
+      if (searchInput) searchInput.value = '';
+      tagButtons.forEach(b => b.classList.remove('active'));
+      const allBtn = document.querySelector('.tag-chip[data-filter="all"]');
+      if (allBtn) allBtn.classList.add('active');
+      applyFilters();
+    }
+
+    btnResetFilter?.addEventListener('click', resetAllFilters);
+
+    function applyFilters() {
+      const query = (searchInput?.value || '').toLowerCase().trim();
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        const tags = (card.dataset.tags || '').toLowerCase();
+
+        const matchQuery = query === '' || text.includes(query);
+        const matchFilter = currentFilter === 'all' || tags.includes(currentFilter);
+
+        if (matchQuery && matchFilter) {
+          card.style.display = 'block';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update Filter Notice Bar
+      const isFiltered = currentFilter !== 'all' || query !== '';
+      if (isFiltered && filterNotice) {
+        filterNotice.classList.add('show');
+        if (filterName) {
+          const activeTagBtn = document.querySelector('.tag-chip.active');
+          const tagLabel = activeTagBtn ? activeTagBtn.innerText : currentFilter;
+          filterName.innerText = query !== '' ? `Texto: "${query}" ${currentFilter !== 'all' ? '(' + tagLabel + ')' : ''}` : tagLabel;
+        }
+        if (matchCount) matchCount.innerText = visibleCount.toString();
+      } else if (filterNotice) {
+        filterNotice.classList.remove('show');
+      }
+    }
+
+    searchInput?.addEventListener('input', applyFilters);
+
+    tagButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tagButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.dataset.filter || 'all';
+        applyFilters();
+      });
+    });
+
+    // Sidebar (Índice Rápido) - Siempre funciona sin importar el filtro
+    document.querySelectorAll('.toc-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href');
+        if (!targetId || !targetId.startsWith('#')) return;
+
+        // 1. Si hay filtro o búsqueda activa, resetear para que la tarjeta sea visible
+        if (currentFilter !== 'all' || (searchInput && searchInput.value.trim() !== '')) {
+          resetAllFilters();
+        }
+
+        // 2. Navegación suave y resalte visual
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          targetElement.classList.remove('card-highlight');
+          void targetElement.offsetWidth; // Forzar repintado
+          targetElement.classList.add('card-highlight');
+          history.pushState(null, null, targetId);
+        }
+      });
+    });
+
+    // Keyboard Shortcuts
+    window.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey && e.key.toLowerCase() === 'f') || (e.key === '/' && document.activeElement !== searchInput)) {
+        e.preventDefault();
+        searchInput?.focus();
+        searchInput?.select();
+      }
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    // Copy to Clipboard
+    document.querySelectorAll('.btn-copy').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const codeElement = btn.closest('.code-box')?.querySelector('code');
+        if (!codeElement) return;
+
+        navigator.clipboard.writeText(codeElement.innerText).then(() => {
+          const original = btn.innerText;
+          btn.innerText = '✅ ¡Copiado!';
+          btn.style.background = '#10b981';
+          btn.style.color = '#090d16';
+          setTimeout(() => {
+            btn.innerText = original;
+            btn.style.background = '';
+            btn.style.color = '';
+          }, 1500);
+        });
+      });
+    });
+
+    // Modal Checklist
+    const modal = document.getElementById('checklistModal');
+    const openBtn = document.getElementById('openChecklistBtn');
+    const closeBtn = document.getElementById('closeChecklistBtn');
+    const closeBottomBtn = document.getElementById('closeChecklistBottomBtn');
+
+    function openModal() { modal?.classList.add('active'); }
+    function closeModal() { modal?.classList.remove('active'); }
+
+    openBtn?.addEventListener('click', openModal);
+    closeBtn?.addEventListener('click', closeModal);
+    closeBottomBtn?.addEventListener('click', closeModal);
+
+    // Save and load checklist from localStorage
+    const checkboxes = document.querySelectorAll('.check-item input[type="checkbox"]');
+    function saveChecks() {
+      const state = {};
+      checkboxes.forEach(chk => {
+        state[chk.id] = chk.checked;
+      });
+      localStorage.setItem('sge_astro_checks', JSON.stringify(state));
+    }
+
+    function loadChecks() {
+      const raw = localStorage.getItem('sge_astro_checks');
+      if (raw) {
+        try {
+          const state = JSON.parse(raw);
+          checkboxes.forEach(chk => {
+            if (state[chk.id]) chk.checked = true;
+          });
+        } catch(e) {}
+      }
+    }
+
+    checkboxes.forEach(chk => chk.addEventListener('change', saveChecks));
+    loadChecks();
+  </script></body></html>

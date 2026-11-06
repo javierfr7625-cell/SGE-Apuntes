@@ -1,0 +1,4045 @@
+﻿Hoy nos toca empezar el sistema terrestre
+empresarial.
+
+
+Ya sabéis, arranbelga, arrodite,
+SP.com.
+
+
+¿Qué vamos a ver en esta asignatura?
+
+
+Estas asignaturas vamos a centrar
+principalmente en Ioni.
+
+
+En Ioni veremos que es una aplicación,
+un framework para hacer desarrollar
+
+
+aplicaciones multiplataformas,
+aplicaciones cibridas, que se puedan
+
+
+compilar tanto para Android, como para
+iOS, como para Web.
+
+
+Lo trabajaremos en la primera variación y
+la mitad de la segunda variación.
+
+
+Entonces la idea es enseñaros a trabajar
+con todos los componentes que tiene Ioni.
+
+
+Ioni es muy extenso, tiene un montón de
+componentes para trabajar.
+
+
+Luego también tiene
+toda la parte nativa, toda
+
+
+la parte que pentece a
+los dispositivos móviles.
+
+
+Pero no tenemos horas subvivientes para
+mostrar todo.
+
+
+Desde la parte nativa, siempre cuando
+terminamos lo digo que le podéis estar
+
+
+listas nuevos otros en la propia
+documentación, tienen mucha información de
+
+
+cómo hacerlo y es muy fácil de trabajar
+con ello.
+
+
+También he explicado para trabajar con esa
+parte nativa, hablando de los crioscopios,
+
+
+hablando de GPS, hablando de la cámara,
+vale, toda esa parte.
+
+
+En nosotros lo que veremos en la parte de
+los componentes, es decir, todos los
+
+
+elementos visuales que nos ofrece Ioni
+para trabajar.
+
+
+La metodología que utilizaremos un poco
+es, con la idea, veremos teoría,
+
+
+vale, plantearemos una ejercicio,
+la siguiente sesión, lo queremos
+
+
+desempecaremos por ejemplo, la ejercicio
+de la sesión anterior y veremos la roa
+
+
+teoría, vale, como lo tenemos en dos
+sesiones, de dos horas, veremos como lo
+
+
+cuadro, vale, porque antes lo teníamos en
+las seteores de personas, en un poco
+
+
+iremos en función de la teoría que veamos,
+pues montaremos en el ejercicio,
+
+
+veremos el ejercicio.
+
+
+Vale, cuando hayamos terminado con Ioni,
+lo que veremos es los RPS, la teoría de
+
+
+RPS, los RPS son los software de sistemas
+de gestión de la empresa, vale,
+
+
+es decir, las aplicaciones que tienen la
+empresa para gestionar sus finanzas,
+
+
+para gestionar a su personal, para
+gestionar el subo estocaje, sus almacenes,
+
+
+todo, vale, sus clientes, es decir,
+esos programas que tienen las diferencias
+
+
+para gestionar hoy en día, absolutamente
+todo.
+
+
+Entonces para ello colaboraremos con una
+empresa de algodía que se llama ahora,
+
+
+que tienen un RPS propio, y nos enseñarán
+ellos su RPS propio, vale, entonces yo se
+
+
+se haré un par de clases, una dos clases
+de teoría, vale, en la que nos enseñaré un
+
+
+poco el contenido, o nos explicaré,
+que es un RPS y en que consiste,
+
+
+y luego ellos nos harán unas hechas en
+prácticas en las que nos lo mostrarán en
+
+
+vivo, vale, nos pondrán, bueno,
+instalaremos el RPS y lo veremos,
+
+
+vale, dependiendo de cuándo cuadro en sus
+horarios, vale, pues será presencial o
+
+
+grabado, vale, porque solo pueden venir a
+uno de los dos grupos, no de repente
+
+
+cuando les cuadro el horario, esto será en
+enero, pues cuando cuadro en los horarios,
+
+
+pues vendrán un par de días, si es en
+nuestro horario, pues lo haremos vivo
+
+
+directamente en clases, sino veremos el
+vídeo que se ha hecho con la otra frase,
+
+
+de las formas en cualquier caso tendremos
+instalado el RPS para probarlo,
+
+
+vale, no están siempre una máquina virtual
+para trabajar con ello y montando,
+
+
+vale, eso en cuanto a el contenido,
+cómo vamos a evaluar esto, vale,
+
+
+esto se va a evaluar, la primera valación
+tendrá un ensamen de los contenidos
+
+
+vistos, es decir, hasta donde lleguemos en
+la teoría, vale, pues realizaremos un
+
+
+examen de ello.
+
+
+Eso será el tiempo de la nota de la
+primera valación, la segunda valación,
+
+
+vale, tendremos la valación del contenido
+del RPS, que se ve tanto la teoría,
+
+
+cómo la práctica con los que ahora
+representará un 10% de la nota que lo
+
+
+haremos en un examen tipo de, vale,
+en la semana de examen, mientras que el
+
+
+otro 90% de la nota, la segunda valación
+será un trabajo que será la aplicación
+
+
+móvil de IONIC del proyecto global de las
+tres asignaturas.
+
+
+O sea, por la vez que os dije que había
+una asignatura en la aplicación móvil,
+
+
+que es esta, PCT se va a encargar de la
+vuelta a la administración y el acceso a
+
+
+datos encargará de la API y la base de
+datos, vale, pues ese 90% sale de la
+
+
+aplicación móvil de que desarrollar con
+IONIC.
+
+
+Si, vale, en la segunda valación para
+mediar el tipo de, con el trabajo,
+
+
+tienes que sacar un 5, mínimo en los dos,
+para mediar la primera valación,
+
+
+con la segunda, vale, ya os dejo que vaya
+con nota 4, vale, por ejemplo,
+
+
+lo prioriza sobre todo la parte de IONIC.
+
+
+¿Entendéis?
+
+
+Como siempre os guardo notas, cualquier
+cosa que hayáis aprobado, os la guardo
+
+
+para organizar ahí esta
+variaria, tal manera que
+
+
+sólo tenéis que evaluar
+de las partes suspendidas.
+
+
+¿Sí?
+
+
+¿Lo has?
+
+
+Lo claro.
+
+
+No digo que la semana de,
+normalmente, la semana del puente
+
+
+de diciembre es cuando diré
+que va el trabajo de este año,
+
+
+vale.
+
+
+¿Entonces qué vamos a ver en, bueno,
+ya vamos a ver, yo os he dicho que nos
+
+
+vamos a empezar viendo
+esta primera valación, es
+
+
+IONIC, vale, que es un
+framework, múltipla tapoma.
+
+
+¿Cómo instalamos IONIC en nuestros
+dispositivos?
+
+
+Vale, pues tenemos que instalar,
+no de, lo primero, vale, no dejo a ese,
+
+
+para poder montar, o para poder tener un
+gestor de paquetes con el que descargar,
+
+
+angular y IONIC, vale, porque IONIC
+nosotros vamos a trabajar con angular,
+
+
+vale, IONIC es un framework que nos
+permite trabajar con angular, react,
+
+
+o view, vale, nosotros como
+en este centro trabajamos
+
+
+con angular, pues vamos a
+desarrollar IONIC con angular.
+
+
+Así que lo primero que tenemos que ir es a
+la página de no de JS,
+
+
+vale, no de JS,
+
+
+vale, la página de no de JS, tenéis aquí
+un botoncito, este pone que no de,
+
+
+o tener no de 0, tenéis de español.
+
+
+Lo veis todos, vale, le dais y
+automáticamente os va a la página de
+
+
+descarga donde en la parte abajo os dice,
+hay una versión reconstruida para usar
+
+
+detectar el sistema operativo que tenéis,
+vale, entonces yo tengo Windows,
+
+
+sería un instalador de Windows,
+si tenéis en nuestro caso Mac,
+
+
+pues en todo ese ahí os pone la versión
+para Mac, vale, un DMR, un p, caje,
+
+
+vale, pues lo descargáis, el podcast.
+
+
+Sí, el instalador es un con un siguiente,
+siguiente, vale, menos en los Windows que
+
+
+hay un checkbox, a mitad de instalación,
+que tenéis que marcar para que os instale
+
+
+las dependencias de Python, de más más,
+etcétera, vale, entonces pone,
+
+
+instalarcho con la peiko para poder
+instalar las dependencias, ahí se
+
+
+construos en Windows, en Windows,
+vale, los Marcais, ¿me voy a enseñar?
+
+
+¿de qué es el PP?
+
+
+¿Era dice qué es el PP?
+
+
+La Vma yúscula y la Vma yúscula,
+la
+
+
+Vma yúscula, la Vma yúscula y la Vma
+yúscula y la Vma yúscula, ¿de qué es el PP?
+
+
+wey Y ppp, veme a ir a esclararse,
+veme a ir a esclar, veme a ir a esclarse,
+
+
+el la contraseña.
+
+
+En la terminal, vale, para ir viendo que
+tenéis instar a un node correctamente,
+
+
+ejecutar, no de menos sube.
+
+
+Variante, si está que vaya, no tenéis todo
+bien.
+
+
+Para actualizar no de
+tenéis que descargar el
+
+
+NVM, que es el ejército
+de versiones de NVM.
+
+
+Porque si no, no te vas a ver,
+no me voy a ver.
+
+
+Aére, no me voy a ver.
+
+
+Aére, no me voy a ver.
+
+
+Si tenéis ver la versión
+de NVM, los siguientes
+
+
+vamos a estar en
+transcript y angular.
+
+
+Vale, con el ejército de paquetes,
+espera, os abro la llamada para...
+
+
+Os abro la llamada de Teams para la
+pantalla.
+
+
+Vale.
+
+
+Entonces, lo vamos a esclarar ahora,
+está en transcript.
+
+
+Vale, NVM está en transcript.
+
+
+Vale, hace un lado que escribí lo bien.
+
+
+En qué?
+
+
+La historia hacía, ¿no?
+
+
+En ese G.
+
+
+¿Qué?
+
+
+Hay un salido que tiene dos errores.
+
+
+Sí, este más de recién empresarial está en
+la iglesia.
+
+
+En el cabello.
+
+
+¿Qué es el salido de NVM?
+
+
+El salido de NVM no está utilizado y es
+poniendo un comando para actualizarle esta.
+
+
+Si, ¿qué es el salido de NVM?
+
+
+El salido de NVM no está utilizado.
+
+
+El salido de NVM no está utilizado.
+
+
+El salido de NVM no está utilizado.
+
+
+¿Qué es el salido de NVM?
+
+
+El salido de NVM no está
+
+
+utilizado.
+
+
+¿Qué es el salido de NVM?
+
+
+El salido de NVM no está utilizado.
+
+
+Este intiante ha sido recordado.
+
+
+Sí, sí, de lo seguro.
+
+
+Es el segundo.
+
+
+¿Qué es el salido de NVM?
+
+
+¿Qué es el salido de NVM?
+
+
+No, no, no.
+
+
+¿Qué es el salido de NVM?
+
+
+Sí, sí, sí.
+
+
+¿Qué es el salido de NVM?
+
+
+No, no.
+
+
+¿Qué es el salido de NVM?
+
+
+¿Qué es el salido de NVM?
+
+
+El salido de NVM no está utilizado.
+
+
+¿Qué es el salido de NVM?
+
+
+¿Qué es el salido de NVM?
+
+
+El salido de NVM no está utilizado.
+
+
+La VMA y la VMA y la VMA y la VMA y la
+VMA.
+
+
+¿Cómo es el salido de NVM?
+
+
+Sí, sí.
+
+
+¿Qué es el salido de NVM?
+
+
+El salido de NVM no está utilizado.
+
+
+Sí, sí, el salido de NVM no está
+utilizado.
+
+
+Sí, sí, sí, sí.
+
+
+¿Qué es el salido de NVM?
+
+
+¿Qué es el salido de NVM?
+
+
+No, no, no.
+
+
+¿Qué es el salido de NVM?
+
+
+Sí, por favor.
+
+
+¿Cómo es el salido de NVM?
+
+
+No,
+
+
+no.
+
+
+¿Qué es el salido de NVM?
+
+
+La VMA, la VMA.
+
+
+¿Qué es el salido de NVM?
+
+
+No, sí, lo que es el salido de NVM y NVM
+no está utilizado.
+
+
+¿Qué es el salido de NVM?
+
+
+¿Qué es el salido de NVM?
+
+
+Por favor.
+
+
+¿Qué es el salido de NVM?
+
+
+¿Qué es el salido de NVM?
+
+
+No tenemos elste que venimos.
+
+
+No es el que nos son, no es al otro.
+
+
+Allí se les pide.
+
+
+Me voy a preguntar, ¿por qué no?
+
+
+No, no.
+
+
+Lo jugamos, no?
+
+
+Y después nos vamos a ver, ojalá estamos
+con la distancia.
+
+
+Tienes que ver este.
+
+
+Me voy a ver, no me gusta.
+
+
+He llegado a ver no, sí me voy a ver,
+abajo.
+
+
+¿No lo has visto?
+
+
+Un poco más.
+
+
+¿Qué has visto?
+
+
+¡Usted no tiene la canción popular!
+
+
+Sí, porque se suele.
+
+
+¡Vaya!
+
+
+¡Perdona!
+
+
+¿Usted no tiene la canción popular?
+
+
+Pues no lo has visto.
+
+
+¡Esto va a ver!
+
+
+¡Perdona, por favor!
+
+
+¿Esto va a ver?
+
+
+¡Esto va a ver.
+
+
+¡Es que es!
+
+
+¡No, mira!
+
+
+¡Es que es el puto báfo.
+
+
+¡Aya, buen intento!
+
+
+La carne de la madre.
+
+
+¡No, no, que es mi cara de la rusa!
+
+
+¿Cuál es?
+
+
+¿Qué se está haciendo?
+
+
+¿Qué es la foto de la cabra?
+
+
+¿Tienes la llave?
+
+
+¿Tienes?
+
+
+¿Qué es?
+
+
+¿Tienes la llave?
+
+
+¿Tienes la llave?
+
+
+¿Qué es?
+
+
+¿Qué es que lo hago?
+
+
+Tienes la foto de la cabra.
+
+
+¿Qué es que lo hago?
+
+
+¡Eso es el segundo!
+
+
+¡Pusimos el segundo!
+
+
+¡¡Ya no!
+
+
+¡Sí, miren!
+
+
+¡El segundo!
+
+
+¡Ya está!
+
+
+¡No, no!
+
+
+No, no, no, no, no, no, no,
+
+
+no.
+
+
+Tengo laums architects y los
+intermediáticos,
+
+
+a ver.
+
+
+Bueno, que te lo tengo... ¿Tú?
+
+
+¿Tú?
+
+
+¿Cómo has estado?
+
+
+¿Tú?
+
+
+¿Te has estado?
+
+
+¿Qué pasa?
+
+
+No, no.
+
+
+Dejamos el en-comun, de una semana.
+
+
+Hay un hombre que vive en la mesa.
+
+
+Es una persona que esta juro de mi vida,
+oye, de mi, de mi.
+
+
+Eva, la vida, la vida.
+
+
+Y
+
+
+esta es
+
+
+la otra
+
+
+vez.
+
+
+Hay más.
+
+
+Vale.
+
+
+El siguiente paso.
+
+
+Vale, a tardar.
+
+
+Lo tenés que ejecutar con sugo.
+
+
+Vale, el NPM y hasta
+que yo nos digan, no le
+
+
+deis al enter, que eso
+es muy bonito, rapido.
+
+
+Vale, Arroba Angular.
+
+
+Para aquí, hasta aquí sería los de
+Windows.
+
+
+Vale, y ahora los de Mac, con sugo
+delante, que discañadirle esto,
+
+
+solo los de Mac, solo los de Mac,
+menos menos un save, dios pens.
+
+
+Vale, solo los de Mac, los que tenéis
+vueltro de Windows, no.
+
+
+Desde esto con sugo delante,
+vale, sugo NPM y está al
+
+
+menos G, Arroba Angular,
+que menos menos un save pens.
+
+
+Y los de Windows, por sí, menos un save
+pens.
+
+
+Vale.
+
+
+Lo de Mac, vale, y si ya
+tenéis el comandentero
+
+
+de sugo, NPM y está al
+menos G, Arroba Angular,
+
+
+Una, una.
+
+
+Un buen día, que por mientras tuvimos...
+¿Ya ves el lado de Windows 4, que
+
+
+te vayan a quitar?
+
+
+Vale, yo que lo ves
+lo que tiene de los J, P,
+
+
+vale, los quitarles
+los J, es solo el sugo.
+
+
+Que les ves mis cada de Windows 5,
+Arroba Angular aquí.
+
+
+Y que te hane 15?
+
+
+recorded, ¿sí?
+
+
+para los de Mac.
+
+
+Ahora voy a poner esto.
+
+
+Ayer ha dado por él.
+
+
+La ha quitado de una versión, una opción
+para el parcial, los primeros que ha hecho
+
+
+es la parte de permisos del mar,
+pero lo que ha quedado por el
+
+
+parcial.
+
+
+Ayer las cuestiones, después de esto,
+probar que lo tenéis correctamente.
+
+
+¿Me vienes tener?
+
+
+Vale, silencéis, en esta versión.
+
+
+No tiene que decir la versión de angular
+que tenéis.
+
+
+22, 22 es 1 o 8, ¿verdad?
+
+
+Sí, 22 es 1 o 8.
+
+
+¿Vemos a ver?
+
+
+Vale.
+
+
+Es que es la verdad, que no hay un avión
+de igual.
+
+
+¿Vemos a ver?
+
+
+¿Vemos a ver?
+
+
+¿Vemos a ver?
+
+
+¿Vemos a ver?
+
+
+¿Vemos a ver?
+
+
+¿Vemos a ver?
+
+
+¿Vemos a ver?
+
+
+¿Vemos a ver?
+
+
+¿Vemos a ver?
+
+
+¿Vemos a ver?
+
+
+Hay que ir a la jefe, a ver todos los
+salen a la versión.
+
+
+¿Vemos a ver?
+
+
+Sí, cuatro de ellos van a dar.
+
+
+Si es mucho dar o cu.
+
+
+Si es un niño, ¿qué viene si es mi
+acoglio?
+
+
+Si no,
+
+
+si.
+
+
+¿Te como era el peor del ganor,
+no?
+
+
+Es el misión.
+
+
+¿De qué no?
+
+
+Es la entidad.
+
+
+¿Qué es la entidad?
+
+
+El peor.
+
+
+¿Y de otra vez el inicio?
+
+
+¿Y que de la otra vez el inicio?
+
+
+¿Qué es?
+
+
+El blanco, tu ha hecho el blanco.
+
+
+Es que es mejor que la gente, pero no te
+estoy pegando.
+
+
+Y aquí está el Cielo, muy bien,
+un grazo.
+
+
+Pero, si no se, si no.
+
+
+Es peor de cien.
+
+
+A su vida, a la gente, a la gente,
+no es el Cielo.
+
+
+Y parece que, a la gente, es un gano y el
+Cielo, se lo hace.
+
+
+Oye, dijo, entonces, ¿qué fue?
+
+
+Bueno, si, ¿qué fue?
+
+
+¿Qué fue?
+
+
+Se cae esta banda de la Cielo,
+la gente con vándose, ¿qué fue?
+
+
+¿Qué fue?
+
+
+Usted no haces nada de la Cielo.
+
+
+Oye, por favor.
+
+
+Para la programada.
+
+
+Bueno, vosotros quiero hacerles...
+Reaccions, te voy a darle otra a ellos.
+
+
+Mira, pero en el caso de la otra casa,
+que no se despeja a los que nos derrás.
+
+
+Y a las dos de tu gente, yo creo que se
+rote.
+
+
+¿Y tu?
+
+
+¿Y tu?
+
+
+¿Y tu?
+
+
+¿Y tu?
+
+
+Me he grabado yo, yo no sé...
+Y se le hago un hombre... ¡Rurro!
+
+
+¡Rurro!
+
+
+Y por favor.
+
+
+Ayámoslo, me gustan.
+
+
+Son las represiones de darle y de ser
+mejor, no?
+
+
+Ya aprendimos.
+
+
+¿Y qué?
+
+
+Ah, seis, siete.
+
+
+Pero si a una vez está la primera.
+
+
+Nuevo asuntamente es que te escuchas,
+tú, tú, tú, tú.
+
+
+Y tú, tú, tú, me llanto.
+
+
+Es un jugo, no?
+
+
+No, pero... ¿Qué tal?
+
+
+Es que soluras de navio que...
+
+
+Hola, a ustedes son los dos.
+
+
+Y no me lo he encontrado.
+
+
+Es una de las dos.
+
+
+Es un desviéndose.
+
+
+Es una de las dos.
+
+
+Y nos vemos en el final.
+
+
+Para los primeros.
+
+
+A ver, la gente se nos va a decir.
+
+
+Y a ver, la gente se va a decir.
+
+
+La gente se va a decir, que es el primer.
+
+
+La gente se va a decir, que es el primer.
+
+
+Es un primer.
+
+
+Y que es el primer.
+
+
+Y no lo he encontrado.
+
+
+Esta es la primera frase.
+
+
+Con el mazo va a ser
+
+
+aquí, por favor.
+
+
+¡Llam, säger!
+
+
+¡Dónde está!
+
+
+¡Dónde está!
+
+
+¡He cambiado!
+
+
+¡Dónde está!
+
+
+¡Dónde está!
+
+
+¿Qué tal, chicos?
+
+
+Si, pues tu mejor maravilla es tu Opolla?
+
+
+Si.
+
+
+Que no sé la oposición?
+
+
+Ah, ¿cómo?
+
+
+No stabilen ylijk.
+
+
+Mi papá es ni si...
+¿Pienes de que lo estoy?
+
+
+¿No, no?
+
+
+¿Pero me lo entenzas con la nueva vez?
+
+
+¿Pero si te tengo?
+
+
+Ah powered, ¿cómo?
+
+
+¿Pero?
+
+
+¿No?
+
+
+Sí, porque... ¿Pero
+si me lo socan?
+
+
+¿Pero?
+
+
+¡Sale, si le he apropiado...
+¿Pero, que le te ha de aas?
+
+
+Sí.
+
+
+Sí.
+
+
+¿Dónde me ha pedido la bien?
+
+
+Te os tome ahora quizás, pero si que no
+seas que me dés,
+
+
+No, no, no.
+
+
+Esa es la primera.
+
+
+Esa es la primera.
+
+
+Esa es la primera.
+
+
+이번에 es akiyo haginonondenonon no hay
+ninguno a poco.
+
+
+Pero vine Y este es el segundo y este es
+el segundo.
+
+
+El segundo es que no haya wheels de
+congelada, porque no es el segundo.
+
+
+No tiene narrative de lapos.
+
+
+Yo te lo digo, pero sí, yo te lo digo.
+
+
+Y ya en el día de stylish los son en el
+pintante.
+
+
+Que es el piso de todo, nosotros no usamos
+un montón de ideas.
+
+
+Y ya lo sé.
+
+
+Los amigos a los que son la verdad,
+¿no?
+
+
+Y esta pregunta, ¿cienda que es?
+
+
+Y que la pente, ¿no?
+
+
+Sí.
+
+
+Que rosa.
+
+
+¿Que puso?
+
+
+Estaba en el enteleador, ¿estás tu poder?
+
+
+Esta.
+
+
+Aferen a esta casa, ¿no?
+
+
+Sí, que no.
+
+
+Estás tu puso, ¿por qué?
+
+
+No, pero por que sí.
+
+
+¿Pero qué?
+
+
+Parece que puso, ¿por qué?
+
+
+¿Por qué?
+
+
+No, por qué?
+
+
+Por qué?
+
+
+No me parecía sentir y tener un difficulty
+de manera.
+
+
+Vamos a escoltar a los vivos.
+
+
+Y a los vivos, con mi que le pide los
+burbas.
+
+
+Y tu te no me pude ver, ¿no?
+
+
+Aquí está es mi nariz, ¿no?
+
+
+Cómo estoy hospitando.
+
+
+¿Eso es el segundo?
+
+
+Yo creo que la porra no tiene nada que
+hacer, pero no tiene nada que hacer.
+
+
+Esta tuve bien.
+
+
+Esta tuve bien.
+
+
+Esa tuve bien.
+
+
+La prueba no es de verdad, es de verdad.
+
+
+En las manos, lo lo hacen.
+
+
+Si no, lo hacen.
+
+
+Si no,
+
+
+lo hacen.
+
+
+Nosotros� nos tomamos lo mismo de madri
+forgetting later.
+
+
+Nosotros nos lubricamos de nuevo y de
+nuevo de aprecio.
+
+
+Nosotros nos lubricamos de nuevo.
+
+
+Nosotros ya lo chargamos, porque no tiene
+ni más de negras,
+
+
+sino que se nos muecaron bass.
+
+
+Y yo no se encontraban de pausa.
+
+
+F Peterson Contra quoi?
+
+
+Que una estonina considerable ni nada no
+hace nada pero sea brutal,
+
+
+funciona.
+
+
+Estaba conmigo en la ciudad,
+
+
+tiene la vía de San Carlos.
+
+
+La compañía de Amara y Azurema,
+creo que por primera vez nos funcionó.
+
+
+La verdad es que este es el tema de mí.
+
+
+También te he sido el existe de mí.
+
+
+No te he podido... No te he podido...
+Y... No te he podido... No te he podido...
+
+
+No te he podido... Me he podido...
+No te he podido... No te he podido...
+
+
+De mí, es que me he podido...
+
+
+Si, tú lo lo lo hiciste.
+
+
+Sí, pero yo lo he podido que me meten en
+la moto, ¿sabes?
+
+
+No, no te he podido...
+
+
+No, pero no, pero hay que sudar por el
+metro del Péstito de Norte.
+
+
+¡Ni!
+
+
+¡Ni!
+
+
+¡Ni!
+
+
+¡Ni!
+
+
+¡Ni!
+
+
+¡Ni!
+
+
+¡Ni!
+
+
+¡Ni!
+
+
+¡Que bueno!
+
+
+¡Que bueno!
+
+
+¡Que bueno!
+
+
+No, y tu la puta, ¿sabes?
+
+
+¡que no ha pasado nada que me te hagas!
+
+
+¿Cual no?
+
+
+También no me he podido... Yo
+fueso feliz con su pelón, si es mi...
+
+
+Por su pao lo he visto, pero...
+Tú, tú viste por el que viste.
+
+
+¿Qué es lo que viste?
+
+
+¿Qué ponía de que viste?
+
+
+¿Vamos?
+
+
+¿Grafíles, maravillón?
+
+
+Un poco de cinema, no la puedes.
+
+
+Sí, en el caso de un dosCómo de la idea es
+que se medium un extrito.
+
+
+Este es el segundo.
+
+
+Este es el segundo.
+
+
+Este es el segundo.
+
+
+Este es el segundo.
+
+
+Este es el segundo.
+
+
+¡Españala!
+
+
+¡Vamos a ver un poco!
+
+
+¡Que os quede el enfote!
+
+
+Son en parte de la tierra, no hay nada.
+
+
+Yo no tengo que venir...
+
+
+Vale, Dios.
+
+
+No le pido de nunca.
+
+
+La crees que siempre es bastante libre?
+
+
+No vale, vale.
+
+
+¡Ey!
+
+
+¡Ey!
+
+
+¡Ey!
+
+
+¡Ey!
+
+
+¡Ey!
+
+
+¡Ey!
+
+
+¡Ey!
+
+
+¡Ey!
+
+
+¡Ey!
+
+
+¡Ey!
+
+
+¡Ey!
+
+
+¡Vamos!
+
+
+¡Vamos!
+
+
+¡Vamos!
+
+
+¡Vamos!
+
+
+¡Vamos!
+
+
+¿Por qué no sé los dos?
+
+
+¡Sí!
+
+
+¡Los dos, son de ellos!
+
+
+¡Ese es el hombre!
+
+
+¿Ves?
+
+
+¿Por qué no sé?
+
+
+¿Ve?
+
+
+¿Ve?
+
+
+¿Ve?
+
+
+¿Ve?
+
+
+¿Ve?
+
+
+¿Por qué?
+
+
+Vamos a unirte, unirte.
+
+
+¿Emos la misma unirte?
+
+
+¡Nimo la cara, verdad!
+
+
+¿Nimo la ha dado un doctoro hoy?
+
+
+¿Dónde?
+
+
+Doctor Fethus, los dos calculados otros,
+los dos, los dos, los dos, los dos.
+
+
+¿Eso es el carcador que es el doctor de la
+primera?
+
+
+¿Muy rápido?
+
+
+Doctor Fethus, ¿eh?
+
+
+¿Temos la vida del cabeviante?
+
+
+¿Muy rápido?
+
+
+¿Y si naricamos, ¿y si naricamos?
+
+
+¿Y si naricamos?
+
+
+¿Y si naricamos?
+
+
+¿Y si naricamos?
+
+
+¿Qué es el día que se va?
+
+
+Bueno, pero, pero me refiero.
+
+
+No, no.
+
+
+Dejamos,
+
+
+eh.
+
+
+Me dijeron.
+
+
+Dejamos.
+
+
+Necesitamos para que el de la jefe se
+acasa la bultra secreta.
+
+
+Yo no, yo lo hago.
+
+
+Lo hago, entonces tú me sorprend your my.
+
+
+¿Está no dejado de estar rompando?
+
+
+La lluvia a la ultradiveta.
+
+
+Se decían abrir un lugar apartado,
+pero no estará apartado.
+
+
+En la siguiente pasos.
+
+
+Instalar Ionic.
+
+
+Manés, parecido a lo que habéis hecho
+antes.
+
+
+Manés, NBM está en Menosjera, Corrado del
+Subo.
+
+
+Allá ahora es Ionic, Parra Clilly.
+
+
+Pero va primero con el Ionic, Parra
+Clilly, Sey Pems.
+
+
+¿Vale?
+
+
+Para lo de Mornos.
+
+
+Sí.
+
+
+Nos deman, pero va ahí con el menos menos
+en Sey Pems.
+
+
+Vale.
+
+
+Si no, deja pues ya la fe sin el Ionic,
+Parra Clilly.
+
+
+¿Pensos menos?
+
+
+¿Que vos haces?
+
+
+Un sello que le den en Sey Pems.
+
+
+Ah, vale.
+
+
+¿No lo haces?
+
+
+¿No lo haces?
+
+
+Y ahora, por qué, nada, por qué.
+
+
+No va a haber un centario de la base.
+
+
+¿Siguimos?
+
+
+¿Que vas por favor?
+
+
+¿Que vas por favor?
+
+
+Sí.
+
+
+¿Es que no me gusta lo está tanto?
+
+
+¿Sabes?
+
+
+Sí.
+
+
+¿A vos se me intervamos?
+
+
+¿Eso?
+
+
+Por favor, le de mi.
+
+
+Sí, nada, pero ya no.
+
+
+¿Es un Sey?
+
+
+¿Alisa?
+
+
+¿De mi?
+
+
+¿Es un Sey?
+
+
+No, no.
+
+
+Vale, pues a ver, lo sin el un Sey Pems.
+
+
+¿Es un Sey?
+
+
+No, no.
+
+
+¿Alisa?
+
+
+¿Que te lo digo?
+
+
+¿Que te lo digo?
+
+
+¿En ese mar?
+
+
+Sí, ya.
+
+
+¿Que no lo haces?
+
+
+Sí.
+
+
+¿Eso?
+
+
+¿Tú?
+
+
+¿No?
+
+
+¿Tú?
+
+
+¿Es un Sey?
+
+
+¿Dónde?
+
+
+¿Quién se pide?
+
+
+¿Por qué?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+¿Tú?
+
+
+Si todos va bien, os
+instalará por el Travaislo,
+
+
+el Leonid Vincent, que
+os tienes ahí, la 7-2-1.
+
+
+Este es el 2-2.
+
+
+Para curarse el saludo, el demás,
+es reputar esto.
+
+
+Este es el 3-2-1.
+
+
+Cuando pongáis luces, después de la barra,
+con el tabulador, sale en los usuarios que
+
+
+hay, tenéis ahí un instalador o un
+progresa.
+
+
+En función de cual, es que
+hay unas máquinas que tienen
+
+
+instalador y otras máquinas
+que tienen progresas.
+
+
+En función de la barra, hay un tabulador,
+sale en los usuarios.
+
+
+No, parte del 1 tiene esa línea,
+al 1 y luego progresa en el instalador.
+
+
+¿Y cual ponemos?
+
+
+Y progresa en el instalador.
+
+
+Normalmente debería ser progresa, pero
+hay algunas máquinas con el instalador.
+
+
+Y le vamos a estar pasando.
+
+
+Ya hay esa entey, respuestas.バラ,
+con 3 y 6?
+
+
+O sea, o sea, de manera nueva,
+contra la 10.
+
+
+Si os la peí dantes, nos va a volver a
+peír.
+
+
+Y con el que no hay efectos, si les pito,
+se le intermedi Bird.
+
+
+A con yola bien.
+
+
+O sea, no
+
+
+más asumado.
+
+
+O sea, se ha hecho un santo en línea,
+ya está.
+
+
+Eso es lo que haces,
+cambiar los pendientes de
+
+
+toda esa carpeta para
+que haya acceso total.
+
+
+A pendientes, igual
+
+
+te que no se ha hecho.
+
+
+Si, no se ha hecho un santo en línea,
+ya está.
+
+
+Yo soy el CEO de la Norte.
+
+
+Yo no puedo ver ver... ¡me voy al Perú!
+
+
+Para ver este país.
+
+
+No puedo sentir de aquí.
+
+
+Yo no he refirado a los primeros de estos
+dos.
+
+
+Es la de mí ahi nos ha de recordar.
+
+
+Si.
+
+
+La de mí lo ha dado a los delayed.
+
+
+Nosotros no es nada.
+
+
+No, lo tenemos.
+
+
+No es nada.
+
+
+No es nada.
+
+
+Una es... No es nada.
+
+
+Es solo para que estuemos.
+
+
+Eh, es solo para que estuemos.
+
+
+Ah... No es nada.
+
+
+Es solo para que estuemos.
+
+
+Ah, no, no.
+
+
+Vamos a hacer... Vamos a hacer un brujito
+y ahora vamos a hacer una ¿Qué es tancito?
+
+
+El desco, esto te he visto.
+
+
+¿Qué?
+
+
+¿Qué escuchaba de las prenses?
+
+
+Bueno ya podré fin de nada.
+
+
+Enca yo te dios que me he visto,
+cuando he inferior a los Amazonos,
+
+
+ya voy a ver los prenses, no me he visto,
+no.
+
+
+Eso fue aquí después tu, aquí después tu
+un espacio.
+
+
+A entre, quitan el espacio y luego res
+tomorrow.
+
+
+Vale.
+
+
+¿Qué tenemos que hacer?
+
+
+Lo primero, crear una carteta y onig donde
+queramos trabajar.
+
+
+Vale, yo trabajo directamente.
+
+
+Vale, en el carteta raíz.
+
+
+Vale, yo tengo una carteta que se llama.
+
+
+¡Y uny!
+
+
+Vale, vosotros también la onig,
+queráis.
+
+
+A ver.
+
+
+Hoy.
+
+
+Vale, yo me crea una carteta o todos cada
+uno con tantas estructuras que queráis.
+
+
+Vale, yo me crea una carteta llama
+
+
+y voy a tener una carteta teoría y una
+carteta ejercicios.
+
+
+Vale, os explico.
+
+
+Para darles tan clases, vale, yo os voy a
+pasar un repositorio.
+
+
+Hoy vamos a crear un proyecto,
+vamos a dar un poco el proyecto inicial.
+
+
+Pero yo os pasaré un
+repositorio que es el proyecto
+
+
+que vamos a hacer
+durante el curso alternado.
+
+
+Entonces, los que haréis
+vosotros es, básicamente,
+
+
+teneréis el proyecto cronado
+en vuestro dispositivo.
+
+
+Y lo eres bien siguiendo la clase conforme
+yo lo voy haciendo.
+
+
+No tenéis que copiar nada.
+
+
+Vale, entonces yo iré haciendo
+las cosas desde cero, vosotros
+
+
+me diréis atentiendo con el
+código ya en vuestras manos.
+
+
+Entendéis el código y yo voy a hacerlo
+también, lo toméis ya en vuestras manos.
+
+
+Os explicaré la teoría de ese día, lo
+que sea, y es para dormir en el ejercicio.
+
+
+Y en el duro sé que en el duro sí que nos
+haréis vosotros, ahí es donde ya,
+
+
+pero a manera de ir la parte del
+ejercicio.
+
+
+Y lo que nos quiero es teneros copiando
+como moros, fram de perdido, en salínea,
+
+
+donde va esto, donde va eso.
+
+
+No, quiero que atendáis la teoría.
+
+
+Vale, por eso os doy ya.
+
+
+Vale, el código, lo que vamos a hacer.
+
+
+Vale, entendéis el funcionamiento de lo
+que vamos a hacer.
+
+
+Vale, es hoy si vamos
+a crear un proyecto
+
+
+para verlo, para ver
+cómo se crea de cómo es.
+
+
+Vale, pero en la siguiente sesión ya vamos
+a explorar el repositorio, etcétera.
+
+
+Vale, entonces...
+
+
+Vienen, vienen.
+
+
+¿Qué es el carpeta MPM?
+
+
+Bueno, a ver, vamos a crear dos permisos.
+
+
+Punto MPM.
+
+
+A ver, creemos el proyecto hoy.
+
+
+Vale.
+
+
+Vale, en vez, dentro de la carpeta donde
+queráis montar la teoría, vale,
+
+
+la que vamos a crear el proyecto,
+tenéis que ejecutar.
+
+
+Bueno, para que lo sepáis en Mac.
+
+
+Si estáis en vuestros sistemas de
+carpetas.
+
+
+Vale, que tenéis un Mac, aprovechar lo que
+tiene el Mac.
+
+
+Si estáis en vuestras
+sistemas de carpetas,
+
+
+las imágenes que no
+estoy en esta carpeta.
+
+
+Y este es la carpeta que quiero mover.
+
+
+Vale, si yo hago, se ve y muevo la
+carpeta.
+
+
+Vale, el Mac, directamente, os pone la
+ruta.
+
+
+Vale, en Windows, nos toca copiarla y
+pevarla.
+
+
+Pero es lo mismo.
+
+
+¿Verdad, entendéis?
+
+
+Ponéis, escritiste de...
+
+
+Arrastráis la arteta a la terminal y os
+pone la ruta automáticamente.
+
+
+Pero, se le es teoría, pero no me mueve la
+teoría.
+
+
+Bueno.
+
+
+Ahí, todos estéis en la carpeta,
+ya donde va a querer estrear el proyecto?
+
+
+Ella, esto es el primero de SMA de
+Revenga.
+
+
+Para crear...
+
+
+Para crear un proyecto de millones en la
+carpeta en la que queráis, Vale,
+
+
+tenéis que ejecutar.
+
+
+Y unique, estar...
+
+
+Nombres del proyecto.
+
+
+Y el tipo de proyecto, nuestro caso,
+Blanc.
+
+
+Sí, sí, sí.
+
+
+Si nos funcionan, que en este lado
+delante, se presenta lo sin el sugo.
+
+
+Ahí, sí.
+
+
+Esto vale, cuando le ejecutéis,
+lo primero que os pedirá es el tipo.
+
+
+Es el framework en el que vamos a
+utilizarlo.
+
+
+O sea, he hecho que vamos a trabajar con
+ámbular, ¿vale?
+
+
+Se puede montar con riado, con mi oro,
+pero aquí vemos ámbular.
+
+
+Y luego vamos a ver esta andalón.
+
+
+Vale, que está a tener los elementos en la
+que hay independiente.
+
+
+Vale, si no, os dejas manejar normal,
+pues lo tendéis transar con sugo.
+
+
+Están malo.
+
+
+Ámbular y están malo.
+
+
+Vale, y una vez se pone a descargada,
+podéis hacer el descanso, ¿vale?
+
+
+Como no tengo mucho
+tiempo, que son dos horas,
+
+
+hacemos cinco minutos
+de estar a una, ¿vale?
+
+
+Y a la una, pues vemos, ya hemos explicado
+un poco el proyecto.
+
+
+Vale, pues, ya me voy a hacer esto.
+
+
+Me da el primero.
+
+
+Vale, me voy a postir, ya.
+
+
+No puede seguir teniendo.
+
+
+Vale, vamos a ver.
+
+
+Vamos a ver, vamos a ver.
+
+
+Pues, ¿pa por el último?
+
+
+¿Pero si te pongo?
+
+
+¿Pero si te pongo?
+
+
+¿Pero si te pongo?
+
+
+voy a seguir... No voy a dejar
+de estar asuntando... ¿Pero vas?
+
+
+¿Vamos a hacer el frío?
+
+
+No, no, no.
+
+
+Sí.
+
+
+¿Lo tengo?
+
+
+Tu nuevo lunes.
+
+
+Creo que no, ¿eh?
+
+
+¿De qué más tiene...?
+
+
+Por lo que te merezco?
+
+
+No.
+
+
+No, no tienen cilers.
+
+
+Solo de todo el mundo.
+
+
+No tiene cilers.
+
+
+Pero no tiene muchos años.
+
+
+Bueno, no tiene cilers.
+
+
+No tiene cilers.
+
+
+Si quienes tu barro, no hay morte.
+
+
+No hay morlloso.
+
+
+No hay morlloso.
+
+
+Laase.
+
+
+Laase.
+
+
+Laase.
+
+
+Y także vamos a ir a sentir un Bulgarian
+como Huh?
+
+
+Ya, una pata aquí.
+
+
+Denie caseta, de donde?
+
+
+¿Usted se refir Works?
+
+
+Esto es la verdad.
+
+
+Es que no hay queigherme compar técnica.
+
+
+Pero bueno, ¿cómo es eso?
+
+
+No, es que estohwa comohhhh.
+
+
+Pero está una primera forma la verdad.
+
+
+Porque si no puedes decirlo.
+
+
+Vale, siguiente.
+
+
+Esta� no te explabe mucho.
+
+
+Ahora vamos y desc来 todos y está.
+
+
+No está.
+
+
+Listo es que esto no tiene nada.
+
+
+Sí, las cabillas son buenas.
+
+
+Oaaa, hay tres... ¿Bien?
+
+
+Dejamos que no hay que a la base.
+
+
+Ya sé que no hay que.
+
+
+El primer es que no hay que.
+
+
+Pero aquí es el primer.
+
+
+Hubo bien, hubo bien que una niña.
+
+
+Yo me voy a eighth.
+
+
+Pero este del primer ha de pilar,
+¡Mare bien!
+
+
+Una de los jugadores, technological y
+resume.
+
+
+Vía, era, brilla.
+
+
+Por lo que estamos en la cual se está
+haciendo más de un dos a tres.
+
+
+Pero sí es una vez la primera vez.
+
+
+Y es una vez la nueva vez.
+
+
+La que estuve así, pero no te digo que
+esta vez.
+
+
+Vale, no es de frío.
+
+
+Sí, es de gameda, es de la Norte... y la
+Norte Grande, tiene mucho peor.
+
+
+No me lo diris tanto, es que no veis lo
+que lo vamos a hacer.
+
+
+No, no me gusta la acta de volver.
+
+
+Sí, pero creo que...
+
+
+Quiera nada.
+
+
+No es más popular, ¿verdad?
+
+
+Es sobreestimado a esa cura.
+
+
+Niñe, ¿eh?
+
+
+No,
+
+
+no, no.
+
+
+Ah, ¿no?
+
+
+No, no.
+
+
+Vamos a hacer cinco.
+
+
+Debe.
+
+
+Y me.
+
+
+¿Qué la tiene?
+
+
+Lo participo.
+
+
+¿Qué la tiene?
+
+
+¿Qué la tiene?
+
+
+No, no.
+
+
+¿Te lo dumbas?
+
+
+Si.
+
+
+¿Frente ya lo mismo?
+
+
+December, ¿y este repずante?
+
+
+Pues vende en curve ya, ya no.
+
+
+¿Buenos principios?
+
+
+¿A cuál es la parte de la Marina?
+
+
+¿Y no soniestos?
+
+
+Que es la parte de la Marina?
+
+
+Hola.
+
+
+¿Cómo te �es?
+
+
+Con teléos la piola.
+
+
+Es de la banda.
+
+
+¿Qué les dije?
+
+
+¿Qué les dije?
+
+
+No fue que era el año.
+
+
+¿A ti te salen como a mi?
+
+
+Se me gustó de... esto lo hice la
+terminal.
+
+
+¿A lo mejor?
+
+
+¿No va?
+
+
+Sí, pero que viene los pasaderos.
+
+
+No, pero... Dice eso.
+
+
+Tenemos que estar un cargador,
+no descargará nada.
+
+
+¿Cuál es el para que le esperamos?
+
+
+¿Cuál es el para que le esperamos?
+
+
+Si, si, si.
+
+
+¿Habríamos gané de las finas de la otra?
+
+
+¿Verdad?
+
+
+¿Verdad?
+
+
+¿Verdad?
+
+
+¿Verdad?
+
+
+¿Verdad?
+
+
+¿Verdad?
+
+
+Por qué?
+
+
+Quedamos cinco pocos durante el melted...
+¿Algo si no te estuvieron?
+
+
+No, yo tuvimos... notas arriba...
+
+
+Que sí, sí.
+
+
+Ya se escuché hasta... Lanzando a su voz...
+que no me has nistido... No creo por lo่.
+
+
+No, por lo lo่.
+
+
+.
+
+
+¿Vamos a entrar un poco para la muerte
+entre carpetas?
+
+
+¿Dónde dice que si no, no te dejas
+preciedos de la barrio?
+
+
+No, no.
+
+
+No, no.
+
+
+No, no.
+
+
+No, no.
+
+
+No.
+
+
+No, no.
+
+
+No, no.
+
+
+La primera de los dos, sí, es la azul del
+sueño.
+
+
+El peoría no se sabe nada.
+
+
+No se va a creer, todo la vez encontrado.
+
+
+¡A suerte!
+
+
+¡A suerte!
+
+
+¡A suerte!
+
+
+¡A suerte!
+
+
+¿A qué se parece?
+
+
+No existe, espéramos.
+
+
+¿Este es el que pasa?
+
+
+¡No!
+
+
+¿Usted es?
+
+
+¡No!
+
+
+¡Vamos, ¡Vamos!
+
+
+¡Estamos clamando!
+
+
+¿Entonces el que vacío?
+
+
+¿A esa parte que se va a matar?
+
+
+Sí, como muestra ahora sí.
+
+
+¿Entonces está?
+
+
+Eso sí, esto está.
+
+
+¿Tú?
+
+
+¿Van?
+
+
+¿Le pones?
+
+
+Que تعste él.
+
+
+¿Tú?
+
+
+¿Van?
+
+
+Vamos a salir, no se han de darle la costa
+y que se vean.
+
+
+Y primero la不到, y aquí tiene la actividad.
+
+
+Vamos, ya estamos.
+
+
+¿Estas bien?
+
+
+¿Os
+
+
+he comprado?
+
+
+¡Sí!
+
+
+¿Y ahora qué?
+
+
+Pero si nos vamos ahora?
+
+
+Nous pasamos...
+
+
+Son Juan, ya.
+
+
+Muy bien, la que tengo en la he visto,
+ya.
+
+
+No,
+
+
+1 minuto y empezamos.
+
+
+Y a mi que está el nombre del proyecto Y
+blanc.
+
+
+No lo habéis habilitado, no lo habéis
+tratado.
+
+
+No lo habéis habilitado.
+
+
+Vamos, a ver esto, y lo dejamos por ahí.
+
+
+A ver que es un proyecto, que hemos
+llamado...
+
+
+Pero uno inicio, y lo que voy a hacer
+ahora es abrirlo.
+
+
+Para ahí vamos a trabajar con el webstorm.
+
+
+Si no, tenéis instalado, pero le estaráis.
+
+
+Dejad ya de jugar.
+
+
+No, sentamos ya.
+
+
+Cada uno es ordenador.
+
+
+Venga.
+
+
+Seguimos la clase.
+
+
+Venga.
+
+
+¡Venga!
+
+
+Habrimos el webstorm, buscamos el proyecto
+que acabamos de crear, y lo abrimos.
+
+
+Venga, abrimos el webstorm y buscamos el
+proyecto que acabamos de crear.
+
+
+¿Qué es el webstorm?
+
+
+El webstorm.
+
+
+Por centro de edades, cargáis el webstorm
+desde la página de James.
+
+
+Webstorm.
+
+
+¿A dónde?
+
+
+A dónde?
+
+
+A dónde?
+
+
+A dónde?
+
+
+A dónde?
+
+
+A dónde?
+
+
+A dónde?
+
+
+El webstorm.
+
+
+Si no, lo tenéis, lo tenéis en la página
+de James.
+
+
+Si tenéis en tubos, pues ahí, lo tenéis en
+tubos, lo tenéis en cargabas.
+
+
+Pues la 26.
+
+
+¿Cuál es la vez y la día de aterrizicos y
+la diinte?
+
+
+A ver, para v Ontario este... ¿Qual tiene
+este gree en la de...?
+
+
+balapel y si no será el otro?
+
+
+Esto no se lo se, los antiguos se llevan a
+nintel, esto no se cual es diva.
+
+
+Vale, como es, básicamente explicaros un
+poco el contenido, vale con que me
+
+
+atendáis nuevo, vale, mientras os va
+instalando el web, todo mi todo.
+
+
+Vale, primer fichero más importante,
+el fichero inicial con el que crea el
+
+
+proyecto, es el fichero package.yeso,
+vale, mientras os caigo a mi web,
+
+
+termineso, lo vais aprendiendo.
+
+
+Vale, entonces el fichero package.yeso es
+el que tiene la información del proyecto,
+
+
+esto es la versión del proyecto, vamos
+a hablar de las versiones de proyectos.
+
+
+No, no, no, no, no, no, no,
+no, no, no, no, no, no, no,
+
+
+vale, sabéis de los que
+representan estos tres números.
+
+
+Ah, sí, cabrón de la versión, ya lo sé,
+no, no, no, no, no, no, no, no,
+
+
+no, no, no, no, no, no, no, no,
+no, no, no, cuatro.
+
+
+Y el treno número, y por qué hay treno
+número?
+
+
+Quiero comér servants de los primeros tres
+números?
+
+
+Lo sale?
+
+
+No, no, no.
+
+
+labor charlo.しま?
+
+
+сделá, el primero, vale, el
+primero representa la mayor
+
+
+versión, este es la versión
+principal de la aplicación.
+
+
+En diezans siempre en cero.
+
+
+Bueno, cuando ya es, digamos
+que ha cumplido los objetivos
+
+
+principales de la aplicación,
+pasa a hacer la versión unol.
+
+
+Bueno, es lo que será la primera versión,
+antes de la unos la beta, a cero.
+
+
+Cuando ya empezamos, a en el uno de los
+que hacemos es cambiamos esa mayor
+
+
+versión, y ahora pasar a la dos,
+pues lo mismo, tener el cambiar
+
+
+sustancialmente la
+aplicación, con lograr unos
+
+
+objetivos, vale, eso
+representa la mayor versión.
+
+
+El segundo número representa la minor
+versión.
+
+
+Esto es, cuando hay un cambio en la
+funcionalidad de la aplicación,
+
+
+pues cambiamos una función, añadimos un
+con elementos nuevos, pues mira,
+
+
+voy a ponerle ahora, que mi aplicación
+tenga lo bien, voy a ponerle ahora,
+
+
+que mi aplicación pueda
+hacer un extra de algo, vale,
+
+
+todos esos elementos van
+incrementando la minor versión.
+
+
+El segundo número y el último representa
+los fixes.
+
+
+Esto es los arreglos, corrección de voz,
+corrección de problemas, ratas,
+
+
+da de cualquier cambio menor de
+soluciones, se hace dentro de los fixes.
+
+
+A vale, en la vez los primeros situaciones
+interesantes, que son el de la carteta,
+
+
+y el escritorio del aspecto, y el que te
+cree un menú contextual en la carteta,
+
+
+y los otros, bueno, es para abrir
+directamente, está bien para cuando
+
+
+quieras abrir directamente dentro de un
+fichero, pues que te detecte el síndole
+
+
+sigue el seditar macho de merida,
+son más raros de utilizar hoy en día para
+
+
+antes de aumentar el mejor síndole,
+ahora ya todos los proyectos de macho.
+
+
+Pero sí, los puedes seleccionar el
+síndole, es opcional.
+
+
+Vale, entonces, cuando cambia una mayor
+versión automáticamente, la minor y los
+
+
+fixes pasan a cero, cuando cambia una
+minor versión el fix automáticamente pasa
+
+
+a cero, vale, cuando cambia el número de
+su derecha pasa a cero.
+
+
+No, eso sí cambia solo, no
+me lo tienes que cambiando
+
+
+los otros conforme
+desarrolléis la aplicación.
+
+
+Luego, es importante, ¿quién ha
+desarrollado el proyecto?
+
+
+Pues la vez desarrollados otros,
+¿no?
+
+
+En vez de ese autor cambiarlo a vuestro
+nombre.
+
+
+Esto es importante, no me quieren
+encontrar proyectos con el nombre de
+
+
+otros, proyectos con el
+nombre de Leoni, vale,
+
+
+eso que sepáis que será
+un cero directamente.
+
+
+Así que todos con vuestro
+nombre en el proyecto,
+
+
+así sé de quién es lo
+que estoy con Riquiela.
+
+
+Vale.
+
+
+Bueno, luego, se den esta género,
+para promocionaros, etcétera,
+
+
+vale, vale, vale, vale, vale, vale,
+vale, vale, vale, vale, vale, vale,
+
+
+vale, luego tenemos una serie de scripts
+que es, pues, comandos para ejecutar,
+
+
+pues, ¿qué hace cuando le voy a aplicar a
+la aplicación?
+
+
+¿Qué sería el estar?
+
+
+Vale, en este caso el ángel en este serve.
+
+
+Ya vemos que no solo lanzaremos
+directamente con el Leoni y serve,
+
+
+que nos proporciona alguna funcionalidad
+extra.
+
+
+Y luego tienes la parte del objeto de
+dependencies, vale, agarraros que esto es
+
+
+un fichero dello y son, vale, entonces,
+las llaves que simulizan en un fichero
+
+
+dello y son, que eran las llaves,
+el objeto, objetos, vale, entonces,
+
+
+vamos hablando de un objeto de
+dependencies, que dentro tienen todas las
+
+
+dependencias o mundos que va a optizar
+esta aplicación, de esta manera que aquí
+
+
+está toda la información de la aplicación,
+vale, si no es que tiene, pues,
+
+
+toda la información de angular,
+toda la parte de capacidad, o es que se
+
+
+encarga de toda la parte
+nativa de la aplicación, vale,
+
+
+de la interacción con el,
+con el móvil, vale, lo tenemos.
+
+
+Y con el angular, fijaros que aquí la
+versión de nos pone en la versión nueva,
+
+
+aunque antes nos poníamos instalada la
+7.2.
+
+
+Es esto que el Leoni-Klee se instalan las
+7.2, vale, y todas las mejoras que han
+
+
+hecho son otras diferentes de 7.2 de
+Antarriard and Chu, pues lo cual,
+
+
+estamos hablando de Leoni-Klee
+nueve a día de hoy, vale, están
+
+
+ya desarrollando el 10, el
+nuevo es salió al final de Agosto.
+
+
+Leoni-Klee es una biblioteca de iconos que
+nos ofrece Leoni-Klee, pues, tenemos
+
+
+Leoni-Klee, vale, pues, toda una
+biblioteca de iconos, vale, y a mis
+
+
+equipos, haremos, vale, para usar en
+nuestras ampliaciones de Leoni,
+
+
+ahí tenemos toda la biblioteca.
+
+
+Incluso, logos comerciales, vale,
+como con ese, los logos de un discente de
+
+
+desempresas, en de guasa, en delito,
+en de bien, exacto.
+
+
+Vale, luego hay rey que escota ese,
+que es una biblioteca reactiva,
+
+
+vale, ya veremos, para hacer repicciones a
+apis, etcétera, y lo tenemos otro objeto
+
+
+que son de Dendensis, que son de Dendensis
+de Desarrollo, a esos de Dendensis que
+
+
+usamos mientras estamos creando el
+proyecto, vale, pero cuando compiremos la
+
+
+versión final, no creará, se traerá todos
+estos módulos, vale, todos estos módulos,
+
+
+cuando los Dendensis como lo Dendensis
+están dentro de donde módulos,
+
+
+cerraros que el proyecto, si llobro,
+obtenir, explorar, si yo cojo el proyecto
+
+
+y lo ve a propiedades, el proyecto,
+vale, mirarlo con culpa, vale,
+
+
+a culpa, doscientos, noventa y cinco
+menos, bueno, trescientos cuarenta mesas
+
+
+en disco, con treinta y cinco mil
+archivos, vale, ahora mirar esto,
+
+
+si yo me meto en el proyecto, leo no cojas
+no de módulos, y dime ahora cuánto ocupas,
+
+
+me dice con culpa cuatrocientos cuarenta y
+cuatro casas, vale, eso quiere decir que
+
+
+toda la información de nuestro proyecto
+vale todo el contenido, va a estar dentro
+
+
+de no de módulos, vale, todo el grueso de
+nuestro proyecto, vale, pero eso es
+
+
+fácilmente cargable desde gracias al
+pacadriación, vale, tal forma que vosotros
+
+
+es la carteta, no de módulos, se puede
+borrar, y la podemos cargar directamente
+
+
+ejecutando en el install, en el proyecto,
+vale, de hecho si os fijáis hay un
+
+
+fichero, que se llama los miembles para
+vuestro proyecto, entre ellos está esa
+
+
+carteta no de módulos con besos,
+y qué es esto?
+
+
+Pues que cuando vosotros, entre que es el
+proyecto a mí, vale, en ejercicios,
+
+
+en examenes, etcétera, en trabajos,
+lo tendéis que haber sin la carteta no de
+
+
+módulos, de siempre cogemos, los ficheros
+cogemos todo, menos la carteta no de
+
+
+módulos, y lo comprimiremos, valendo ese
+enviada con primera en cip, ahí pondréis,
+
+
+nombre a pide, nombre a pide,
+
+
+pondréis ahí nombre, a pide,
+
+
+¿cómo hacemos?
+
+
+Vaya, entre este a mí, ahí tendéis vuestro
+proyecto, comprimido, vale, sin el no de
+
+
+módulos, fiojaros con cupéos, cien cas,
+mucho más ligero, el subirme cien cas,
+
+
+que subirme los 300 en guantaneas,
+además que si tenéis que comprimir 300,
+
+
+o sea, 35.000 ficheros, vale, os va a dar
+entre 5 y bien minuto, ahora es tiempo,
+
+
+te perremos a vosotros y tiempo,
+que pierdo, yo sé que no debes comprimir
+
+
+cada uno de vuestros proyectos,
+y tiran a esos 5 de 1.000 con todos los
+
+
+ficheros, caso de corregir vuestro
+ejercicio examen en 5 o 10 minutos a
+
+
+tardar casi media hora, eso que supone de
+media hora por cienos con los que tengo,
+
+
+pues echar cuando tiempo me tengo que ver
+ahí, solucion, el que me suba,
+
+
+árbol con los módulos, que se va a que
+está automáticamente suspendido,
+
+
+vale, y botón derecho comprimido,
+se le cianas todo y con el coman,
+
+
+clicas, con el coman, en la tecla de
+Windows, la tecla de Windows, ahí,
+
+
+haces clic, vale, entonces ahí es todo ese
+recé y los ficheros, todos me los módulos,
+
+
+esa,
+
+
+vale, eso para, para entregas,
+vale, vas ficheros importantes,
+
+
+capacitos.conf, este ficheros para cuando
+generéis la versión móvil final,
+
+
+vale, cuando vais a hacer una versión
+móvil final, decir para generar el
+
+
+proyecto de Andrés Estudio, del Discord,
+ya sea para Andrés, o para Iof,
+
+
+pues aquí tenéis el nombre de la
+aplicación que se subirá luego a la store,
+
+
+o el identificador, esto sería el nombre
+de la aplicación, vale, y esto,
+
+
+bueno, si tenéis, bueno, vale,
+luego ya han pegado en el contenido del
+
+
+fichero, o sea, el proyecto, vale,
+dentro de la capital CRC, es donde está
+
+
+bastante nuestro proyecto, que tenemos
+aquí, bueno, un archivo main, que es el
+
+
+que va a arrancar el proyecto,
+esto viene a ser un proyecto, como lo
+
+
+estamos haciendo sobre el angular,
+un proyecto de CTA, el que tiene un sitio
+
+
+del page aplicativo, ni igual,
+el salido de un sitio del page aplicativo,
+
+
+que
+
+
+no te mueves de la misma página,
+que es que todo está hecho, en la misma
+
+
+página, así como, adivamente, en los que
+se hacía él, yo tenía un index atentemail,
+
+
+y entonces al mejor iba a una carrera,
+me iba a otra página, que es lo que se ha
+
+
+haciendo, lo que había pasado en el aguaje
+de marcas, vale, así en el page
+
+
+aplicativo, lo que ha tenido, sólo tengo
+un index atentemail, punto, todo mi
+
+
+contenido va a estar ahí dentro,
+que hago con JavaScript voy a modificar su
+
+
+contenido, de la manera que voy cambiando
+lo que tiene, la información que tiene es
+
+
+el fichero, pero si el usuario no tiene
+que cargar cada vez esto a la información,
+
+
+sino que simplemente vamos modificando la
+información que tiene dentro, y los
+
+
+elementos estáticos, permanecerán
+estáticos, vale, es un poco de idea,
+
+
+pues esto es igual, el index atentemail,
+si nos fijamos dentro, tiene el
+
+
+atentemail, el atentemail es el componente
+raíz de la aplicación, el que va a tener
+
+
+toda la información, aquí lo tenemos
+dentro del atentem, el atentemail
+
+
+corresponde atentemail.tps, vale,
+fijaros que el atentemail.tps de selector
+
+
+tiene atentemail, que es como en Unic,
+vale páginas de componentes, vale,
+
+
+hay un elemento, Page, en Unic,
+vale, que tiene a ser una vista de la
+
+
+aplicación, vale, entonces cuando hablamos
+de Page, en Unic hablaremos de Vista,
+
+
+aunque si yo abro un Page, lo que me
+encuentro es un componente, en decir que
+
+
+internamente son lo mismo, vale,
+tienen los dos, son componentes,
+
+
+vale de angular, pero Unic los tratan
+diferentes en cuanto a que, si yo creo una
+
+
+Page, para empezar el atentemail me lo
+monta con una cabecera y un contenido,
+
+
+vale, y luego además a cada uno le asigna
+una ruta, ¿saben?
+
+
+En decir, cuando yo creo un Page,
+automátilamente, y Unic le asignará una
+
+
+ruta con el leicido, vale, con la cargada,
+con la cargada bombada, volvemos de así,
+
+
+vale, entonces para que el atentemail los
+componentes, para que el atentemail las
+
+
+páginas, vale, las páginas, como se ha
+dicho son las Vistas de la aplicación,
+
+
+cuando queramos tener una Vista en la
+aplicación, pues utilizaremos una página.
+
+
+Cuando queramos un código reutilizable
+dentro de la aplicación, entonces la
+
+
+tenemos un componente, vale, me hace
+quiero montar un mensaje de alerta a los
+
+
+usuarios, vale, pues ese mensaje de alerta
+a los usuarios, yo lo monto en un
+
+
+componente y así ese componente lo puedo
+reutilizar en mis diferentes Vistas.
+
+
+Es la manera de cada vez que te la mandan,
+es el mensaje de alerta y lo tengo hecho
+
+
+en un componente, todo el código,
+toda la lógica más la parte visible.
+
+
+Como una par que, bueno, a ver,
+el number es más cor que es estábico,
+
+
+es decir, voy a tener un number estábico
+en la aplicación, pero cuando es algo
+
+
+reutilizable, es decir, pues eso,
+un aviso que voy a hacer en varias
+
+
+páginas, es un mensaje de error a usuario
+de hoy que no puedes hacer esto,
+
+
+pues entonces tengo a lo mejor en la parte
+del perfil de usuario que si clican en
+
+
+algún elemento, en el que no tiene el
+internillo, pues les sale ese mensaje.
+
+
+O sea, este es una página de comprar y no
+puede hacer eso, les sale el mismo mensaje.
+
+
+Son dos listas diferentes, son dos partes
+de la aplicación diferentes, pero hacen
+
+
+exactamente lo mismo, pues lo programo una
+única vez y lo meto en un componente,
+
+
+lo voy a utilizar en un nuevo sitio,
+vale, vale, pues eso para eso,
+
+
+la evidencia página con componente,
+vale, por lo demás, dentro de la
+
+
+ppcomponent, entonces, en el en,
+encontraremos un íon a pp, es la parte que
+
+
+corresponde a la aplicación, el logón y el
+reútero red que corresponde a la parte
+
+
+dinámica, es decir, el íon reútero red
+solo pintará o solo rendecerá la ruta
+
+
+activa, es decir, la ruta que es cuincida
+con el paz que está puesto aquí,
+
+
+vale, entonces eso será en función de la
+ruta que esté definida, pues tardaremos
+
+
+una vista o otra, vale, y bueno,
+en la cadetera y el contenido,
+
+
+la parte en íon y vale, como decía,
+las páginas se vinieron entre cabecera y
+
+
+onjeder y contenido y onjonder,
+a veces, a los que todas las citetas
+
+
+tienen el íon delante, vale, son el titel
+astróneas de íon y para representar el M
+
+
+componentes, estas cosas son las que vamos
+a ir viendo a lo largo del curso,
+
+
+vale, todas estas implicetas, sobre todo,
+pues son las que tienen el M más
+
+
+complejida o la de desarrollar,
+vale, el íon reúter, como decía,
+
+
+representa la cabecera de la aplicación,
+esto es, vamos a lanzar la aplicación para
+
+
+que lo veáis, y onig serve, y onig serve,
+vale, para lanzar la aplicación,
+
+
+escribimos, y onig serve en el ademinal,
+vale, esto lo hará, es lanzar la
+
+
+aplicación dentro del
+cuarto ocho místil, vale, lo que
+
+
+está haciendo es llamar
+ámbular, y lanzar la aplicación.
+
+
+¿Me dice que hay
+
+
+asumurarnos de que
+cuando lanzese y onig serve
+
+
+estáis en la carpeta del
+bueno, como era, ¿cómo?
+
+
+Ionig serve, Ionig serve, igual que así es
+que es el serve del año pasado ámbular,
+
+
+pues aquí ahora es Ionig serve,
+
+
+yo decía que el serve como tal en la
+cabecera de la parte superior de la
+
+
+aplicación, vale, normalmente dentro
+tendrá un toolboard que es una barra para
+
+
+poder poner elementos dentro, ya sea
+botón, ya trabajaremos con eso más
+
+
+tranquilamente en ejemplo, vale,
+y lo tenemos, Ionig serve,
+
+
+bueno, mirad, os he dicho que sin entender
+o sentréis en atender ahora en esta parte,
+
+
+vale, aquí veis la parte arriba que pone
+blanc, vale, eso es la cabecera,
+
+
+la parte superior del móvil que
+corresponde a la cabecera y la parte
+
+
+inferior corresponde al
+conden, vale, Ionig serve, esta
+
+
+parte arriba y Ion conden
+esta parte de abajo, vale,
+
+
+bueno, pues hecho, entonces el mañana que
+nos toca la siguiente sesión, vale,
+
+
+mañana veremos ya, a ver, silencio,
+vale, mañana la idea es, ya pasaros el
+
+
+repositorio, vale, donde tendéis el
+proyecto, y en vez de empezar a crear el
+
+
+proyecto que mostraremos todos componentes
+de ejemplo, vale, esto es el proyecto
+
+
+donde vamos a ver, pues todos los
+componentes que tiene ejemplo de todos los
+
+
+componentes que tiene Ionig, por ejemplo,
+pues veremos como lanzar alent,
+
+
+vale, etcétera, entonces el mañana pues
+empezamos ya con el proyecto, los
+
+
+componentes, vale, en el que tenemos un
+menu para poder ser extra que el
+
+
+componente que

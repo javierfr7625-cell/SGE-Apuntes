@@ -40,3 +40,4 @@ Para generar la compilación estática:
 ```bash
 npm run build
 ```
+

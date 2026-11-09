@@ -893,6 +893,7 @@ const lastUpdated = "Noviembre 2026 - Francisco Belda";
         <button class="tag-chip" data-filter="toast">🍞 Toast Service</button>
         <button class="tag-chip" data-filter="alert">⚠️ Alert Controller</button>
         <button class="tag-chip" data-filter="i18n">🌍 Multilenguaje</button>
+        <button class="tag-chip" data-filter="diseno">🎨 Diseños</button>
       </div>
     </div>
   </header>
@@ -908,6 +909,7 @@ const lastUpdated = "Noviembre 2026 - Francisco Belda";
         <li><a href="#guia-inicio" class="toc-link"><span class="num">00</span> Guía Inicio & Setup Cero</a></li>
         <li><a href="#setup-critico" class="toc-link"><span class="num">01</span> Setup Base & Providers</a></li>
         <li><a href="#modelo-api" class="toc-link"><span class="num">02</span> Consumo API REST + Signals</a></li>
+        <li><a href="#suscripciones-listas" class="toc-link"><span class="num">02b</span> Suscripciones en listas</a></li>
         <li><a href="#modelo-swiper" class="toc-link"><span class="num">03</span> Diapositivas Swiper</a></li>
         <li><a href="#modelo-menu" class="toc-link"><span class="num">04</span> Menú con Avatar Toggle</a></li>
         <li><a href="#modelo-modal" class="toc-link"><span class="num">05</span> Modal Inline willDismiss</a></li>
@@ -919,6 +921,7 @@ const lastUpdated = "Noviembre 2026 - Francisco Belda";
         <li><a href="#modelo-alert" class="toc-link"><span class="num">11</span> Alert Controller</a></li>
         <li><a href="#modelo-i18n" class="toc-link"><span class="num">12</span> Multilenguaje i18n</a></li>
         <li><a href="#cheat-sheet" class="toc-link"><span class="num">13</span> Cheat-Sheet y addIcons</a></li>
+        <li><a href="#apartado-disenos" class="toc-link"><span class="num">14</span> Diseños</a></li>
       </ul>
     </aside>
 
@@ -959,7 +962,7 @@ const lastUpdated = "Noviembre 2026 - Francisco Belda";
 
       <!-- Active Filter Notice -->
       <div class="active-filter-bar" id="filterNotice">
-        <span>🔍 Mostrando filtro: <strong id="filterName">Todos</strong> (<span id="matchCount">14</span> modelos encontrados)</span>
+        <span>🔍 Mostrando filtro: <strong id="filterName">Todos</strong> (<span id="matchCount">16</span> modelos encontrados)</span>
         <button class="btn-reset-filter" id="btnResetFilter">Mostrar Todos</button>
       </div>
 
@@ -1231,6 +1234,135 @@ export class ZeldaService &#123;
     &#125;
   &lt;/ion-list&gt;
 &lt;/ion-content&gt;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODELO: SUSCRIPCIONES EN LISTAS -->
+        <article class="model-card" data-tags="api lista subscribe agentes ionic critico" id="suscripciones-listas">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">02b</span>
+              <h3 class="card-title">Suscripciones en listas</h3>
+            </div>
+            <span class="trigger-pill">"Suscripción Observable", "Listas con subscribe", "@for en ion-list", "inject(AgenteService)"</span>
+          </div>
+          <div class="card-content">
+            <div class="info-callout">
+              <strong>Anatomía:</strong> <code>src/app/services/agentes.service.ts</code>, <code>src/app/pages/inicio/inicio.page.ts</code> y <code>src/app/pages/inicio/inicio.page.html</code>.
+            </div>
+
+            <ol class="recipe-steps">
+              <li>Inyectar el servicio usando la función moderna <code>inject(AgenteService)</code> como <code>private readonly</code>.</li>
+              <li>Declarar la propiedad de lista tipada: <code>agentes: AgenteItem[] = [];</code>.</li>
+              <li>En <code>ngOnInit()</code> llamar al método cargador: <code>this.cargarAgentes();</code>.</li>
+              <li>En <code>cargarAgentes()</code> suscribirse al Observable del servicio mediante <code>this.agentesService.getAgents().subscribe(&#123; next: (res: Agente) =&gt; &#123; this.agentes = res.data; &#125;, error: (err) =&gt; &#123; ... &#125; &#125;);</code>.</li>
+              <li>En el HTML iterar con la sintaxis moderna <code>@for (agente of agentes; track $index)</code> dentro de <code>&lt;ion-list&gt;</code>.</li>
+              <li>Renderizar <code>&lt;ion-item&gt;</code> con <code>&lt;ion-button&gt;</code>, <code>&lt;ion-avatar slot="end"&gt;</code> con <code>[src]="agente.displayIcon"</code> e <code>&lt;ion-label class="ion-margin"&gt;</code> con título y descripción.</li>
+            </ol>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/pages/inicio/inicio.page.ts</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; Component, OnInit, inject &#125; from '@angular/core';
+import &#123;
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonContent,
+  IonList,
+  IonItem,
+  IonButton,
+  IonAvatar,
+  IonLabel
+&#125; from '@ionic/angular/standalone';
+import &#123; AgenteService &#125; from '../../services/agentes.service';
+import &#123; Agente, AgenteItem &#125; from '../../common/models/agente.model';
+
+@Component(&#123;
+  selector: 'app-inicio',
+  templateUrl: './inicio.page.html',
+  styleUrls: ['./inicio.page.scss'],
+  standalone: true,
+  imports: [
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    IonList,
+    IonItem,
+    IonButton,
+    IonAvatar,
+    IonLabel
+  ],
+&#125;)
+export class InicioPage implements OnInit &#123;
+  private readonly agentesService: AgenteService = inject(AgenteService);
+  agentes: AgenteItem[] = [];
+
+  constructor() &#123;&#125;
+
+  ngOnInit() &#123;
+    this.cargarAgentes();
+  &#125;
+
+  cargarAgentes() &#123;
+    this.agentesService.getAgents().subscribe(&#123;
+      next: (res: Agente) =&gt; &#123;
+        this.agentes = res.data;
+      &#125;,
+      error: (err: any) =&gt; &#123;
+        console.log('Error al cargar agentes:', err);
+      &#125;,
+    &#125;);
+  &#125;
+&#125;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/pages/inicio/inicio.page.html</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-html">&lt;ion-header [translucent]="true"&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-title class="ion-text-center"&gt;Página de Inicio&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content [fullscreen]="true"&gt;
+  &lt;ion-list&gt;
+    @for (agente of agentes; track $index) &#123;
+      &lt;ion-item&gt;
+        &lt;ion-button&gt;
+          &lt;ion-avatar slot="end"&gt;
+            &lt;img [src]="agente.displayIcon" /&gt;
+          &lt;/ion-avatar&gt;
+          &lt;ion-label class="ion-margin"&gt;
+            &lt;h1&gt;&#123;&#123; agente.displayName &#125;&#125;&lt;/h1&gt;
+            &lt;h2&gt;&lt;p class="descripcion"&gt;&#123;&#123; agente.description &#125;&#125;&lt;/p&gt;&lt;/h2&gt;
+          &lt;/ion-label&gt;
+        &lt;/ion-button&gt;
+      &lt;/ion-item&gt;
+    &#125;
+  &lt;/ion-list&gt;
+&lt;/ion-content&gt;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/pages/inicio/inicio.page.scss</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-css">.descripcion &#123;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+&#125;</code></pre>
             </div>
           </div>
         </article>
@@ -1865,6 +1997,57 @@ constructor() &#123;
     arrowBack, trash, add, menu, flame, heart, star, car
   &#125;);
 &#125;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- APARTADO DE DISEÑOS -->
+        <article class="model-card" data-tags="diseno css scss estilos lista" id="apartado-disenos">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">14</span>
+              <h3 class="card-title">Diseños</h3>
+            </div>
+            <span class="trigger-pill">"Diseño para que solo se vea una linea", "Truncar texto", "line-clamp", "Puntos suspensivos"</span>
+          </div>
+          <div class="card-content">
+            <div class="info-callout">
+              <strong>Diseño para que solo se vea una linea en la descripcion de cada objeto.</strong>
+              <p style="margin-top: 6px; font-size: 0.88rem; color: var(--text-muted);">
+                Aplica truncado multilínea/unilínea con CSS con elipsis (...) para que los textos largos de descripción no descuadren los <code>ion-item</code> de la lista.
+              </p>
+            </div>
+
+            <ol class="recipe-steps">
+              <li>En el archivo de estilos de la página (ej. <code>src/app/pages/inicio/inicio.page.scss</code>), añade la clase <code>.descripcion</code>.</li>
+              <li>Aplica <code>display: -webkit-box;</code>, <code>-webkit-line-clamp: 1;</code> y <code>-webkit-box-orient: vertical;</code>.</li>
+              <li>Añade <code>overflow: hidden;</code> y <code>text-overflow: ellipsis;</code> para forzar el corte con puntos suspensivos (...).</li>
+              <li>En el HTML de la página (<code>inicio.page.html</code>), añade la clase al párrafo: <code>&lt;p class="descripcion"&gt;&#123;&#123; objeto.description &#125;&#125;&lt;/p&gt;</code>.</li>
+            </ol>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>src/app/pages/inicio/inicio.page.scss</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-css">.descripcion &#123;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+&#125;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>Plantilla HTML (src/app/pages/inicio/inicio.page.html)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-html">&lt;ion-label class="ion-margin"&gt;
+  &lt;h1&gt;&#123;&#123; agente.displayName &#125;&#125;&lt;/h1&gt;
+  &lt;h2&gt;&lt;p class="descripcion"&gt;&#123;&#123; agente.description &#125;&#125;&lt;/p&gt;&lt;/h2&gt;
+&lt;/ion-label&gt;</code></pre>
             </div>
           </div>
         </article>

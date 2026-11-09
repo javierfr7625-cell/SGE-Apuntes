@@ -133,6 +133,7 @@ export const routes: Routes = [
 | **Modelo de Datos DTO** | `src/app/common/models/*.model.ts` | `export interface ApiResponse<T>` | Tipado estricto TypeScript para la respuesta de la API. |
 | **Servicio API REST** | `src/app/services/*.service.ts` | `@Injectable({ providedIn: 'root' })`, `inject(HttpClient)` | Métodos HTTP (`.get<T>()`) que retornan `Observable<T>`. |
 | **Gestión de Estado** | `*.page.ts` | `signal<T>()`, `items.set(val)` | Señales reactivas de Angular para pintar en template con `items()`. |
+| **Suscripción en Listas** | `*.page.ts` + `*.page.html` | `service.get().subscribe({ next, error })`, `@for` | Patrón tradicional de suscripción a Observable sin Signals y renderizado con `@for (item of items; track $index)`. |
 | **Bucle For Moderno** | `*.page.html` | `@for (item of items(); track item.id)` | Control flow moderno de Angular sin necesidad de `*ngFor`. |
 | **Condicional Moderno** | `*.page.html` | `@if (condicion) { } @else { }` | Renderizado condicional moderno sin directivas `*ngIf`. |
 | **Swiper Diapositivas** | `inicio.page.html` + `*.ts` | `<swiper-container>`, `CUSTOM_ELEMENTS_SCHEMA` | Secuencia de diapositivas con botón final condicional `@if ($last)`. |
@@ -357,6 +358,119 @@ export class MaterialsPage implements OnInit {
           <h2 class="ion-text-capitalize">{{ material.name }}</h2>
           <p>{{ material.description }}</p>
         </ion-label>
+      </ion-item>
+    }
+  </ion-list>
+</ion-content>
+```
+
+---
+
+### MODELO: SUSCRIPCIONES EN LISTAS (CONSUMO CON SUBSCRIBE TRADICIONAL Y @FOR)
+
+* **IDENTIFICADOR Y TRIGGER RÁPIDO**: "Cargar lista mediante suscripción", "Consumo con subscribe", "Listas con ion-avatar y botones", "Iterar con @for y track $index".
+* **ANATOMÍA DE ARCHIVOS**:
+  * `src/app/services/agentes.service.ts`
+  * `src/app/pages/inicio/inicio.page.ts`
+  * `src/app/pages/inicio/inicio.page.html`
+* **RECETA PASO A PASO**:
+  1. Inyecta el servicio mediante la función moderna `inject(AgenteService)` asignándolo a una propiedad `private readonly`.
+  2. Declara la variable de estado como un array clásico tipado: `agentes: AgenteItem[] = [];`.
+  3. En el ciclo de vida `ngOnInit()` invoca `this.cargarAgentes();`.
+  4. En `cargarAgentes()`, suscríbete al método del servicio pasando el objeto con `next` y `error`:
+     ```typescript
+     this.agentesService.getAgents().subscribe({
+       next: (res: Agente) => {
+         this.agentes = res.data;
+       },
+       error: (err: any) => {
+         console.log('Error al cargar agentes:', err);
+       },
+     });
+     ```
+  5. En el template HTML, usa `<ion-list>` y el nuevo bloque de control de flujo `@for (agente of agentes; track $index)`.
+  6. Para cada ítem, define un `<ion-item>` con `<ion-button>`, `<ion-avatar slot="end">` con binding `[src]="agente.displayIcon"` y un `<ion-label class="ion-margin">` con título y descripción.
+
+* **SNIPPET COPY-PASTE READY**:
+
+```typescript
+// src/app/pages/inicio/inicio.page.ts
+import { Component, OnInit, inject } from '@angular/core';
+import {
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonContent,
+  IonList,
+  IonItem,
+  IonButton,
+  IonAvatar,
+  IonLabel
+} from '@ionic/angular/standalone';
+import { AgenteService } from '../../services/agentes.service';
+import { Agente, AgenteItem } from '../../common/models/agente.model';
+
+@Component({
+  selector: 'app-inicio',
+  templateUrl: './inicio.page.html',
+  styleUrls: ['./inicio.page.scss'],
+  standalone: true,
+  imports: [
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    IonList,
+    IonItem,
+    IonButton,
+    IonAvatar,
+    IonLabel
+  ],
+})
+export class InicioPage implements OnInit {
+  private readonly agentesService: AgenteService = inject(AgenteService);
+  agentes: AgenteItem[] = [];
+
+  constructor() {}
+
+  ngOnInit() {
+    this.cargarAgentes();
+  }
+
+  cargarAgentes() {
+    this.agentesService.getAgents().subscribe({
+      next: (res: Agente) => {
+        this.agentes = res.data;
+      },
+      error: (err: any) => {
+        console.log('Error al cargar agentes:', err);
+      },
+    });
+  }
+}
+```
+
+```html
+<!-- src/app/pages/inicio/inicio.page.html -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Página de Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    @for (agente of agentes; track $index) {
+      <ion-item>
+        <ion-button>
+          <ion-avatar slot="end">
+            <img [src]="agente.displayIcon" />
+          </ion-avatar>
+          <ion-label class="ion-margin">
+            <h1>{{ agente.displayName }}</h1>
+            <h2><p class="descripcion">{{ agente.description }}</p></h2>
+          </ion-label>
+        </ion-button>
       </ion-item>
     }
   </ion-list>
@@ -1208,7 +1322,45 @@ ionic g pipe pipes/filtro --standalone
 
 ---
 
-# 5. CHECKLIST DE ENTREGA FINAL DEL EXAMEN (3 MINUTOS ANTES)
+# 5. APARTADO DE DISEÑOS
+
+### DISEÑO PARA QUE SOLO SE VEA UNA LINEA EN LA DESCRIPCION DE CADA OBJETO
+
+* **IDENTIFICADOR Y TRIGGER RÁPIDO**: "Diseño para que solo se vea una línea en la descripción de cada objeto", "truncar texto", "cortar texto con puntos suspensivos", "line-clamp".
+* **ANATOMÍA DE ARCHIVOS**:
+  * `src/app/pages/inicio/inicio.page.scss` (o el `.scss` de la página correspondiente).
+  * `src/app/pages/inicio/inicio.page.html`.
+* **RECETA PASO A PASO**:
+  1. En el archivo `.scss` de la página, añade la regla con el selector de clase `.descripcion`.
+  2. Define `-webkit-line-clamp: 1;` con `display: -webkit-box;` y `-webkit-box-orient: vertical;`.
+  3. Añade `overflow: hidden;` y `text-overflow: ellipsis;` para forzar el corte con puntos suspensivos (...).
+  4. En el HTML asigna `class="descripcion"` al párrafo de la descripción dentro de `ion-label`:
+     `<p class="descripcion">{{ agente.description }}</p>`.
+
+* **SNIPPET COPY-PASTE READY**:
+
+```scss
+// src/app/pages/inicio/inicio.page.scss
+.descripcion {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+```
+
+```html
+<!-- src/app/pages/inicio/inicio.page.html -->
+<ion-label class="ion-margin">
+  <h1>{{ agente.displayName }}</h1>
+  <h2><p class="descripcion">{{ agente.description }}</p></h2>
+</ion-label>
+```
+
+---
+
+# 6. CHECKLIST DE ENTREGA FINAL DEL EXAMEN (3 MINUTOS ANTES)
 
 - [ ] **1. `package.json`**: ¿Está tu nombre en `"author"` y la `"version"` definida?
 - [ ] **2. Consola del Navegador (F12)**: ¿Está limpia de errores rojos?

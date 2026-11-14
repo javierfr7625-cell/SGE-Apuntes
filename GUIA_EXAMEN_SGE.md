@@ -1360,7 +1360,153 @@ ionic g pipe pipes/filtro --standalone
 
 ---
 
-# 6. CHECKLIST DE ENTREGA FINAL DEL EXAMEN (3 MINUTOS ANTES)
+# 6. APARTADO SERVICIO (CREACIÓN COMPLETA, ENVIRONMENT Y CONSUMO)
+
+### RECETA PASO A PASO: GENERACIÓN, MODELO DTO, ENVIRONMENT Y CONSUMO CON .SUBSCRIBE()
+
+* **IDENTIFICADOR Y TRIGGER RÁPIDO**: "Crear servicio con ionic g", "definir endpoint en environment", "recoger datos con subscribe", "conectar API de agentes/objetos".
+* **ANATOMÍA DE ARCHIVOS**:
+  * `src/app/modelo/agentes.model.ts` (Modelos DTO).
+  * `src/environments/environment.ts` y `src/environments/environment.prod.ts` (Variables dinámicas).
+  * `src/app/services/agenteServicio.ts` (Servicio HTTP).
+  * `src/app/pages/inicio/inicio.page.ts` (Consumo del servicio).
+* **RECETA PASO A PASO**:
+  1. **Generar el servicio con el CLI**: Ejecuta `ionic g service services/agenteService --skip-tests`.
+  2. **Definir el modelo TypeScript**: Antes de implementar el servicio, crea las interfaces en `src/app/modelo/agentes.model.ts` para tipar la respuesta (`ApiResponseAgente`) y los objetos (`Agente`).
+  3. **Configurar la URL dinámica en environments**:
+     - En `src/environments/environment.ts` añade `URLBase: 'https://valorant-api.com/v1/agents'`.
+     - En `src/environments/environment.prod.ts` añade la misma variable `URLBase`.
+  4. **Implementar el servicio**:
+     - Inyecta `HttpClient` mediante `inject(HttpClient)`.
+     - Importa `Observable` de `rxjs`.
+     - Crea el método `getAgentes(): Observable<ApiResponseAgente>` retornando `this.HttpClient.get<ApiResponseAgente>(environment.URLBase)`.
+  5. **Consumir los datos en la página**:
+     - Inyecta el servicio con `inject(AgenteServicio)`.
+     - Declara la señal reactiva: `agentes: WritableSignal<Agente[]> = signal<Agente[]>([]);`.
+     - En `ngOnInit()` llama a `loadAgentes()`.
+     - En `loadAgentes()` suscríbete al método del servicio con `.subscribe({ next: (res) => this.agentes.set(res.data), error: (err) => console.log(err) })`.
+
+* **SNIPPETS COPY-PASTE READY**:
+
+#### 1. Comando CLI
+```bash
+ionic g service services/agenteService --skip-tests
+```
+
+#### 2. Modelo DTO (`src/app/modelo/agentes.model.ts`)
+```typescript
+export interface ApiResponseAgente {
+  status: number;
+  data: Agente[];
+}
+
+export interface Agente {
+  uuid: string;
+  displayName: string;
+  description?: string;
+  developerName: string;
+  releaseDate: string;
+  characterTags?: string[];
+  displayIcon: string;
+  displayIconSmall: string;
+  bustPortrait?: string;
+  fullPortrait?: string;
+  fullPortraitV2?: string;
+  killfeedPortrait: string;
+  minimapPortrait: string;
+  homeScreenPromoTileImage?: string;
+  background?: string;
+  backgroundGradientColors?: string[];
+  assetPath: string;
+  isFullPortraitRightFacing: boolean;
+  isPlayableCharacter: boolean;
+  isAvailableForTest: boolean;
+  isBaseContent: boolean;
+  role?: any;
+  recruitmentData?: any;
+  abilities?: any[];
+  voiceLine?: any;
+}
+```
+
+#### 3. Environments Dinámicos
+```typescript
+// src/environments/environment.ts (Desarrollo)
+export const environment = {
+  production: false,
+  URLBase: 'https://valorant-api.com/v1/agents',
+};
+```
+
+```typescript
+// src/environments/environment.prod.ts (Producción)
+export const environment = {
+  production: true,
+  URLBase: "https://valorant-api.com/v1/agents",
+};
+```
+
+#### 4. Servicio HTTP (`src/app/services/agenteServicio.ts`)
+```typescript
+import { inject, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { ApiResponseAgente } from '../modelo/agentes.model';
+import { environment } from '../../environments/environment';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AgenteServicio {
+  private readonly HttpClient: HttpClient = inject(HttpClient);
+
+  getAgentes(): Observable<ApiResponseAgente> {
+    return this.HttpClient.get<ApiResponseAgente>(
+      environment.URLBase
+    );
+  }
+}
+```
+
+#### 5. Consumo en la Página (`src/app/pages/inicio/inicio.page.ts`)
+```typescript
+import { Component, OnInit, inject, signal, WritableSignal } from '@angular/core';
+import { AgenteServicio } from '../../services/agenteServicio';
+import { ApiResponseAgente, Agente } from '../modelo/agentes.model';
+
+@Component({
+  selector: 'app-inicio',
+  templateUrl: './inicio.page.html',
+  styleUrls: ['./inicio.page.scss'],
+  standalone: true,
+  imports: []
+})
+export class InicioPage implements OnInit {
+  private readonly agenteServicio: AgenteServicio = inject(AgenteServicio);
+  agentes: WritableSignal<Agente[]> = signal<Agente[]>([]);
+
+  constructor() {}
+
+  ngOnInit() {
+    this.loadAgentes();
+  }
+
+  private loadAgentes() {
+    this.agenteServicio.getAgentes().subscribe({
+      next: (res: ApiResponseAgente) => {
+        this.agentes.set(res.data);
+      },
+      error: (err: any) => {
+        console.log(err);
+      }
+    });
+  }
+}
+```
+
+---
+
+# 7. CHECKLIST DE ENTREGA FINAL DEL EXAMEN (3 MINUTOS ANTES)
 
 - [ ] **1. `package.json`**: ¿Está tu nombre en `"author"` y la `"version"` definida?
 - [ ] **2. Consola del Navegador (F12)**: ¿Está limpia de errores rojos?

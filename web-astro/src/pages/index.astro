@@ -1521,6 +1521,7 @@ const lastUpdated = "Noviembre 2026 - Francisco Belda";
         <button class="tag-chip" data-filter="alert">⚠️ Alert Controller</button>
         <button class="tag-chip" data-filter="i18n">🌍 Multilenguaje</button>
         <button class="tag-chip" data-filter="diseno">🎨 Diseños</button>
+        <button class="tag-chip" data-filter="servicio">💉 Servicio</button>
       </div>
     </div>
   </header>
@@ -1558,6 +1559,7 @@ const lastUpdated = "Noviembre 2026 - Francisco Belda";
         <li><a href="#modelo-i18n" class="toc-link"><span class="num">12</span> Multilenguaje i18n</a></li>
         <li><a href="#cheat-sheet" class="toc-link"><span class="num">13</span> Cheat-Sheet y addIcons</a></li>
         <li><a href="#apartado-disenos" class="toc-link"><span class="num">14</span> Diseños</a></li>
+        <li><a href="#apartado-servicio" class="toc-link"><span class="num">15</span> Servicio & Environments</a></li>
       </ul>
     </aside>
 
@@ -1598,7 +1600,7 @@ const lastUpdated = "Noviembre 2026 - Francisco Belda";
 
       <!-- Active Filter Notice -->
       <div class="active-filter-bar" id="filterNotice">
-        <span>🔍 Mostrando filtro: <strong id="filterName">Todos</strong> (<span id="matchCount">16</span> modelos encontrados)</span>
+        <span>🔍 Mostrando filtro: <strong id="filterName">Todos</strong> (<span id="matchCount">17</span> modelos encontrados)</span>
         <button class="btn-reset-filter" id="btnResetFilter">Mostrar Todos</button>
       </div>
 
@@ -2679,6 +2681,177 @@ constructor() &#123;
   &lt;h1&gt;&#123;&#123; agente.displayName &#125;&#125;&lt;/h1&gt;
   &lt;h2&gt;&lt;p class="descripcion"&gt;&#123;&#123; agente.description &#125;&#125;&lt;/p&gt;&lt;/h2&gt;
 &lt;/ion-label&gt;</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- APARTADO DE SERVICIO -->
+        <article class="model-card" data-tags="servicio api setup environment critico" id="apartado-servicio">
+          <div class="card-top">
+            <div class="card-id-title">
+              <span class="card-num">15</span>
+              <h3 class="card-title">Servicio (Creación, Modelo DTO, Environment y Consumo)</h3>
+            </div>
+            <span class="trigger-pill">"ionic g service", "Crear servicio", "environment.URLBase", "ApiResponseAgente", "loadAgentes() subscribe"</span>
+          </div>
+          <div class="card-content">
+            <div class="info-callout">
+              <strong>Flujo completo de trabajo para conectar una API externa:</strong>
+              <p style="margin-top: 6px; font-size: 0.88rem; color: var(--text-muted);">
+                1. Generar el servicio con el CLI &bull; 2. Crear interfaces TypeScript DTO &bull; 3. Definir URL dinámica en Environments &bull; 4. Implementar método HTTP en el servicio &bull; 5. Consumir con <code>.subscribe()</code> y <code>signal</code> en la página.
+              </p>
+            </div>
+
+            <ol class="recipe-steps">
+              <li><strong>Paso 1 (CLI):</strong> Genera el archivo del servicio mediante <code>ionic g service services/agenteService</code>.</li>
+              <li><strong>Paso 2 (Modelo DTO):</strong> Crea <code>src/app/modelo/agentes.model.ts</code> con la interfaz raíz (<code>ApiResponseAgente</code>) y la del objeto (<code>Agente</code>) tipando cada propiedad sin usar <code>any</code>.</li>
+              <li><strong>Paso 3 (Environments):</strong> Añade la propiedad <code>URLBase</code> tanto en <code>environment.ts</code> como en <code>environment.prod.ts</code> para centralizar la URL de la API.</li>
+              <li><strong>Paso 4 (Servicio HTTP):</strong> Inyecta <code>HttpClient</code> con <code>inject(HttpClient)</code> y devuelve <code>Observable&lt;ApiResponseAgente&gt;</code> haciendo <code>this.HttpClient.get&lt;ApiResponseAgente&gt;(environment.URLBase)</code>.</li>
+              <li><strong>Paso 5 (Página Inicio):</strong> Inyecta el servicio con <code>inject(AgenteServicio)</code>, define la señal reactiva <code>agentes = signal&lt;Agente[]&gt;([])</code> y en <code>loadAgentes()</code> suscríbete con <code>.subscribe(&#123; next: (res) =&gt; this.agentes.set(res.data), error: (err) =&gt; console.log(err) &#125;)</code>.</li>
+            </ol>
+
+            <!-- 1. COMANDO CLI -->
+            <div class="code-box">
+              <div class="code-bar">
+                <span>1. Comando CLI para Generar el Servicio</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-bash">ionic g service services/agenteService --skip-tests</code></pre>
+            </div>
+
+            <!-- 2. MODELO DTO -->
+            <div class="code-box">
+              <div class="code-bar">
+                <span>2. Modelo DTO (src/app/modelo/agentes.model.ts)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">export interface ApiResponseAgente &#123;
+  status: number;
+  data: Agente[];
+&#125;
+
+export interface Agente &#123;
+  uuid: string;
+  displayName: string;
+  description?: string;
+  developerName: string;
+  releaseDate: string;
+  characterTags?: string[];
+  displayIcon: string;
+  displayIconSmall: string;
+  bustPortrait?: string;
+  fullPortrait?: string;
+  fullPortraitV2?: string;
+  killfeedPortrait: string;
+  minimapPortrait: string;
+  homeScreenPromoTileImage?: string;
+  background?: string;
+  backgroundGradientColors?: string[];
+  assetPath: string;
+  isFullPortraitRightFacing: boolean;
+  isPlayableCharacter: boolean;
+  isAvailableForTest: boolean;
+  isBaseContent: boolean;
+  role?: any;
+  recruitmentData?: any;
+  abilities?: any[];
+  voiceLine?: any;
+&#125;</code></pre>
+            </div>
+
+            <!-- 3. ENVIRONMENTS -->
+            <div class="code-box">
+              <div class="code-bar">
+                <span>3. Configuración Dinámica (src/environments/environment.ts)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">// src/environments/environment.ts (Desarrollo)
+export const environment = &#123;
+  production: false,
+  URLBase: 'https://valorant-api.com/v1/agents',
+&#125;;</code></pre>
+            </div>
+
+            <div class="code-box">
+              <div class="code-bar">
+                <span>4. Configuración Dinámica (src/environments/environment.prod.ts)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">// src/environments/environment.prod.ts (Producción)
+export const environment = &#123;
+  production: true,
+  URLBase: "https://valorant-api.com/v1/agents",
+&#125;;</code></pre>
+            </div>
+
+            <!-- 4. SERVICIO -->
+            <div class="code-box">
+              <div class="code-bar">
+                <span>5. Servicio HTTP (src/app/services/agenteServicio.ts)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; inject, Injectable &#125; from '@angular/core';
+import &#123; HttpClient &#125; from '@angular/common/http';
+import &#123; Observable &#125; from 'rxjs';
+import &#123; ApiResponseAgente &#125; from '../modelo/agentes.model';
+import &#123; environment &#125; from '../../environments/environment';
+
+@Injectable(&#123;
+  providedIn: 'root'
+&#125;)
+export class AgenteServicio &#123;
+  private readonly HttpClient: HttpClient = inject(HttpClient);
+
+  getAgentes(): Observable&lt;ApiResponseAgente&gt; &#123;
+    return this.HttpClient.get&lt;ApiResponseAgente&gt;(
+      environment.URLBase
+    );
+  &#125;
+&#125;</code></pre>
+            </div>
+
+            <!-- 5. CONSUMO EN LA PÁGINA -->
+            <div class="code-box">
+              <div class="code-bar">
+                <span>6. Consumo con .subscribe() y Signal (src/app/pages/inicio/inicio.page.ts)</span>
+                <button class="btn-copy">Copiar</button>
+              </div>
+              <pre><code class="language-typescript">import &#123; Component, OnInit, inject, signal, WritableSignal &#125; from '@angular/core';
+import &#123; AgenteServicio &#125; from '../../services/agenteServicio';
+import &#123; ApiResponseAgente, Agente &#125; from '../modelo/agentes.model';
+
+@Component(&#123;
+  selector: 'app-inicio',
+  templateUrl: './inicio.page.html',
+  styleUrls: ['./inicio.page.scss'],
+  standalone: true,
+  imports: []
+&#125;)
+export class InicioPage implements OnInit &#123;
+  // 1. Inyección de dependencias funcional
+  private readonly agenteServicio: AgenteServicio = inject(AgenteServicio);
+
+  // 2. Estado reactivo mediante Signals
+  agentes: WritableSignal&lt;Agente[]&gt; = signal&lt;Agente[]&gt;([]);
+
+  constructor() &#123;&#125;
+
+  ngOnInit() &#123;
+    this.loadAgentes();
+  &#125;
+
+  // 3. Método para consumir los datos mediante Observable .subscribe()
+  private loadAgentes() &#123;
+    this.agenteServicio.getAgentes().subscribe(&#123;
+      next: (res: ApiResponseAgente) =&gt; &#123;
+        this.agentes.set(res.data);
+      &#125;,
+      error: (err: any) =&gt; &#123;
+        console.log(err);
+      &#125;
+    &#125;);
+  &#125;
+&#125;</code></pre>
             </div>
           </div>
         </article>

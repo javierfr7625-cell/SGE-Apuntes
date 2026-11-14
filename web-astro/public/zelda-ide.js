@@ -29,13 +29,20 @@ function initIdeController() {
       btnModeIde?.classList.add('active');
       if (guideViewContainer) guideViewContainer.style.display = 'none';
       if (ideViewContainer) ideViewContainer.style.display = 'block';
-      window.location.hash = 'ide';
+      if (window.location.hash !== '#ide') {
+        window.location.hash = 'ide';
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
 
-      // Open initial file if editor is empty
-      const codeOutput = document.getElementById('ideCodeOutput');
-      if (codeOutput && (!codeOutput.innerHTML || codeOutput.innerHTML.trim() === '')) {
+      // Render tree if empty and open file
+      if (window.ZELDA_FILES) {
+        const treeContainer = document.getElementById('ideTreeContainer');
+        if (treeContainer && !treeContainer.hasChildNodes()) {
+          buildTreeAndRender();
+        }
         openFileInIde(currentOpenFilePath);
+      } else {
+        tryInitTree();
       }
     } else {
       btnModeIde?.classList.remove('active');
@@ -48,11 +55,23 @@ function initIdeController() {
     }
   }
 
+  // Expose globally
+  window.switchView = switchView;
+
   btnModeGuide?.addEventListener('click', () => switchView('guide'));
   btnModeIde?.addEventListener('click', () => switchView('ide'));
   chipIdeZelda?.addEventListener('click', () => switchView('ide'));
   btnBackToGuide?.addEventListener('click', () => switchView('guide'));
   sidebarIdeBtn?.addEventListener('click', () => switchView('ide'));
+
+  // Listen to hashchange in browser URL
+  window.addEventListener('hashchange', () => {
+    if (window.location.hash === '#ide') {
+      switchView('ide');
+    } else {
+      switchView('guide');
+    }
+  });
 
   // Quick jump buttons from Guide into IDE
   document.querySelectorAll('.btn-jump-ide').forEach(btn => {

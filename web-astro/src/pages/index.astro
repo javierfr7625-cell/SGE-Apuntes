@@ -1495,10 +1495,10 @@ const lastUpdated = "Noviembre 2026 - Francisco Belda";
 
       <!-- View Mode Tabs (Guía vs IDE) -->
       <div class="view-mode-bar">
-        <button class="view-mode-btn active" id="btnModeGuide" data-mode="guide">
+        <button class="view-mode-btn active" id="btnModeGuide" data-mode="guide" onclick="if(window.switchView)window.switchView('guide');else{location.hash='';}">
           <span class="icon">📖</span> Guía y Modelos de Examen
         </button>
-        <button class="view-mode-btn" id="btnModeIde" data-mode="ide">
+        <button class="view-mode-btn" id="btnModeIde" data-mode="ide" onclick="if(window.switchView)window.switchView('ide');else{location.hash='ide';}">
           <span class="icon">💻</span> IDE: Simulacro Zelda (Archivos Oficiales)
           <span class="btn-badge">48 archivos</span>
         </button>
@@ -1534,7 +1534,7 @@ const lastUpdated = "Noviembre 2026 - Francisco Belda";
         <span>📑</span> Índice Rápido
       </div>
       <div class="sidebar-ide-card">
-        <button class="btn-open-ide" id="sidebarIdeBtn">
+        <button class="btn-open-ide" id="sidebarIdeBtn" onclick="if(window.switchView)window.switchView('ide');else{location.hash='ide';}">
           <span class="icon">💻</span>
           <div>
             <strong>IDE Simulacro Zelda</strong>
@@ -2879,7 +2879,7 @@ export class InicioPage implements OnInit &#123;
           <span class="ide-title-badge">Solución Oficial de Clase • Ionic v8 & Angular Standalone</span>
         </div>
         <div class="ide-titlebar-actions">
-          <button class="btn-ide-switch-back" id="btnBackToGuide">
+          <button class="btn-ide-switch-back" id="btnBackToGuide" onclick="if(window.switchView)window.switchView('guide');else{location.hash='';}">
             <span>📖</span> Volver a la Guía
           </button>
         </div>
@@ -3241,8 +3241,26 @@ export class InicioPage implements OnInit &#123;
     loadChecks();
   </script>
 
-  <!-- Zelda Files Data & IDE Controller -->
-  <script is:inline src="/zelda-files.js"></script>
-  <script is:inline src="/zelda-ide.js"></script>
+  <!-- Zelda Files Data & IDE Controller (Relative paths & Dynamic fallback loader for GitHub Pages & Local) -->
+  <script is:inline src="./zelda-files.js"></script>
+  <script is:inline src="./zelda-ide.js"></script>
+  <script is:inline>
+    (function() {
+      if (!window.ZELDA_FILES) {
+        var p = window.location.pathname;
+        var dir = p.substring(0, p.lastIndexOf('/') + 1);
+        var s = document.createElement('script');
+        s.src = dir + 'zelda-files.js';
+        document.head.appendChild(s);
+      }
+      if (!window.switchView) {
+        var p2 = window.location.pathname;
+        var dir2 = p2.substring(0, p2.lastIndexOf('/') + 1);
+        var s2 = document.createElement('script');
+        s2.src = dir2 + 'zelda-ide.js';
+        document.head.appendChild(s2);
+      }
+    })();
+  </script>
 </body>
 </html>

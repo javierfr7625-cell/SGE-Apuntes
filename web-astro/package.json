@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node src/scripts/prerender-highlight.mjs",
+    "build": "node src/scripts/generate-zelda-ide-data.mjs && astro build && node src/scripts/prerender-highlight.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

@@ -15,3 +15,8 @@ web-astro/.astro/
 .DS_Store
 Thumbs.db
 
+# Simulacro Corregido (local only)
+simulacroCorregido/
+Simulacro/simulacroCorregido/
+
+

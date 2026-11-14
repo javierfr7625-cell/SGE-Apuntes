@@ -1,0 +1,10 @@
+exclude:
+  - web-astro
+  - Simulacro
+  - "Teor*"
+  - Transcripcion
+  - node_modules
+  - .github
+  - "*.mjs"
+  - package.json
+  - package-lock.json
